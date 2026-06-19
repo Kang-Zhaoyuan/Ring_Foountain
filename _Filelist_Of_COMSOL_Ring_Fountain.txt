@@ -1,11 +1,8 @@
 卷 Data 的文件夹 PATH 列表
-卷序列号为 00000064 6497:C20A
+卷序列号为 000000EB 6497:C20A
 D:.
 |   .gitattributes
 |   .gitignore
-|   06_true_moving_geometry_stage_archive.zip
-|   5B4_R1_stage_archive.zip
-|   5C_stage_archive.zip
 |   CHANGELOG.md
 |   README.md
 |   _Filelist_Of_COMSOL_Ring_Fountain.txt
@@ -2914,11 +2911,209 @@ D:.
 |           phase0_gate_history.csv
 |           phase0_physics_limitations.csv
 |           
++---06_true_moving_geometry_R1_diagnostic_repair
+|   +---00_import_review
+|   |   +---reports
+|   |   |       A_import_review.md
+|   |   |       
+|   |   \---tables
+|   |           A_known_defects.csv
+|   |           A_previous_cases_audit.csv
+|   |           
+|   +---01_interface_diagnostic_repair
+|   |   +---frames
+|   |   |       B_interface_check_frame_001.png
+|   |   |       B_interface_check_frame_010.png
+|   |   |       B_interface_check_frame_021.png
+|   |   |       
+|   |   +---images
+|   |   |       B_H_method_comparison.png
+|   |   |       B_t0_interface_extraction_check.png
+|   |   |       
+|   |   +---logs
+|   |   |       B_interface_diagnostic_repair.log
+|   |   |       
+|   |   +---reports
+|   |   |       B_interface_diagnostic_repair_report.md
+|   |   |       
+|   |   \---tables
+|   |           B_interface_extraction_method_comparison.csv
+|   |           B_repaired_H_timeseries.csv
+|   |           
+|   +---02_mesh_quality_diagnostic
+|   |   +---images
+|   |   |       C_mesh_before_after.png
+|   |   |       C_mesh_quality_summary.png
+|   |   |       C_S1_mesh_before_after.png
+|   |   |       C_S2_mesh_before_after.png
+|   |   |       C_S3_mesh_before_after.png
+|   |   |       C_T0_mesh_before_after.png
+|   |   |       C_T1_mesh_before_after.png
+|   |   |       C_T2_mesh_before_after.png
+|   |   |       
+|   |   +---logs
+|   |   |       C_mesh_quality_diagnostic.log
+|   |   |       
+|   |   +---reports
+|   |   |       C_mesh_quality_diagnostic_report.md
+|   |   |       
+|   |   \---tables
+|   |           C_mesh_quality_cases.csv
+|   |           
+|   +---03_zero_motion_regression
+|   |   +---exports
+|   |   |       D0.java
+|   |   |       D0_20260619_165307.java
+|   |   |       D1.java
+|   |   |       D1_20260619_165307.java
+|   |   |       D2.java
+|   |   |       D2_20260619_165307.java
+|   |   |       
+|   |   +---frames
+|   |   |       D0_interface_frame_001.png
+|   |   |       D0_interface_frame_final.png
+|   |   |       D0_interface_frame_mid.png
+|   |   |       D1_interface_frame_001.png
+|   |   |       D1_interface_frame_final.png
+|   |   |       D1_interface_frame_mid.png
+|   |   |       D2_interface_frame_001.png
+|   |   |       D2_interface_frame_final.png
+|   |   |       D2_interface_frame_mid.png
+|   |   |       
+|   |   +---images
+|   |   |       D0_H_vs_t.png
+|   |   |       D1_H_vs_t.png
+|   |   |       D2_H_vs_t.png
+|   |   |       D_H_vs_t.png
+|   |   |       D_interface_selected_frames.png
+|   |   |       D_interface_selected_frames.txt
+|   |   |       D_mesh_motion_selected_frames.png
+|   |   |       D_mesh_motion_selected_frames.txt
+|   |   |       
+|   |   +---logs
+|   |   |       D_zero_motion_regression.log
+|   |   |       
+|   |   +---models
+|   |   |       D0.mph
+|   |   |       D0_20260619_165307.mph
+|   |   |       D1.mph
+|   |   |       D1_20260619_165307.mph
+|   |   |       D2.mph
+|   |   |       D2_20260619_165307.mph
+|   |   |       
+|   |   +---reports
+|   |   |       D_zero_and_micro_motion_regression_report.md
+|   |   |       
+|   |   \---tables
+|   |           D_zero_and_micro_motion_cases.csv
+|   |           
+|   +---04_displacement_ladder_micro_to_mm
+|   |   +---frames
+|   |   +---images
+|   |   +---logs
+|   |   +---reports
+|   |   \---tables
+|   +---05_optional_physical_response_probe
+|   |   +---frames
+|   |   +---images
+|   |   +---reports
+|   |   \---tables
+|   +---06_jet1_readiness_review
+|   |   +---reports
+|   |   \---tables
+|   +---exports
+|   +---frames
+|   +---images
+|   +---logs
+|   |       06_R1_true_moving_geometry_diagnostic_repair_20260619_165307.log
+|   |       
+|   +---models
+|   |       ring_fountain_06_R1_base_from_true_moving_best.mph
+|   |       
+|   +---reports
+|   |       06_R1_true_moving_geometry_diagnostic_repair_final_report.md
+|   |       06_R1_true_moving_geometry_diagnostic_repair_summary.json
+|   |       
+|   +---scripts
+|   |       ring_fountain_06_R1_true_moving_geometry_diagnostic_repair.py
+|   |       ring_fountain_06_R1_true_moving_geometry_diagnostic_repair_20260619_165307.py
+|   |       
+|   \---tables
++---06_true_moving_geometry_R2_interface_noise_isolation
+|   +---00_R1_audit
+|   |   +---images
+|   |   |       R1_D_drift_vs_Vring.png
+|   |   |       
+|   |   +---reports
+|   |   |       R1_failure_reinterpretation_report.md
+|   |   |       
+|   |   \---tables
+|   |           R1_D_case_recomputed_summary.csv
+|   |           
+|   +---01_extraction_algorithm_audit
+|   |   +---images
+|   |   |       D0_interface_ROI_filter_visual_check.png
+|   |   |       D1_interface_ROI_filter_visual_check.png
+|   |   |       D2_interface_ROI_filter_visual_check.png
+|   |   |       old_vs_ROI_extraction_H.png
+|   |   |       
+|   |   +---logs
+|   |   |       interface_extraction_algorithm_audit.log
+|   |   |       
+|   |   +---reports
+|   |   |       interface_extraction_algorithm_audit.md
+|   |   |       
+|   |   \---tables
+|   |           D0_D1_D2_reextracted_H_timeseries.csv
+|   |           interface_extraction_methods_comparison.csv
+|   |           
+|   +---02_static_control_decomposition
+|   |   +---images
+|   |   +---logs
+|   |   +---reports
+|   |   \---tables
+|   +---03_levelset_solver_stabilization
+|   |   +---frames
+|   |   +---images
+|   |   +---logs
+|   |   +---reports
+|   |   \---tables
+|   +---04_mesh_quality_validation
+|   |   +---images
+|   |   +---logs
+|   |   +---reports
+|   |   \---tables
+|   +---05_R2_baseline_regression
+|   |   +---frames
+|   |   +---images
+|   |   +---reports
+|   |   \---tables
+|   +---06_next_gate_review
+|   |   +---images
+|   |   +---reports
+|   |   \---tables
+|   +---exports
+|   +---frames
+|   +---images
+|   +---logs
+|   |       06_R2_interface_noise_isolation_20260619_205807.log
+|   |       
+|   +---models
+|   +---reports
+|   +---scripts
+|   |       ring_fountain_06_R2_interface_noise_isolation.py
+|   |       ring_fountain_06_R2_interface_noise_isolation_20260619_205807.py
+|   |       
+|   \---tables
 +---ring_fountain_v0_single_phase
 |       README.txt
 |       ring_fountain_v0_single_phase.mph
 |       
 +---scripts
+|   |   ring_fountain_06_R1_true_moving_geometry_diagnostic_repair.py
+|   |   ring_fountain_06_R1_true_moving_geometry_diagnostic_repair_20260619_165307.py
+|   |   ring_fountain_06_R2_interface_noise_isolation.py
+|   |   ring_fountain_06_R2_interface_noise_isolation_20260619_205807.py
 |   |   ring_fountain_stage0_2.py
 |   |   ring_fountain_stage2_1_plus.py
 |   |   ring_fountain_stage4_1_boundary_review.py
@@ -2952,16 +3147,20 @@ D:.
 |   |   SCRIPT_MANIFEST.md
 |   |   
 |   \---__pycache__
+|           ring_fountain_06_R1_true_moving_geometry_diagnostic_repair.cpython-311.pyc
 |           ring_fountain_stage4_1_boundary_review.cpython-311.pyc
 |           ring_fountain_stage4_2a.cpython-311.pyc
+|           ring_fountain_stage5b3_C4_seed_based_ring_smoke.cpython-311.pyc
 |           ring_fountain_stage5b4_falling_or_equivalent_ring.cpython-311.pyc
 |           ring_fountain_stage5b4_R1_extended_stability_repair.cpython-311.pyc
 |           ring_fountain_stage5c_jet1_extraction.cpython-311.pyc
 |           ring_fountain_stage5_cleanup_5b_5c.cpython-311.pyc
+|           ring_fountain_stage6_true_moving_geometry_campaign.cpython-311.pyc
 |           
 \---理论推导
     |   IYPT2026_Ring_Fountain_Literature_Reference_Book_v3.1.pdf
     |   IYPT2026_Ring_Fountain_Literature_Reference_Book_v3.1_manifest.txt
+    |   IYPT2026_Ring_Fountain_Theory_Derivation.pdf
     |   ring_fountain_core_conclusions.pdf
     |   
     \---参考资料

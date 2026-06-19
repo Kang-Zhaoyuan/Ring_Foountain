@@ -1,0 +1,36 @@
+[2026-06-19 21:02:34] Phase 0 start
+[2026-06-19 21:02:34] Phase 0 done
+[2026-06-19 21:02:39] Phase 1 start
+[2026-06-19 21:02:39] Phase 1 loading D0: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D0.mph
+[2026-06-19 21:03:23] Phase 1 loading D1: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D1.mph
+[2026-06-19 21:03:55] Phase 1 loading D2: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D2.mph
+[2026-06-19 21:04:26] Phase 1 done
+[2026-06-19 21:04:26] Phase 2 start
+[2026-06-19 21:04:26] Phase 2 running C1_static_no_ALE
+[2026-06-19 21:04:48] Phase 2 running C2_static_ALE_present_zero_displacement
+[2026-06-19 21:05:09] Phase 2 running C3_static_no_ring_rectangular_seed
+[2026-06-19 21:05:23] Phase 2 done
+[2026-06-19 21:05:23] Phase 3 start
+[2026-06-19 21:05:23] Phase 3 running B0 S1_time_step_5e-5
+[2026-06-19 21:05:47] Phase 3 running B0 S2_time_step_2e-5
+[2026-06-19 21:06:21] Phase 3 running B0 S3_time_step_1e-5
+[2026-06-19 21:07:08] B0: smaller dt through S3 did not clear case; continuing to eps/gamma diagnostics.
+[2026-06-19 21:07:08] Phase 3 running B0 S4_eps_ls_0p5mm
+[2026-06-19 21:07:29] Phase 3 running B0 S5_eps_ls_2mm
+[2026-06-19 21:07:45] Phase 3 running B0 S6_eps_ls_3mm
+[2026-06-19 21:07:59] Phase 3 running B0 S7_gamma_0p002
+[2026-06-19 21:08:19] Phase 3 running B0 S8_gamma_0p005
+[2026-06-19 21:08:41] Phase 3 running B0 S9_gamma_0p02
+[2026-06-19 21:09:02] Phase 3 running B0 S10_ramp_motion
+[2026-06-19 21:09:05] Phase 3 running B1 S1_time_step_5e-5
+[2026-06-19 21:09:30] Phase 3 running B1 S2_time_step_2e-5
+[2026-06-19 21:10:05] Phase 3 running B1 S3_time_step_1e-5
+[2026-06-19 21:10:58] B1: smaller dt through S3 did not clear case; continuing to eps/gamma diagnostics.
+[2026-06-19 21:10:58] Phase 3 running B1 S4_eps_ls_0p5mm
+[2026-06-19 21:11:19] Phase 3 running B1 S5_eps_ls_2mm
+[2026-06-19 21:11:38] Phase 3 running B1 S6_eps_ls_3mm
+[2026-06-19 21:11:56] Phase 3 running B1 S7_gamma_0p002
+[2026-06-19 21:12:16] Phase 3 running B1 S8_gamma_0p005
+[2026-06-19 21:12:37] Phase 3 running B1 S9_gamma_0p02
+[2026-06-19 21:12:58] Phase 3 running B1 S10_ramp_motion
+[2026-06-19 21:13:19] Phase 3 done

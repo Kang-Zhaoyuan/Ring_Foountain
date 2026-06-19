@@ -82,3 +82,17 @@ D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts
 - Local script copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\scripts\ring_fountain_06_R1_true_moving_geometry_diagnostic_repair.py`.
 - Run id: `20260619_165307`.
 - Purpose: repair free-surface and mesh diagnostics, then run gated displacement ladder.
+
+## TRUE_GEOMETRY_R2_INTERFACE_NOISE_ISOLATION_SCRIPT
+
+- Canonical: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\ring_fountain_06_R2_interface_noise_isolation.py`
+- Local copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R2_interface_noise_isolation\scripts\ring_fountain_06_R2_interface_noise_isolation.py`
+- Run id: `20260619_205807`
+- Purpose: isolate R1 pseudo_spike source and attempt safe R2 zero/micro-motion baseline stabilization.
+
+## TRUE_GEOMETRY_R2_INTERFACE_NOISE_ISOLATION_SCRIPT
+
+- Canonical: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\ring_fountain_06_R2_interface_noise_isolation.py`
+- Local copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R2_interface_noise_isolation\scripts\ring_fountain_06_R2_interface_noise_isolation.py`
+- Run id: `20260619_210233`
+- Purpose: isolate R1 pseudo_spike source and attempt safe R2 zero/micro-motion baseline stabilization.

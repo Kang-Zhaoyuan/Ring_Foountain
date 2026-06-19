@@ -218,3 +218,33 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No real Hmax has been produced.
 - Current outputs remain diagnostic and are not final ring-fountain physics conclusions.
 <!-- TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR:END -->
+
+## TRUE_GEOMETRY_R2_INTERFACE_NOISE_ISOLATION
+
+- Run id: `20260619_205807`
+- 06_R1 diagnostic repair repaired NaN/interface count, but failed on pseudo_spike.
+- 06_R2 isolates pseudo_spike source and attempts stabilization.
+- R2 branch: `FAIL_PHASE2`
+- Phase 1: `PASS`
+- Phase 2: `FAIL`
+- Phase 3: `SKIPPED`
+- Phase 4: `SKIPPED`
+- Phase 5: `SKIPPED`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+
+## TRUE_GEOMETRY_R2_INTERFACE_NOISE_ISOLATION
+
+- Run id: `20260619_210233`
+- 06_R1 diagnostic repair repaired NaN/interface count, but failed on pseudo_spike.
+- 06_R2 isolates pseudo_spike source and attempts stabilization.
+- R2 branch: `FAIL_PHASE3`
+- Phase 1: `PASS`
+- Phase 2: `PASS`
+- Phase 3: `FAIL`
+- Phase 4: `SKIPPED`
+- Phase 5: `SKIPPED`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.

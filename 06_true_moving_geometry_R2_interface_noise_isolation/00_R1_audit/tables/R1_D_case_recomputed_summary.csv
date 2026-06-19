@@ -1,0 +1,4 @@
+﻿case_id,Vring,solve_status,pseudo_spike_detected,H0,Hfinal,H_robust_final_minus_H0,ring_motion_verified,mesh_quality_min,case_pass
+D0,0[m/s],PASS,True,-1.9262450361298093e-07,3.735300898977926e-06,3.927925402590907e-06,True,1.0,False
+D1,1e-4[m/s],PASS,True,-1.9262474571340158e-07,3.7243766147450425e-06,3.9170013604584445e-06,True,1.0,False
+D2,1e-3[m/s],PASS,True,-1.9262692468354067e-07,3.6253624619500306e-06,3.817989386633571e-06,True,1.0,False

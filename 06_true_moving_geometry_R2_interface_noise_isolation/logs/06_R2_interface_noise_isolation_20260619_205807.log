@@ -1,0 +1,12 @@
+[2026-06-19 20:58:07] Phase 0 start
+[2026-06-19 20:58:07] Phase 0 done
+[2026-06-19 20:58:27] Phase 1 start
+[2026-06-19 20:58:27] Phase 1 loading D0: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D0.mph
+[2026-06-19 20:59:11] Phase 1 loading D1: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D1.mph
+[2026-06-19 20:59:44] Phase 1 loading D2: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D2.mph
+[2026-06-19 21:00:17] Phase 1 done
+[2026-06-19 21:00:17] Phase 2 start
+[2026-06-19 21:00:17] Phase 2 running C1_static_no_ALE
+[2026-06-19 21:00:38] Phase 2 running C2_static_ALE_present_zero_displacement
+[2026-06-19 21:01:00] Phase 2 running C3_static_no_ring_rectangular_seed
+[2026-06-19 21:01:12] Phase 2 done
