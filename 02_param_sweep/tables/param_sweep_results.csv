@@ -1,0 +1,573 @@
+﻿group,parameter,value,solve_status,u_max_maxop,u_max_max,p_max_p,p_max_spf_p,vz_max_v,vz_max_w,u_max_field,p_max_field,p_max_spf_field,vz_max_v_field,vz_max_w_field,U0,Ro,Ri,Ri/Ro,h_ring
+U0_sweep,U0,0.01[m/s],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 8
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 9
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 10
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 11
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 12
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 13
+",0.04155219620920075,303350.5628194233,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 14
+",0.0,0.03910605371959097,0.01[m/s],20[mm],8[mm],see Ri and Ro expressions,2[mm]
+U0_sweep,U0,0.02[m/s],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 15
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 16
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 17
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 18
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 19
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 20
+",0.0679017194449792,606700.6894202254,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 21
+",0.0,0.06414448455102804,0.02[m/s],20[mm],8[mm],see Ri and Ro expressions,2[mm]
+U0_sweep,U0,0.05[m/s],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 22
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 23
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 24
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 25
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 26
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 27
+",0.15455714210574548,1516731.4729773216,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 28
+",0.0,0.15455054356783307,0.05[m/s],20[mm],8[mm],see Ri and Ro expressions,2[mm]
+U0_sweep,U0,0.10[m/s],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 29
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 30
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 31
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 32
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 33
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 34
+",0.3093352780740281,3033323.1890210197,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 35
+",0.0,0.3093281588891502,0.10[m/s],20[mm],8[mm],see Ri and Ro expressions,2[mm]
+h_ring_sweep,h_ring,1[mm],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 36
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 37
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 38
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 39
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 40
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 41
+",0.31200385155064797,3032735.355830053,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 42
+",0.0,0.3114490700813717,0.10[m/s],20[mm],8[mm],see Ri and Ro expressions,1[mm]
+h_ring_sweep,h_ring,2[mm],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 43
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 44
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 45
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 46
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 47
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 48
+",0.3093352780735367,3033323.1890212125,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 49
+",0.0,0.30932815888865833,0.10[m/s],20[mm],8[mm],see Ri and Ro expressions,2[mm]
+h_ring_sweep,h_ring,4[mm],ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 50
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 51
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 52
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 53
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 54
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 55
+",0.2721046932177755,3031953.6984160305,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 56
+",0.0,0.26585204135884016,0.10[m/s],20[mm],8[mm],see Ri and Ro expressions,4[mm]
+Ri_Ro_sweep,Ri,0.3*Ro,ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 57
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 58
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 59
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 60
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 61
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 62
+",0.3056771574805851,3048662.5814777617,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 63
+",0.0,0.30551598477779013,0.10[m/s],20[mm],0.3*Ro,see Ri and Ro expressions,4[mm]
+Ri_Ro_sweep,Ri,0.4*Ro,ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 64
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 65
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 66
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 67
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 68
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 69
+",0.27210469321778197,3031953.6984159593,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 70
+",0.0,0.2658520413588503,0.10[m/s],20[mm],0.4*Ro,see Ri and Ro expressions,4[mm]
+Ri_Ro_sweep,Ri,0.5*Ro,ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 71
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 72
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 73
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 74
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 75
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 76
+",0.271832125793387,3048521.850001046,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 77
+",0.0,0.2653254461601563,0.10[m/s],20[mm],0.5*Ro,see Ri and Ro expressions,4[mm]
+Ri_Ro_sweep,Ri,0.6*Ro,ok,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 78
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 79
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 80
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 81
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 82
+","failed: Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 83
+",0.27085305791643244,3028096.10908914,"failed: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 84
+",0.0,0.26459684241178,0.10[m/s],20[mm],0.6*Ro,see Ri and Ro expressions,4[mm]

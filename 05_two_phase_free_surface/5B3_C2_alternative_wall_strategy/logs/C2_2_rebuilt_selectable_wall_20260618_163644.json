@@ -1,0 +1,28 @@
+{
+  "status": "FAIL",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\C2_2_rebuilt_selectable_wall_report.md",
+  "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\tables\\C2_2_rebuilt_cases.csv",
+  "rows": [
+    {
+      "case_id": "C2_2_failure",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "",
+      "V_test": "",
+      "t_end": "",
+      "solve_status": "FAIL",
+      "failure_time": "",
+      "failure_message": "com.comsol.util.exceptions.FlException: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n",
+      "H0": NaN,
+      "Hfinal": NaN,
+      "delta_H": NaN,
+      "Hmax": NaN,
+      "interface_quality": "",
+      "wall_overlap_status": "UNKNOWN_OR_FAIL",
+      "notes": "Traceback (most recent call last):\n  File \"java.lang.Thread.java\", line 0, in java.lang.Thread.run\nException: Java Exception\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 800, in stage_c2_2\n    configure_rebuilt_static_wall(model, named[\"sel_ring_wall_all\"])\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 748, in configure_rebuilt_static_wall\n    wall.selection().set(jints(ids))\ncom.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n\n"
+    }
+  ],
+  "best_model": "",
+  "setup": {},
+  "named_selections": {},
+  "ALLOW_RESUME_STAGE5": "NO"
+}

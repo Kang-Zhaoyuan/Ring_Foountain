@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5a_static_interface.py", line 336, in main
+    outputs = evaluate_outputs(model)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5a_static_interface.py", line 206, in evaluate_outputs
+    raise RuntimeError(f"Could not evaluate Level Set interface variable candidates {candidates}: {last_error}")
+RuntimeError: Could not evaluate Level Set interface variable candidates ['ls.phi', 'phi', 'Phi', 'ls.Phi']: Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: ls.Phi
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: ls.Phi
+	- Feature: Evaluation 4
+

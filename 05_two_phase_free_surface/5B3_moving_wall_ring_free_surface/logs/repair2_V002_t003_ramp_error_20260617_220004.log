@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b2_to_5e.py", line 515, in run_b3_case
+    wall = add_moving_wall(model, sel["ids"], v_expr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b2_to_5e.py", line 480, in add_moving_wall
+    spf.feature("wallbc1").selection().set(jints([2, 3, 8]))
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+

@@ -1,0 +1,793 @@
+{
+  "statuses": {
+    "2.1": "PASS",
+    "2.2": "PASS",
+    "2.3": "PASS",
+    "3": "PASS",
+    "4": "FAIL",
+    "5": "not_run"
+  },
+  "records": {
+    "2.1": {
+      "stage": "2.1",
+      "parameter_descriptions": [
+        {
+          "parameter": "Ro",
+          "status": "ok",
+          "description": "Outer radius of the ring."
+        },
+        {
+          "parameter": "Ri",
+          "status": "ok",
+          "description": "Inner radius of the ring opening."
+        },
+        {
+          "parameter": "Rtank",
+          "status": "ok",
+          "description": "Radius of the axisymmetric computational water domain."
+        },
+        {
+          "parameter": "Zup",
+          "status": "ok",
+          "description": "Water-domain height above the ring center plane."
+        },
+        {
+          "parameter": "Zdown",
+          "status": "ok",
+          "description": "Water-domain height below the ring center plane."
+        },
+        {
+          "parameter": "U0",
+          "status": "ok",
+          "description": "Relative incoming velocity in the fixed-ring single-phase model."
+        },
+        {
+          "parameter": "rho_w",
+          "status": "ok",
+          "description": "Water density."
+        },
+        {
+          "parameter": "mu_w",
+          "status": "ok",
+          "description": "Water dynamic viscosity."
+        },
+        {
+          "parameter": "h_ring",
+          "status": "ok",
+          "description": "Ring cross-section thickness in the simplified model."
+        }
+      ],
+      "coupling_operators": [
+        {
+          "tag": "rfmax_all",
+          "type": "Maximum",
+          "status": "ok",
+          "selection": "all domains"
+        },
+        {
+          "tag": "rfavg_all",
+          "type": "Average",
+          "status": "ok",
+          "selection": "all domains"
+        },
+        {
+          "tag": "rfint_all",
+          "type": "Integration",
+          "status": "ok",
+          "selection": "all domains"
+        }
+      ],
+      "variable_probe": {
+        "chosen": {
+          "velocity_magnitude": "spf.U",
+          "pressure": "p",
+          "radial_velocity": "u",
+          "axial_velocity": "w",
+          "radial_coordinate": "r",
+          "axial_coordinate": "z"
+        },
+        "details": {
+          "velocity_magnitude": [
+            {
+              "expression": "spf.U",
+              "unit": "m/s",
+              "status": "ok",
+              "min": 0.0,
+              "max": 0.06790171944503055,
+              "max_abs": 0.06790171944503055,
+              "sample_count": 302787
+            },
+            {
+              "expression": "U",
+              "unit": "m/s",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: U\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: U\r\n\t- Feature: Evaluation 8\r\n"
+            }
+          ],
+          "pressure": [
+            {
+              "expression": "p",
+              "unit": "Pa",
+              "status": "ok",
+              "min": -21747.616740776775,
+              "max": 606700.6894202387,
+              "max_abs": 606700.6894202387,
+              "sample_count": 302787
+            },
+            {
+              "expression": "spf.p",
+              "unit": "Pa",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: spf.p\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: spf.p\r\n\t- Feature: Evaluation 9\r\n"
+            }
+          ],
+          "radial_velocity": [
+            {
+              "expression": "u",
+              "unit": "m/s",
+              "status": "ok",
+              "min": -0.05326013731077028,
+              "max": 0.05014918188174994,
+              "max_abs": 0.05326013731077028,
+              "sample_count": 302787
+            },
+            {
+              "expression": "spf.u",
+              "unit": "m/s",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: spf.u\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: spf.u\r\n\t- Feature: Evaluation 10\r\n"
+            }
+          ],
+          "axial_velocity": [
+            {
+              "expression": "w",
+              "unit": "m/s",
+              "status": "ok",
+              "min": -0.008085193081390376,
+              "max": 0.06414448455098092,
+              "max_abs": 0.06414448455098092,
+              "sample_count": 302787
+            },
+            {
+              "expression": "spf.w",
+              "unit": "m/s",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: spf.w\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: spf.w\r\n\t- Feature: Evaluation 11\r\n"
+            },
+            {
+              "expression": "v",
+              "unit": "m/s",
+              "status": "ok",
+              "min": 0.0,
+              "max": 0.0,
+              "max_abs": 0.0,
+              "sample_count": 302787
+            },
+            {
+              "expression": "spf.v",
+              "unit": "m/s",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: spf.v\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: spf.v\r\n\t- Feature: Evaluation 12\r\n"
+            }
+          ],
+          "radial_coordinate": [
+            {
+              "expression": "r",
+              "unit": "m",
+              "status": "ok",
+              "min": 0.0,
+              "max": 0.10000000000000003,
+              "max_abs": 0.10000000000000003,
+              "sample_count": 302787
+            },
+            {
+              "expression": "x",
+              "unit": "m",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: x\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: x\r\n\t- Feature: Evaluation 13\r\n"
+            }
+          ],
+          "axial_coordinate": [
+            {
+              "expression": "z",
+              "unit": "m",
+              "status": "ok",
+              "min": -0.12000000000000001,
+              "max": 0.12000000000000001,
+              "max_abs": 0.12000000000000001,
+              "sample_count": 302787
+            },
+            {
+              "expression": "y",
+              "unit": "m",
+              "status": "failed",
+              "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: y\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: y\r\n\t- Feature: Evaluation 14\r\n"
+            }
+          ]
+        }
+      },
+      "coordinate_meaning": {
+        "radial_coordinate": "r",
+        "axial_coordinate": "z",
+        "axisymmetric_interpretation": "2D axisymmetric r-z model; horizontal coordinate is radius, vertical coordinate is axial z."
+      },
+      "metric_regions": {
+        "values_m": {
+          "Ri": 0.008,
+          "Ro": 0.02,
+          "h_ring": 0.002,
+          "Ri_over_Ro": 0.4
+        },
+        "full_domain": "domain 1, current single-phase fluid domain",
+        "ring_near": "r in [0.004, 0.024] m and z in [-0.008, 0.008] m",
+        "center_above": "r in [0, 0.008] m and z in [0, 0.008] m",
+        "axis_near": "r <= 0.0012 m",
+        "hole_above_line": "z = 0.002 m, r in [0, 0.008] m",
+        "center_vertical_line": "r = 0 m, z in [0, 0.008] m"
+      },
+      "metrics": {
+        "u_mag_max": {
+          "metric": "u_mag_max",
+          "expression": "spf.U",
+          "unit": "m/s",
+          "value": 0.06790171944503055,
+          "status": "ok",
+          "method": "calibrated full-domain field sampling fallback",
+          "operator_expression": "rfmax_all(spf.U)",
+          "operator_error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown function or operator.\r\nMessages:\r\n\tUnknown function or operator.\r\n\t- Name: rfmax_all\r\n\t- Feature: Evaluation 15\r\n"
+        },
+        "p_max_global": {
+          "metric": "p_max_global",
+          "expression": "p",
+          "unit": "Pa",
+          "value": 606700.6894202387,
+          "status": "ok",
+          "method": "calibrated full-domain field sampling fallback",
+          "operator_expression": "rfmax_all(p)",
+          "operator_error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown function or operator.\r\nMessages:\r\n\tUnknown function or operator.\r\n\t- Name: rfmax_all\r\n\t- Feature: Evaluation 16\r\n"
+        },
+        "p_max_ring_near": {
+          "metric": "p_max_ring_near",
+          "expression": "p",
+          "unit": "Pa",
+          "value": 316772.696479486,
+          "status": "ok",
+          "method": "coordinate-masked field sampling over solved COMSOL data",
+          "sample_count": 51459
+        },
+        "vz_max_center_above": {
+          "metric": "vz_max_center_above",
+          "expression": "w",
+          "unit": "m/s",
+          "value": 0.06414448455098092,
+          "status": "ok",
+          "method": "coordinate-masked field sampling over solved COMSOL data",
+          "sample_count": 7089
+        },
+        "vz_avg_hole_above": {
+          "metric": "vz_avg_hole_above",
+          "expression": "w",
+          "unit": "m/s",
+          "value": 0.03095787265893504,
+          "status": "ok",
+          "method": "coordinate-masked field sampling over solved COMSOL data",
+          "sample_count": 7089
+        },
+        "Q_axisym_hole_above": {
+          "metric": "Q_axisym_hole_above",
+          "status": "NA",
+          "value": "NA",
+          "method": "not used",
+          "notes": "A reliable axisymmetric line integration requires a cut-line dataset or boundary-normal flux definition; not implemented for stage 2.1."
+        }
+      },
+      "tables": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\tables\\metric_calibration_baseline.csv",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\tables\\metric_calibration_baseline.xlsx"
+      ],
+      "images": [
+        {
+          "ok": true,
+          "plot": "Velocity (spf)",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\images\\metric_velocity_magnitude.png",
+          "export_type": "Image2D"
+        },
+        {
+          "ok": true,
+          "plot": "Pressure (spf)",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\images\\metric_pressure.png",
+          "export_type": "Image2D"
+        },
+        {
+          "ok": true,
+          "plot": "Vertical velocity metric plot",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\images\\metric_vertical_velocity.png"
+        },
+        {
+          "ok": true,
+          "plot": "metric regions schematic",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\images\\metric_regions_schematic.png"
+        }
+      ],
+      "models": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\models\\ring_fountain_v0_metric_calibrated.mph",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_1_metric_calibration\\models\\ring_fountain_v0_metric_calibrated_20260617_181832.mph"
+      ],
+      "review": {
+        "status": "PASS",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "2.2": {
+      "stage": "2.2",
+      "tables": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\tables\\clean_param_sweep_results.csv",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\tables\\clean_param_sweep_results.xlsx"
+      ],
+      "images": [
+        {
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\images\\U0_vs_vz_max_center_above.png",
+          "ok": true,
+          "group": "U0_sweep",
+          "metric": "vz_max_center_above"
+        },
+        {
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\images\\U0_vs_p_max_ring_near.png",
+          "ok": true,
+          "group": "U0_sweep",
+          "metric": "p_max_ring_near"
+        },
+        {
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\images\\h_ring_vs_vz_max_center_above.png",
+          "ok": true,
+          "group": "h_ring_sweep",
+          "metric": "vz_max_center_above"
+        },
+        {
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\images\\h_ring_vs_p_max_ring_near.png",
+          "ok": true,
+          "group": "h_ring_sweep",
+          "metric": "p_max_ring_near"
+        },
+        {
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\images\\Ri_over_Ro_vs_vz_max_center_above.png",
+          "ok": true,
+          "group": "Ri_Ro_sweep",
+          "metric": "vz_max_center_above"
+        },
+        {
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\images\\Ri_over_Ro_vs_p_max_ring_near.png",
+          "ok": true,
+          "group": "Ri_Ro_sweep",
+          "metric": "p_max_ring_near"
+        }
+      ],
+      "models": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\models\\ring_fountain_v1_clean_param_sweep.mph",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\models\\ring_fountain_v1_clean_param_sweep_20260617_181832.mph"
+      ],
+      "rows": [
+        {
+          "sweep_group": "U0_sweep",
+          "case_id": "U0_001",
+          "parameter_changed": "U0",
+          "parameter_value": "0.01[m/s]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.01[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.0415521962092013,
+          "p_max_global": 303350.56281940377,
+          "p_max_ring_near": 158396.2071833902,
+          "vz_max_center_above": 0.039106053719591076,
+          "vz_avg_hole_above": 0.01562749915614762,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.01
+        },
+        {
+          "sweep_group": "U0_sweep",
+          "case_id": "U0_002",
+          "parameter_changed": "U0",
+          "parameter_value": "0.02[m/s]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.06790171944509839,
+          "p_max_global": 606700.6894202445,
+          "p_max_ring_near": 316772.6964794622,
+          "vz_max_center_above": 0.06414448455093157,
+          "vz_avg_hole_above": 0.030957872668407677,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.02
+        },
+        {
+          "sweep_group": "U0_sweep",
+          "case_id": "U0_005",
+          "parameter_changed": "U0",
+          "parameter_value": "0.05[m/s]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.05[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.15455714210566404,
+          "p_max_global": 1516731.4729772175,
+          "p_max_ring_near": 791736.9183904065,
+          "vz_max_center_above": 0.15055424421309854,
+          "vz_avg_hole_above": 0.07539988643540735,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.05
+        },
+        {
+          "sweep_group": "U0_sweep",
+          "case_id": "U0_010",
+          "parameter_changed": "U0",
+          "parameter_value": "0.10[m/s]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.10[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.30933527807357086,
+          "p_max_global": 3033323.189021243,
+          "p_max_ring_near": 1582842.2028217618,
+          "vz_max_center_above": 0.299981992937015,
+          "vz_avg_hole_above": 0.1343741466089863,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.1
+        },
+        {
+          "sweep_group": "h_ring_sweep",
+          "case_id": "h_001",
+          "parameter_changed": "h_ring",
+          "parameter_value": "1[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "1[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.06920130242404512,
+          "p_max_global": 606592.4224083485,
+          "p_max_ring_near": 311539.02337390516,
+          "vz_max_center_above": 0.06668893645582415,
+          "vz_avg_hole_above": 0.03493319595475068,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 1.0
+        },
+        {
+          "sweep_group": "h_ring_sweep",
+          "case_id": "h_002",
+          "parameter_changed": "h_ring",
+          "parameter_value": "2[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.06790171944502796,
+          "p_max_global": 606700.6894202225,
+          "p_max_ring_near": 316772.6964794841,
+          "vz_max_center_above": 0.06414448455094725,
+          "vz_avg_hole_above": 0.030957872659813233,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 2.0
+        },
+        {
+          "sweep_group": "h_ring_sweep",
+          "case_id": "h_004",
+          "parameter_changed": "h_ring",
+          "parameter_value": "4[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "4[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.06589149529237072,
+          "p_max_global": 606425.9730352766,
+          "p_max_ring_near": 329339.16633229546,
+          "vz_max_center_above": 0.062479498288588876,
+          "vz_avg_hole_above": 0.02735670009810109,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 4.0
+        },
+        {
+          "sweep_group": "Ri_Ro_sweep",
+          "case_id": "ri_006",
+          "parameter_changed": "Ri",
+          "parameter_value": "6[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "6[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.3,
+          "u_mag_max": 0.07746837224294066,
+          "p_max_global": 610303.3731442813,
+          "p_max_ring_near": 326099.45866734703,
+          "vz_max_center_above": 0.07515929950699694,
+          "vz_avg_hole_above": 0.03386704131774262,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.3
+        },
+        {
+          "sweep_group": "Ri_Ro_sweep",
+          "case_id": "ri_008",
+          "parameter_changed": "Ri",
+          "parameter_value": "8[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "8[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.4,
+          "u_mag_max": 0.06790171944502545,
+          "p_max_global": 606700.6894202183,
+          "p_max_ring_near": 316772.69647942245,
+          "vz_max_center_above": 0.06414448455093004,
+          "vz_avg_hole_above": 0.030957872661766517,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.4
+        },
+        {
+          "sweep_group": "Ri_Ro_sweep",
+          "case_id": "ri_010",
+          "parameter_changed": "Ri",
+          "parameter_value": "10[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "10[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.5,
+          "u_mag_max": 0.061252994014935926,
+          "p_max_global": 608110.3216612232,
+          "p_max_ring_near": 310900.6322835024,
+          "vz_max_center_above": 0.058175452395408556,
+          "vz_avg_hole_above": 0.027895941659439143,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.5
+        },
+        {
+          "sweep_group": "Ri_Ro_sweep",
+          "case_id": "ri_012",
+          "parameter_changed": "Ri",
+          "parameter_value": "12[mm]",
+          "control_reset": "base parameters reset before case",
+          "notes": "",
+          "solve_status": "ok",
+          "Ro": "20[mm]",
+          "Ri": "12[mm]",
+          "h_ring": "2[mm]",
+          "U0": "0.02[m/s]",
+          "Rtank": "100[mm]",
+          "Zup": "120[mm]",
+          "Zdown": "120[mm]",
+          "rho_w": "1000[kg/m^3]",
+          "mu_w": "1e-3[Pa*s]",
+          "Ri_over_Ro": 0.6,
+          "u_mag_max": 0.056756464950653555,
+          "p_max_global": 604366.3972505103,
+          "p_max_ring_near": 303926.2937655942,
+          "vz_max_center_above": 0.053963152033919104,
+          "vz_avg_hole_above": 0.025134532102852727,
+          "Q_axisym_hole_above": "NA",
+          "x_value": 0.6
+        }
+      ],
+      "review": {
+        "status": "PASS",
+        "all_solved": true,
+        "metrics_ok": true,
+        "images_ok": true
+      }
+    },
+    "2.3": {
+      "stage": "2.3",
+      "clean_rows": 11,
+      "old_rows": 11,
+      "old_preliminary_label": "preliminary automation test; not used for final physical interpretation",
+      "clean_sweep_source": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\02_2_clean_param_sweep\\tables\\clean_param_sweep_results.csv",
+      "review": {
+        "status": "PASS",
+        "clean_rows_ok": true
+      }
+    },
+    "3": {
+      "stage": "3",
+      "models": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\03_relative_flow_model\\models\\ring_fountain_v2_relative_flow.mph",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\03_relative_flow_model\\models\\ring_fountain_v2_relative_flow_20260617_181832.mph"
+      ],
+      "metrics": {
+        "u_mag_max": {
+          "metric": "u_mag_max",
+          "expression": "spf.U",
+          "unit": "m/s",
+          "value": 0.06790171944503055,
+          "status": "ok",
+          "method": "calibrated full-domain field sampling fallback",
+          "operator_expression": "rfmax_all(spf.U)",
+          "operator_error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown function or operator.\r\nMessages:\r\n\tUnknown function or operator.\r\n\t- Name: rfmax_all\r\n\t- Feature: Evaluation 24\r\n"
+        },
+        "p_max_global": {
+          "metric": "p_max_global",
+          "expression": "p",
+          "unit": "Pa",
+          "value": 606700.6894202387,
+          "status": "ok",
+          "method": "calibrated full-domain field sampling fallback",
+          "operator_expression": "rfmax_all(p)",
+          "operator_error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown function or operator.\r\nMessages:\r\n\tUnknown function or operator.\r\n\t- Name: rfmax_all\r\n\t- Feature: Evaluation 25\r\n"
+        },
+        "p_max_ring_near": {
+          "metric": "p_max_ring_near",
+          "expression": "p",
+          "unit": "Pa",
+          "value": 316772.696479486,
+          "status": "ok",
+          "method": "coordinate-masked field sampling over solved COMSOL data",
+          "sample_count": 51459
+        },
+        "vz_max_center_above": {
+          "metric": "vz_max_center_above",
+          "expression": "w",
+          "unit": "m/s",
+          "value": 0.06414448455098092,
+          "status": "ok",
+          "method": "coordinate-masked field sampling over solved COMSOL data",
+          "sample_count": 7089
+        },
+        "vz_avg_hole_above": {
+          "metric": "vz_avg_hole_above",
+          "expression": "w",
+          "unit": "m/s",
+          "value": 0.03095787265893504,
+          "status": "ok",
+          "method": "coordinate-masked field sampling over solved COMSOL data",
+          "sample_count": 7089
+        },
+        "Q_axisym_hole_above": {
+          "metric": "Q_axisym_hole_above",
+          "status": "NA",
+          "value": "NA",
+          "method": "not used",
+          "notes": "A reliable axisymmetric line integration requires a cut-line dataset or boundary-normal flux definition; not implemented for stage 2.1."
+        }
+      },
+      "H_kin_proxy": {
+        "H_drop": "50[mm]",
+        "U0": "0.02[m/s]",
+        "U_impact_m_per_s": 0.990285312422637,
+        "vz_max_center_above_m_per_s": 0.06414448455098092,
+        "H_kin_proxy_m": 0.00020978187751734948,
+        "model_type": "single-phase fixed-ring relative-flow proxy",
+        "notes": "H_kin_proxy is not true two-phase free-surface Hmax."
+      },
+      "images": [
+        {
+          "ok": true,
+          "plot": "Velocity (spf)",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\03_relative_flow_model\\images\\relative_velocity.png",
+          "export_type": "Image2D"
+        },
+        {
+          "ok": true,
+          "plot": "Pressure (spf)",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\03_relative_flow_model\\images\\relative_pressure.png",
+          "export_type": "Image2D"
+        },
+        {
+          "ok": true,
+          "plot": "Vertical velocity metric plot",
+          "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\03_relative_flow_model\\images\\relative_vertical_velocity.png"
+        }
+      ],
+      "review": {
+        "status": "PASS",
+        "images_ok": true
+      }
+    },
+    "4": {
+      "stage": "4",
+      "models": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_moving_ring.mph",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_moving_ring_20260617_181832.mph"
+      ],
+      "review": {
+        "status": "FAIL",
+        "reason": "Automation did not safely confirm the ring moving-wall boundary selection or wall movement property names; physics was not altered.",
+        "no_stage5": true
+      }
+    },
+    "5": {
+      "status": "not_run",
+      "reason": "Stage 4 did not pass."
+    }
+  }
+}

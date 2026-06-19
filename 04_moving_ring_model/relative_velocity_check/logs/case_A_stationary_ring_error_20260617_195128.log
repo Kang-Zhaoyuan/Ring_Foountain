@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage4_2a.py", line 369, in solve_case
+    wall_info = configure_wall(model, case["moving_wall"], case["wall_speed"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage4_2a.py", line 134, in configure_wall
+    wall.selection().set(jints(RING_IDS))
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+

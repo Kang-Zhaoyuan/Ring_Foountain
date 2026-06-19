@@ -1,0 +1,73 @@
+{
+  "component_dimension": "2D axisymmetric",
+  "geometry": "rectangle r=0..20 mm, z=-10..20 mm",
+  "boundaries": {
+    "all": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "axis": [
+      1
+    ],
+    "bottom_wall": [
+      2
+    ],
+    "top_open": [
+      3
+    ],
+    "right_moving_wetted_wall": [
+      4
+    ]
+  },
+  "physics": [
+    "spf",
+    "ls"
+  ],
+  "multiphysics": [
+    "tpf1",
+    "ww1"
+  ],
+  "ww1_properties": [
+    "BoundaryCondition",
+    "usePorousSlip",
+    "SpecifyContactAngle",
+    "thetaw",
+    "surfaceE1",
+    "surfaceE2",
+    "TranslationalVelocityOption",
+    "utr",
+    "NavierSlip",
+    "beta",
+    "beta_factor",
+    "tau_ref",
+    "m",
+    "IncludeUtrInNavierSlipForce",
+    "tau_y",
+    "k1",
+    "k2",
+    "constraintOptions",
+    "constraintType",
+    "constraintMethod",
+    "Fluid_physics",
+    "Mathematics_physics",
+    "StudyStep",
+    "Fluid_PhysicalModelProperty_SwirlFlow",
+    "Fluid_TurbulenceModelProperty_TurbulenceModelType",
+    "Fluid_TurbulenceModelProperty_TurbulenceModel",
+    "Fluid_TurbulenceModelProperty_WallTreatment",
+    "Fluid_PhysicalModelProperty_EnablePorousMediaDomains",
+    "Fluid_showDependencies"
+  ],
+  "tpf1_properties_subset": [
+    "rho1",
+    "mu1",
+    "rho2",
+    "mu2",
+    "SurfaceTensionCoefficient",
+    "sigma",
+    "Fluid_physics",
+    "Mathematics_physics"
+  ]
+}

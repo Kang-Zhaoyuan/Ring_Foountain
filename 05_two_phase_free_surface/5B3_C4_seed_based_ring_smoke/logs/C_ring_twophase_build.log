@@ -1,0 +1,169 @@
+{
+  "boundaries": {
+    "axis": [
+      1
+    ],
+    "top_open": [
+      3
+    ],
+    "bottom_wall": [
+      2
+    ],
+    "outer_wall": [
+      8
+    ],
+    "ring_inner": [
+      4
+    ],
+    "ring_outer": [
+      7
+    ],
+    "ring_top": [
+      6
+    ],
+    "ring_bottom": [
+      5
+    ],
+    "ring_wettedwall_confirmed": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "tpf_properties": [
+    {
+      "feature": "tpf1",
+      "property": "rho1_mat",
+      "value": "userdef",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "rho1",
+      "value": "rho_air",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "mu1_mat",
+      "value": "userdef",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "mu1",
+      "value": "mu_air",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "rho2_mat",
+      "value": "userdef",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "rho2",
+      "value": "rho_w",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "mu2_mat",
+      "value": "userdef",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "mu2",
+      "value": "mu_w",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "IncludeSurfaceTension",
+      "value": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "SurfaceTensionCoefficient",
+      "value": "userdef",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "tpf1",
+      "property": "sigma",
+      "value": "sigma_wa",
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "wettedwall_properties": [
+    {
+      "feature": "ww1",
+      "property": "BoundaryCondition",
+      "value": "NavierSlip",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "ww1",
+      "property": "TranslationalVelocityOption",
+      "value": "Manual",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "ww1",
+      "property": "utr",
+      "value": [
+        "0",
+        "-Vwall",
+        "0"
+      ],
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "ww1",
+      "property": "SpecifyContactAngle",
+      "value": "SpecifyContactAngleDirectly",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "ww1",
+      "property": "thetaw",
+      "value": "pi/2",
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "feature": "ww1",
+      "property": "beta",
+      "value": "eps_ls",
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "physics": [
+    "spf",
+    "ls"
+  ],
+  "multiphysics": [
+    "tpf1",
+    "ww1"
+  ]
+}

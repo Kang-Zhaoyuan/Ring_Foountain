@@ -1,0 +1,342 @@
+{
+  "run_id": "20260618_202100",
+  "stage": "5B4 falling-or-equivalent ring model",
+  "ALLOW_5C": "NO",
+  "ALLOW_STAGE6": "NO",
+  "5B4_status": "FAIL",
+  "A": {
+    "status": "PASS",
+    "rows": [
+      {
+        "item": "C4 PASS",
+        "value": "PASS",
+        "status": "PASS"
+      },
+      {
+        "item": "ALLOW_5B4",
+        "value": "YES",
+        "status": "PASS"
+      },
+      {
+        "item": "ALLOW_5C",
+        "value": "NO",
+        "status": "PASS"
+      },
+      {
+        "item": "ALLOW_STAGE6",
+        "value": "NO",
+        "status": "PASS"
+      },
+      {
+        "item": "C4 best model exists",
+        "value": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_best.mph",
+        "status": "PASS"
+      },
+      {
+        "item": "C4 best Java exists",
+        "value": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\exports\\ring_fountain_v5B3_C4_best.java",
+        "status": "PASS"
+      },
+      {
+        "item": "C4 final report exists",
+        "value": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\reports\\5B3_C4_seed_based_ring_smoke_final_report.md",
+        "status": "PASS"
+      },
+      {
+        "item": "README exists",
+        "value": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\README.md",
+        "status": "PASS"
+      },
+      {
+        "item": "CHANGELOG exists",
+        "value": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\CHANGELOG.md",
+        "status": "PASS"
+      },
+      {
+        "item": "SCRIPT_MANIFEST exists",
+        "value": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\SCRIPT_MANIFEST.md",
+        "status": "PASS"
+      }
+    ]
+  },
+  "B": {
+    "status": "PASS",
+    "ramp": {
+      "Vwall_eff": "Vtarget*(1-exp(-(t/t_ramp)^2))",
+      "utr": [
+        "0",
+        "-Vwall_eff",
+        "0"
+      ],
+      "wettedwall_selection": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "variable_status": {
+        "created_or_reused": true,
+        "error": ""
+      }
+    },
+    "audit": [
+      {
+        "item": "physics_tags",
+        "value": [
+          "spf",
+          "ls"
+        ],
+        "status": "INFO"
+      },
+      {
+        "item": "multiphysics_tags",
+        "value": [
+          "tpf1",
+          "ww1"
+        ],
+        "status": "INFO"
+      },
+      {
+        "item": "multiphysics_tpf1_exists",
+        "value": true,
+        "status": "PASS"
+      },
+      {
+        "item": "multiphysics_ww1_exists",
+        "value": true,
+        "status": "PASS"
+      },
+      {
+        "item": "ww1_selection",
+        "value": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "status": "PASS"
+      },
+      {
+        "item": "ww1_TranslationalVelocityOption",
+        "value": "Manual",
+        "status": "PASS",
+        "note": "Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here."
+      },
+      {
+        "item": "ww1_utr",
+        "value": [
+          "0",
+          "-Vwall_eff",
+          "0"
+        ],
+        "status": "PASS",
+        "note": "Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here."
+      },
+      {
+        "item": "ww1_BoundaryCondition",
+        "value": "retained from C4",
+        "status": "PASS",
+        "note": "Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here."
+      }
+    ],
+    "models": {
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_equivalent_falling_ring_base_20260618_202100.mph",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_equivalent_falling_ring_base.mph",
+      "canonical_note": "canonical existed; not overwritten"
+    }
+  },
+  "C": {
+    "case_id": "C_static_regression",
+    "Vtarget": "0[m/s]",
+    "t_end": "0.005[s]",
+    "dt": "1e-4[s]",
+    "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+    "WettedWall_selection_ok": true,
+    "solve_status": "PASS",
+    "failure_message": "",
+    "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+    "max_interface_height_change": 6.846528986234649e-05,
+    "max_velocity": 0.08893488195860967,
+    "max_pressure": 18.14745491753834,
+    "interface_quality": "clear",
+    "pseudo_spike_detected": false,
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_static_regression.mph",
+    "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\C_static_regression_H_vs_t.csv",
+    "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\C_static_regression_H_vs_t.png",
+    "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\C_static_regression_phils_final.png",
+    "case_pass": "PASS"
+  },
+  "D": {
+    "status": "PASS",
+    "rows": [
+      {
+        "case_id": "D1",
+        "Vtarget": "1e-3[m/s]",
+        "t_end": "0.005[s]",
+        "dt": "1e-4[s]",
+        "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+        "WettedWall_selection_ok": true,
+        "solve_status": "PASS",
+        "failure_message": "",
+        "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+        "max_interface_height_change": 6.846528986234652e-05,
+        "max_velocity": 0.08893488195861016,
+        "max_pressure": 18.147454917538496,
+        "interface_quality": "clear",
+        "pseudo_spike_detected": false,
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_D1_1e-3.mph",
+        "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\D1_H_vs_t.csv",
+        "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D1_H_vs_t.png",
+        "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D1_phils_final.png",
+        "case_pass": "PASS"
+      },
+      {
+        "case_id": "D2",
+        "Vtarget": "2e-3[m/s]",
+        "t_end": "0.005[s]",
+        "dt": "1e-4[s]",
+        "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+        "WettedWall_selection_ok": true,
+        "solve_status": "PASS",
+        "failure_message": "",
+        "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+        "max_interface_height_change": 6.846528986234649e-05,
+        "max_velocity": 0.08893488195860984,
+        "max_pressure": 18.14745491753834,
+        "interface_quality": "clear",
+        "pseudo_spike_detected": false,
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_D2_2e-3.mph",
+        "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\D2_H_vs_t.csv",
+        "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D2_H_vs_t.png",
+        "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D2_phils_final.png",
+        "case_pass": "PASS"
+      },
+      {
+        "case_id": "D3",
+        "Vtarget": "5e-3[m/s]",
+        "t_end": "0.008[s]",
+        "dt": "1e-4[s]",
+        "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+        "WettedWall_selection_ok": true,
+        "solve_status": "PASS",
+        "failure_message": "",
+        "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+        "max_interface_height_change": 6.846528986234652e-05,
+        "max_velocity": 0.09028503686590479,
+        "max_pressure": 18.147475371364184,
+        "interface_quality": "clear",
+        "pseudo_spike_detected": false,
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_D3_5e-3.mph",
+        "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\D3_H_vs_t.csv",
+        "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D3_H_vs_t.png",
+        "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D3_phils_final.png",
+        "case_pass": "PASS"
+      },
+      {
+        "case_id": "D4",
+        "Vtarget": "1e-2[m/s]",
+        "t_end": "0.010[s]",
+        "dt": "1e-4[s]",
+        "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+        "WettedWall_selection_ok": true,
+        "solve_status": "PASS",
+        "failure_message": "",
+        "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+        "max_interface_height_change": 6.846528986234649e-05,
+        "max_velocity": 0.08842409832667776,
+        "max_pressure": 18.14748984286082,
+        "interface_quality": "clear",
+        "pseudo_spike_detected": false,
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_D4_1e-2.mph",
+        "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\D4_H_vs_t.csv",
+        "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D4_H_vs_t.png",
+        "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D4_phils_final.png",
+        "case_pass": "PASS"
+      }
+    ]
+  },
+  "E": {
+    "status": "FAIL",
+    "row": {
+      "case_id": "E_extended_stability",
+      "Vtarget": "1e-2[m/s]",
+      "t_end": "0.020[s]",
+      "dt": "1e-4[s]",
+      "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+      "WettedWall_selection_ok": true,
+      "solve_status": "PASS",
+      "failure_message": "",
+      "diagnostic_H_final_minus_H0_m": 0.0002340314889688338,
+      "max_interface_height_change": 0.0002340314889688338,
+      "max_velocity": 0.09960590392032331,
+      "max_pressure": 18.14757169464013,
+      "interface_quality": "clear",
+      "pseudo_spike_detected": false,
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_extended_stability.mph",
+      "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\E_extended_stability_H_vs_t.csv",
+      "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\E_extended_stability_H_vs_t.png",
+      "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\E_extended_stability_phils_final.png",
+      "case_pass": "FAIL"
+    },
+    "selected_from_D": {
+      "case_id": "D4",
+      "Vtarget": "1e-2[m/s]",
+      "t_end": "0.010[s]",
+      "dt": "1e-4[s]",
+      "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+      "WettedWall_selection_ok": true,
+      "solve_status": "PASS",
+      "failure_message": "",
+      "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+      "max_interface_height_change": 6.846528986234649e-05,
+      "max_velocity": 0.08842409832667776,
+      "max_pressure": 18.14748984286082,
+      "interface_quality": "clear",
+      "pseudo_spike_detected": false,
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_D4_1e-2.mph",
+      "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\D4_H_vs_t.csv",
+      "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D4_H_vs_t.png",
+      "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D4_phils_final.png",
+      "case_pass": "PASS"
+    }
+  },
+  "F": {
+    "executed": false,
+    "status": "SKIPPED",
+    "reason": "Optional ALE feasibility probe was not executed; this run preserved fixed-geometry C4-derived best model."
+  },
+  "stop_reason": "E extended stability failed; preserving D best only and not allowing 5C.",
+  "G": {
+    "status": "PASS",
+    "source": "highest passing D short-time case",
+    "selected": {
+      "case_id": "D4",
+      "Vtarget": "1e-2[m/s]",
+      "t_end": "0.010[s]",
+      "dt": "1e-4[s]",
+      "used_forcing_route": "WettedWall utr = {0,-Vwall_eff(t),0}",
+      "WettedWall_selection_ok": true,
+      "solve_status": "PASS",
+      "failure_message": "",
+      "diagnostic_H_final_minus_H0_m": 6.846528986234649e-05,
+      "max_interface_height_change": 6.846528986234649e-05,
+      "max_velocity": 0.08842409832667776,
+      "max_pressure": 18.14748984286082,
+      "interface_quality": "clear",
+      "pseudo_spike_detected": false,
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_D4_1e-2.mph",
+      "table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\tables\\D4_H_vs_t.csv",
+      "plot": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D4_H_vs_t.png",
+      "phils_final": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\images\\D4_phils_final.png",
+      "case_pass": "PASS"
+    },
+    "best_model": {
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_best_20260618_202100.mph",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_best.mph"
+    },
+    "best_java": {
+      "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\exports\\ring_fountain_v5B4_best_20260618_202100.java",
+      "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\exports\\ring_fountain_v5B4_best.java"
+    }
+  }
+}

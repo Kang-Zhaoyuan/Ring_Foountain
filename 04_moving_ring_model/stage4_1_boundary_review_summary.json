@@ -1,0 +1,159 @@
+{
+  "stage": "4.1",
+  "status": "AWAITING_MANUAL_CONFIRMATION",
+  "run_id": "20260617_193341",
+  "input_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\03_relative_flow_model\\models\\ring_fountain_v2_relative_flow.mph",
+  "candidate_ids": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "classification": {
+    "candidate_ids": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "roles": {
+      "inner_vertical_r_eq_Ri": {
+        "boundary_id": 4,
+        "length_m": 0.002,
+        "center_r_m": 0.008000000000000002,
+        "center_z_m": 6.6174449004242214e-21,
+        "r_min_m": 0.008,
+        "r_max_m": 0.008000000000000004,
+        "z_min_m": -0.001,
+        "z_max_m": 0.001,
+        "endpoint_1": [
+          0.008,
+          -0.001
+        ],
+        "endpoint_2": [
+          0.008000000000000004,
+          0.001
+        ],
+        "int_r": 1.6000000000000003e-05,
+        "int_z": 1.3234889800848443e-23,
+        "inside_water_domain_not_outer_tank": true,
+        "candidate_role": "inner_vertical_r_eq_Ri"
+      },
+      "outer_vertical_r_eq_Ro": {
+        "boundary_id": 7,
+        "length_m": 0.002,
+        "center_r_m": 0.019999999999999997,
+        "center_z_m": -2.6469779601696886e-20,
+        "r_min_m": 0.02,
+        "r_max_m": 0.020000000000000004,
+        "z_min_m": -0.001,
+        "z_max_m": 0.001,
+        "endpoint_1": [
+          0.02,
+          -0.001
+        ],
+        "endpoint_2": [
+          0.020000000000000004,
+          0.001
+        ],
+        "int_r": 3.9999999999999996e-05,
+        "int_z": -5.293955920339377e-23,
+        "inside_water_domain_not_outer_tank": true,
+        "candidate_role": "outer_vertical_r_eq_Ro"
+      },
+      "top_horizontal_z_eq_plus_h_over_2": {
+        "boundary_id": 6,
+        "length_m": 0.011999999999999995,
+        "center_r_m": 0.014000000000000009,
+        "center_z_m": 0.001000000000000001,
+        "r_min_m": 0.008,
+        "r_max_m": 0.02,
+        "z_min_m": 0.001,
+        "z_max_m": 0.0010000000000000005,
+        "endpoint_1": [
+          0.008,
+          0.001
+        ],
+        "endpoint_2": [
+          0.02,
+          0.0010000000000000005
+        ],
+        "int_r": 0.00016800000000000004,
+        "int_z": 1.2000000000000009e-05,
+        "inside_water_domain_not_outer_tank": true,
+        "candidate_role": "top_horizontal_z_eq_plus_h_over_2"
+      },
+      "bottom_horizontal_z_eq_minus_h_over_2": {
+        "boundary_id": 5,
+        "length_m": 0.012,
+        "center_r_m": 0.013999999999999999,
+        "center_z_m": -0.0010000000000000002,
+        "r_min_m": 0.008,
+        "r_max_m": 0.02,
+        "z_min_m": -0.0010000000000000005,
+        "z_max_m": -0.001,
+        "endpoint_1": [
+          0.008,
+          -0.0010000000000000005
+        ],
+        "endpoint_2": [
+          0.02,
+          -0.001
+        ],
+        "int_r": 0.000168,
+        "int_z": -1.2000000000000004e-05,
+        "inside_water_domain_not_outer_tank": true,
+        "candidate_role": "bottom_horizontal_z_eq_minus_h_over_2"
+      }
+    },
+    "checks": {
+      "candidate_count_is_4": true,
+      "total_length_close_to_theory": true,
+      "all_positions_match_theory": true,
+      "all_candidates_are_internal_hole_boundaries": true,
+      "no_outer_tank_boundaries_selected": true
+    },
+    "candidate_total_length_m": 0.027999999999999994,
+    "theoretical_total_length_m": 0.028,
+    "tolerance_position_m": 6e-05,
+    "tolerance_length_m": 0.00028000000000000003
+  },
+  "parameters": {
+    "Ri": {
+      "expression": "8[mm]",
+      "value_m": 0.008
+    },
+    "Ro": {
+      "expression": "20[mm]",
+      "value_m": 0.02
+    },
+    "h_ring": {
+      "expression": "2[mm]",
+      "value_m": 0.002
+    },
+    "Rtank": {
+      "expression": "100[mm]",
+      "value_m": 0.1
+    },
+    "Zup": {
+      "expression": "120[mm]",
+      "value_m": 0.12
+    },
+    "Zdown": {
+      "expression": "120[mm]",
+      "value_m": 0.12
+    }
+  },
+  "outputs": {
+    "boundary_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\tables\\ring_boundary_all_boundaries.csv",
+    "boundary_xlsx": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\tables\\ring_boundary_all_boundaries.xlsx",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_boundary_review_package.mph",
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_boundary_review_package_20260617_193341.mph",
+    "full_image": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\images\\ring_boundary_full_model_ids.png",
+    "local_image": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\images\\ring_boundary_local_ids.png",
+    "highlight_image": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\images\\ring_boundary_candidate_highlight.png",
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\reports\\ring_boundary_manual_review_package.md",
+    "log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\logs\\stage4_1_boundary_review_20260617_193341.log"
+  },
+  "note": "No moving-wall, wall-movement, ALE, or time-dependent motion setting has been applied."
+}

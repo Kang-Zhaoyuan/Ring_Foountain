@@ -1,0 +1,4 @@
+﻿roi,definition,r_min_m,r_max_m,z_min_m,t_min_s
+axis_near_region,0 <= r <= 0.25*Ri and z >= z0,0.0,0.0015,0.0,
+center_region,0 <= r <= Ri and z >= z0,0.0,0.006,0.0,
+late_time_window,t >= t_Jet1_window_end,,,,0.005

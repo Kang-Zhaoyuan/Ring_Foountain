@@ -1,0 +1,121 @@
+{
+  "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_boundary_review_package.mph",
+  "run_time": "2026-06-17T19:44:37",
+  "components": {
+    "comp1": {
+      "selections": {
+        "geom1_zaxis": {
+          "label": "z-axis",
+          "dimension": "",
+          "entities_1d": [
+            1
+          ],
+          "properties": {}
+        },
+        "sel_ring_wall_candidate": {
+          "label": "Ring wall candidate boundaries for manual review",
+          "dimension": "",
+          "entities_1d": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "properties": {}
+        }
+      },
+      "physics": {
+        "spf": {
+          "label": "Laminar Flow",
+          "type": "LaminarFlow",
+          "properties": {},
+          "features": {
+            "fp1": {
+              "label": "Fluid Properties 1",
+              "type": "FluidProperties",
+              "selection_entities_1d": [],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "init1": {
+              "label": "Initial Values 1",
+              "type": "init",
+              "selection_entities_1d": [],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "axi1": {
+              "label": "Axial Symmetry 1",
+              "type": "AxialSymmetry",
+              "selection_entities_1d": [
+                1
+              ],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "wallbc1": {
+              "label": "Wall 1",
+              "type": "WallBC",
+              "selection_entities_1d": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "grav1": {
+              "label": "Gravity 1",
+              "type": "Gravity",
+              "selection_entities_1d": [],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "rtfr1": {
+              "label": "Rotating Frame 1",
+              "type": "RotatingFrameFD",
+              "selection_entities_1d": [],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "dcont1": {
+              "label": "Flow Continuity 1",
+              "type": "Continuity",
+              "selection_entities_1d": [],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "inl1": {
+              "label": "Inlet 1",
+              "type": "InletBoundary",
+              "selection_entities_1d": [
+                2
+              ],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "out1": {
+              "label": "Outlet 1",
+              "type": "OutletBoundary",
+              "selection_entities_1d": [
+                3
+              ],
+              "properties": {},
+              "allowed_property_tags": []
+            },
+            "wallbc2": {
+              "label": "Right_Slip_Wall",
+              "type": "WallBC",
+              "selection_entities_1d": [
+                8
+              ],
+              "properties": {},
+              "allowed_property_tags": []
+            }
+          }
+        }
+      }
+    }
+  }
+}

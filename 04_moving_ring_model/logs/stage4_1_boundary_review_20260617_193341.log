@@ -1,0 +1,6 @@
+[2026-06-17 19:33:41] Stage 4.1 boundary review package started.
+[2026-06-17 19:33:45] Loading model: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\03_relative_flow_model\models\ring_fountain_v2_relative_flow.mph
+[2026-06-17 19:33:55] Parameters: {"Ri": {"expression": "8[mm]", "value_m": 0.008}, "Ro": {"expression": "20[mm]", "value_m": 0.02}, "h_ring": {"expression": "2[mm]", "value_m": 0.002}, "Rtank": {"expression": "100[mm]", "value_m": 0.1}, "Zup": {"expression": "120[mm]", "value_m": 0.12}, "Zdown": {"expression": "120[mm]", "value_m": 0.12}}
+[2026-06-17 19:33:57] Candidate boundary IDs: [4, 5, 6, 7]
+[2026-06-17 19:33:57] Created named selection: sel_ring_wall_candidate
+[2026-06-17 19:33:59] Stage 4.1 completed; awaiting manual confirmation.

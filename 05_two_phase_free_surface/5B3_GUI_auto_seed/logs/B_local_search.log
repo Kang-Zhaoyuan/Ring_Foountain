@@ -1,0 +1,193 @@
+## rg search: D:\COMSOL64\Multiphysics\applications
+returncode=0
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\simply_supported_composite_laminate_variables.txt:2:SXX_lw lshell.SXX/q0*(th/a)^2 "In-plane normal stress (SXX), normalized"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\simply_supported_composite_laminate_variables.txt:3:SZZ_lw lshell.SZZ/q0 "Transverse normal stress (SZZ), normalized"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\simply_supported_composite_laminate_variables.txt:4:SYZ_lw lshell.SYZ/q0*th/a "Transverse shear stress (SYZ), normalized"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\simply_supported_composite_laminate_variables.txt:5:SXZ_lw lshell.SXZ/q0*th/a "Transverse shear stress (SXZ), normalized"
+D:\COMSOL64\Multiphysics\applications\Acoustics_Module\Aeroacoustics_and_Noise\helmholtz_resonator_with_flow_parameters.txt:12:Lsource 5[cm] "Source domain length"
+D:\COMSOL64\Multiphysics\applications\Acoustics_Module\Aeroacoustics_and_Noise\helmholtz_resonator_with_flow_cgns_parameters.txt:14:Lsource 5[cm] "Source domain length"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt:1:mean(mean(shell.llem1.lsf1.s_f)) 1 "Tsai-Wu orthotropic safety factor"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt:2:mean(mean(shell.llem1.lsf2.s_f)) 1 "Hoffman safety factor"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt:3:mean(mean(shell.llem1.lsf3.s_f)) 1 "Tsai-Hill safety factor, plane stress"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt:4:mean(mean(shell.llem1.lsf4.s_f)) 1 "Azzi-Tsai-Hill safety factor"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt:5:mean(mean(shell.llem1.lsf5.s_f)) 1 "Norris safety factor"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt:6:mean(mean(shell.llem1.lsf6.s_f)) 1 "Tsai-Wu anisotropic safety factor"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt:1:mean(mean(shell.llem1.lsf1.f_i)) 1 "Tsai-Wu orthotropic failure index"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt:2:mean(mean(shell.llem1.lsf2.f_i)) 1 "Hoffman failure index"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt:3:mean(mean(shell.llem1.lsf3.f_i)) 1 "Tsai-Hill failure index, plane stress"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt:4:mean(mean(shell.llem1.lsf4.f_i)) 1 "Azzi-Tsai-Hill failure index"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt:5:mean(mean(shell.llem1.lsf5.f_i)) 1 "Norris failure index"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Verification_Examples\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt:6:mean(mean(shell.llem1.lsf6.f_i)) 1 "Tsai-Wu anisotropic failure index"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\thermal_runaway_propagation_physics_parameters.txt:2:n_batt nx_batt*ny_batt "Number of battery cells in pack"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\thermal_runaway_propagation_physics_parameters.txt:3:I_1C_pack Q_cell*ny_batt/1[h] "Total 1C pack current (when applied at terminals)"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_pack_cooling_physics_parameters.txt:2:s_channels 4[mm] "Channel width"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_pack_cooling_geom_sequence_parameters.txt:1:N_channels 4 "Number of channels in cooling plate"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_pack_cooling_geom_sequence_parameters.txt:2:N_cells 16 "Number of cells in pack (equally divisible by 4)"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_pack_cooling_geom_sequence_parameters.txt:5:s_ch_ch D_can/N_channels "Channel geometry parameter"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_physics_parameters.txt:21:eps_cc_neg 0.1 "Volume fraction of negative current current collectors foils in tab bundle"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_physics_parameters.txt:22:eps_cc_pos 0.1 "Volume fraction of positive current current collectors foils in tab bundle"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_geom_sequence_parameters.txt:7:H_foils 3[mm] "Current collector offset from can"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_geom_sequence_parameters.txt:8:W_foils 6[cm] "Width of foil tab bundle"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_geom_sequence_parameters.txt:9:foils_offset_x 6[cm] "Offset of foil bundle from can"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_geom_sequence_parameters.txt:14:H_jelly H_can-s_can*2-s_spacer-H_cc_plate-H_foils "Jelly roll height"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_geom_sequence_parameters.txt:15:W_cc_plate W_foils+foils_offset_x-cc_plate_offset_x "Width of current collector plate"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\prismatic_battery_cooling_geom_sequence_parameters.txt:17:R_terminal 8[mm] "Radius of terminals"
+D:\COMSOL64\Multiphysics\applications\Battery_Design_Module\Thermal_Management\li_battery_thermal_parameters.txt:44:t_pulse 300[s] Pulse time
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:1:FI_max_l1 intop1(lshell.atxd1(0*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, bottom interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:2:FI_max_l2 intop1(lshell.atxd1(1*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, layer 1-layer 2 interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:3:FI_max_l3 intop1(lshell.atxd1(2*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, layer 2-layer 3 interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:4:FI_max_l4 intop1(lshell.atxd1(3*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, layer 3-layer 4 interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:5:FI_max_l5 intop1(lshell.atxd1(4*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, layer 4-layer 5 interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:6:FI_max_l6 intop1(lshell.atxd1(5*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, layer 5-layer 6 interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\stacking_sequence_optimization_variables.txt:7:FI_max_l7 intop1(lshell.atxd1(6*d_layer,lshell.lemm1.sf1.f_i)^pExp) "Measure of maximum failure index, top interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\composite_multiscale_variables.txt:18:eXX comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eXX)) "Elastic strain, XX-component from layered shell interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\composite_multiscale_variables.txt:19:eYY comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eYY)) "Elastic strain, YY-component from layered shell interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\composite_multiscale_variables.txt:20:eZZ comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eZZ)) "Elastic strain, ZZ-component from layered shell interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\composite_multiscale_variables.txt:21:eXY comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eXY)) "Elastic strain, XY-component from layered shell interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\composite_multiscale_variables.txt:22:eYZ comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eYZ)) "Elastic strain, YZ-component from layered shell interface"
+D:\COMSOL64\Multiphysics\applications\Composite_Materials_Module\Tutorials\composite_multiscale_variables.txt:23:eXZ comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eXZ)) "Elastic strain, XZ-component from layered shell interface"
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:41:VanderWaalsArea_[0]_VanderWaalsArea
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:42:VanderWaalsVolume_[0]_VanderWaalsVolume
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:60:WilsonVolume_[0]_WilsonVolume
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:99:VanderWaalsArea_[222300]_VanderWaalsArea
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:100:VanderWaalsVolume_[1.391e-5]_VanderWaalsVolume
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:118:WilsonVolume_[0]_WilsonVolume
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:203:  <VanderWaalsArea Comment="User defined">222300</VanderWaalsArea>
+D:\COMSOL64\Multiphysics\applications\Chemical_Reaction_Engineering_Module\Tutorials\dissociation_thermo_system.xml:204:  <VanderWaalsVolume Comment="User defined">1.391e-05</VanderWaalsVolume>
+D:\COMSOL64\Multiphysics\applications\Corrosion_Module\General_Corrosion\localized_corrosion_ls_variables.txt:4:sigmae sigma*ls.Vf1+0.1[S/m]*ls.Vf2 "Electrolyte conductivity"
+D:\COMSOL64\Multiphysics\applications\Corrosion_Module\General_Corrosion\localized_corrosion_ls_microstructure.txt:1:% Model:              localized_corrosion_ls_microstructure.mph
+D:\COMSOL64\Multiphysics\applications\Corrosion_Module\General_Corrosion\biodegradation_mg_stent_vessel_variables.txt:3:epsl epsl_blood*max(1-phils,1e-3) "Plasma volume fraction"
+D:\COMSOL64\Multiphysics\applications\Corrosion_Module\General_Corrosion\biodegradation_mg_stent_tissue_stent_variables.txt:2:epsl epsl_tissue*max(1-phils,1e-3) "Plasma volume fraction"
+D:\COMSOL64\Mu
+
+## rg search: D:\COMSOL64\Multiphysics\doc
+returncode=999
+Command '['rg', '-n', '-i', '--max-count', '40', 'Laminar\\ Two\\-Phase\\ Flow|Two\\-Phase\\ Flow,\\ Level\\ Set|Level\\ Set|Wetted\\ Wall|Interior\\ Wetted\\ Wall|Moving\\ Wall|wallbc|spf\\.Wall|tpf|ls', 'D:\\COMSOL64\\Multiphysics\\doc']' timed out after 45 seconds
+
+## rg search: D:\COMSOL64\Multiphysics\mli
+returncode=0
+D:\COMSOL64\Multiphysics\mli\connectserver.m:8:% See also: mphstart
+D:\COMSOL64\Multiphysics\mli\Contents.m:9:%   mmmodelinfo   - Model info for models stored in Model Manager or as files
+D:\COMSOL64\Multiphysics\mli\cyclic.m:7:%   See also: colortable
+D:\COMSOL64\Multiphysics\mli\disco.m:7:%   See also: colortable
+D:\COMSOL64\Multiphysics\mli\discolight.m:7:%   See also: colortable
+D:\COMSOL64\Multiphysics\mli\grayprint.m:7:%   See also: colortable
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:397:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:481:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:727:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:761:        "type": "choices=cellstr(char(model.param.get(paramname)))",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:989:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:1031:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:1159:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:1165:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:1381:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:1443:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:1519:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2163:        "type": "choices={'flnullorth','flspnull','explicitsp','explicitorth','auto'}",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2339:        "purpose": "Minimum distance between coordinates in curves (in pixels)"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2464:        "name": "Edgelabels",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2467:        "purpose": "Edge labels"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2470:        "name": "Edgelabelscolor",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2473:        "purpose": "Edge labels color"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2476:        "name": "edgelabelsfontsize",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2479:        "purpose": "Edge labels font size"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2500:        "name": "Facelabels",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2503:        "purpose": "Face labels"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2506:        "name": "Facelabelscolor",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2509:        "purpose": "Face labels color"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2512:        "name": "facelabelsfontsize",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2515:        "purpose": "Face labels font size"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2536:        "name": "Vertexlabels",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2539:        "purpose": "Vertex labels"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2548:        "name": "Vertexlabelscolor",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2551:        "purpose": "Vertex labels color"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2554:        "name": "vertexlabelsfontsize",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2557:        "purpose": "Vertex labels font size"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2732:        "type": "cellstr",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2784:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2832:        "type": [["char"], ["cellstr"]],
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2900:        "name": "edgelabels",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2903:        "purpose": "Edge labels"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2906:        "name": "edgelabelscolor",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2909:        "purpose": "Edge labels color"
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2924:        "name": "facelabels",
+D:\COMSOL64\Multiphysics\mli\functionSignatures.json:2927:        "purpose": "Face labels"
+D:\COMSOL64\Multiphysics\mli\grayscale.m:7:%   See also: colortable
+D:\COMSOL64\Multiphysics\mli\guinavigatorv2utils.m:1:% Model Navigator utils
+D:\COMSOL64\Multiphysics\mli\mmfindnewest.m:2:% Find newer versions of models stored in Model Manager
+D:\COMSOL64\Multiphysics\mli\mmgetalltags.m:8:% See also: mmgetbranch, mmsearch
+D:\COMSOL64\Multiphysics\mli\mmgetbranch.m:8:% See also: mmmodelinfo, mmsave
+D:\COMSOL64\Multiphysics\mli\mmgetcommit.m:7:% [cm, msg] = MMGETCOMMIT(BRANCH, ITEM) also return the commit message.
+D:\COMSOL64\Multiphysics\mli\mmgetcommit.m:18:% See also: mmgetcommits, mmsearch, mmgetbranch
+D:\COMSOL64\Multiphysics\mli\mmmodelinfo.m:2:% MMMODELINFO Get model information for models stored in Model Manager or as files
+D:\COMSOL64\Multiphysics\mli\mmmodelinfo.m:15:% See also: mphgetbranch, mmsave, mphtags
+D:\COMSOL64\Multiphysics\mli\mmsave.m:17:% See also: mmgetbranch, mmmodelinfo
+D:\COMSOL64\Multiphysics\mli\mmsearch.m:49:% % Example: Search for models where the title is "busbar"
+D:\COMSOL64\Multiphysics\mli\mmsearch.m:53:% % Example: Search for models having a node of type analytic and a savetype of "regular"
+D:\COMSOL64\Multiphysics\mli\mmsearch.m:56:% See also: mmgetbranch
+D:\COMSOL64\Multiphysics\mli\mmsearch.m:107:else
+D:\COMSOL64\Multiphysics\mli\mmsearch.m:156:    else
+D:\COMSOL64\Multiphysics\mli\mphaddplotdata.m:16:%   normaldata   matrix                            Data for normals (low level)
+D:\COMSOL64\Multiphysics\mli\mphapplicationlibraries.m:8:%   Models that are specific to Livelink for MATLAB also contains the 
+D:\COMSOL64\Multiphysics\mli\mphcd.m:7:%   See also: mphopen, mphload, mphsave
+D:\COMSOL64\Multiphysics\mli\mphcomponentinfo.m:27:%   See also: mphnavigator
+D:\COMSOL64\Multiphysics\mli\mphdataset.m:21:%   See also: mphdatasetinfo, mphnavigator
+D:\COMSOL64\Multiphysics\mli\mphdatasetinfo.m:21:%   See also: mphdataset, mphnavigator
+D:\COMSOL64\Multiphysics\mli\mpheval.m:127:%   See also: mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix,
+D:\COMSOL64\Multiphysics\mli\mphevalglobalmatrix.m:37:%   See also: mpheval, mphevalpoint, mphevalpointmatrix, mphglobal, mphint2, 
+D:\COMSOL64\Multiphysics\mli\mphevalpoint.m:85:%   See also: mpheval, mphevalglobalmatrix, mphevalpointmatrix, mphglobal, 
+D:\COMSOL64\Multiphysics\mli\mphevalpointmatrix.m:21:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphglobal, mphint2,
+D:\COMSOL64\Multiphysics\mli\mphevaluate.m:2:% MPHEVALUATE Evaluate parameter expressions (constants) in models
+D:\COMSOL64\Multiphysics\mli\mphevaluate.m:31:%     % Evaluate Temp in degrees Celsius and its definition in the model:
+D:\COMSOL64\Multiphysics\mli\mphevaluate.m:36:%   See also: mphgetexpressions, mphglobal, mphinterp
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:16:%   domainlabels       'on'|{'off'}        Show domain labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:17:%   domainlabelscolor  char|{'k'}          Color for domain labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:19:%   edgelabels         'on'|{'off'}        Show edge labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:20:%   edgelabelscolor    char {'k'}          Color for edge labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:27:%   facelabels         'on' | {'off'}      Show face labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:28:%   facelabelscolor    char | {'k'}        Color for face labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:33:%   vertexlabels       'on' | {'off'}      Show vertex labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:34:%   vertexlabelscolor  char | {'r'}        Color for vertex labels
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:51:%     % Plot the model geometry with face labels:
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:52:%     mphgeom(model,'geom1','facelabels','on','facelabelscolor','r');
+D:\COMSOL64\Multiphysics\mli\mphgeom.m:61:%   See also: mphmesh, mphviewselection
+D:\COMSOL64\Multiphysics\mli\mphgeominfo.m:34:% See also: mphcomponentinfo, mphmeshstats
+D:\COMSOL64\Multiphysics\mli\mphgetadj.m:28:%   See also: mphgetcoords, mphselectball, mphselectbox, mphselectcoords, mphmeasure
+D:\COMSOL64\Multiphysics\mli\mphgetcoords.m:24:%   See also: mphgetadj, mphselectbox, mphselectcoords
+D:\COMSOL64\Multiphysics\mli\mphgetexpressions.m:17:%   See also: mphevaluate, mphgetproperties, mphgetselection, mphmodel,
+D:\COMSOL64\Multiphysics\mli\mphgetfield.m:7:%   See also: mphnavigator
+D:\COMSOL64\Multiphysics\mli\mphgetframe.m:7:%   See also: mphcomponentinfo, mphnavigator
+D:\COMSOL64\Multiphysics\mli\mphgetphysicsparam.m:17:%   See also: mphnavigator, mphgetphysics
+D:\COMSOL64\Multiphysics\mli\mphgetode.m:8:%   See also: mphgetexpressions
+D:\COMSOL64\Multiphysics\mli\mphgetpair.m:8:%   See also: mphnavigator
+D:\COMSOL64\Multiphysics\mli\mphgetphysics.m:11:% See also: mphnavigator, mphgetphysicsparam
+D:\COMSOL64\Multiphysics\mli\mphgetmethods.m:18:%   showall        {'off'} | 'on'   Show all methods (e.g. also 'wait')
+D:\COMSOL64\Multiphysics\mli\mphgetmethods.m:25:%   See also: mphgetproperties, mphgetmodel
+D:\COMSOL64\Multiphysics\mli\mphgetmodelnode.m:9:%   See also: mphnavigator
+D:\COMSOL64\Multiphysics\mli\mphgetproperties.m:7:%   [STR, ALLOWED] = MPHGETPROPERTIES(MODELNODE) also returns the structure
+D:\COMSOL64\Multiphysics\mli\mphgetproperties.m:34:%   See also: mphgetproperties, mphgetselection, mphmodel, mphnavigator,
+D:\COMSOL64\Multiphysics\mli\mphgetselection.m:32:%   See also: mphgetexpressions, mphgetproperties, mphmodel, mphnavigator, mphsearch
+D:\COMSOL64\Multiphysics\mli\mphgetu.m:73:%   See also: mphsolinfo
+D:\COMSOL64\Multiphysics\mli\mphgrain.m:34:%   See also: mphparticle, mpheval, mphevalpoint, mphint2, mphinterp
+D:\COMSOL64\Multiphysics\mli\mphglobal.m:8:%   [D1,...,DN,UNIT] = MPHGLOBAL(MODEL,{E1,...,EN},...) also returns the
+D:\COMSOL64\Multiphysics\mli\mphglobal.m:54:%     % Evaluate the maximum temperature in the model in degrees Celsius
+D:\COMSOL64\Multiphysics\mli\mphglobal.m:85:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix,
+D:\COMSOL64\Multiphysics\mli\mphimage2geom.m:18:%                                         (in square pixels)
+D:\COMSOL64\Multiphysics\mli\mphimage2geom.m:20:%                                         coordinates in curves (in pixels)
+D:\COMSOL64\Multiphysics\mli\mphimage2geom.m:25:%   scale       Value | {1}               Scale factor from pixels to 
+D:\COMSOL64\Multiphysics\mli\mphinputmatrix.m:32:%   There is also the possibility to include the constraint force Jacobian 
+D:\COMSOL64\Multiphysics\mli\mphinputmatrix.m:49:%     g.prop('ShapeProperty').set('order', 1).set('boundaryFlux', false);
+D:\COMSOL64\Multiphysics\mli\mphinputmatrix.m:80:%   See also: mphmatrix, mphxmeshinfo
+D:\COMSOL64\Multiphysics\mli\mphint2.m:5:%   integrals of the string expressions E1,...,EN and returns the result
+D:\COMSOL64\Multiphysics\mli\mphint2.m:11:%   [V1,...,VN,UNIT] = MPHINT2(MODEL,{E1,...,EN},EDIM,...) also returns the
+D:\COMSOL64\Multiphysics\mli\mphint2.m:58:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix, 
+D:\COMSOL64\Multiphysics\mli\mphinterp.m:144:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix,
+D:\COMSOL64\Multiphysics\mli\mphinterpolationfile.m:35:%   See also:  mphquad2tri, mphreadstl, mphsurf, mphwritestl
+D:\COMSOL64\Multiphysics\mli\mphlaunch.m:13:%   'ModelTag' in the server. This can also be done using this syntax:
+D:\COMSOL64\Multiphysics\mli\mphlaunch.m:31:%   See also: mphopen, mphload, mphtags
+D:\COMSOL64\Multiphysics\mli\mphload.m:25:%   [MODEL, FILENAMELOADED] = MPHLOAD(FILENAME,...) also returns the full
+D:\CO
+
+## rg search: D:\COMSOL64\Multiphysics\plugins
+returncode=1
+

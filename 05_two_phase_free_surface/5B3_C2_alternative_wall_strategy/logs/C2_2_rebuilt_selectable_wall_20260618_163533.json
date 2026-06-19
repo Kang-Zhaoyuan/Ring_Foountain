@@ -1,0 +1,28 @@
+{
+  "status": "FAIL",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\C2_2_rebuilt_selectable_wall_report.md",
+  "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\tables\\C2_2_rebuilt_cases.csv",
+  "rows": [
+    {
+      "case_id": "C2_2_failure",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "",
+      "V_test": "",
+      "t_end": "",
+      "solve_status": "FAIL",
+      "failure_time": "",
+      "failure_message": "RuntimeError: Could not determine default dataset.",
+      "H0": NaN,
+      "Hfinal": NaN,
+      "delta_H": NaN,
+      "Hmax": NaN,
+      "interface_quality": "",
+      "wall_overlap_status": "UNKNOWN_OR_FAIL",
+      "notes": "Traceback (most recent call last):\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 772, in stage_c2_2\n    named = ensure_c2_box_selections(model)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 686, in ensure_c2_box_selections\n    ri = param_float(model, \"Ri\")\n         ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 654, in param_float\n    return float(base.s42a.param_float(model, name, \"m\"))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage4_2a.py\", line 215, in param_float\n    arr = finite_flat(model.evaluate(expr, unit=unit))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\comsol-mcp\\.venv\\Lib\\site-packages\\mph\\model.py\", line 502, in evaluate\n    raise RuntimeError(error)\nRuntimeError: Could not determine default dataset.\n"
+    }
+  ],
+  "best_model": "",
+  "setup": {},
+  "named_selections": {},
+  "ALLOW_RESUME_STAGE5": "NO"
+}

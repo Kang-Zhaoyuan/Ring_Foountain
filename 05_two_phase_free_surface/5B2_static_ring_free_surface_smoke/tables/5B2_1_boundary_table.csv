@@ -1,0 +1,5 @@
+﻿boundary_id,role,coordinate_range,length_m,selection_name
+4,r = Ri inner vertical edge,"r=[0.007950,0.008050], z=[-0.021050,-0.018950] m",0.002,sel_5B2_ring_wall_inner
+7,r = Ro outer vertical edge,"r=[0.019950,0.020050], z=[-0.021050,-0.018950] m",0.002,sel_5B2_ring_wall_outer
+6,z = z_ring_center + h_ring/2 top edge,"r=[0.007950,0.020050], z=[-0.019050,-0.018950] m",0.012,sel_5B2_ring_wall_top
+5,z = z_ring_center - h_ring/2 bottom edge,"r=[0.007950,0.020050], z=[-0.021050,-0.020950] m",0.012,sel_5B2_ring_wall_bottom

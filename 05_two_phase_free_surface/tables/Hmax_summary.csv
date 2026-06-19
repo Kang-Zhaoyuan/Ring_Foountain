@@ -1,0 +1,2 @@
+﻿model_used,model_type,forcing_type,V_used,A_force,Ri,Ro,h_ring,z_ring_center,interface_variable,interface_threshold,Hmax,Hmax_mm,t_at_Hmax,domain_top,quality_status,notes
+D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\models\ring_fountain_v4_5B1_center_forcing.mph,approximate reduced center-forcing model,localized upward Level Set advection velocity; reduced kinematic forcing,,0.10[m/s],,,,,phils,0.5,0.0013953488372092156,1.3953488372092155,0.01,0.12[m],valid,approximate/reduced model; Hmax is not a fully validated physical ring-fountain height

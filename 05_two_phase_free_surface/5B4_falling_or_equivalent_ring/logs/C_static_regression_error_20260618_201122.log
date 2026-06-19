@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b4_falling_or_equivalent_ring.py", line 368, in solve_case
+    metrics = extract_case_outputs(model, case_id, prefix, include_velocity=include_velocity)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b4_falling_or_equivalent_ring.py", line 314, in extract_case_outputs
+    base.render_curve(plot, rows)
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5_cleanup_5b_5c.py", line 603, in render_curve
+    ts = np.array([float(r["time_s"]) for r in rows if math.isfinite(float(r["H_m"]))])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5_cleanup_5b_5c.py", line 603, in <listcomp>
+    ts = np.array([float(r["time_s"]) for r in rows if math.isfinite(float(r["H_m"]))])
+                                                                           ~^^^^^^^
+KeyError: 'H_m'

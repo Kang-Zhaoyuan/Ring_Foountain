@@ -1,0 +1,19 @@
+﻿item,value,status
+5B4,FAIL,CONFIRMED
+E extended stability solve_status,PASS,CONFIRMED
+E extended stability case_pass,FAIL,CONFIRMED
+E diagnostic H(final)-H(0),0.0002340315 m,CONFIRMED
+ALLOW_5C,NO,CONFIRMED
+ALLOW_STAGE6,NO,CONFIRMED
+input_exists:5B4_falling_or_equivalent_ring_final_report.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\reports\5B4_falling_or_equivalent_ring_final_report.md,PASS
+input_exists:E_extended_stability_report.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\reports\E_extended_stability_report.md,PASS
+input_exists:D_velocity_ladder_cases.csv,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\tables\D_velocity_ladder_cases.csv,PASS
+input_exists:E_extended_stability_H_vs_t.csv,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\tables\E_extended_stability_H_vs_t.csv,PASS
+input_exists:ring_fountain_v5B4_best.mph,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\models\ring_fountain_v5B4_best.mph,PASS
+input_exists:ring_fountain_v5B4_best.java,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\exports\ring_fountain_v5B4_best.java,PASS
+input_exists:README.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\README.md,PASS
+input_exists:CHANGELOG.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\CHANGELOG.md,PASS
+input_exists:SCRIPT_MANIFEST.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\SCRIPT_MANIFEST.md,PASS
+E H(t) discrete_step_likely,True,INFO
+E interface_points range,11..17,INFO
+E near_top any,False,INFO

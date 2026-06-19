@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b4_falling_or_equivalent_ring.py", line 786, in main
+    summary["D"] = velocity_ladder(model)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b4_falling_or_equivalent_ring.py", line 542, in velocity_ladder
+    base.render_curve(B4 / "images" / "D_velocity_ladder_summary.png", summary_rows)
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5_cleanup_5b_5c.py", line 603, in render_curve
+    ts = np.array([float(r["time_s"]) for r in rows if math.isfinite(float(r["H_m"]))])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5_cleanup_5b_5c.py", line 603, in <listcomp>
+    ts = np.array([float(r["time_s"]) for r in rows if math.isfinite(float(r["H_m"]))])
+                                                                           ~^^^^^^^
+KeyError: 'H_m'

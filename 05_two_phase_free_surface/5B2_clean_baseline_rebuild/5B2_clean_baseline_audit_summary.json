@@ -1,0 +1,64 @@
+{
+  "run_id": "20260618_123412",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\reports\\A_physics_audit.md",
+  "script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage5b2_clean_baseline_audit.py",
+  "rotating_frame_present": true,
+  "rotating_frame_tags": [
+    "rtfr1"
+  ],
+  "gravity_present": true,
+  "gravity_tags": [
+    "grav1"
+  ],
+  "wall_features": [
+    "wallbc1"
+  ],
+  "wall_ring_overlap": [
+    {
+      "feature_tag": "wallbc1",
+      "intersects_ring": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "selection_boundaries": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "physics_types": [
+    "LaminarFlow",
+    "LevelSet"
+  ],
+  "feature_types": [
+    "AxialSymmetry",
+    "Continuity",
+    "FluidProperties",
+    "Gravity",
+    "LevelSetModel",
+    "NoFlow",
+    "RotatingFrameFD",
+    "WallBC",
+    "init",
+    "initFluid2"
+  ],
+  "level_set_like_features": [
+    "lsm1",
+    "init1",
+    "initfluid2",
+    "axi1",
+    "nf1",
+    "dcont1"
+  ],
+  "multiphysics_tags": [],
+  "two_phase_coupling_detected": false,
+  "rho_mu_definitions_detected_in_variables": false,
+  "surface_tension_like_definition_detected": true
+}

@@ -1,0 +1,269 @@
+{
+  "run_id": "20260618_182058",
+  "stage": "5B3-C4 seed-based ring free-surface moving-wall smoke test",
+  "outputs": {},
+  "ALLOW_5B4": "YES",
+  "ALLOW_5C": "NO",
+  "ALLOW_STAGE6": "NO",
+  "A": {
+    "status": "PASS",
+    "required": {
+      "TwoPhaseFlowLevelSet usable": true,
+      "WettedWall usable": true,
+      "TranslationalVelocityOption Manual usable": true,
+      "utr {\"0\",\"-Vwall\",\"0\"} usable": true,
+      "Vwall=0 seed PASS": true,
+      "Vwall=1e-4 seed PASS": true
+    }
+  },
+  "B": {
+    "status": "PASS",
+    "rows": 30
+  },
+  "C": {
+    "status": "PASS",
+    "metadata": {
+      "boundaries": {
+        "axis": [
+          1
+        ],
+        "top_open": [
+          3
+        ],
+        "bottom_wall": [
+          2
+        ],
+        "outer_wall": [
+          8
+        ],
+        "ring_inner": [
+          4
+        ],
+        "ring_outer": [
+          7
+        ],
+        "ring_top": [
+          6
+        ],
+        "ring_bottom": [
+          5
+        ],
+        "ring_wettedwall_confirmed": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "tpf_properties": [
+        {
+          "feature": "tpf1",
+          "property": "rho1_mat",
+          "value": "userdef",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "rho1",
+          "value": "rho_air",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "mu1_mat",
+          "value": "userdef",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "mu1",
+          "value": "mu_air",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "rho2_mat",
+          "value": "userdef",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "rho2",
+          "value": "rho_w",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "mu2_mat",
+          "value": "userdef",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "mu2",
+          "value": "mu_w",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "IncludeSurfaceTension",
+          "value": true,
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "SurfaceTensionCoefficient",
+          "value": "userdef",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "tpf1",
+          "property": "sigma",
+          "value": "sigma_wa",
+          "status": "PASS",
+          "error": ""
+        }
+      ],
+      "wettedwall_properties": [
+        {
+          "feature": "ww1",
+          "property": "BoundaryCondition",
+          "value": "NavierSlip",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "ww1",
+          "property": "TranslationalVelocityOption",
+          "value": "Manual",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "ww1",
+          "property": "utr",
+          "value": [
+            "0",
+            "-Vwall",
+            "0"
+          ],
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "ww1",
+          "property": "SpecifyContactAngle",
+          "value": "SpecifyContactAngleDirectly",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "ww1",
+          "property": "thetaw",
+          "value": "pi/2",
+          "status": "PASS",
+          "error": ""
+        },
+        {
+          "feature": "ww1",
+          "property": "beta",
+          "value": "eps_ls",
+          "status": "PASS",
+          "error": ""
+        }
+      ],
+      "physics": [
+        "spf",
+        "ls"
+      ],
+      "multiphysics": [
+        "tpf1",
+        "ww1"
+      ]
+    },
+    "models": {
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_ring_twophase_smoke_base_20260618_182058.mph",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_ring_twophase_smoke_base.mph",
+      "canonical_note": "canonical existed; not overwritten"
+    }
+  },
+  "D": {
+    "case_id": "D_static_ring",
+    "Vwall": "0[m/s]",
+    "tlist": "range(0,dt,t_end)",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "H0": 8.474977502194332e-05,
+    "Hfinal": 8.474977502194332e-05,
+    "delta_H": 0.0,
+    "interface_quality": "clear",
+    "case_pass": "PASS",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_static_ring_baseline.mph"
+  },
+  "E": {
+    "case_id": "E_V1e-4",
+    "Vwall": "1e-4[m/s]",
+    "tlist": "range(0,dt,t_end)",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "H0": 8.474977502194332e-05,
+    "Hfinal": 8.474977502194332e-05,
+    "delta_H": 0.0,
+    "interface_quality": "clear",
+    "case_pass": "PASS",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_V1e-4_smoke.mph"
+  },
+  "F": {
+    "rows": [
+      {
+        "case_id": "F_V5em4",
+        "Vwall": "5e-4[m/s]",
+        "tlist": "range(0,dt,t_end)",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "H0": 8.474977502194332e-05,
+        "Hfinal": 8.474977502194332e-05,
+        "delta_H": 0.0,
+        "interface_quality": "clear",
+        "case_pass": "PASS",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_5em4_smoke.mph"
+      },
+      {
+        "case_id": "F_V1em3",
+        "Vwall": "1e-3[m/s]",
+        "tlist": "range(0,dt,t_end)",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "H0": 8.474977502194332e-05,
+        "Hfinal": 8.474977502194332e-05,
+        "delta_H": 0.0,
+        "interface_quality": "clear",
+        "case_pass": "PASS",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_1em3_smoke.mph"
+      }
+    ],
+    "status": "PASS"
+  },
+  "G": {
+    "status": "PASS",
+    "best_model": {
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_best_20260618_182058.mph",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_best.mph"
+    },
+    "best_java": {
+      "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\exports\\ring_fountain_v5B3_C4_best_20260618_182058.java",
+      "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\exports\\ring_fountain_v5B3_C4_best.java"
+    }
+  },
+  "C4_status": "PASS"
+}

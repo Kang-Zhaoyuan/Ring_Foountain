@@ -1,0 +1,20 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 6497-C20A
+D:.
+    Controlled_impact_of_a_disk_on_a_water_surface_cavity_dynamics.pdf
+    Dynamics_and_universal_scaling_of_Worthington_jets_in_the_cavity-free_regime.pdf
+    Dynamics_of_transient_cavities.pdf
+    Generation_and_breakup_of_Worthington_jets_after_cavity_collapse._Part_1._Jet_formation.pdf
+    High-Speed_Jet_Formation_after_Solid_Object_Impact.pdf
+    Making_a_splash_with_water_repellency.pdf
+    Splash_(fluid_mechanics).pdf
+    Splash_wave_and_crown_breakup_after_disc__impact_on_a_liquid_surface.pdf
+    The_water_entry_of_slender_axisymmetric_bodies.pdf
+    water-entry-of-cups-and-disks.pdf
+    Water_entry_and_related_problems.pdf
+    Water_Entry_of_Projectiles.pdf
+    Why_Dropping_a_Stone_Makes_a_Jet.pdf
+    _Filelist_Of_参考资料.txt
+    
+没有子文件夹 
+

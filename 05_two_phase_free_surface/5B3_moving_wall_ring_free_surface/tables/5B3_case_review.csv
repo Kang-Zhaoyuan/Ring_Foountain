@@ -1,0 +1,7 @@
+﻿attempt_id,V_ring,t_end,ramp,solve_status,quality_status,Hmax_m,upstroke,model,error_log
+V002_t012,0.02[m/s],0.12[s],False,fail,solve_failed,,,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_moving_wall_ring_free_surface\logs\V002_t012_error_20260617_220333.log
+V005_t012,0.05[m/s],0.12[s],False,fail,solve_failed,,,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_moving_wall_ring_free_surface\logs\V005_t012_error_20260617_220333.log
+V010_t012,0.10[m/s],0.12[s],False,fail,solve_failed,,,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_moving_wall_ring_free_surface\logs\V010_t012_error_20260617_220333.log
+repair1_V001_t003_ramp,0.01[m/s],0.03[s],True,fail,solve_failed,,,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_moving_wall_ring_free_surface\logs\repair1_V001_t003_ramp_error_20260617_220333.log
+repair2_V002_t003_ramp,0.02[m/s],0.03[s],True,fail,solve_failed,,,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_moving_wall_ring_free_surface\logs\repair2_V002_t003_ramp_error_20260617_220333.log
+repair3_V001_t002_ramp,0.01[m/s],0.02[s],True,fail,solve_failed,,,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_moving_wall_ring_free_surface\logs\repair3_V001_t002_ramp_error_20260617_220333.log

@@ -1,0 +1,3 @@
+﻿case_id,Vwall,tlist,solve_status,failure_message,H0,Hfinal,delta_H,interface_quality,case_pass,model
+F_V5em4,5e-4[m/s],"range(0,dt,t_end)",PASS,,8.474977502194332e-05,8.474977502194332e-05,0.0,clear,PASS,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_C4_seed_based_ring_smoke\models\ring_fountain_v5B3_C4_5em4_smoke.mph
+F_V1em3,1e-3[m/s],"range(0,dt,t_end)",PASS,,8.474977502194332e-05,8.474977502194332e-05,0.0,clear,PASS,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_C4_seed_based_ring_smoke\models\ring_fountain_v5B3_C4_1em3_smoke.mph

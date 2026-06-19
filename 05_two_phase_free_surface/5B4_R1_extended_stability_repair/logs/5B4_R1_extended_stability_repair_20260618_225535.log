@@ -1,0 +1,5 @@
+[2026-06-18 22:55:35] A: reviewing original 5B4 failure.
+[2026-06-18 22:55:42] B: recomputing robust diagnostics on the original E solution.
+[2026-06-18 23:01:18] Solving C_E0_D4_repeat: Vtarget=1e-2[m/s], t_end=0.020[s], dt=1e-4[s], t_ramp=1e-3[s].
+[2026-06-18 23:12:11] Updating README, CHANGELOG, and SCRIPT_MANIFEST.
+[2026-06-18 23:12:11] 5B4-R1 completed.

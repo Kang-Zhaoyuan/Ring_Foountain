@@ -1,0 +1,88 @@
+{
+  "status": "FAIL",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\C2_2_rebuilt_selectable_wall_report.md",
+  "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\tables\\C2_2_rebuilt_cases.csv",
+  "rows": [
+    {
+      "case_id": "C2_2_static_baseline",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "all walls static",
+      "V_test": 0,
+      "t_end": "0.02[s]",
+      "solve_status": "PASS",
+      "failure_time": "",
+      "failure_message": "",
+      "H0": 0.00016578850821326205,
+      "Hfinal": 0.00016578850821326205,
+      "delta_H": 0.0,
+      "Hmax": 0.00016578850821326205,
+      "interface_quality": "clear/continuous",
+      "wall_overlap_status": "not_applicable_static",
+      "notes": "rebuilt reduced model without gravity; reproduces clean baseline stability check"
+    },
+    {
+      "case_id": "C2_2_failure",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "",
+      "V_test": "",
+      "t_end": "",
+      "solve_status": "FAIL",
+      "failure_time": "",
+      "failure_message": "com.comsol.util.exceptions.FlException: Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tFailed to find consistent initial values.\r\n\r\n\tLast time step is not converged.\r\n",
+      "H0": NaN,
+      "Hfinal": NaN,
+      "delta_H": NaN,
+      "Hmax": NaN,
+      "interface_quality": "",
+      "wall_overlap_status": "UNKNOWN_OR_FAIL",
+      "notes": "Traceback (most recent call last):\n  File \"java.lang.Thread.java\", line 0, in java.lang.Thread.run\nException: Java Exception\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 839, in stage_c2_2\n    model.solve()\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\comsol-mcp\\.venv\\Lib\\site-packages\\mph\\model.py\", line 343, in solve\n    node.run()\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\comsol-mcp\\.venv\\Lib\\site-packages\\mph\\node.py\", line 565, in run\n    java.run()\ncom.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tFailed to find consistent initial values.\r\n\r\n\tLast time step is not converged.\r\n\n",
+      "pre_solve_model": {
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\models\\ring_fountain_v5B3_C2c_rebuilt_selectable_wall_model_20260618_164605.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\models\\ring_fountain_v5B3_C2c_rebuilt_selectable_wall_model.mph"
+      }
+    }
+  ],
+  "best_model": "",
+  "setup": {
+    "geometry": "rectangle tank minus fixed rectangular ring hole",
+    "coupling": "manual LaminarFlow + LevelSet with phils mixture properties",
+    "level_set_gamma": "0; inherited from the passed clean static baseline fallback to avoid artificial static-interface drift"
+  },
+  "named_selections": {
+    "sel_axis": [
+      1
+    ],
+    "sel_outer_wall": [
+      8
+    ],
+    "sel_top_boundary": [
+      3
+    ],
+    "sel_bottom_boundary": [
+      2
+    ],
+    "sel_ring_wall_inner": [
+      4
+    ],
+    "sel_ring_wall_outer": [
+      7
+    ],
+    "sel_ring_wall_top": [
+      6
+    ],
+    "sel_ring_wall_bottom": [
+      5
+    ],
+    "sel_ring_wall_all": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "sel_ring_wall_vertical": [
+      4,
+      7
+    ]
+  },
+  "ALLOW_RESUME_STAGE5": "NO"
+}

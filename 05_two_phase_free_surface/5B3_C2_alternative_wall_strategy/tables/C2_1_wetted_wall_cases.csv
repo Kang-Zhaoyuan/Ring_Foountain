@@ -1,0 +1,2 @@
+﻿case_id,route,boundary_set,V_test,t_end,solve_status,failure_message,wall_overlap_status,notes
+C2_1_not_run_features_unavailable,Wetted/Interior,"[4, 5, 6, 7]",0,,FAIL,C2-0 did not find creatable Wetted Wall or Interior Wetted Wall feature types.,not_tested,C2-1 failed by availability gate; proceeding to C2-2.

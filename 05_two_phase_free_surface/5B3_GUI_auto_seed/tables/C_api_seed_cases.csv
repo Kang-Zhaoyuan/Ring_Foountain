@@ -1,0 +1,3 @@
+﻿case_id,Vwall,tlist,solve_status,failure_message
+Vwall_0,0[m/s],"range(0,1e-4,0.002)",PASS,
+Vwall_1e-4,1e-4[m/s],"range(0,1e-4,0.002)",PASS,

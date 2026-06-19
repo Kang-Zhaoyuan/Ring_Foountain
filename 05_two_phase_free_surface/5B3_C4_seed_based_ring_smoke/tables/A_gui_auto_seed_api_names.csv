@@ -1,0 +1,12 @@
+﻿item,status,snippet
+TwoPhaseFlowLevelSet usable,PASS,
+WettedWall usable,PASS,
+TranslationalVelocityOption Manual usable,PASS,
+"utr {""0"",""-Vwall"",""0""} usable",PASS,
+Vwall=0 seed PASS,PASS,
+Vwall=1e-4 seed PASS,PASS,
+java:multiphysics_create,INFO,"multiphysics().create(""tpf1"", ""TwoPhaseFlowLevelSet"", 2)"
+java:multiphysics_create,INFO,"multiphysics().create(""ww1"", ""WettedWall"", 1)"
+java:multiphysics_set,INFO,"multiphysics(""ww1"").set(""TranslationalVelocityOption"", ""Manual"");"
+java:multiphysics_set,INFO,"multiphysics(""ww1"").set(""utr"", new String[]{""0"", ""-Vwall"", ""0""});"
+java:physics_feature_set,INFO,"physics(""spf"").feature(""grav1"").set(""g"", new String[]{""0"", ""-g0"", ""0""});"

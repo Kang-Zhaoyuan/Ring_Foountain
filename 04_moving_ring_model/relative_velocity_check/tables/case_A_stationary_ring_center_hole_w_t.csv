@@ -1,0 +1,6 @@
+﻿case,inner_solution,time_s,w_center_above_mean_m_per_s,sample_count
+case_A_stationary_ring,1,0.0,0.02627227511385601,139
+case_A_stationary_ring,2,0.005,0.03138439350604138,139
+case_A_stationary_ring,3,0.01,0.03137601481625741,139
+case_A_stationary_ring,4,0.015,0.03138778742294115,139
+case_A_stationary_ring,5,0.02,0.03138135033051099,139

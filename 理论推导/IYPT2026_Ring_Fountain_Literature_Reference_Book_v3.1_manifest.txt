@@ -1,0 +1,200 @@
+IYPT 2026 第3题：环形喷泉 文献参考书 v3.1 - 页码清单
+合订本总页数：670
+源 PDF 总页数：638
+统一页码标记：每页右下角 Book p. XXX
+v3.1 修改：在 v3.0 基础上加入本轮上传的补充参考文献；按正文相似度去重，新增 13 篇，跳过 3 篇重复/等价版本。
+
+【原 v3.0 已收录文献】
+01. Splash (fluid mechanics)
+    原文件：Splash_(fluid_mechanics).pdf
+    原PDF页数：2
+    分隔页：7
+    正文范围：8-9
+
+02. Water entry and related problems
+    原文件：Water_entry_and_related_problems.pdf
+    原PDF页数：155
+    分隔页：10
+    正文范围：11-165
+
+03. The water entry of slender axisymmetric bodies
+    原文件：The_water_entry_of_slender_axisymmetric_bodies.pdf
+    原PDF页数：38
+    分隔页：166
+    正文范围：167-204
+
+04. Water Entry of Projectiles
+    原文件：Water_Entry_of_Projectiles.pdf
+    原PDF页数：24
+    分隔页：205
+    正文范围：206-229
+
+05. Water entry of cups and disks
+    原文件：water-entry-of-cups-and-disks.pdf
+    原PDF页数：24
+    分隔页：230
+    正文范围：231-254
+
+06. Controlled impact of a disk on a water surface: cavity dynamics
+    原文件：Controlled_impact_of_a_disk_on_a_water_surface_cavity_dynamics.pdf
+    原PDF页数：29
+    分隔页：255
+    正文范围：256-284
+
+07. Splash wave and crown breakup after disc impact on a liquid surface
+    原文件：Splash_wave_and_crown_breakup_after_disc__impact_on_a_liquid_surface.pdf
+    原PDF页数：28
+    分隔页：285
+    正文范围：286-313
+
+08. Dynamics of transient cavities
+    原文件：Dynamics_of_transient_cavities.pdf
+    原PDF页数：19
+    分隔页：314
+    正文范围：315-333
+
+09. Why Dropping a Stone Makes a Jet
+    原文件：Why_Dropping_a_Stone_Makes_a_Jet.pdf
+    原PDF页数：5
+    分隔页：334
+    正文范围：335-339
+    处理：沿用 v3.0 的 OCR 可复制文字重建版。
+
+10. Dynamics and universal scaling of Worthington jets in the cavity-free regime
+    原文件：Dynamics_and_universal_scaling_of_Worthington_jets_in_the_cavity-free_regime.pdf
+    原PDF页数：29
+    分隔页：340
+    正文范围：341-369
+
+11. Generation and breakup of Worthington jets after cavity collapse. Part 1. Jet formation
+    原文件：Generation_and_breakup_of_Worthington_jets_after_cavity_collapse._Part_1._Jet_formation.pdf
+    原PDF页数：38
+    分隔页：370
+    正文范围：371-408
+
+12. High-Speed Jet Formation after Solid Object Impact
+    原文件：High-Speed_Jet_Formation_after_Solid_Object_Impact.pdf
+    原PDF页数：4
+    分隔页：409
+    正文范围：410-413
+
+13. Making a splash with water repellency
+    原文件：Making_a_splash_with_water_repellency.pdf
+    原PDF页数：4
+    分隔页：414
+    正文范围：415-418
+
+【v3.1 新增文献】
+14. Study on the cavity dynamics of water entry for horizontal objects with different geometrical shapes
+    原文件：1-s2.0-S0029801822006382-main.pdf
+    原PDF页数：12
+    分隔页：419
+    正文范围：420-431
+    主题标签：Water-entry cavity dynamics; geometry effects; horizontal objects; vortex evolution
+    处理说明：新加入。与原书已有文献正文相似度低，保留为独立文献。
+
+15. Dynamics of water entry
+    原文件：dynamics-of-water-entry.pdf
+    原PDF页数：28
+    分隔页：432
+    正文范围：433-460
+    主题标签：Wedge impact; splash sheet; cavity; force model
+    处理说明：新加入。补充楔形体入水、冲击力与水花演化。
+
+16. Water entry of rounded cylindrical bodies with different aspect ratios and surface conditions
+    原文件：water-entry-of-rounded-cylindrical-bodies-with-different-aspect-ratios-and-surface-conditions.pdf
+    原PDF页数：32
+    分隔页：461
+    正文范围：462-493
+    主题标签：Rounded cylinders; aspect ratio; roughness/wettability; jet/splash/cavity
+    处理说明：新加入。补充柱状体长径比和表面条件对水花、射流、空腔的影响。
+
+17. Impact force reduction by consecutive water entry of spheres
+    原文件：2007.01943v1.pdf
+    原PDF页数：15
+    分隔页：494
+    正文范围：495-509
+    主题标签：Consecutive water entry; preformed cavity; impact force modulation
+    处理说明：新加入。对环形喷泉的多次扰动、预空腔/预变形水面问题有启发。
+
+18. Water exit / lift-off: Hydro-elastic effects during the fast lifting of a disc from a water surface
+    原文件：1811.06314v2.pdf
+    原PDF页数：24
+    分隔页：510
+    正文范围：511-534
+    主题标签：Water exit; suction force; wetted area; hydro-elastic coupling
+    处理说明：新加入。虽为出水问题，但对圆盘/环形结构与水面相互作用、附加质量和吸力有参考价值。
+
+19. Air Entrapment and its effect on Pressure Impulses in the slamming of a Flat Disc on Water
+    原文件：2012.10137v2.pdf
+    原PDF页数：21
+    分隔页：535
+    正文范围：536-556
+    主题标签：Flat disc slamming; trapped air; pressure impulse; air cushioning
+    处理说明：新加入。补充平盘撞水的空气俘获与冲击压力。
+
+20. Numerical simulation of circular disks entering the free surface of a fluid
+    原文件：撞击水面阻力.pdf
+    原PDF页数：12
+    分隔页：557
+    正文范围：558-569
+    主题标签：Circular disk water entry; low Froude number; drag; seal depth
+    处理说明：新加入。补充圆盘入水阻力和低 Froude 数空腔闭合。
+
+21. Dynamic Characteristics and Flow Field Evolution of Flat Plate Water Entry Slamming Based on Smoothed Particle Hydrodynamics
+    原文件：sph（一种用于拟合的方式）.pdf
+    原PDF页数：17
+    分隔页：570
+    正文范围：571-587
+    主题标签：SPH; flat plate slamming; flow-field evolution; numerical modelling
+    处理说明：新加入。作为后续 AI 建模和数值模拟的 SPH 参考。
+
+22. Investigation of cavity and jet evolution mechanisms during porous plate water entry under different velocities
+    原文件：多孔平面版（关于射流整体形状直观展示）.pdf
+    原PDF页数：18
+    分隔页：588
+    正文范围：589-606
+    主题标签：Porous plate; cavity and jet evolution; SPH; velocity effects
+    处理说明：新加入。对“环形/多孔/开口结构”入水后的水体穿流、射流形态很有参考价值。
+
+23. Drop Impact Dynamics: Splashing, Spreading, Receding, Bouncing...
+    原文件：冠状水花（关于第一次射流成因的解释辅助）.pdf
+    原PDF页数：34
+    分隔页：607
+    正文范围：608-641
+    主题标签：Review; crown formation; splashing; spreading; jetting; secondary droplets
+    处理说明：新加入。补充液滴撞击、冠状水花和 Worthington jet 的综述背景。
+
+24. Theoretical Analyses on "Splash" Formation of Competitive Diving
+    原文件：压水花.pdf
+    原PDF页数：4
+    分隔页：642
+    正文范围：643-646
+    主题标签：Diving splash control; wedge/rectangle simplification; qualitative mechanics
+    处理说明：新加入。扫描/会议论文已有可提取文本层；用作直观水花控制参考。
+
+25. On modelling fluid/body interactions, impacts and lift-offs
+    原文件：s10409-023-23019-x.pdf
+    原PDF页数：12
+    分隔页：647
+    正文范围：648-659
+    主题标签：Review; fluid-body interaction; impacts; lift-off; reduced modelling
+    处理说明：新加入。补充流固耦合、impact/lift-off 解析建模框架。
+
+26. Exploring nonlinear dynamics and network structures in Kuramoto systems using machine learning approaches
+    原文件：073148_1_5.0153229.pdf
+    原PDF页数：10
+    分隔页：660
+    正文范围：661-670
+    主题标签：Low direct relevance; nonlinear dynamics / machine learning reference
+    处理说明：新加入但直接相关性较低。因上传且正文不重复，保留在“低相关度/方法参考”类，便于后续 AI 自行取舍。
+
+【本轮上传但未重复加入的文件】
+- annurev-fluid-011212-140753.pdf：正文与原书第 04 篇 Water Entry of Projectiles 高度一致，已收录最终/等价版本，未重复加入。
+- water-entry-of-cups-and-disks.pdf：正文与原书第 05 篇 Water entry of cups and disks 完全一致，未重复加入。
+- 圆盘（空腔射流高度的辅助）.pdf：正文对应原书第 06 篇 Controlled impact of a disk on a water surface: cavity dynamics 的 arXiv/投稿稿；原书已收录正式 JFM 版本，未重复加入。
+
+【给后续 AI 的建议】
+1. 首选上传 v3.1 PDF + v3.1 manifest。
+2. 询问具体论文时使用 Book p. 页码定位，再结合原论文页码。
+3. 低相关度方法文献 073148_1_5.0153229.pdf 已保留在第 26 篇，建议只在需要机器学习/非线性动力学方法参考时读取。

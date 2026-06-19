@@ -1,0 +1,13 @@
+[2026-06-17 20:55:17] Stage 5A cleanup started.
+[2026-06-17 20:55:31] Stage 5B1 center forcing started.
+[2026-06-17 20:55:44] B1 hydrodynamic VolumeForce attempt failed; trying kinematic Level Set forcing. Error: Exception:
+	com.comsol.util.exceptions.FlException: The following feature has encountered a problem:
+Messages:
+	The following feature has encountered a problem:
+	- Feature: Time-Dependent Solver 1 (sol1/t1)
+
+	Failed to find consistent initial values.
+
+	Last time step is not converged.
+
+[2026-06-17 20:56:12] Stage 5 chain summary written: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\stage5_cleanup_5b_5c_summary.json

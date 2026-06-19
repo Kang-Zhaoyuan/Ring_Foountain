@@ -1,0 +1,15 @@
+﻿item,value,status
+5B4-R1,PASS,PASS
+ALLOW_5C,YES,PASS
+ALLOW_STAGE6,NO,PASS
+this_run_allows,Jet1 extraction,CONFIRMED
+this_run_forbids,"Jet2 extraction, Stage 6 parameter sweep, real Hmax output",CONFIRMED
+input_exists:5B4_R1_extended_stability_repair_final_report.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_R1_extended_stability_repair\reports\5B4_R1_extended_stability_repair_final_report.md,PASS
+input_exists:B_interface_diagnostic_audit.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_R1_extended_stability_repair\reports\B_interface_diagnostic_audit.md,PASS
+input_exists:C_E0_D4_repeat_report.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_R1_extended_stability_repair\reports\C_E0_D4_repeat_report.md,PASS
+input_exists:F_R1_best_model_report.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_R1_extended_stability_repair\reports\F_R1_best_model_report.md,PASS
+input_exists:ring_fountain_v5B4_R1_best.mph,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_R1_extended_stability_repair\models\ring_fountain_v5B4_R1_best.mph,PASS
+input_exists:ring_fountain_v5B4_R1_best.java,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_R1_extended_stability_repair\exports\ring_fountain_v5B4_R1_best.java,PASS
+input_exists:README.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\README.md,PASS
+input_exists:CHANGELOG.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\CHANGELOG.md,PASS
+input_exists:SCRIPT_MANIFEST.md,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\SCRIPT_MANIFEST.md,PASS

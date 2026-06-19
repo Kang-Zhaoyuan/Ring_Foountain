@@ -1,0 +1,134 @@
+{
+  "run_id": "20260617_220333",
+  "5B2-0": {
+    "status": "PASS",
+    "previous_error": "Unsupported geometry - Geometry: geom1",
+    "failure_type": "COMSOL API boundary-metric call failure after successful geometry and mesh probe",
+    "is_physics_failure": false,
+    "reuse_old_script": false,
+    "new_route": "Rebuild geometry, use COMSOL Box selections for ring boundaries, then solve manual LaminarFlow + LevelSet fallback if official combined API type is unavailable.",
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\reports\\5B2_0_route_and_failure_diagnosis.md"
+  },
+  "5B2-1": {
+    "status": "PASS",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\models\\ring_fountain_v5B2_1_static_ring_free_surface.mph",
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\models\\ring_fountain_v5B2_1_static_ring_free_surface_20260617_220333.mph",
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\reports\\5B2_1_static_ring_free_surface_report.md",
+    "boundary_table": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\tables\\5B2_1_boundary_table.csv",
+    "images": [
+      "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\images\\5B2_1_phils_cloud_with_colorbar.png",
+      "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\images\\5B2_1_phils_interface_line.png",
+      "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\images\\5B2_1_density_rho.png",
+      "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\images\\5B2_1_viscosity_mu.png"
+    ]
+  },
+  "5B2-2": {
+    "status": "PASS",
+    "AUTO_BOUNDARY_REVIEW": "PASS",
+    "ids": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\reports\\5B2_2_ring_boundary_review_package.md"
+  },
+  "5B2-3": {
+    "status": "PASS",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\models\\ring_fountain_v5B2_3_static_ring_free_surface_boundary_confirmed.mph",
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\models\\ring_fountain_v5B2_3_static_ring_free_surface_boundary_confirmed_20260617_220333.mph",
+    "ids": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_static_ring_free_surface_smoke\\reports\\5B2_3_boundary_confirmed_report.md"
+  },
+  "5B3": {
+    "status": "FAIL",
+    "attempts": [
+      {
+        "attempt_id": "V002_t012",
+        "V_ring": "0.02[m/s]",
+        "t_end": "0.12[s]",
+        "ramp": false,
+        "solve_status": "fail",
+        "quality_status": "solve_failed",
+        "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tFailed to find consistent initial values.\r\n\r\n\tLast time step is not converged.\r\n",
+        "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\V002_t012_error_20260617_220333.log",
+        "result": "FAIL"
+      },
+      {
+        "attempt_id": "V005_t012",
+        "V_ring": "0.05[m/s]",
+        "t_end": "0.12[s]",
+        "ramp": false,
+        "solve_status": "fail",
+        "quality_status": "solve_failed",
+        "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tFailed to find consistent initial values.\r\n\r\n\tLast time step is not converged.\r\n",
+        "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\V005_t012_error_20260617_220333.log",
+        "result": "FAIL"
+      },
+      {
+        "attempt_id": "V010_t012",
+        "V_ring": "0.10[m/s]",
+        "t_end": "0.12[s]",
+        "ramp": false,
+        "solve_status": "fail",
+        "quality_status": "solve_failed",
+        "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tFailed to find consistent initial values.\r\n\r\n\tLast time step is not converged.\r\n",
+        "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\V010_t012_error_20260617_220333.log",
+        "result": "FAIL"
+      },
+      {
+        "attempt_id": "repair1_V001_t003_ramp",
+        "V_ring": "0.01[m/s]",
+        "t_end": "0.03[s]",
+        "ramp": true,
+        "solve_status": "fail",
+        "quality_status": "solve_failed",
+        "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tRepeated error test failures. May have reached a singularity.\r\n\r\n\tTime: 0.0040000003817363345 s.\r\n\r\n\tLast time step is not converged.\r\n",
+        "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\repair1_V001_t003_ramp_error_20260617_220333.log",
+        "result": "FAIL"
+      },
+      {
+        "attempt_id": "repair2_V002_t003_ramp",
+        "V_ring": "0.02[m/s]",
+        "t_end": "0.03[s]",
+        "ramp": true,
+        "solve_status": "fail",
+        "quality_status": "solve_failed",
+        "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tRepeated error test failures. May have reached a singularity.\r\n\r\n\tTime: 0.0040000003817363345 s.\r\n\r\n\tLast time step is not converged.\r\n",
+        "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\repair2_V002_t003_ramp_error_20260617_220333.log",
+        "result": "FAIL"
+      },
+      {
+        "attempt_id": "repair3_V001_t002_ramp",
+        "V_ring": "0.01[m/s]",
+        "t_end": "0.02[s]",
+        "ramp": true,
+        "solve_status": "fail",
+        "quality_status": "solve_failed",
+        "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tRepeated error test failures. May have reached a singularity.\r\n\r\n\tTime: 0.0040000015759883937 s.\r\n\r\n\tLast time step is not converged.\r\n",
+        "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\repair3_V001_t002_ramp_error_20260617_220333.log",
+        "result": "FAIL"
+      }
+    ],
+    "best_case": {
+      "attempt_id": "V002_t012",
+      "V_ring": "0.02[m/s]",
+      "t_end": "0.12[s]",
+      "ramp": false,
+      "solve_status": "fail",
+      "quality_status": "solve_failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: The following feature has encountered a problem:\r\nMessages:\r\n\tThe following feature has encountered a problem:\r\n\t- Feature: Time-Dependent Solver 1 (sol1/t1)\r\n\r\n\tFailed to find consistent initial values.\r\n\r\n\tLast time step is not converged.\r\n",
+      "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\logs\\V002_t012_error_20260617_220333.log",
+      "result": "FAIL"
+    },
+    "model": null,
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\reports\\5B3_moving_wall_ring_free_surface_report.md",
+    "case_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_moving_wall_ring_free_surface\\tables\\5B3_case_review.csv"
+  },
+  "stop_reason": "5B3 did not PASS; do not enter 5B4/5C/5D/5E/6."
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "case_id": "F_V5em4",
+    "Vwall": "5e-4[m/s]",
+    "tlist": "range(0,dt,t_end)",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "H0": 8.474977502194332e-05,
+    "Hfinal": 8.474977502194332e-05,
+    "delta_H": 0.0,
+    "interface_quality": "clear",
+    "case_pass": "PASS",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_5em4_smoke.mph"
+  },
+  {
+    "case_id": "F_V1em3",
+    "Vwall": "1e-3[m/s]",
+    "tlist": "range(0,dt,t_end)",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "H0": 8.474977502194332e-05,
+    "Hfinal": 8.474977502194332e-05,
+    "delta_H": 0.0,
+    "interface_quality": "clear",
+    "case_pass": "PASS",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C4_seed_based_ring_smoke\\models\\ring_fountain_v5B3_C4_1em3_smoke.mph"
+  }
+]

@@ -1,0 +1,81 @@
+﻿case_id,model_type,V,t_end,boundary_feature_type,solve_status,failure_message,case_pass
+C3_2_V_0_T_0p002,manual LaminarFlow + LevelSet minimal rectangle,0[m/s],0.002[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_0_T_0p005,manual LaminarFlow + LevelSet minimal rectangle,0[m/s],0.005[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_1em4_T_0p002,manual LaminarFlow + LevelSet minimal rectangle,1e-4[m/s],0.002[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_1em4_T_0p005,manual LaminarFlow + LevelSet minimal rectangle,1e-4[m/s],0.005[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_5em4_T_0p002,manual LaminarFlow + LevelSet minimal rectangle,5e-4[m/s],0.002[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_5em4_T_0p005,manual LaminarFlow + LevelSet minimal rectangle,5e-4[m/s],0.005[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_1em3_T_0p002,manual LaminarFlow + LevelSet minimal rectangle,1e-3[m/s],0.002[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL
+C3_2_V_1em3_T_0p005,manual LaminarFlow + LevelSet minimal rectangle,1e-3[m/s],0.005[s],spf.Wall,FAIL,"Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+; disable error=Exception:
+	com.comsol.util.exceptions.FlException: Object cannot be disabled.
+Messages:
+	Object cannot be disabled.
+	- Tag: wallbc1
+",FAIL

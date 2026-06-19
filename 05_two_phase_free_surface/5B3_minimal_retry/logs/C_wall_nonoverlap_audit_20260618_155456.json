@@ -1,0 +1,47 @@
+[
+  {
+    "group_id": "S1_vertical_edges_only",
+    "moving_boundaries": [
+      4,
+      7
+    ],
+    "status": "FAIL",
+    "failure_message": "wall_overlap_unresolved: default wall selection is not editable and default wall cannot be removed: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Wall 1 (wallbc1)\r\n"
+  },
+  {
+    "group_id": "S2_bottom_edge_only",
+    "moving_boundaries": [
+      5
+    ],
+    "status": "FAIL",
+    "failure_message": "wall_overlap_unresolved: default wall selection is not editable and default wall cannot be removed: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Wall 1 (wallbc1)\r\n"
+  },
+  {
+    "group_id": "S3_top_edge_only",
+    "moving_boundaries": [
+      6
+    ],
+    "status": "FAIL",
+    "failure_message": "wall_overlap_unresolved: default wall selection is not editable and default wall cannot be removed: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Wall 1 (wallbc1)\r\n"
+  },
+  {
+    "group_id": "S4_horizontal_edges_only",
+    "moving_boundaries": [
+      5,
+      6
+    ],
+    "status": "FAIL",
+    "failure_message": "wall_overlap_unresolved: default wall selection is not editable and default wall cannot be removed: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Wall 1 (wallbc1)\r\n"
+  },
+  {
+    "group_id": "S5_all_edges",
+    "moving_boundaries": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "status": "FAIL",
+    "failure_message": "wall_overlap_unresolved: default wall selection is not editable and default wall cannot be removed: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Wall 1 (wallbc1)\r\n"
+  }
+]

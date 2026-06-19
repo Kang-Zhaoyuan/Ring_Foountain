@@ -1,0 +1,4 @@
+[2026-06-18 17:15:02] C3-0 reviewing C2 outputs.
+[2026-06-18 17:15:02] C3-1 auditing API feature names and enumerability.
+[2026-06-18 17:15:12] C3-2 running minimal free-surface + solid moving wall tests.
+[2026-06-18 17:15:17] C3 finished with ALLOW_RESUME_STAGE5=NO

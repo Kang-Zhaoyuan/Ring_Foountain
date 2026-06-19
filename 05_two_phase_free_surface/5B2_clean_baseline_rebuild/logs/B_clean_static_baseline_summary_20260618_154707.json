@@ -1,0 +1,78 @@
+{
+  "routes": [
+    {
+      "route_id": "Route_LS_official",
+      "route_used": "Route_LS_official",
+      "status": "NOT_AVAILABLE",
+      "solve_status": "not_run",
+      "notes": "No tested official physics type could be created through the COMSOL Java API.",
+      "probe_rows": [
+        {
+          "type": "LaminarTwoPhaseFlowLevelSet",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowLevelSet\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowLevelSet",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowLevelSet\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowLS",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowLS\r\n"
+        },
+        {
+          "type": "TpfLevelSet",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TpfLevelSet\r\n"
+        }
+      ]
+    },
+    {
+      "route_id": "Route_PF_official",
+      "route_used": "Route_PF_official",
+      "status": "NOT_RUN",
+      "solve_status": "not_run",
+      "notes": "Physics type `PhaseField` is creatable, but automatic conversion of the existing ring model to this formal interface is not implemented safely in this pass.",
+      "probe_rows": [
+        {
+          "type": "LaminarTwoPhaseFlowPhaseField",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowPhaseField\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowPhaseField",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowPhaseField\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowPF",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowPF\r\n"
+        },
+        {
+          "type": "PhaseField",
+          "status": "CREATED",
+          "created_type": "PhaseField",
+          "label": "Phase Field in Fluids 1"
+        }
+      ]
+    },
+    {
+      "route_id": "Route_LS_manual_clean",
+      "route_used": "manual LaminarFlow + LevelSet fallback",
+      "status": "FAIL",
+      "solve_status": "fail",
+      "failure_message": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n",
+      "error_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\logs\\Route_LS_manual_clean_error_20260618_154707.log"
+    }
+  ],
+  "summary": {
+    "status": "FAIL",
+    "ALLOW_5B3_RETRY": "NO",
+    "best": null,
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\reports\\B_clean_static_baseline_report.md",
+    "comparison": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\tables\\clean_baseline_route_comparison.csv"
+  }
+}

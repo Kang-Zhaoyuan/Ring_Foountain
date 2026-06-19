@@ -1,0 +1,127 @@
+{
+  "routes": [
+    {
+      "route_id": "Route_LS_official",
+      "route_used": "Route_LS_official",
+      "status": "NOT_AVAILABLE",
+      "solve_status": "not_run",
+      "notes": "No tested official physics type could be created through the COMSOL Java API.",
+      "probe_rows": [
+        {
+          "type": "LaminarTwoPhaseFlowLevelSet",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowLevelSet\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowLevelSet",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowLevelSet\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowLS",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowLS\r\n"
+        },
+        {
+          "type": "TpfLevelSet",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TpfLevelSet\r\n"
+        }
+      ]
+    },
+    {
+      "route_id": "Route_PF_official",
+      "route_used": "Route_PF_official",
+      "status": "NOT_AVAILABLE",
+      "solve_status": "not_run",
+      "notes": "No tested official physics type could be created through the COMSOL Java API.",
+      "probe_rows": [
+        {
+          "type": "LaminarTwoPhaseFlowPhaseField",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowPhaseField\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowPhaseField",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowPhaseField\r\n"
+        },
+        {
+          "type": "TwoPhaseFlowPF",
+          "status": "FAILED",
+          "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowPF\r\n"
+        }
+      ]
+    },
+    {
+      "route_id": "Route_LS_manual_clean",
+      "route_used": "manual LaminarFlow + LevelSet fallback",
+      "status": "PASS",
+      "solve_status": "success",
+      "H0": 0.00016578850821326205,
+      "Hfinal": 0.00016578850821326205,
+      "delta_H": 0.0,
+      "Hmax": 0.00016578850821326205,
+      "interface_quality": "clear/continuous",
+      "main_free_surface_continuous": true,
+      "isolated_spike": false,
+      "near_top": false,
+      "actions": {
+        "rtfr1": "kept_but_already_inactive; remove_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Rotating Frame 1 (rtfr1)\r\n; disable_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: rtfr1\r\n",
+        "grav1": "kept_but_already_inactive; remove_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Gravity 1 (grav1)\r\n; disable_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: grav1\r\n",
+        "gravity_policy": "not used in this short static smoke test; no hydrostatic-pressure initialization is available in this manual fallback, so gravity is removed to test numerical interface advection stability without extra forcing",
+        "wallbc1_selection": "left_unchanged_selection_not_editable: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n",
+        "level_set_gamma": "0; clean static fallback disables reinitialization convection to avoid artificial static-interface drift during the smoke test"
+      },
+      "route_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\models\\ring_fountain_v5B2_clean_static_baseline_manual_20260618_155151.mph",
+      "solved_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\models\\ring_fountain_v5B2_clean_static_baseline_manual_solved_20260618_155151.mph",
+      "best_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\models\\ring_fountain_v5B2_clean_static_baseline_best.mph",
+      "h_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\tables\\5B2_clean_manual_static_H_vs_t.csv",
+      "frame_index": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\tables\\5B2_clean_manual_static_frame_index.csv",
+      "H_vs_t_png": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\images\\Route_LS_manual_clean\\5B2_clean_manual_static_H_vs_t.png",
+      "images": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\images\\Route_LS_manual_clean_phils_final.png",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\images\\Route_LS_manual_clean_velocity_magnitude.png"
+      ],
+      "notes": "No moving wall and no additional forcing were applied."
+    }
+  ],
+  "summary": {
+    "status": "PASS",
+    "ALLOW_5B3_RETRY": "YES",
+    "best": {
+      "route_id": "Route_LS_manual_clean",
+      "route_used": "manual LaminarFlow + LevelSet fallback",
+      "status": "PASS",
+      "solve_status": "success",
+      "H0": 0.00016578850821326205,
+      "Hfinal": 0.00016578850821326205,
+      "delta_H": 0.0,
+      "Hmax": 0.00016578850821326205,
+      "interface_quality": "clear/continuous",
+      "main_free_surface_continuous": true,
+      "isolated_spike": false,
+      "near_top": false,
+      "actions": {
+        "rtfr1": "kept_but_already_inactive; remove_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Rotating Frame 1 (rtfr1)\r\n; disable_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: rtfr1\r\n",
+        "grav1": "kept_but_already_inactive; remove_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be removed.\r\nMessages:\r\n\tObject cannot be removed.\r\n\t- Feature: Gravity 1 (grav1)\r\n; disable_failed=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: grav1\r\n",
+        "gravity_policy": "not used in this short static smoke test; no hydrostatic-pressure initialization is available in this manual fallback, so gravity is removed to test numerical interface advection stability without extra forcing",
+        "wallbc1_selection": "left_unchanged_selection_not_editable: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n",
+        "level_set_gamma": "0; clean static fallback disables reinitialization convection to avoid artificial static-interface drift during the smoke test"
+      },
+      "route_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\models\\ring_fountain_v5B2_clean_static_baseline_manual_20260618_155151.mph",
+      "solved_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\models\\ring_fountain_v5B2_clean_static_baseline_manual_solved_20260618_155151.mph",
+      "best_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\models\\ring_fountain_v5B2_clean_static_baseline_best.mph",
+      "h_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\tables\\5B2_clean_manual_static_H_vs_t.csv",
+      "frame_index": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\tables\\5B2_clean_manual_static_frame_index.csv",
+      "H_vs_t_png": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\images\\Route_LS_manual_clean\\5B2_clean_manual_static_H_vs_t.png",
+      "images": [
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\images\\Route_LS_manual_clean_phils_final.png",
+        "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\images\\Route_LS_manual_clean_velocity_magnitude.png"
+      ],
+      "notes": "No moving wall and no additional forcing were applied."
+    },
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\reports\\B_clean_static_baseline_report.md",
+    "comparison": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B2_clean_baseline_rebuild\\tables\\clean_baseline_route_comparison.csv"
+  }
+}

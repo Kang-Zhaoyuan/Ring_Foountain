@@ -1,0 +1,109 @@
+﻿probe,candidate_type,create_status,error,physics_tag,feature_tag,can_select_ring,properties,created_type,label,BoundaryCondition,SlidingWall,TranslationalVelocityOption,utr,WallCondition,WallType,cleanup
+physics_interface,LaminarTwoPhaseFlowLevelSet,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: LaminarTwoPhaseFlowLevelSet
+",,,,,,,,,,,,,
+physics_interface,TwoPhaseFlowLevelSet,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: TwoPhaseFlowLevelSet
+",,,,,,,,,,,,,
+physics_interface,TwoPhaseFlowLS,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: TwoPhaseFlowLS
+",,,,,,,,,,,,,
+physics_interface,TpfLevelSet,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: TpfLevelSet
+",,,,,,,,,,,,,
+physics_interface,LaminarTwoPhaseFlowPhaseField,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: LaminarTwoPhaseFlowPhaseField
+",,,,,,,,,,,,,
+physics_interface,TwoPhaseFlowPhaseField,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: TwoPhaseFlowPhaseField
+",,,,,,,,,,,,,
+physics_interface,TwoPhaseFlowPF,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown physics interface.
+Messages:
+	Unknown physics interface.
+	- Physics interface: TwoPhaseFlowPF
+",,,,,,,,,,,,,
+feature,WettedWall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: WettedWall.
+Messages:
+	Unknown feature ID: WettedWall.
+",ls,C2_probe_ls_WettedWall,False,[],,,,,,,,,
+feature,WettedWallLS,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: WettedWallLS.
+Messages:
+	Unknown feature ID: WettedWallLS.
+",ls,C2_probe_ls_WettedWallLS,False,[],,,,,,,,,
+feature,WallWetted,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: WallWetted.
+Messages:
+	Unknown feature ID: WallWetted.
+",ls,C2_probe_ls_WallWetted,False,[],,,,,,,,,
+feature,InteriorWettedWall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: InteriorWettedWall.
+Messages:
+	Unknown feature ID: InteriorWettedWall.
+",ls,C2_probe_ls_InteriorWettedWall,False,[],,,,,,,,,
+feature,InteriorWettedWallLS,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: InteriorWettedWallLS.
+Messages:
+	Unknown feature ID: InteriorWettedWallLS.
+",ls,C2_probe_ls_InteriorWettedWallLS,False,[],,,,,,,,,
+feature,NoFlow,PASS,,ls,C2_probe_ls_NoFlow,"[4, 5, 6, 7]","[""StudyStep"", ""showPhysicsSymbols"", ""pairContrib""]",NoFlow,No Flow,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,removed_probe_feature
+feature,LevelSetNoFlow,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: LevelSetNoFlow.
+Messages:
+	Unknown feature ID: LevelSetNoFlow.
+",ls,C2_probe_ls_LevelSetNoFlow,False,[],,,,,,,,,
+feature,Wall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: Wall.
+Messages:
+	Unknown feature ID: Wall.
+",ls,C2_probe_ls_Wall,False,[],,,,,,,,,
+feature,OpenBoundary,PASS,,ls,C2_probe_ls_OpenBoundary,"[4, 5, 6, 7]","[""lscond"", ""ls0"", ""StudyStep"", ""showPhysicsSymbols"", ""pairContrib""]",OpenBoundary,Open Boundary,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,removed_probe_feature
+feature,Wall,PASS,,spf,C2_probe_spf_Wall,"[4, 5, 6, 7]","[""BoundaryCondition"", ""uleak"", ""UseViscousSlip"", ""UseThermalCreep"", ""SlipLengthOption"", ""Ls"", ""alphav"", ""lambda"", ""sigmat"", ""ElectroosmoticOption"", ""mueo"", ""zeta"", ""epsilonr"", ""T_src"", ""T"", ""E_src"", ""E"", ""utr"", ""uvw"", ""vw"", ""SlidingWall"", ""TranslationalVelocityOption"", ""constraintOptions"", ""constraintType"", ""constraintMethod"", ""ApplyWallRoughness"", ""RoughnessModel"", ""kseq"", ""ks"", ""Cs"", ""NavierSlip"", ""beta"", ""beta_factor"", ""tau_ref"", ""m"", ""IncludeUtrInNavierSlipForce"", ""tau_y"", ""k1"", ""k2"", ""StudyStep"", ""showPhysicsSymbols"", ""pairContrib""]",WallBC,Wall,NoSlip,0,AutomaticFromFrame,0,<unreadable>,<unreadable>,removed_probe_feature
+feature,Inlet,PASS,,spf,C2_probe_spf_Inlet,"[4, 5, 6, 7]","[""BoundaryCondition"", ""ComponentWise"", ""U0in"", ""u0"", ""p0"", ""LaminarInflowOption"", ""Uav"", ""V0"", ""p0_entr"", ""CompensateForHydrostaticPressureApproximationIO"", ""CompensateForHydrostaticPressureIO"", ""Lentr"", ""ConstrainEndPointsToZero"", ""f0"", ""MassFlowType"", ""mfr"", ""StandardFlowRateDefinedBy"", ""stdmfr"", ""mnst"", ""Pst"", ""Tst"", ""sccmmfr"", ""Mf_src"", ""Mf"", ""Mn_src"", ""Mn"", ""RANSVarOption"", ""RANSAnisotropyOption"", ""IT"", ""LT"", ""Uref"", ""k0"", ""ep0"", ""om0"", ""nutilde0"", ""zeta0"", ""zeta0_aniso"", ""alpha0"", ""constraintOptions"", ""constraintType"", ""constraintMethod"", ""StudyStep"", ""showPhysicsSymbols"", ""pairContrib""]",Inlet,Inlet,Velocity,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,removed_probe_feature
+feature,Outlet,PASS,,spf,C2_probe_spf_Outlet,"[4, 5, 6, 7]","[""BoundaryCondition"", ""ComponentWise"", ""U0out"", ""u0"", ""p0"", ""f0"", ""LaminarOutflowOption"", ""Uav"", ""V0"", ""Lexit"", ""p0_exit"", ""CompensateForHydrostaticPressureApproximationIO"", ""CompensateForHydrostaticPressureIO"", ""ConstrainEndPointsToZero"", ""constraintOptions"", ""constraintType"", ""constraintMethod"", ""StudyStep"", ""showPhysicsSymbols"", ""pairContrib""]",Outlet,Outlet,PressureNoViscousStress,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,removed_probe_feature
+feature,OpenBoundary,PASS,,spf,C2_probe_spf_OpenBoundary,"[4, 5, 6, 7]","[""BoundaryCondition"", ""f0"", ""CompensateForHydrostaticPressureApproximation"", ""CompensateForHydrostaticPressure"", ""RANSVarOption"", ""RANSAnisotropyOption"", ""IT_list"", ""LT_list"", ""IT"", ""LT"", ""Uref"", ""k0"", ""ep0"", ""om0"", ""nutilde0"", ""zeta0"", ""zeta0_aniso"", ""alpha0"", ""gamma0"", ""N"", ""useRandomSeed"", ""phys.randomSeed"", ""RSMAnisotropyOption"", ""R0"", ""a0"", ""xi0"", ""StudyStep"", ""showPhysicsSymbols"", ""pairContrib""]",OpenBoundary,Open Boundary,NormalStress,<unreadable>,<unreadable>,<unreadable>,<unreadable>,<unreadable>,removed_probe_feature
+feature,SlipWall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: SlipWall.
+Messages:
+	Unknown feature ID: SlipWall.
+",spf,C2_probe_spf_SlipWall,False,[],,,,,,,,,
+feature,WettedWall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: WettedWall.
+Messages:
+	Unknown feature ID: WettedWall.
+",spf,C2_probe_spf_WettedWall,False,[],,,,,,,,,
+feature,InteriorWettedWall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: InteriorWettedWall.
+Messages:
+	Unknown feature ID: InteriorWettedWall.
+",spf,C2_probe_spf_InteriorWettedWall,False,[],,,,,,,,,
+feature,MovingWall,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: MovingWall.
+Messages:
+	Unknown feature ID: MovingWall.
+",spf,C2_probe_spf_MovingWall,False,[],,,,,,,,,
+feature,NoFlow,FAIL,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown feature ID: NoFlow.
+Messages:
+	Unknown feature ID: NoFlow.
+",spf,C2_probe_spf_NoFlow,False,[],,,,,,,,,

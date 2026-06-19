@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5_cleanup_5b_5c.py", line 857, in stage_b2
+    sel = ensure_b2_selections(model)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5_cleanup_5b_5c.py", line 796, in ensure_b2_selections
+    rows = s41.boundary_metrics(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage4_1_boundary_review.py", line 92, in boundary_metrics
+    length, int_r, int_z = numerical_values(model, "IntLine", bid, ["1", "r", "z"])
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage4_1_boundary_review.py", line 76, in numerical_values
+    node.selection().geom("geom1", 1)
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: Unsupported geometry.
+Messages:
+	Unsupported geometry.
+	- Geometry: geom1
+

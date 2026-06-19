@@ -1,0 +1,35 @@
+﻿case_id,route,boundary_set,V_test,t_end,solve_status,failure_time,failure_message,H0,Hfinal,delta_H,Hmax,interface_quality,wall_overlap_status,notes,pre_solve_model
+C2_2_static_baseline,rebuilt manual LaminarFlow + LevelSet,all walls static,0,0.02[s],PASS,,,0.00016578850821326205,0.00016578850821326205,0.0,0.00016578850821326205,clear/continuous,not_applicable_static,rebuilt reduced model without gravity; reproduces clean baseline stability check,
+C2_2_failure,rebuilt manual LaminarFlow + LevelSet,,,,FAIL,,"com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: The following feature has encountered a problem:
+Messages:
+	The following feature has encountered a problem:
+	- Feature: Time-Dependent Solver 1 (sol1/t1)
+
+	Failed to find consistent initial values.
+
+	Last time step is not converged.
+",nan,nan,nan,nan,,UNKNOWN_OR_FAIL,"Traceback (most recent call last):
+  File ""java.lang.Thread.java"", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b3_C2_alternative_wall_strategy.py"", line 839, in stage_c2_2
+    model.solve()
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\comsol-mcp\.venv\Lib\site-packages\mph\model.py"", line 343, in solve
+    node.run()
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\comsol-mcp\.venv\Lib\site-packages\mph\node.py"", line 565, in run
+    java.run()
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: The following feature has encountered a problem:
+Messages:
+	The following feature has encountered a problem:
+	- Feature: Time-Dependent Solver 1 (sol1/t1)
+
+	Failed to find consistent initial values.
+
+	Last time step is not converged.
+
+","{""timestamp_model"": ""D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\models\\ring_fountain_v5B3_C2c_rebuilt_selectable_wall_model_20260618_164605.mph"", ""model"": ""D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\models\\ring_fountain_v5B3_C2c_rebuilt_selectable_wall_model.mph""}"

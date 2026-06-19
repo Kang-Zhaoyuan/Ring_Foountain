@@ -1,0 +1,14 @@
+[2026-06-17 18:18:32] Starting Ring Fountain stage 2.1+ automation
+[2026-06-17 18:18:36] COMSOL client started: version=6.4, cores=2, standalone=True
+[2026-06-17 18:18:56] Stage 2.2 solve U0_001: U0=0.01[m/s]
+[2026-06-17 18:19:09] Stage 2.2 solve U0_002: U0=0.02[m/s]
+[2026-06-17 18:19:22] Stage 2.2 solve U0_005: U0=0.05[m/s]
+[2026-06-17 18:19:38] Stage 2.2 solve U0_010: U0=0.10[m/s]
+[2026-06-17 18:20:06] Stage 2.2 solve h_001: h_ring=1[mm]
+[2026-06-17 18:20:27] Stage 2.2 solve h_002: h_ring=2[mm]
+[2026-06-17 18:20:40] Stage 2.2 solve h_004: h_ring=4[mm]
+[2026-06-17 18:20:53] Stage 2.2 solve ri_006: Ri=6[mm]
+[2026-06-17 18:21:06] Stage 2.2 solve ri_008: Ri=8[mm]
+[2026-06-17 18:21:18] Stage 2.2 solve ri_010: Ri=10[mm]
+[2026-06-17 18:21:31] Stage 2.2 solve ri_012: Ri=12[mm]
+[2026-06-17 18:21:52] Finished Ring Fountain stage 2.1+ automation

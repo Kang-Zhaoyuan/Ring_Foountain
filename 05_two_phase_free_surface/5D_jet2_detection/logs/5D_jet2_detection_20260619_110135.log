@@ -1,0 +1,8 @@
+[2026-06-19 11:01:35] A: reviewing 5C gates.
+[2026-06-19 11:02:09] B: defining Jet2 ROI.
+[2026-06-19 11:02:10] C: screening existing 0.020 s window.
+[2026-06-19 11:07:41] D: running optional extended-window detection.
+[2026-06-19 11:19:40] E: exporting Jet2 velocity and pressure support frames.
+[2026-06-19 11:19:59] F: saving 5D best artifact.
+[2026-06-19 11:20:02] Updating README, CHANGELOG, and SCRIPT_MANIFEST.
+[2026-06-19 11:20:02] 5D completed.

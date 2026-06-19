@@ -1,0 +1,2 @@
+﻿H_drop,U0,U_impact_m_per_s,vz_max_center_above_m_per_s,H_kin_proxy_m,model_type,notes
+50[mm],0.02[m/s],0.990285312422637,0.06414448455098092,0.00020978187751734948,single-phase fixed-ring relative-flow proxy,H_kin_proxy is not true two-phase free-surface Hmax.

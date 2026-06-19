@@ -1,0 +1,4 @@
+﻿roi,definition,r_min_m,r_max_m,z_min_m
+center_hole_region,0 <= r <= Ri and z >= z0,0.0,0.006,0.0
+inner_edge_region,Ri +/- inner_edge_width and z >= z0,0.0039000000000000003,0.0081,0.0
+above_initial_interface,z >= z0,,,0.0

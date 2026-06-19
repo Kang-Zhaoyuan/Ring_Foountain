@@ -1,0 +1,2 @@
+﻿case_id,solve_status,reason
+C3_3_skip,SKIP,C3-2 did not PASS; C3-3 is gated off

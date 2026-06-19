@@ -1,0 +1,450 @@
+# Stage 4.2A Relative Velocity Check Report
+
+Run time: 2026-06-17T19:58:15
+
+4.2A review status: `PASS`
+
+## Confirmed Named Selections
+
+- Named model: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\models\ring_fountain_v3_boundary_named.mph`
+- Timestamp model: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\models\ring_fountain_v3_boundary_named_20260617_195622.mph`
+- Selections: `{"sel_ring_wall_inner": [4], "sel_ring_wall_outer": [7], "sel_ring_wall_top": [6], "sel_ring_wall_bottom": [5], "sel_ring_wall_confirmed": [4, 5, 6, 7]}`
+
+## Direction Confirmation
+
+- In the current model, `spf.inl1` is on boundary 2, the bottom tank boundary `z=-Zdown`; positive normal inflow therefore points into the domain, i.e. `+z` / upward.
+- `spf.out1` is on boundary 3, the top tank boundary.
+- The axial/vertical velocity component is `w`; positive `w` is upward along `+z`.
+- Ring moving-wall test speed is set as `utr=[0,0,-V_ring_test]`, i.e. negative `z` / downward.
+
+## Moving Wall Property Names
+
+- Wall feature: `spf.wallbc1`.
+- Confirmed wall selection: `[4, 5, 6, 7]` only.
+- Properties used: `BoundaryCondition=NoSlip`, `SlidingWall=1`, `TranslationalVelocityOption=Manual`, `utr=[0,0,-V_ring_test]`.
+
+## Case Results
+
+### case_A_stationary_ring - stationary ring, original upward inflow
+
+- Status: `PASS`
+- Model: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\models\case_A_stationary_ring.mph`
+- Wall: `{"feature": "spf/wallbc1", "BoundaryCondition": "NoSlip", "SlidingWall": "0", "TranslationalVelocityOption": "ZeroFixedWall", "selection": [4, 5, 6, 7], "selection_binding": "wallbc1 uses COMSOL's existing noneditable explicit selection; verified equal to sel_ring_wall_confirmed [4,5,6,7]", "utr_set": ["0", "0", "0"]}`
+- Flow: `{"inlet_feature": "spf/inl1", "inlet_ids": [2], "outlet_feature": "spf/out1", "outlet_ids": [3], "U0in": "U0", "inlet_boundary_direction": "boundary 2 bottom inlet is +z/upward; boundary 3 top inlet is -z/downward"}`
+- Summary: `{"case": "case_A_stationary_ring", "w_center_above_final_mean_m_per_s": 0.03138135033051099, "w_center_above_final_max_m_per_s": 0.051206773548550015, "ring_near_abs_w_relative_mean_m_per_s": 0.11424809298603972, "ring_near_abs_w_relative_p95_m_per_s": 0.14575777181974625}`
+- Center-hole `w(t)` CSV: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\tables\case_A_stationary_ring_center_hole_w_t.csv`
+- Images:
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_A_stationary_ring_velocity_magnitude_spfU.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_A_stationary_ring_axial_velocity_w.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_A_stationary_ring_w_relative_to_ring.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_A_stationary_ring_ring_near_velocity_vectors.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_A_stationary_ring_ring_near_relative_velocity.png` (`ok=True`)
+
+### case_B_same_downward - ring and water both downward at V_ring_test
+
+- Status: `PASS`
+- Model: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\models\case_B_same_downward.mph`
+- Wall: `{"feature": "spf/wallbc1", "BoundaryCondition": "NoSlip", "SlidingWall": "1", "TranslationalVelocityOption": "Manual", "selection": [4, 5, 6, 7], "selection_binding": "wallbc1 uses COMSOL's existing noneditable explicit selection; verified equal to sel_ring_wall_confirmed [4,5,6,7]", "utr_set": ["0", "0", "-V_ring_test"]}`
+- Flow: `{"inlet_feature": "spf/inl1", "inlet_ids": [3], "outlet_feature": "spf/out1", "outlet_ids": [2], "U0in": "V_ring_test", "inlet_boundary_direction": "boundary 2 bottom inlet is +z/upward; boundary 3 top inlet is -z/downward"}`
+- Summary: `{"case": "case_B_same_downward", "w_center_above_final_mean_m_per_s": -0.1002758019457179, "w_center_above_final_max_m_per_s": -0.10003955347883199, "ring_near_abs_w_relative_mean_m_per_s": 0.00013041539482204362, "ring_near_abs_w_relative_p95_m_per_s": 0.00041444732778572746}`
+- Center-hole `w(t)` CSV: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\tables\case_B_same_downward_center_hole_w_t.csv`
+- Images:
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_B_same_downward_velocity_magnitude_spfU.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_B_same_downward_axial_velocity_w.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_B_same_downward_w_relative_to_ring.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_B_same_downward_ring_near_velocity_vectors.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_B_same_downward_ring_near_relative_velocity.png` (`ok=True`)
+
+### case_C_opposite_relative - ring downward, water upward at V_ring_test
+
+- Status: `PASS`
+- Model: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\models\case_C_opposite_relative.mph`
+- Wall: `{"feature": "spf/wallbc1", "BoundaryCondition": "NoSlip", "SlidingWall": "1", "TranslationalVelocityOption": "Manual", "selection": [4, 5, 6, 7], "selection_binding": "wallbc1 uses COMSOL's existing noneditable explicit selection; verified equal to sel_ring_wall_confirmed [4,5,6,7]", "utr_set": ["0", "0", "-V_ring_test"]}`
+- Flow: `{"inlet_feature": "spf/inl1", "inlet_ids": [2], "outlet_feature": "spf/out1", "outlet_ids": [3], "U0in": "V_ring_test", "inlet_boundary_direction": "boundary 2 bottom inlet is +z/upward; boundary 3 top inlet is -z/downward"}`
+- Summary: `{"case": "case_C_opposite_relative", "w_center_above_final_mean_m_per_s": 0.19390501275302519, "w_center_above_final_max_m_per_s": 0.4300422796059418, "ring_near_abs_w_relative_mean_m_per_s": 0.12007583790427336, "ring_near_abs_w_relative_p95_m_per_s": 0.3969912823423352}`
+- Center-hole `w(t)` CSV: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\tables\case_C_opposite_relative_center_hole_w_t.csv`
+- Images:
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_C_opposite_relative_velocity_magnitude_spfU.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_C_opposite_relative_axial_velocity_w.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_C_opposite_relative_w_relative_to_ring.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_C_opposite_relative_ring_near_velocity_vectors.png` (`ok=True`)
+  - `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\relative_velocity_check\images\case_C_opposite_relative_ring_near_relative_velocity.png` (`ok=True`)
+
+## Review
+
+- Case B ring-near mean `abs(w + V_ring_test)`: `0.00013041539482204362` m/s
+- Case C ring-near mean `abs(w + V_ring_test)`: `0.12007583790427336` m/s
+- Relative disturbance ratio B/C: `0.0010861085552116916`
+- Limitation: the geometry and outer boundaries are fixed. The ring outline does not translate; only the no-slip wall velocity condition is changed.
+- Limitation: this is still a single-phase model with no free liquid surface; it cannot produce a true `Hmax`.
+
+## Structured Data
+
+```json
+{
+  "status": "PASS",
+  "named": {
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_boundary_named.mph",
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\models\\ring_fountain_v3_boundary_named_20260617_195622.mph",
+    "selections": {
+      "sel_ring_wall_inner": [
+        4
+      ],
+      "sel_ring_wall_outer": [
+        7
+      ],
+      "sel_ring_wall_top": [
+        6
+      ],
+      "sel_ring_wall_bottom": [
+        5
+      ],
+      "sel_ring_wall_confirmed": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "review": {
+    "all_cases_pass": true,
+    "case_b_relative_mean": 0.00013041539482204362,
+    "case_c_relative_mean": 0.12007583790427336,
+    "relative_ratio_b_over_c": 0.0010861085552116916,
+    "case_b_disturbance_much_less_than_case_c": true
+  },
+  "cases": [
+    {
+      "case": {
+        "id": "case_A_stationary_ring",
+        "label": "stationary ring, original upward inflow",
+        "moving_wall": false,
+        "wall_speed": "0",
+        "inlet": [
+          2
+        ],
+        "outlet": [
+          3
+        ],
+        "u0_expr": "U0",
+        "set_u0": null
+      },
+      "status": "PASS",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\models\\case_A_stationary_ring.mph",
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\models\\case_A_stationary_ring_20260617_195622.mph",
+      "wall": {
+        "feature": "spf/wallbc1",
+        "BoundaryCondition": "NoSlip",
+        "SlidingWall": "0",
+        "TranslationalVelocityOption": "ZeroFixedWall",
+        "selection": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "selection_binding": "wallbc1 uses COMSOL's existing noneditable explicit selection; verified equal to sel_ring_wall_confirmed [4,5,6,7]",
+        "utr_set": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "flow": {
+        "inlet_feature": "spf/inl1",
+        "inlet_ids": [
+          2
+        ],
+        "outlet_feature": "spf/out1",
+        "outlet_ids": [
+          3
+        ],
+        "U0in": "U0",
+        "inlet_boundary_direction": "boundary 2 bottom inlet is +z/upward; boundary 3 top inlet is -z/downward"
+      },
+      "stage3_scale_param_cleanup": {
+        "removed": [
+          "U_impact",
+          "g_const",
+          "H_drop"
+        ],
+        "adjusted": [],
+        "reason": "Stage 3 scale-only parameters caused a duplicate global name with the Gravity feature during transient equation compilation."
+      },
+      "outputs": {
+        "summary": {
+          "case": "case_A_stationary_ring",
+          "w_center_above_final_mean_m_per_s": 0.03138135033051099,
+          "w_center_above_final_max_m_per_s": 0.051206773548550015,
+          "ring_near_abs_w_relative_mean_m_per_s": 0.11424809298603972,
+          "ring_near_abs_w_relative_p95_m_per_s": 0.14575777181974625
+        },
+        "images": [
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_A_stationary_ring_velocity_magnitude_spfU.png",
+            "title": "spf.U",
+            "vmin": 0.0,
+            "vmax": 0.03800659627986874,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_A_stationary_ring_axial_velocity_w.png",
+            "title": "w",
+            "vmin": 0.0,
+            "vmax": 0.035196992053578936,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_A_stationary_ring_w_relative_to_ring.png",
+            "title": "w + V_ring_test",
+            "vmin": 0.1,
+            "vmax": 0.13519699205357893,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_A_stationary_ring_ring_near_velocity_vectors.png",
+            "title": "velocity vectors",
+            "vmin": 0.0,
+            "vmax": 0.03800659627986874,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_A_stationary_ring_ring_near_relative_velocity.png",
+            "title": "relative velocity",
+            "vmin": 0.1,
+            "vmax": 0.13587858263896874,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          }
+        ],
+        "w_t_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\tables\\case_A_stationary_ring_center_hole_w_t.csv"
+      }
+    },
+    {
+      "case": {
+        "id": "case_B_same_downward",
+        "label": "ring and water both downward at V_ring_test",
+        "moving_wall": true,
+        "wall_speed": "-V_ring_test",
+        "inlet": [
+          3
+        ],
+        "outlet": [
+          2
+        ],
+        "u0_expr": "V_ring_test",
+        "set_u0": "0.10[m/s]"
+      },
+      "status": "PASS",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\models\\case_B_same_downward.mph",
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\models\\case_B_same_downward_20260617_195622.mph",
+      "wall": {
+        "feature": "spf/wallbc1",
+        "BoundaryCondition": "NoSlip",
+        "SlidingWall": "1",
+        "TranslationalVelocityOption": "Manual",
+        "selection": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "selection_binding": "wallbc1 uses COMSOL's existing noneditable explicit selection; verified equal to sel_ring_wall_confirmed [4,5,6,7]",
+        "utr_set": [
+          "0",
+          "0",
+          "-V_ring_test"
+        ]
+      },
+      "flow": {
+        "inlet_feature": "spf/inl1",
+        "inlet_ids": [
+          3
+        ],
+        "outlet_feature": "spf/out1",
+        "outlet_ids": [
+          2
+        ],
+        "U0in": "V_ring_test",
+        "inlet_boundary_direction": "boundary 2 bottom inlet is +z/upward; boundary 3 top inlet is -z/downward"
+      },
+      "stage3_scale_param_cleanup": {
+        "removed": [
+          "U_impact",
+          "g_const",
+          "H_drop"
+        ],
+        "adjusted": [],
+        "reason": "Stage 3 scale-only parameters caused a duplicate global name with the Gravity feature during transient equation compilation."
+      },
+      "outputs": {
+        "summary": {
+          "case": "case_B_same_downward",
+          "w_center_above_final_mean_m_per_s": -0.1002758019457179,
+          "w_center_above_final_max_m_per_s": -0.10003955347883199,
+          "ring_near_abs_w_relative_mean_m_per_s": 0.00013041539482204362,
+          "ring_near_abs_w_relative_p95_m_per_s": 0.00041444732778572746
+        },
+        "images": [
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_B_same_downward_velocity_magnitude_spfU.png",
+            "title": "spf.U",
+            "vmin": 0.0,
+            "vmax": 0.10323421951247402,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_B_same_downward_axial_velocity_w.png",
+            "title": "w",
+            "vmin": -0.10323012155796421,
+            "vmax": 0.0,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_B_same_downward_w_relative_to_ring.png",
+            "title": "w + V_ring_test",
+            "vmin": -0.0032301215579642072,
+            "vmax": 0.1,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_B_same_downward_ring_near_velocity_vectors.png",
+            "title": "velocity vectors",
+            "vmin": 0.0,
+            "vmax": 0.10323421951247402,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_B_same_downward_ring_near_relative_velocity.png",
+            "title": "relative velocity",
+            "vmin": 9.970763967870735e-06,
+            "vmax": 0.1,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          }
+        ],
+        "w_t_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\tables\\case_B_same_downward_center_hole_w_t.csv"
+      }
+    },
+    {
+      "case": {
+        "id": "case_C_opposite_relative",
+        "label": "ring downward, water upward at V_ring_test",
+        "moving_wall": true,
+        "wall_speed": "-V_ring_test",
+        "inlet": [
+          2
+        ],
+        "outlet": [
+          3
+        ],
+        "u0_expr": "V_ring_test",
+        "set_u0": "0.10[m/s]"
+      },
+      "status": "PASS",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\models\\case_C_opposite_relative.mph",
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\models\\case_C_opposite_relative_20260617_195622.mph",
+      "wall": {
+        "feature": "spf/wallbc1",
+        "BoundaryCondition": "NoSlip",
+        "SlidingWall": "1",
+        "TranslationalVelocityOption": "Manual",
+        "selection": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "selection_binding": "wallbc1 uses COMSOL's existing noneditable explicit selection; verified equal to sel_ring_wall_confirmed [4,5,6,7]",
+        "utr_set": [
+          "0",
+          "0",
+          "-V_ring_test"
+        ]
+      },
+      "flow": {
+        "inlet_feature": "spf/inl1",
+        "inlet_ids": [
+          2
+        ],
+        "outlet_feature": "spf/out1",
+        "outlet_ids": [
+          3
+        ],
+        "U0in": "V_ring_test",
+        "inlet_boundary_direction": "boundary 2 bottom inlet is +z/upward; boundary 3 top inlet is -z/downward"
+      },
+      "stage3_scale_param_cleanup": {
+        "removed": [
+          "U_impact",
+          "g_const",
+          "H_drop"
+        ],
+        "adjusted": [],
+        "reason": "Stage 3 scale-only parameters caused a duplicate global name with the Gravity feature during transient equation compilation."
+      },
+      "outputs": {
+        "summary": {
+          "case": "case_C_opposite_relative",
+          "w_center_above_final_mean_m_per_s": 0.19390501275302519,
+          "w_center_above_final_max_m_per_s": 0.4300422796059418,
+          "ring_near_abs_w_relative_mean_m_per_s": 0.12007583790427336,
+          "ring_near_abs_w_relative_p95_m_per_s": 0.3969912823423352
+        },
+        "images": [
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_C_opposite_relative_velocity_magnitude_spfU.png",
+            "title": "spf.U",
+            "vmin": 0.0,
+            "vmax": 0.26574665749539456,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_C_opposite_relative_axial_velocity_w.png",
+            "title": "w",
+            "vmin": -0.0997907716809224,
+            "vmax": 0.234405431434533,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_C_opposite_relative_w_relative_to_ring.png",
+            "title": "w + V_ring_test",
+            "vmin": 0.00020922831907760006,
+            "vmax": 0.334405431434533,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_C_opposite_relative_ring_near_velocity_vectors.png",
+            "title": "velocity vectors",
+            "vmin": 0.0,
+            "vmax": 0.26574665749539456,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          },
+          {
+            "ok": true,
+            "file": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\images\\case_C_opposite_relative_ring_near_relative_velocity.png",
+            "title": "relative velocity",
+            "vmin": 0.02049043748831811,
+            "vmax": 0.35371196925955123,
+            "method": "Python rendering of COMSOL solved field samples near the ring"
+          }
+        ],
+        "w_t_csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\04_moving_ring_model\\relative_velocity_check\\tables\\case_C_opposite_relative_center_hole_w_t.csv"
+      }
+    }
+  ]
+}
+```

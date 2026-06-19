@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage4_2a.py", line 375, in solve_case
+    model.solve()
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 343, in solve
+    node.run()
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\node.py", line 565, in run
+    java.run()
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: The following feature has encountered a problem:
+Messages:
+	The following feature has encountered a problem:
+	- Feature: Compile Equations: Time Dependent (sol1/st1)
+
+	Error in multiphysics compilation.
+
+	Duplicate parameter/variable name.
+	- Variable: g_const
+	- Global scope
+

@@ -1,0 +1,131 @@
+{
+  "run_id": "20260618_171450",
+  "script": {
+    "source": "C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C3_boundary_semantics_audit.py",
+    "target": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage5b3_C3_boundary_semantics_audit.py",
+    "manifest": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\SCRIPT_MANIFEST.md",
+    "sha256": "3db413894b45bed6e8d4b1a30a9c953ef1db40762d2e88f1d4dd91fd0673fbd3"
+  },
+  "results": {
+    "C3-0": {
+      "status": "PASS",
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\reports\\C3_0_C2_result_review.md",
+      "missing": [],
+      "no_c2_best": true,
+      "failed_after_equiv": true,
+      "allow_stage5": "NO"
+    },
+    "C3-1": {
+      "status": "PASS",
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\reports\\C3_1_feature_name_audit.md",
+      "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\tables\\C3_1_feature_name_audit.csv",
+      "formal_two_phase_api_creatable": false,
+      "spf_wall_moving_props_creatable": true
+    },
+    "C3-2": {
+      "status": "FAIL",
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\reports\\C3_2_minimal_moving_wall_test.md",
+      "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\tables\\C3_2_minimal_moving_wall_cases.csv",
+      "model": {
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\models\\ring_fountain_v5B3_C3_minimal_moving_wall_test_20260618_171450.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\models\\ring_fountain_v5B3_C3_minimal_moving_wall_test.mph",
+        "canonical_note": "canonical path already existed and was not overwritten"
+      },
+      "rows": [
+        {
+          "case_id": "C3_2_V_0_T_0p002",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "0[m/s]",
+          "t_end": "0.002[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_0_T_0p005",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "0[m/s]",
+          "t_end": "0.005[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_1em4_T_0p002",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "1e-4[m/s]",
+          "t_end": "0.002[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_1em4_T_0p005",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "1e-4[m/s]",
+          "t_end": "0.005[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_5em4_T_0p002",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "5e-4[m/s]",
+          "t_end": "0.002[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_5em4_T_0p005",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "5e-4[m/s]",
+          "t_end": "0.005[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_1em3_T_0p002",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "1e-3[m/s]",
+          "t_end": "0.002[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        },
+        {
+          "case_id": "C3_2_V_1em3_T_0p005",
+          "model_type": "manual LaminarFlow + LevelSet minimal rectangle",
+          "V": "1e-3[m/s]",
+          "t_end": "0.005[s]",
+          "boundary_feature_type": "spf.Wall",
+          "solve_status": "FAIL",
+          "failure_message": "Could not exclude moving boundaries from the default wall feature, and could not disable it. selection error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Selection is not editable.\r\nMessages:\r\n\tSelection is not editable.\r\n; disable error=Exception:\r\n\tcom.comsol.util.exceptions.FlException: Object cannot be disabled.\r\nMessages:\r\n\tObject cannot be disabled.\r\n\t- Tag: wallbc1\r\n",
+          "case_pass": "FAIL"
+        }
+      ]
+    },
+    "C3-3": {
+      "status": "SKIP",
+      "reason": "C3-2 did not PASS; C3-3 is gated off"
+    },
+    "C3-4": {
+      "status": "SKIP",
+      "reason": "C3-2 and C3-3 did not both PASS; C3-4 is gated off"
+    }
+  },
+  "final": {
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\reports\\5B3_C3_boundary_semantics_audit_final_report.md",
+    "ALLOW_RESUME_STAGE5": "NO",
+    "best_model": "NO"
+  }
+}

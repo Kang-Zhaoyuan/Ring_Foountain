@@ -1,0 +1,6 @@
+[2026-06-17 19:56:27] Loading review model for named selections: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\models\ring_fountain_v3_boundary_review_package.mph
+[2026-06-17 19:56:38] Saved named selection model: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\04_moving_ring_model\models\ring_fountain_v3_boundary_named.mph
+[2026-06-17 19:56:39] Solving case_A_stationary_ring: stationary ring, original upward inflow
+[2026-06-17 19:56:59] Solving case_B_same_downward: ring and water both downward at V_ring_test
+[2026-06-17 19:57:33] Solving case_C_opposite_relative: ring downward, water upward at V_ring_test
+[2026-06-17 19:58:15] Stage 4.2A status: PASS

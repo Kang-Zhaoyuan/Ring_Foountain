@@ -1,0 +1,2 @@
+﻿case_id,t_end,dt,solve_status,failure_message,H_robust_final_minus_H0,interface_quality,pseudo_spike_detected,near_top_flag,Jet2_detected,timestamp_model,model
+D_ext_030,0.030[s],1e-4[s],PASS,,0.0001381276207982532,clear,False,False,NO,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5D_jet2_detection\models\ring_fountain_v5D_D_ext_030_20260619_110135.mph,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5D_jet2_detection\models\ring_fountain_v5D_D_ext_030.mph

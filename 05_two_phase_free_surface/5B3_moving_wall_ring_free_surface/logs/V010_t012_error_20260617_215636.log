@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b2_to_5e.py", line 510, in run_b3_case
+    model.solve()
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\comsol-mcp\.venv\Lib\site-packages\mph\model.py", line 343, in solve
+    node.run()
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\comsol-mcp\.venv\Lib\site-packages\mph\node.py", line 565, in run
+    java.run()
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: The following feature has encountered a problem:
+Messages:
+	The following feature has encountered a problem:
+	- Feature: Time-Dependent Solver 1 (sol1/t1)
+
+	Failed to find consistent initial values.
+
+	Last time step is not converged.
+

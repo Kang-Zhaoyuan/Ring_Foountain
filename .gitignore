@@ -1,0 +1,14 @@
+﻿# Local OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# COMSOL transient lock/temp files
+*.mph.lock
+*.autosave
+*.tmp
+*.temp
+
+# Python caches
+__pycache__/
+*.pyc

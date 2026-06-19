@@ -1,0 +1,16 @@
+[
+  {
+    "case_id": "D_ext_030",
+    "t_end": "0.030[s]",
+    "dt": "1e-4[s]",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "H_robust_final_minus_H0": 0.0001381276207982532,
+    "interface_quality": "clear",
+    "pseudo_spike_detected": false,
+    "near_top_flag": false,
+    "Jet2_detected": "NO",
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5D_jet2_detection\\models\\ring_fountain_v5D_D_ext_030_20260619_110135.mph",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5D_jet2_detection\\models\\ring_fountain_v5D_D_ext_030.mph"
+  }
+]

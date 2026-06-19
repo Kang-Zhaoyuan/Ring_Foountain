@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "type": "TwoPhaseFlowLevelSet",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowLevelSet\r\n"
+    },
+    {
+      "type": "LaminarTwoPhaseFlowLevelSet",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowLevelSet\r\n"
+    },
+    {
+      "type": "TwoPhaseFlowLS",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowLS\r\n"
+    },
+    {
+      "type": "LaminarTwoPhaseFlowLS",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowLS\r\n"
+    },
+    {
+      "type": "TpfLevelSet",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TpfLevelSet\r\n"
+    },
+    {
+      "type": "LevelSet",
+      "status": "ok",
+      "label": "Level Set 1",
+      "created_type": "LevelSet"
+    },
+    {
+      "type": "TwoPhaseFlowPhaseField",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowPhaseField\r\n"
+    },
+    {
+      "type": "LaminarTwoPhaseFlowPhaseField",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowPhaseField\r\n"
+    },
+    {
+      "type": "TwoPhaseFlowPF",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: TwoPhaseFlowPF\r\n"
+    },
+    {
+      "type": "LaminarTwoPhaseFlowPF",
+      "status": "failed",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: LaminarTwoPhaseFlowPF\r\n"
+    },
+    {
+      "type": "PhaseField",
+      "status": "ok",
+      "label": "Phase Field in Fluids 1",
+      "created_type": "PhaseField"
+    },
+    {
+      "type": "LaminarFlow",
+      "status": "ok",
+      "label": "Laminar Flow 1",
+      "created_type": "LaminarFlow"
+    }
+  ],
+  "run_time": "2026-06-17T20:04:28"
+}

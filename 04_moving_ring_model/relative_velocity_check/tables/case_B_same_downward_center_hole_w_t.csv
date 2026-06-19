@@ -1,0 +1,6 @@
+﻿case,inner_solution,time_s,w_center_above_mean_m_per_s,sample_count
+case_B_same_downward,1,0.0,-0.09526292861729999,139
+case_B_same_downward,2,0.005,-0.10010187825755107,139
+case_B_same_downward,3,0.01,-0.10016395294049614,139
+case_B_same_downward,4,0.015,-0.10022260561375668,139
+case_B_same_downward,5,0.02,-0.1002758019457179,139

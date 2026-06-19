@@ -1,0 +1,86 @@
+IYPT 2026 第3题：环形喷泉 文献参考书 v3.0 - 页码清单
+合订本总页数：418
+源 PDF 总页数：399
+统一页码标记：每页右下角 Book p. XXX
+3.0 修改：Why_Dropping_a_Stone_Makes_a_Jet.pdf 原扫描页替换为经公式/特殊符号核查的 OCR 重建文字版。
+核查结果：该扫描新闻稿正文无独立数学公式；已校正特殊符号、单位、专名、文献信息。
+
+01. Splash (fluid mechanics)
+    原文件：Splash_(fluid_mechanics).pdf
+    原PDF页数：2
+    分隔页：7
+    正文范围：8-9
+
+02. Water entry and related problems
+    原文件：Water_entry_and_related_problems.pdf
+    原PDF页数：155
+    分隔页：10
+    正文范围：11-165
+
+03. The water entry of slender axisymmetric bodies
+    原文件：The_water_entry_of_slender_axisymmetric_bodies.pdf
+    原PDF页数：38
+    分隔页：166
+    正文范围：167-204
+
+04. Water Entry of Projectiles
+    原文件：Water_Entry_of_Projectiles.pdf
+    原PDF页数：24
+    分隔页：205
+    正文范围：206-229
+
+05. Water entry of cups and disks
+    原文件：water-entry-of-cups-and-disks.pdf
+    原PDF页数：24
+    分隔页：230
+    正文范围：231-254
+
+06. Controlled impact of a disk on a water surface: cavity dynamics
+    原文件：Controlled_impact_of_a_disk_on_a_water_surface_cavity_dynamics.pdf
+    原PDF页数：29
+    分隔页：255
+    正文范围：256-284
+
+07. Splash wave and crown breakup after disc impact on a liquid surface
+    原文件：Splash_wave_and_crown_breakup_after_disc__impact_on_a_liquid_surface.pdf
+    原PDF页数：28
+    分隔页：285
+    正文范围：286-313
+
+08. Dynamics of transient cavities
+    原文件：Dynamics_of_transient_cavities.pdf
+    原PDF页数：19
+    分隔页：314
+    正文范围：315-333
+
+09. Why Dropping a Stone Makes a Jet
+    原文件：Why_Dropping_a_Stone_Makes_a_Jet.pdf
+    原PDF页数：5
+    分隔页：334
+    正文范围：335-339
+    3.0处理：替换为 OCR 可复制文字重建版；无独立数学公式；已校正特殊符号。
+
+10. Dynamics and universal scaling of Worthington jets in the cavity-free regime
+    原文件：Dynamics_and_universal_scaling_of_Worthington_jets_in_the_cavity-free_regime.pdf
+    原PDF页数：29
+    分隔页：340
+    正文范围：341-369
+
+11. Generation and breakup of Worthington jets after cavity collapse. Part 1. Jet formation
+    原文件：Generation_and_breakup_of_Worthington_jets_after_cavity_collapse._Part_1._Jet_formation.pdf
+    原PDF页数：38
+    分隔页：370
+    正文范围：371-408
+
+12. High-Speed Jet Formation after Solid Object Impact
+    原文件：High-Speed_Jet_Formation_after_Solid_Object_Impact.pdf
+    原PDF页数：4
+    分隔页：409
+    正文范围：410-413
+
+13. Making a splash with water repellency
+    原文件：Making_a_splash_with_water_repellency.pdf
+    原PDF页数：4
+    分隔页：414
+    正文范围：415-418
+

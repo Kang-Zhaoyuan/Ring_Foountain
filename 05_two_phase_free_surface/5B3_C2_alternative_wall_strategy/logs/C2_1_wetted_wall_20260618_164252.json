@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\C2_1_wetted_wall_report.md",
+  "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\tables\\C2_1_wetted_wall_cases.csv",
+  "rows": [
+    {
+      "case_id": "C2_1_not_run_features_unavailable",
+      "route": "Wetted/Interior",
+      "boundary_set": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "V_test": 0,
+      "t_end": "",
+      "solve_status": "FAIL",
+      "failure_message": "C2-0 did not find creatable Wetted Wall or Interior Wetted Wall feature types.",
+      "wall_overlap_status": "not_tested",
+      "notes": "C2-1 failed by availability gate; proceeding to C2-2."
+    }
+  ],
+  "best": null,
+  "ALLOW_RESUME_STAGE5": "NO"
+}

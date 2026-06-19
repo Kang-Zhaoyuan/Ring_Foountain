@@ -1,0 +1,2175 @@
+{
+  "run_id": "20260618_174704",
+  "script": {
+    "target": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage5b3_GUI_auto_seed.py",
+    "local_copy": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\scripts\\ring_fountain_stage5b3_GUI_auto_seed.py",
+    "manifest": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\SCRIPT_MANIFEST.md"
+  },
+  "results": {
+    "A": {
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\reports\\A_previous_stage_review.md",
+      "rows": [
+        {
+          "path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\5B3_C2_alternative_wall_strategy_final_report.md",
+          "exists": true,
+          "contains_ALLOW_RESUME_STAGE5_NO": true,
+          "contains_stage5_gate": true,
+          "bytes": 1608
+        },
+        {
+          "path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C3_boundary_semantics_audit\\reports\\5B3_C3_boundary_semantics_audit_final_report.md",
+          "exists": true,
+          "contains_ALLOW_RESUME_STAGE5_NO": true,
+          "contains_stage5_gate": true,
+          "bytes": 2398
+        },
+        {
+          "path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\README.md",
+          "exists": true,
+          "contains_ALLOW_RESUME_STAGE5_NO": true,
+          "contains_stage5_gate": true,
+          "bytes": 5556
+        },
+        {
+          "path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\CHANGELOG.md",
+          "exists": true,
+          "contains_ALLOW_RESUME_STAGE5_NO": true,
+          "contains_stage5_gate": true,
+          "bytes": 2371
+        },
+        {
+          "path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\SCRIPT_MANIFEST.md",
+          "exists": true,
+          "contains_ALLOW_RESUME_STAGE5_NO": false,
+          "contains_stage5_gate": true,
+          "bytes": 4499
+        }
+      ]
+    },
+    "B": {
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\reports\\B_local_installation_search.md",
+      "rows": [
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\simply_supported_composite_laminate_variables.txt",
+          "snippet": "2:SXX_lw lshell.SXX/q0*(th/a)^2 \"In-plane normal stress (SXX), normalized\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\simply_supported_composite_laminate_variables.txt",
+          "snippet": "3:SZZ_lw lshell.SZZ/q0 \"Transverse normal stress (SZZ), normalized\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\simply_supported_composite_laminate_variables.txt",
+          "snippet": "4:SYZ_lw lshell.SYZ/q0*th/a \"Transverse shear stress (SYZ), normalized\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\simply_supported_composite_laminate_variables.txt",
+          "snippet": "5:SXZ_lw lshell.SXZ/q0*th/a \"Transverse shear stress (SXZ), normalized\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Aeroacoustics_and_Noise\\helmholtz_resonator_with_flow_parameters.txt",
+          "snippet": "12:Lsource 5[cm] \"Source domain length\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Aeroacoustics_and_Noise\\helmholtz_resonator_with_flow_cgns_parameters.txt",
+          "snippet": "14:Lsource 5[cm] \"Source domain length\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt",
+          "snippet": "1:mean(mean(shell.llem1.lsf1.s_f)) 1 \"Tsai-Wu orthotropic safety factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt",
+          "snippet": "2:mean(mean(shell.llem1.lsf2.s_f)) 1 \"Hoffman safety factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt",
+          "snippet": "3:mean(mean(shell.llem1.lsf3.s_f)) 1 \"Tsai-Hill safety factor, plane stress\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt",
+          "snippet": "4:mean(mean(shell.llem1.lsf4.s_f)) 1 \"Azzi-Tsai-Hill safety factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt",
+          "snippet": "5:mean(mean(shell.llem1.lsf5.s_f)) 1 \"Norris safety factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_safety_factors.txt",
+          "snippet": "6:mean(mean(shell.llem1.lsf6.s_f)) 1 \"Tsai-Wu anisotropic safety factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt",
+          "snippet": "1:mean(mean(shell.llem1.lsf1.f_i)) 1 \"Tsai-Wu orthotropic failure index\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt",
+          "snippet": "2:mean(mean(shell.llem1.lsf2.f_i)) 1 \"Hoffman failure index\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt",
+          "snippet": "3:mean(mean(shell.llem1.lsf3.f_i)) 1 \"Tsai-Hill failure index, plane stress\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt",
+          "snippet": "4:mean(mean(shell.llem1.lsf4.f_i)) 1 \"Azzi-Tsai-Hill failure index\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt",
+          "snippet": "5:mean(mean(shell.llem1.lsf5.f_i)) 1 \"Norris failure index\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Verification_Examples\\failure_prediction_in_a_laminated_composite_shell_failure_indices.txt",
+          "snippet": "6:mean(mean(shell.llem1.lsf6.f_i)) 1 \"Tsai-Wu anisotropic failure index\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\thermal_runaway_propagation_physics_parameters.txt",
+          "snippet": "2:n_batt nx_batt*ny_batt \"Number of battery cells in pack\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\thermal_runaway_propagation_physics_parameters.txt",
+          "snippet": "3:I_1C_pack Q_cell*ny_batt/1[h] \"Total 1C pack current (when applied at terminals)\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_pack_cooling_physics_parameters.txt",
+          "snippet": "2:s_channels 4[mm] \"Channel width\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_pack_cooling_geom_sequence_parameters.txt",
+          "snippet": "1:N_channels 4 \"Number of channels in cooling plate\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_pack_cooling_geom_sequence_parameters.txt",
+          "snippet": "2:N_cells 16 \"Number of cells in pack (equally divisible by 4)\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_pack_cooling_geom_sequence_parameters.txt",
+          "snippet": "5:s_ch_ch D_can/N_channels \"Channel geometry parameter\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_physics_parameters.txt",
+          "snippet": "21:eps_cc_neg 0.1 \"Volume fraction of negative current current collectors foils in tab bundle\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_physics_parameters.txt",
+          "snippet": "22:eps_cc_pos 0.1 \"Volume fraction of positive current current collectors foils in tab bundle\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_geom_sequence_parameters.txt",
+          "snippet": "7:H_foils 3[mm] \"Current collector offset from can\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_geom_sequence_parameters.txt",
+          "snippet": "8:W_foils 6[cm] \"Width of foil tab bundle\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_geom_sequence_parameters.txt",
+          "snippet": "9:foils_offset_x 6[cm] \"Offset of foil bundle from can\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_geom_sequence_parameters.txt",
+          "snippet": "14:H_jelly H_can-s_can*2-s_spacer-H_cc_plate-H_foils \"Jelly roll height\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_geom_sequence_parameters.txt",
+          "snippet": "15:W_cc_plate W_foils+foils_offset_x-cc_plate_offset_x \"Width of current collector plate\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\prismatic_battery_cooling_geom_sequence_parameters.txt",
+          "snippet": "17:R_terminal 8[mm] \"Radius of terminals\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Thermal_Management\\li_battery_thermal_parameters.txt",
+          "snippet": "44:t_pulse 300[s] Pulse time"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "1:FI_max_l1 intop1(lshell.atxd1(0*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, bottom interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "2:FI_max_l2 intop1(lshell.atxd1(1*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, layer 1-layer 2 interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "3:FI_max_l3 intop1(lshell.atxd1(2*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, layer 2-layer 3 interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "4:FI_max_l4 intop1(lshell.atxd1(3*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, layer 3-layer 4 interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "5:FI_max_l5 intop1(lshell.atxd1(4*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, layer 4-layer 5 interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "6:FI_max_l6 intop1(lshell.atxd1(5*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, layer 5-layer 6 interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\stacking_sequence_optimization_variables.txt",
+          "snippet": "7:FI_max_l7 intop1(lshell.atxd1(6*d_layer,lshell.lemm1.sf1.f_i)^pExp) \"Measure of maximum failure index, top interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\composite_multiscale_variables.txt",
+          "snippet": "18:eXX comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eXX)) \"Elastic strain, XX-component from layered shell interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\composite_multiscale_variables.txt",
+          "snippet": "19:eYY comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eYY)) \"Elastic strain, YY-component from layered shell interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\composite_multiscale_variables.txt",
+          "snippet": "20:eZZ comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eZZ)) \"Elastic strain, ZZ-component from layered shell interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\composite_multiscale_variables.txt",
+          "snippet": "21:eXY comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eXY)) \"Elastic strain, XY-component from layered shell interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\composite_multiscale_variables.txt",
+          "snippet": "22:eYZ comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eYZ)) \"Elastic strain, YZ-component from layered shell interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Composite_Materials_Module\\Tutorials\\composite_multiscale_variables.txt",
+          "snippet": "23:eXZ comp2.at2(X0,Y0,Z0,comp2.lshell.atxd1(xd,comp2.lshell.eXZ)) \"Elastic strain, XZ-component from layered shell interface\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "41:VanderWaalsArea_[0]_VanderWaalsArea"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "42:VanderWaalsVolume_[0]_VanderWaalsVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "60:WilsonVolume_[0]_WilsonVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "99:VanderWaalsArea_[222300]_VanderWaalsArea"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "100:VanderWaalsVolume_[1.391e-5]_VanderWaalsVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "118:WilsonVolume_[0]_WilsonVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "203:  <VanderWaalsArea Comment=\"User defined\">222300</VanderWaalsArea>"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Tutorials\\dissociation_thermo_system.xml",
+          "snippet": "204:  <VanderWaalsVolume Comment=\"User defined\">1.391e-05</VanderWaalsVolume>"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\General_Corrosion\\localized_corrosion_ls_variables.txt",
+          "snippet": "4:sigmae sigma*ls.Vf1+0.1[S/m]*ls.Vf2 \"Electrolyte conductivity\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\General_Corrosion\\localized_corrosion_ls_microstructure.txt",
+          "snippet": "1:% Model:              localized_corrosion_ls_microstructure.mph"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\General_Corrosion\\biodegradation_mg_stent_vessel_variables.txt",
+          "snippet": "3:epsl epsl_blood*max(1-phils,1e-3) \"Plasma volume fraction\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\General_Corrosion\\biodegradation_mg_stent_tissue_stent_variables.txt",
+          "snippet": "2:epsl epsl_tissue*max(1-phils,1e-3) \"Plasma volume fraction\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\ACDC_Module\\Tutorials,_Cables\\submarine_cable_f_geom_parameters.txt",
+          "snippet": "6:Lsec CPcab*Nper \"Length of cable section included in model\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\ACDC_Module\\Tutorials,_Cables\\submarine_cable_f_geom_parameters.txt",
+          "snippet": "7:Tsec 360[deg]*Tenab*Lsec/LLpha \"Twist angle of cable section included in model\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\ACDC_Module\\Tutorials,_Cables\\submarine_cable_b_geom_parameters.txt",
+          "snippet": "4:Lsec1 1/3 \"Relative length cross bonding section 1\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\ACDC_Module\\Tutorials,_Cables\\submarine_cable_b_geom_parameters.txt",
+          "snippet": "5:Lsec2 1-Lsec1-Lsec3 \"Relative length cross bonding section 2\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\ACDC_Module\\Tutorials,_Cables\\submarine_cable_b_geom_parameters.txt",
+          "snippet": "6:Lsec3 1/3 \"Relative length cross bonding section 3\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\Galvanic_Corrosion\\under_deposit_corrosion_variables.txt",
+          "snippet": "6:u_corprod vn_corprod*ls.intnormx*step1(0.6-phils) \"Corrosion product velocity, x-component\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\Galvanic_Corrosion\\under_deposit_corrosion_variables.txt",
+          "snippet": "7:v_corprod max(vn_corprod*ls.intnormy+genext1(cd.vn*cd.ny),eps)*step1(0.6-phils) \"Corrosion product velocity, y-component\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\distillation_column_parameters.txt",
+          "snippet": "15:Ls Lr+F \"Liquid rate stripping\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\distillation_column_parameters.txt",
+          "snippet": "25:uLs Ls*0.022414[m^3/mol]/A \"Liquid velocity stripping\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "41:VanderWaalsArea_[0]_VanderWaalsArea"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "42:VanderWaalsVolume_[0]_VanderWaalsVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "60:WilsonVolume_[0]_WilsonVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "99:VanderWaalsArea_[222300]_VanderWaalsArea"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "100:VanderWaalsVolume_[1.391e-5]_VanderWaalsVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "118:WilsonVolume_[0]_WilsonVolume"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "203:  <VanderWaalsArea Comment=\"User defined\">222300</VanderWaalsArea>"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Thermodynamics\\dissociation_thermo_system.xml",
+          "snippet": "204:  <VanderWaalsVolume Comment=\"User defined\">1.391e-05</VanderWaalsVolume>"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Lithium-Ion_Batteries,_Performance\\particle_size_distribution_variables.txt",
+          "snippet": "6:i_app -10[A/m^2]*step1((t-t_pulse)/1[s]) \"Applied current density\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Lithium-Ion_Batteries,_Performance\\particle_size_distribution_parameters.txt",
+          "snippet": "14:t_pulse 30[min] \"Pulse time\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Lithium-Ion_Batteries,_Performance\\li_battery_sigr_hysteresis_variables.txt",
+          "snippet": "3:U_offset (Eeq_Si_upper(x_Si)-Eeq_Si_lower(x_Si))/2 \"Offset between upper and lower equilibrium potentials\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_particulate_filter_variables.txt",
+          "snippet": "1:rho1 (p_amb+p1)*M_gas/(R_const*T1) Gas density, inlet channels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_particulate_filter_variables.txt",
+          "snippet": "2:rho2 (p_amb+p2)*M_gas/(R_const*T2) Gas density, outlet channels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_particulate_filter_variables.txt",
+          "snippet": "3:v1 -k_l*p1X Flow velocity, inlet channels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_particulate_filter_variables.txt",
+          "snippet": "4:v2 -k_l*p2X Flow velocity, outlet channels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_filter_parameters.txt",
+          "snippet": "20:kappa_m 1e-11[m^2] Permeability in filter walls"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_filter_parameters.txt",
+          "snippet": "28:Cp_m 1120[J/kg/K] Mixture heat capacity, filter walls"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_filter_parameters.txt",
+          "snippet": "30:k_m 0.85[W/m/K] Mixture thermal conductivity, filter walls"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Chemical_Reaction_Engineering_Module\\Reactors_with_Porous_Catalysts\\diesel_filter_parameters.txt",
+          "snippet": "32:rho_m 1400[kg/m^3] Mixture density, filter walls"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "6:PulseWidth 2[m] Width of load pulse"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "7:PulseSpacing 20[m] Distance between load pulses"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "8:LoadSpeed 20[m/s] Velocity of the load pulse"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "10:Tstep2 PulseWidth/LoadSpeed/2 Time step limit based on load velocity"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "12:Tend TotLength/LoadSpeed Time when first load pulse reaches beam end"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "13:ElemPerSpan max(ceil(SpanWidth/PulseWidth*2),20) Number of elements along a span"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\COMSOL_Multiphysics\\Structural_Mechanics\\traveling_load_parameters.txt",
+          "snippet": "15:CriticalSpeed f0*2*SpanWidth Estimated critical speed"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Lithium-Ion_Batteries,_Performance\\lib_power_losses_parameters.txt",
+          "snippet": "1:t_pulse 10[s] \"Pulse time\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Lithium-Ion_Batteries,_Performance\\lib_power_losses_parameters.txt",
+          "snippet": "2:t_rest 20[s] \"Rest time between pulses\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Battery_Design_Module\\Lithium-Ion_Batteries,_Performance\\lib_power_losses_parameters.txt",
+          "snippet": "3:I_pulse 10[A] \"Cell current during pulse\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\CAD_Import_Module\\Tutorial_Examples\\loudspeaker_enclosure.step",
+          "snippet": "4: * from STEP Tools, Inc. (www.steptools.com) "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Single-Phase_Flow\\air_filter_parameters_1.txt",
+          "snippet": "2:N_h 3 \"Horizontal number of cells\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Single-Phase_Flow\\air_filter_parameters_1.txt",
+          "snippet": "3:N_v N_h \"Vertical number of cells\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\Cathodic_Protection\\cp_with_anode_deformation_variables.txt",
+          "snippet": "2:epsl max(min(phils,1),1e-3) \"Electrolyte volume fraction\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\Cathodic_Protection\\cp_with_anode_deformation_variables.txt",
+          "snippet": "3:phils_init min(1,2*sphavg(h_interface,dom==1,8)) \"Initial level set variable expression\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Corrosion_Module\\Cathodic_Protection\\cp_with_anode_deformation_parameters.txt",
+          "snippet": "6:h_interface 1e-2[m] \"Level set interface thickness\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Design_Module\\Tutorial_Examples\\loudspeaker_enclosure.step",
+          "snippet": "4: * from STEP Tools, Inc. (www.steptools.com) "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Wave_Optics_Module\\Gratings_and_Metamaterials\\metasurface_beam_deflector_parameters.txt",
+          "snippet": "9:N 6 \"Number of unit cells\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Design_Module\\Tutorial_Examples\\ladder_frame_geom.step",
+          "snippet": "4: * from STEP Tools, Inc. (www.steptools.com) "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\pem_electrolyzer_parameters.txt",
+          "snippet": "2:N_ch_full_cell 23 \"Number of electrodes channels, full cell\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\pem_electrolyzer_geom_sequence_parameters.txt",
+          "snippet": "1:N_ch 23 \"Number of electrode channels\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Tutorials,_Pressure_Acoustics\\gaussian_pulse_perfectly_matched_layers_parameters.txt",
+          "snippet": "6:alpha log(2)/9 \"Gaussian pulse width\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Tutorials,_Pressure_Acoustics\\gaussian_pulse_perfectly_matched_layers_parameters.txt",
+          "snippet": "7:beta 0.04 \"Gaussian pulse velocity factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Wave_Optics_Module\\Couplers_Filters_and_Mirrors\\time_to_frequency_fft_distributed_bragg_reflector_parameters.txt",
+          "snippet": "21:Td 1/(2*f0) \"Pulse duration\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Tutorials,_Pressure_Acoustics\\gaussian_pulse_absorbing_layers_parameters.txt",
+          "snippet": "6:alpha log(2)/9 \"Gaussian pulse width\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Tutorials,_Pressure_Acoustics\\gaussian_pulse_absorbing_layers_parameters.txt",
+          "snippet": "7:beta 0.04 \"Gaussian pulse velocity factor\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Wave_Optics_Module\\Couplers_Filters_and_Mirrors\\sesam_laser_heating_beam_parameters.txt",
+          "snippet": "1:lda0 1.03[um] \"Pulse Wavelength\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Wave_Optics_Module\\Couplers_Filters_and_Mirrors\\sesam_laser_heating_beam_parameters.txt",
+          "snippet": "3:Rrep \"1[MHz]\" \"Pulse repetition rate\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Wave_Optics_Module\\Couplers_Filters_and_Mirrors\\sesam_laser_heating_beam_parameters.txt",
+          "snippet": "6:tau_p 1[ps] \"Pulse duration\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Design_Module\\Tutorial_Examples\\bracket_import_optimization_geom.step",
+          "snippet": "4: * from STEP Tools, Inc. (www.steptools.com) "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Uncertainty_Quantification_Module\\Tutorials\\bracket_uncertainty_quantification_parameters.txt",
+          "snippet": "5:YC -ls+r2 \"Y-coordinate of hole center\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Uncertainty_Quantification_Module\\Tutorials\\bracket_uncertainty_quantification_geom_sequence_parameters.txt",
+          "snippet": "8:ls 0.35[m] \"Side length\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Nonlinear_Acoustics\\thermoacoustic_engine_heat_pump_parameters.txt",
+          "snippet": "11:f0 c/(4*tube_L) \"Frequency of initiation pulse\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\applications\\Acoustics_Module\\Building_and_Room_Acoustics\\wave_based_room_admittance_wall.txt",
+          "snippet": "1:% Model:              materials_data.mph"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\connectserver.m",
+          "snippet": "8:% See also: mphstart"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\Contents.m",
+          "snippet": "9:%   mmmodelinfo   - Model info for models stored in Model Manager or as files"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\cyclic.m",
+          "snippet": "7:%   See also: colortable"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\disco.m",
+          "snippet": "7:%   See also: colortable"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\discolight.m",
+          "snippet": "7:%   See also: colortable"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\grayprint.m",
+          "snippet": "7:%   See also: colortable"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "397:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "481:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "727:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "761:        \"type\": \"choices=cellstr(char(model.param.get(paramname)))\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "989:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "1031:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "1159:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "1165:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "1381:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "1443:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "1519:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2163:        \"type\": \"choices={'flnullorth','flspnull','explicitsp','explicitorth','auto'}\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2339:        \"purpose\": \"Minimum distance between coordinates in curves (in pixels)\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2464:        \"name\": \"Edgelabels\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2467:        \"purpose\": \"Edge labels\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2470:        \"name\": \"Edgelabelscolor\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2473:        \"purpose\": \"Edge labels color\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2476:        \"name\": \"edgelabelsfontsize\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2479:        \"purpose\": \"Edge labels font size\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2500:        \"name\": \"Facelabels\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2503:        \"purpose\": \"Face labels\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2506:        \"name\": \"Facelabelscolor\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2509:        \"purpose\": \"Face labels color\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2512:        \"name\": \"facelabelsfontsize\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2515:        \"purpose\": \"Face labels font size\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2536:        \"name\": \"Vertexlabels\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2539:        \"purpose\": \"Vertex labels\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2548:        \"name\": \"Vertexlabelscolor\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2551:        \"purpose\": \"Vertex labels color\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2554:        \"name\": \"vertexlabelsfontsize\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2557:        \"purpose\": \"Vertex labels font size\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2732:        \"type\": \"cellstr\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2784:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2832:        \"type\": [[\"char\"], [\"cellstr\"]],"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2900:        \"name\": \"edgelabels\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2903:        \"purpose\": \"Edge labels\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2906:        \"name\": \"edgelabelscolor\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2909:        \"purpose\": \"Edge labels color\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2924:        \"name\": \"facelabels\","
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\functionSignatures.json",
+          "snippet": "2927:        \"purpose\": \"Face labels\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\grayscale.m",
+          "snippet": "7:%   See also: colortable"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\guinavigatorv2utils.m",
+          "snippet": "1:% Model Navigator utils"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmfindnewest.m",
+          "snippet": "2:% Find newer versions of models stored in Model Manager"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmgetalltags.m",
+          "snippet": "8:% See also: mmgetbranch, mmsearch"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmgetbranch.m",
+          "snippet": "8:% See also: mmmodelinfo, mmsave"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmgetcommit.m",
+          "snippet": "7:% [cm, msg] = MMGETCOMMIT(BRANCH, ITEM) also return the commit message."
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmgetcommit.m",
+          "snippet": "18:% See also: mmgetcommits, mmsearch, mmgetbranch"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmmodelinfo.m",
+          "snippet": "2:% MMMODELINFO Get model information for models stored in Model Manager or as files"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmmodelinfo.m",
+          "snippet": "15:% See also: mphgetbranch, mmsave, mphtags"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmsave.m",
+          "snippet": "17:% See also: mmgetbranch, mmmodelinfo"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmsearch.m",
+          "snippet": "49:% % Example: Search for models where the title is \"busbar\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmsearch.m",
+          "snippet": "53:% % Example: Search for models having a node of type analytic and a savetype of \"regular\""
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmsearch.m",
+          "snippet": "56:% See also: mmgetbranch"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmsearch.m",
+          "snippet": "107:else"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mmsearch.m",
+          "snippet": "156:    else"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphaddplotdata.m",
+          "snippet": "16:%   normaldata   matrix                            Data for normals (low level)"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphapplicationlibraries.m",
+          "snippet": "8:%   Models that are specific to Livelink for MATLAB also contains the "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphcd.m",
+          "snippet": "7:%   See also: mphopen, mphload, mphsave"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphcomponentinfo.m",
+          "snippet": "27:%   See also: mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphdataset.m",
+          "snippet": "21:%   See also: mphdatasetinfo, mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphdatasetinfo.m",
+          "snippet": "21:%   See also: mphdataset, mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mpheval.m",
+          "snippet": "127:%   See also: mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix,"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphevalglobalmatrix.m",
+          "snippet": "37:%   See also: mpheval, mphevalpoint, mphevalpointmatrix, mphglobal, mphint2, "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphevalpoint.m",
+          "snippet": "85:%   See also: mpheval, mphevalglobalmatrix, mphevalpointmatrix, mphglobal, "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphevalpointmatrix.m",
+          "snippet": "21:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphglobal, mphint2,"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphevaluate.m",
+          "snippet": "2:% MPHEVALUATE Evaluate parameter expressions (constants) in models"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphevaluate.m",
+          "snippet": "31:%     % Evaluate Temp in degrees Celsius and its definition in the model:"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphevaluate.m",
+          "snippet": "36:%   See also: mphgetexpressions, mphglobal, mphinterp"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "16:%   domainlabels       'on'|{'off'}        Show domain labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "17:%   domainlabelscolor  char|{'k'}          Color for domain labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "19:%   edgelabels         'on'|{'off'}        Show edge labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "20:%   edgelabelscolor    char {'k'}          Color for edge labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "27:%   facelabels         'on' | {'off'}      Show face labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "28:%   facelabelscolor    char | {'k'}        Color for face labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "33:%   vertexlabels       'on' | {'off'}      Show vertex labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "34:%   vertexlabelscolor  char | {'r'}        Color for vertex labels"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "51:%     % Plot the model geometry with face labels:"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "52:%     mphgeom(model,'geom1','facelabels','on','facelabelscolor','r');"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeom.m",
+          "snippet": "61:%   See also: mphmesh, mphviewselection"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgeominfo.m",
+          "snippet": "34:% See also: mphcomponentinfo, mphmeshstats"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetadj.m",
+          "snippet": "28:%   See also: mphgetcoords, mphselectball, mphselectbox, mphselectcoords, mphmeasure"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetcoords.m",
+          "snippet": "24:%   See also: mphgetadj, mphselectbox, mphselectcoords"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetexpressions.m",
+          "snippet": "17:%   See also: mphevaluate, mphgetproperties, mphgetselection, mphmodel,"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetfield.m",
+          "snippet": "7:%   See also: mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetframe.m",
+          "snippet": "7:%   See also: mphcomponentinfo, mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetphysicsparam.m",
+          "snippet": "17:%   See also: mphnavigator, mphgetphysics"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetode.m",
+          "snippet": "8:%   See also: mphgetexpressions"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetpair.m",
+          "snippet": "8:%   See also: mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetphysics.m",
+          "snippet": "11:% See also: mphnavigator, mphgetphysicsparam"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetmethods.m",
+          "snippet": "18:%   showall        {'off'} | 'on'   Show all methods (e.g. also 'wait')"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetmethods.m",
+          "snippet": "25:%   See also: mphgetproperties, mphgetmodel"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetmodelnode.m",
+          "snippet": "9:%   See also: mphnavigator"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetproperties.m",
+          "snippet": "7:%   [STR, ALLOWED] = MPHGETPROPERTIES(MODELNODE) also returns the structure"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetproperties.m",
+          "snippet": "34:%   See also: mphgetproperties, mphgetselection, mphmodel, mphnavigator,"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetselection.m",
+          "snippet": "32:%   See also: mphgetexpressions, mphgetproperties, mphmodel, mphnavigator, mphsearch"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgetu.m",
+          "snippet": "73:%   See also: mphsolinfo"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphgrain.m",
+          "snippet": "34:%   See also: mphparticle, mpheval, mphevalpoint, mphint2, mphinterp"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphglobal.m",
+          "snippet": "8:%   [D1,...,DN,UNIT] = MPHGLOBAL(MODEL,{E1,...,EN},...) also returns the"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphglobal.m",
+          "snippet": "54:%     % Evaluate the maximum temperature in the model in degrees Celsius"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphglobal.m",
+          "snippet": "85:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix,"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphimage2geom.m",
+          "snippet": "18:%                                         (in square pixels)"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphimage2geom.m",
+          "snippet": "20:%                                         coordinates in curves (in pixels)"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphimage2geom.m",
+          "snippet": "25:%   scale       Value | {1}               Scale factor from pixels to "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphinputmatrix.m",
+          "snippet": "32:%   There is also the possibility to include the constraint force Jacobian "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphinputmatrix.m",
+          "snippet": "49:%     g.prop('ShapeProperty').set('order', 1).set('boundaryFlux', false);"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphinputmatrix.m",
+          "snippet": "80:%   See also: mphmatrix, mphxmeshinfo"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphint2.m",
+          "snippet": "5:%   integrals of the string expressions E1,...,EN and returns the result"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphint2.m",
+          "snippet": "11:%   [V1,...,VN,UNIT] = MPHINT2(MODEL,{E1,...,EN},EDIM,...) also returns the"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphint2.m",
+          "snippet": "58:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix, "
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphinterp.m",
+          "snippet": "144:%   See also: mpheval, mphevalglobalmatrix, mphevalpoint, mphevalpointmatrix,"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphinterpolationfile.m",
+          "snippet": "35:%   See also:  mphquad2tri, mphreadstl, mphsurf, mphwritestl"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphlaunch.m",
+          "snippet": "13:%   'ModelTag' in the server. This can also be done using this syntax:"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphlaunch.m",
+          "snippet": "31:%   See also: mphopen, mphload, mphtags"
+        },
+        {
+          "source": "rg",
+          "path": "D",
+          "line": "\\COMSOL64\\Multiphysics\\mli\\mphload.m",
+          "snippet": "25:%   [MODEL, FILENAMELOADED] = MPHLOAD(FILENAME,...) also returns the full"
+        },
+        {
+          "source": "application_model",
+          "path": "D:\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\capillary_filling_ls.mph",
+          "exists": true,
+          "purpose": "official Level Set two-phase application-library reference model"
+        },
+        {
+          "source": "application_model",
+          "path": "D:\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\rising_bubble_2daxi.mph",
+          "exists": true,
+          "purpose": "official Level Set two-phase application-library reference model"
+        },
+        {
+          "source": "application_model",
+          "path": "D:\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\inkjet_nozzle_ls.mph",
+          "exists": true,
+          "purpose": "official Level Set two-phase application-library reference model"
+        },
+        {
+          "source": "application_model",
+          "path": "D:\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\dam_break_column_ls.mph",
+          "exists": true,
+          "purpose": "official Level Set two-phase application-library reference model"
+        }
+      ]
+    },
+    "C": {
+      "status": "PASS",
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\reports\\C_api_seed_attempt.md",
+      "rows": [
+        {
+          "case_id": "Vwall_0",
+          "Vwall": "0[m/s]",
+          "tlist": "range(0,1e-4,0.002)",
+          "solve_status": "PASS",
+          "failure_message": ""
+        },
+        {
+          "case_id": "Vwall_1e-4",
+          "Vwall": "1e-4[m/s]",
+          "tlist": "range(0,1e-4,0.002)",
+          "solve_status": "PASS",
+          "failure_message": ""
+        }
+      ],
+      "metadata": {
+        "component_dimension": "2D axisymmetric",
+        "geometry": "rectangle r=0..20 mm, z=-10..20 mm",
+        "boundaries": {
+          "all": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "axis": [
+            1
+          ],
+          "bottom_wall": [
+            2
+          ],
+          "top_open": [
+            3
+          ],
+          "right_moving_wetted_wall": [
+            4
+          ]
+        },
+        "physics": [
+          "spf",
+          "ls"
+        ],
+        "multiphysics": [
+          "tpf1",
+          "ww1"
+        ],
+        "ww1_properties": [
+          "BoundaryCondition",
+          "usePorousSlip",
+          "SpecifyContactAngle",
+          "thetaw",
+          "surfaceE1",
+          "surfaceE2",
+          "TranslationalVelocityOption",
+          "utr",
+          "NavierSlip",
+          "beta",
+          "beta_factor",
+          "tau_ref",
+          "m",
+          "IncludeUtrInNavierSlipForce",
+          "tau_y",
+          "k1",
+          "k2",
+          "constraintOptions",
+          "constraintType",
+          "constraintMethod",
+          "Fluid_physics",
+          "Mathematics_physics",
+          "StudyStep",
+          "Fluid_PhysicalModelProperty_SwirlFlow",
+          "Fluid_TurbulenceModelProperty_TurbulenceModelType",
+          "Fluid_TurbulenceModelProperty_TurbulenceModel",
+          "Fluid_TurbulenceModelProperty_WallTreatment",
+          "Fluid_PhysicalModelProperty_EnablePorousMediaDomains",
+          "Fluid_showDependencies"
+        ],
+        "tpf1_properties_subset": [
+          "rho1",
+          "mu1",
+          "rho2",
+          "mu2",
+          "SurfaceTensionCoefficient",
+          "sigma",
+          "Fluid_physics",
+          "Mathematics_physics"
+        ]
+      },
+      "reference": {
+        "status": "PASS",
+        "source_model": "D:\\COMSOL64\\Multiphysics\\applications\\CFD_Module\\Multiphase_Flow\\capillary_filling_ls.mph",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\exports\\reference_capillary_filling_ls.java",
+        "api_rows": 21
+      }
+    },
+    "D": {
+      "status": "SKIP",
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\reports\\D_gui_automation_seed_attempt.md"
+    },
+    "E": {
+      "status": "SKIP"
+    },
+    "F": {
+      "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\reports\\F_exported_java_api_analysis.md",
+      "rows": [
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_create",
+          "match": "physics().create(\"spf\", \"LaminarFlow\", \"geom1\")",
+          "groups": [
+            "spf",
+            "LaminarFlow",
+            "geom1"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_create",
+          "match": "physics().create(\"ls\", \"LevelSet\", \"geom1\")",
+          "groups": [
+            "ls",
+            "LevelSet",
+            "geom1"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_create",
+          "match": "multiphysics().create(\"tpf1\", \"TwoPhaseFlowLevelSet\", 2)",
+          "groups": [
+            "tpf1",
+            "TwoPhaseFlowLevelSet",
+            "2"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_create",
+          "match": "multiphysics().create(\"ww1\", \"WettedWall\", 1)",
+          "groups": [
+            "ww1",
+            "WettedWall",
+            "1"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"Fluid_physics\", \"spf\");",
+          "groups": [
+            "tpf1",
+            "Fluid_physics",
+            "\"spf\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"Mathematics_physics\", \"ls\");",
+          "groups": [
+            "tpf1",
+            "Mathematics_physics",
+            "\"ls\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"rho1_mat\", \"userdef\");",
+          "groups": [
+            "tpf1",
+            "rho1_mat",
+            "\"userdef\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"rho1\", \"rho_air\");",
+          "groups": [
+            "tpf1",
+            "rho1",
+            "\"rho_air\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"mu1_mat\", \"userdef\");",
+          "groups": [
+            "tpf1",
+            "mu1_mat",
+            "\"userdef\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"mu1\", \"mu_air\");",
+          "groups": [
+            "tpf1",
+            "mu1",
+            "\"mu_air\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"rho2_mat\", \"userdef\");",
+          "groups": [
+            "tpf1",
+            "rho2_mat",
+            "\"userdef\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"rho2\", \"rho_w\");",
+          "groups": [
+            "tpf1",
+            "rho2",
+            "\"rho_w\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"mu2_mat\", \"userdef\");",
+          "groups": [
+            "tpf1",
+            "mu2_mat",
+            "\"userdef\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"mu2\", \"mu_w\");",
+          "groups": [
+            "tpf1",
+            "mu2",
+            "\"mu_w\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"IncludeSurfaceTension\", true);",
+          "groups": [
+            "tpf1",
+            "IncludeSurfaceTension",
+            "true"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"SurfaceTensionCoefficient\", \"userdef\");",
+          "groups": [
+            "tpf1",
+            "SurfaceTensionCoefficient",
+            "\"userdef\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"sigma\", \"sigma_wa\");",
+          "groups": [
+            "tpf1",
+            "sigma",
+            "\"sigma_wa\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"Fluid_physics\", \"spf\");",
+          "groups": [
+            "ww1",
+            "Fluid_physics",
+            "\"spf\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"Mathematics_physics\", \"ls\");",
+          "groups": [
+            "ww1",
+            "Mathematics_physics",
+            "\"ls\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"BoundaryCondition\", \"NavierSlip\");",
+          "groups": [
+            "ww1",
+            "BoundaryCondition",
+            "\"NavierSlip\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"TranslationalVelocityOption\", \"Manual\");",
+          "groups": [
+            "ww1",
+            "TranslationalVelocityOption",
+            "\"Manual\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"utr\", new String[]{\"0\", \"-Vwall\", \"0\"});",
+          "groups": [
+            "ww1",
+            "utr",
+            "new String[]{\"0\", \"-Vwall\", \"0\"}"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"SpecifyContactAngle\", \"SpecifyContactAngleDirectly\");",
+          "groups": [
+            "ww1",
+            "SpecifyContactAngle",
+            "\"SpecifyContactAngleDirectly\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"thetaw\", \"pi/2\");",
+          "groups": [
+            "ww1",
+            "thetaw",
+            "\"pi/2\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"beta\", \"eps_ls\");",
+          "groups": [
+            "ww1",
+            "beta",
+            "\"eps_ls\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"spf\").feature(\"out_top\").set(\"CompensateForHydrostaticPressure\", false);",
+          "groups": [
+            "spf",
+            "out_top",
+            "CompensateForHydrostaticPressure",
+            "false"
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"ls\").feature(\"init1\").set(\"phils_init\", \"flc2hs(-z,eps_ls)\");",
+          "groups": [
+            "ls",
+            "init1",
+            "phils_init",
+            "\"flc2hs(-z,eps_ls)\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"ls\").feature(\"init1\").set(\"phils\", \"flc2hs(-z,eps_ls)\");",
+          "groups": [
+            "ls",
+            "init1",
+            "phils",
+            "\"flc2hs(-z,eps_ls)\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"ls\").feature(\"lsm1\").set(\"epsilon_ls\", \"eps_ls\");",
+          "groups": [
+            "ls",
+            "lsm1",
+            "epsilon_ls",
+            "\"eps_ls\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"ls\").feature(\"lsm1\").set(\"gamma\", \"0.01[m/s]\");",
+          "groups": [
+            "ls",
+            "lsm1",
+            "gamma",
+            "\"0.01[m/s]\""
+          ]
+        },
+        {
+          "source": "seed_exported_java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"spf\").feature(\"grav1\").set(\"g\", new String[]{\"0\", \"-g0\", \"0\"});",
+          "groups": [
+            "spf",
+            "grav1",
+            "g",
+            "new String[]{\"0\", \"-g0\", \"0\"}"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_create",
+          "match": "physics().create(\"spf\", \"LaminarFlow\", \"geom1\")",
+          "groups": [
+            "spf",
+            "LaminarFlow",
+            "geom1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_create",
+          "match": "physics().create(\"ls\", \"LevelSet\", \"geom1\")",
+          "groups": [
+            "ls",
+            "LevelSet",
+            "geom1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_create",
+          "match": "multiphysics().create(\"tpf1\", \"TwoPhaseFlowLevelSet\", 2)",
+          "groups": [
+            "tpf1",
+            "TwoPhaseFlowLevelSet",
+            "2"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_create",
+          "match": "multiphysics().create(\"ww1\", \"WettedWall\", 1)",
+          "groups": [
+            "ww1",
+            "WettedWall",
+            "1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "feature_create",
+          "match": "physics(\"spf\").create(\"inl1\", \"InletBoundary\", 1)",
+          "groups": [
+            "spf",
+            "inl1",
+            "InletBoundary",
+            "1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "feature_create",
+          "match": "physics(\"ls\").create(\"inl1\", \"InletBoundary\", 1)",
+          "groups": [
+            "ls",
+            "inl1",
+            "InletBoundary",
+            "1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "feature_create",
+          "match": "physics(\"ls\").create(\"out1\", \"Outlet\", 1)",
+          "groups": [
+            "ls",
+            "out1",
+            "Outlet",
+            "1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "feature_create",
+          "match": "physics(\"spf\").create(\"out1\", \"OutletBoundary\", 1)",
+          "groups": [
+            "spf",
+            "out1",
+            "OutletBoundary",
+            "1"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "feature_create",
+          "match": "physics(\"spf\").create(\"init2\", \"init\", 2)",
+          "groups": [
+            "spf",
+            "init2",
+            "init",
+            "2"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"Fluid_physics\", \"spf\");",
+          "groups": [
+            "tpf1",
+            "Fluid_physics",
+            "\"spf\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"Mathematics_physics\", \"ls\");",
+          "groups": [
+            "tpf1",
+            "Mathematics_physics",
+            "\"ls\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"Fluid_physics\", \"spf\");",
+          "groups": [
+            "ww1",
+            "Fluid_physics",
+            "\"spf\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"Mathematics_physics\", \"ls\");",
+          "groups": [
+            "ww1",
+            "Mathematics_physics",
+            "\"ls\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"multiphaseMaterialList\", \"mpmat1\");",
+          "groups": [
+            "tpf1",
+            "multiphaseMaterialList",
+            "\"mpmat1\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"tpf1\").set(\"IncludeSurfaceTension\", true);",
+          "groups": [
+            "tpf1",
+            "IncludeSurfaceTension",
+            "true"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "multiphysics_set",
+          "match": "multiphysics(\"ww1\").set(\"thetaw\", \"(3*pi/8)[rad]\");",
+          "groups": [
+            "ww1",
+            "thetaw",
+            "\"(3*pi/8)[rad]\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"ls\").feature(\"lsm1\").set(\"epsilon_ls\", \"5e-6\");",
+          "groups": [
+            "ls",
+            "lsm1",
+            "epsilon_ls",
+            "\"5e-6\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"spf\").feature(\"inl1\").set(\"BoundaryCondition\", \"Pressure\");",
+          "groups": [
+            "spf",
+            "inl1",
+            "BoundaryCondition",
+            "\"Pressure\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"ls\").feature(\"inl1\").set(\"lscond\", \"Fluid2ls\");",
+          "groups": [
+            "ls",
+            "inl1",
+            "lscond",
+            "\"Fluid2ls\""
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"spf\").feature(\"out1\").set(\"CompensateForHydrostaticPressure\", false);",
+          "groups": [
+            "spf",
+            "out1",
+            "CompensateForHydrostaticPressure",
+            "false"
+          ]
+        },
+        {
+          "source": "reference_capillary_filling_ls.java",
+          "kind": "physics_feature_set",
+          "match": "physics(\"spf\").feature(\"init2\").set(\"CompensateForHydrostaticPressure\", false);",
+          "groups": [
+            "spf",
+            "init2",
+            "CompensateForHydrostaticPressure",
+            "false"
+          ]
+        }
+      ]
+    }
+  },
+  "final": {
+    "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_GUI_auto_seed\\reports\\5B3_GUI_auto_seed_final_report.md",
+    "ALLOW_RESUME_STAGE5": "YES",
+    "seed_ready": true
+  },
+  "docs": {
+    "README": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\README.md",
+    "CHANGELOG": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\CHANGELOG.md"
+  }
+}

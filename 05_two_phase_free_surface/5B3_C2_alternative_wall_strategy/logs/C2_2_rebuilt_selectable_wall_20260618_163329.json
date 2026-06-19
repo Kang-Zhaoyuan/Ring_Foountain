@@ -1,0 +1,28 @@
+{
+  "status": "FAIL",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\C2_2_rebuilt_selectable_wall_report.md",
+  "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\tables\\C2_2_rebuilt_cases.csv",
+  "rows": [
+    {
+      "case_id": "C2_2_failure",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "",
+      "V_test": "",
+      "t_end": "",
+      "solve_status": "FAIL",
+      "failure_time": "",
+      "failure_message": "com.comsol.util.exceptions.FlException: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unsupported geometry.\r\nMessages:\r\n\tUnsupported geometry.\r\n\t- Geometry: geom1\r\n",
+      "H0": NaN,
+      "Hfinal": NaN,
+      "delta_H": NaN,
+      "Hmax": NaN,
+      "interface_quality": "",
+      "wall_overlap_status": "UNKNOWN_OR_FAIL",
+      "notes": "Traceback (most recent call last):\n  File \"java.lang.Thread.java\", line 0, in java.lang.Thread.run\nException: Java Exception\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 705, in stage_c2_2\n    sel = base.ensure_b2_selections(model)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5_cleanup_5b_5c.py\", line 793, in ensure_b2_selections\n    rows = s41.boundary_metrics(model)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage4_1_boundary_review.py\", line 92, in boundary_metrics\n    length, int_r, int_z = numerical_values(model, \"IntLine\", bid, [\"1\", \"r\", \"z\"])\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage4_1_boundary_review.py\", line 76, in numerical_values\n    node.selection().geom(\"geom1\", 1)\ncom.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unsupported geometry.\r\nMessages:\r\n\tUnsupported geometry.\r\n\t- Geometry: geom1\r\n\n"
+    }
+  ],
+  "best_model": "",
+  "setup": {},
+  "named_selections": {},
+  "ALLOW_RESUME_STAGE5": "NO"
+}

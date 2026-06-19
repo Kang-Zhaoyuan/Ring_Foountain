@@ -1,0 +1,6 @@
+[2026-06-18 20:11:22] A: reviewing C4 imports and gates.
+[2026-06-18 20:11:44] B: loading C4 best and constructing 5B4 base model.
+[2026-06-18 20:11:54] C: running static regression.
+[2026-06-18 20:11:54] Solving C_static_regression: Vtarget=0[m/s], t_end=0.005[s], dt=1e-4[s].
+[2026-06-18 20:12:45] Updating README, CHANGELOG, and SCRIPT_MANIFEST.
+[2026-06-18 20:12:45] 5B4 completed.

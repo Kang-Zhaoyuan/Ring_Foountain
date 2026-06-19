@@ -1,0 +1,16 @@
+﻿selection_name,boundary_ids,used_for
+axis,[1],axis/open/static/default
+top_open,[3],axis/open/static/default
+bottom_wall,[2],axis/open/static/default
+outer_wall,[8],axis/open/static/default
+ring_inner,[4],axis/open/static/default
+ring_outer,[7],axis/open/static/default
+ring_top,[6],axis/open/static/default
+ring_bottom,[5],axis/open/static/default
+ring_wettedwall_confirmed,"[4, 5, 6, 7]",WettedWall
+ww1_property,,"{""feature"": ""ww1"", ""property"": ""BoundaryCondition"", ""value"": ""NavierSlip"", ""status"": ""PASS"", ""error"": """"}"
+ww1_property,,"{""feature"": ""ww1"", ""property"": ""TranslationalVelocityOption"", ""value"": ""Manual"", ""status"": ""PASS"", ""error"": """"}"
+ww1_property,,"{""feature"": ""ww1"", ""property"": ""utr"", ""value"": [""0"", ""-Vwall"", ""0""], ""status"": ""PASS"", ""error"": """"}"
+ww1_property,,"{""feature"": ""ww1"", ""property"": ""SpecifyContactAngle"", ""value"": ""SpecifyContactAngleDirectly"", ""status"": ""PASS"", ""error"": """"}"
+ww1_property,,"{""feature"": ""ww1"", ""property"": ""thetaw"", ""value"": ""pi/2"", ""status"": ""PASS"", ""error"": """"}"
+ww1_property,,"{""feature"": ""ww1"", ""property"": ""beta"", ""value"": ""eps_ls"", ""status"": ""PASS"", ""error"": """"}"

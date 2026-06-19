@@ -1,0 +1,119 @@
+{
+  "audit": [
+    {
+      "feature_tag": "wallbc1",
+      "feature_type": "WallBC",
+      "selection_boundaries": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selection_intersects_ring": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "BoundaryCondition": "NoSlip",
+      "SlidingWall": "0",
+      "TranslationalVelocityOption": "AutomaticFromFrame",
+      "utr": "0"
+    }
+  ],
+  "all_boundaries": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "spf_feature_inventory": [
+    {
+      "feature_tag": "fp1",
+      "feature_type": "FluidProperties",
+      "feature_label": "Fluid Properties 1",
+      "selection_boundaries": [],
+      "BoundaryCondition": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "SlidingWall": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "TranslationalVelocityOption": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "utr": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>"
+    },
+    {
+      "feature_tag": "init1",
+      "feature_type": "init",
+      "feature_label": "Initial Values 1",
+      "selection_boundaries": [],
+      "BoundaryCondition": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "SlidingWall": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "TranslationalVelocityOption": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "utr": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>"
+    },
+    {
+      "feature_tag": "axi1",
+      "feature_type": "AxialSymmetry",
+      "feature_label": "Axial Symmetry 1",
+      "selection_boundaries": [
+        1
+      ],
+      "BoundaryCondition": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "SlidingWall": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "TranslationalVelocityOption": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "utr": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>"
+    },
+    {
+      "feature_tag": "wallbc1",
+      "feature_type": "WallBC",
+      "feature_label": "Wall 1",
+      "selection_boundaries": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "BoundaryCondition": "NoSlip",
+      "SlidingWall": "0",
+      "TranslationalVelocityOption": "AutomaticFromFrame",
+      "utr": "0"
+    },
+    {
+      "feature_tag": "grav1",
+      "feature_type": "Gravity",
+      "feature_label": "Gravity 1",
+      "selection_boundaries": [],
+      "BoundaryCondition": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "SlidingWall": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "TranslationalVelocityOption": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "utr": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>"
+    },
+    {
+      "feature_tag": "rtfr1",
+      "feature_type": "RotatingFrameFD",
+      "feature_label": "Rotating Frame 1",
+      "selection_boundaries": [],
+      "BoundaryCondition": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "SlidingWall": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "TranslationalVelocityOption": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "utr": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>"
+    },
+    {
+      "feature_tag": "dcont1",
+      "feature_type": "Continuity",
+      "feature_label": "Flow Continuity 1",
+      "selection_boundaries": [],
+      "BoundaryCondition": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "SlidingWall": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "TranslationalVelocityOption": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>",
+      "utr": "<unreadable: 'com.comsol.clientapi.physics.impl.PhysicsFeatureCl' object has no attribute 'get'>"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+[2026-06-17 12:24:24] Starting Ring Fountain stages 0-2 automation
+[2026-06-17 12:24:26] OK: MCP smoke test
+[2026-06-17 12:24:46] COMSOL client started: version=6.4, cores=2, standalone=True
+[2026-06-17 12:24:54] Loaded original V0 model: ring_fountain_v0_single_phase / 6.4
+[2026-06-17 12:24:54] OK: used products
+[2026-06-17 12:24:54] OK: parameters
+[2026-06-17 12:24:54] OK: parameter descriptions
+[2026-06-17 12:24:54] OK: functions
+[2026-06-17 12:24:54] OK: components
+[2026-06-17 12:24:54] OK: geometries
+[2026-06-17 12:24:54] OK: selections
+[2026-06-17 12:24:54] OK: materials
+[2026-06-17 12:24:54] OK: physics
+[2026-06-17 12:24:54] OK: multiphysics
+[2026-06-17 12:24:54] OK: meshes
+[2026-06-17 12:24:54] OK: studies
+[2026-06-17 12:24:54] OK: solutions
+[2026-06-17 12:24:55] OK: datasets
+[2026-06-17 12:24:55] OK: plots
+[2026-06-17 12:24:55] OK: exports
+[2026-06-17 12:24:56] OK: model problems
+[2026-06-17 12:24:56] OK: plots for export
+[2026-06-17 12:24:56] FAIL: export plot Velocity (spf): Node "exports/Velocity (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity (spf)" does not exist in model tree.
+
+[2026-06-17 12:24:56] FAIL: export plot Pressure (spf): Node "exports/Pressure (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Pressure (spf)" does not exist in model tree.
+
+[2026-06-17 12:24:56] FAIL: export plot Velocity, 3D (spf): Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+
+[2026-06-17 12:24:56] FAIL: export plot 3D Plot Group 4: Node "exports/3D Plot Group 4" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/3D Plot Group 4" does not exist in model tree.
+
+[2026-06-17 12:24:56] OK: export nodes
+[2026-06-17 12:24:58] Saved Stage 1 copies: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\01_v0_checked\models\ring_fountain_v0_checked.mph; D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\01_v0_checked\models\ring_fountain_v0_checked_20260617_122424.mph
+[2026-06-17 12:25:00] OK: plots for export
+[2026-06-17 12:25:00] FAIL: export plot Velocity (spf): Node "exports/Velocity (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity (spf)" does not exist in model tree.
+
+[2026-06-17 12:25:00] FAIL: export plot Pressure (spf): Node "exports/Pressure (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Pressure (spf)" does not exist in model tree.
+
+[2026-06-17 12:25:00] FAIL: export plot Velocity, 3D (spf): Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+
+[2026-06-17 12:25:00] FAIL: export plot 3D Plot Group 4: Node "exports/3D Plot Group 4" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/3D Plot Group 4" does not exist in model tree.
+
+[2026-06-17 12:25:00] OK: export nodes
+[2026-06-17 12:25:02] Sweep set U0=0.01[m/s]
+[2026-06-17 12:25:14] Sweep set U0=0.02[m/s]
+[2026-06-17 12:25:25] Sweep set U0=0.05[m/s]
+[2026-06-17 12:25:37] Sweep set U0=0.10[m/s]
+[2026-06-17 12:26:00] Sweep set h_ring=1[mm]
+[2026-06-17 12:26:23] Sweep set h_ring=2[mm]
+[2026-06-17 12:26:47] Sweep set h_ring=4[mm]
+[2026-06-17 12:27:08] Sweep set Ri=0.3*Ro
+[2026-06-17 12:27:29] Sweep set Ri=0.4*Ro
+[2026-06-17 12:27:57] Sweep set Ri=0.5*Ro
+[2026-06-17 12:28:36] Sweep set Ri=0.6*Ro
+[2026-06-17 12:28:58] XLSX export failed: No module named 'openpyxl'
+[2026-06-17 12:28:58] OK: plots for export
+[2026-06-17 12:28:58] FAIL: export plot Velocity (spf): Node "exports/Velocity (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity (spf)" does not exist in model tree.
+
+[2026-06-17 12:28:58] FAIL: export plot Pressure (spf): Node "exports/Pressure (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Pressure (spf)" does not exist in model tree.
+
+[2026-06-17 12:28:58] FAIL: export plot Velocity, 3D (spf): Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+
+[2026-06-17 12:28:58] FAIL: export plot 3D Plot Group 4: Node "exports/3D Plot Group 4" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/3D Plot Group 4" does not exist in model tree.
+
+[2026-06-17 12:28:58] OK: export nodes
+[2026-06-17 12:28:59] FATAL: Exception:
+	com.comsol.util.exceptions.UnexpectedServerException: java.lang.IllegalStateException: java.io.IOException: Failed to save model. The file 'ring fountain v1 param sweep 20260617 122424.mph' is locked by another model.
+	(rethrown as com.comsol.util.exceptions.FlException)
+Messages:
+	java.lang.IllegalStateException: java.io.IOException: Failed to save model. The file 'ring fountain v1 param sweep 20260617 122424.mph' is locked by another model.
+
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+com.comsol.util.exceptions.com.comsol.util.exceptions.UnexpectedServerException: com.comsol.util.exceptions.UnexpectedServerException: java.lang.IllegalStateException: java.io.IOException: Failed to save model. The file 'ring_fountain_v1_param_sweep_20260617_122424.mph' is locked by another model.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "SourceFile", line 1075, in com.comsol.clientapi.impl.ModelClient.save
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 612, in <module>
+    main()
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 584, in main
+    sweep.save(stage2_ts)
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 980, in save
+    self.java.save(str(file))
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.UnexpectedServerException: java.lang.IllegalStateException: java.io.IOException: Failed to save model. The file 'ring fountain v1 param sweep 20260617 122424.mph' is locked by another model.
+	(rethrown as com.comsol.util.exceptions.FlException)
+Messages:
+	java.lang.IllegalStateException: java.io.IOException: Failed to save model. The file 'ring fountain v1 param sweep 20260617 122424.mph' is locked by another model.
+

@@ -1,0 +1,9 @@
+﻿item,value,status,note
+physics_tags,"[""spf"", ""ls""]",INFO,
+multiphysics_tags,"[""tpf1"", ""ww1""]",INFO,
+multiphysics_tpf1_exists,True,PASS,
+multiphysics_ww1_exists,True,PASS,
+ww1_selection,"[4, 5, 6, 7]",PASS,
+ww1_TranslationalVelocityOption,Manual,PASS,Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here.
+ww1_utr,"[""0"", ""-Vwall_eff"", ""0""]",PASS,Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here.
+ww1_BoundaryCondition,retained from C4,PASS,Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here.

@@ -1,0 +1,5 @@
+[2026-06-18 18:19:11] A: importing GUI-auto-seed evidence.
+[2026-06-18 18:19:11] B: extracting reusable Java skeleton.
+[2026-06-18 18:19:16] C: building minimal ring two-phase model.
+[2026-06-18 18:19:28] Solving D_static_ring with Vwall=0[m/s].
+[2026-06-18 18:19:48] Updating README, CHANGELOG, SCRIPT_MANIFEST.

@@ -1,0 +1,2 @@
+﻿Ro,Ri,h_ring,U0,Rtank,Zup,Zdown,rho_w,mu_w,Ri_over_Ro,u_mag_max,p_max_global,p_max_ring_near,vz_max_center_above,vz_avg_hole_above,Q_axisym_hole_above
+20[mm],8[mm],2[mm],0.02[m/s],100[mm],120[mm],120[mm],1000[kg/m^3],1e-3[Pa*s],0.4,0.06790171944503055,606700.6894202387,316772.696479486,0.06414448455098092,0.03095787265893504,NA

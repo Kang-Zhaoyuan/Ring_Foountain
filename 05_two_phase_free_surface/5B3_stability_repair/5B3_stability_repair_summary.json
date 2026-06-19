@@ -1,0 +1,30 @@
+﻿{
+    "run_status":  "FAIL",
+    "ALLOW_RESUME_STAGE5":  "NO",
+    "R0":  {
+               "ring_boundaries":  "[4,5,6,7]",
+               "status":  "PASS",
+               "overlapping_feature":  "spf.wallbc1",
+               "wall_overlap":  "YES",
+               "wallbc1_selection":  "[2,3,4,5,6,7,8]"
+           },
+    "R1":  {
+               "status":  "FAIL",
+               "criterion_mm":  0.2,
+               "delta_H_mm":  1.0644697943384469,
+               "stop_reason":  "5B2_baseline_not_stable"
+           },
+    "R2":  {
+               "status":  "NOT_RUN",
+               "reason":  "R1 did not PASS"
+           },
+    "R3":  {
+               "status":  "NOT_RUN",
+               "reason":  "R1 did not PASS"
+           },
+    "R4":  {
+               "status":  "NOT_RUN",
+               "reason":  "R1 did not PASS / repair timeout"
+           },
+    "final_report":  "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_stability_repair\\reports\\5B3_stability_repair_final_report.md"
+}

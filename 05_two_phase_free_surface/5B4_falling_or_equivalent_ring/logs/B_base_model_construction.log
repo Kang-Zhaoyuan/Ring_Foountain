@@ -1,0 +1,85 @@
+{
+  "ramp": {
+    "Vwall_eff": "Vtarget*(1-exp(-(t/t_ramp)^2))",
+    "utr": [
+      "0",
+      "-Vwall_eff",
+      "0"
+    ],
+    "wettedwall_selection": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "variable_status": {
+      "created_or_reused": true,
+      "error": ""
+    }
+  },
+  "audit": [
+    {
+      "item": "physics_tags",
+      "value": [
+        "spf",
+        "ls"
+      ],
+      "status": "INFO"
+    },
+    {
+      "item": "multiphysics_tags",
+      "value": [
+        "tpf1",
+        "ww1"
+      ],
+      "status": "INFO"
+    },
+    {
+      "item": "multiphysics_tpf1_exists",
+      "value": true,
+      "status": "PASS"
+    },
+    {
+      "item": "multiphysics_ww1_exists",
+      "value": true,
+      "status": "PASS"
+    },
+    {
+      "item": "ww1_selection",
+      "value": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "PASS"
+    },
+    {
+      "item": "ww1_TranslationalVelocityOption",
+      "value": "Manual",
+      "status": "PASS",
+      "note": "Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here."
+    },
+    {
+      "item": "ww1_utr",
+      "value": [
+        "0",
+        "-Vwall_eff",
+        "0"
+      ],
+      "status": "PASS",
+      "note": "Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here."
+    },
+    {
+      "item": "ww1_BoundaryCondition",
+      "value": "retained from C4",
+      "status": "PASS",
+      "note": "Set or retained by 5B4 script; COMSOL MultiphysicsCoup does not expose a Python get() accessor here."
+    }
+  ],
+  "models": {
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_equivalent_falling_ring_base_20260618_202100.mph",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B4_falling_or_equivalent_ring\\models\\ring_fountain_v5B4_equivalent_falling_ring_base.mph",
+    "canonical_note": "canonical existed; not overwritten"
+  }
+}

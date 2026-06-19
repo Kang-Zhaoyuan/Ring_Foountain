@@ -1,0 +1,183 @@
+[2026-06-17 12:29:58] Starting Ring Fountain stages 0-2 automation
+[2026-06-17 12:30:00] OK: MCP smoke test
+[2026-06-17 12:30:06] COMSOL client started: version=6.4, cores=2, standalone=True
+[2026-06-17 12:30:14] Loaded original V0 model: ring_fountain_v0_single_phase / 6.4
+[2026-06-17 12:30:14] OK: used products
+[2026-06-17 12:30:14] OK: parameters
+[2026-06-17 12:30:14] OK: parameter descriptions
+[2026-06-17 12:30:14] OK: functions
+[2026-06-17 12:30:14] OK: components
+[2026-06-17 12:30:14] OK: geometries
+[2026-06-17 12:30:14] OK: selections
+[2026-06-17 12:30:14] OK: materials
+[2026-06-17 12:30:14] OK: physics
+[2026-06-17 12:30:14] OK: multiphysics
+[2026-06-17 12:30:14] OK: meshes
+[2026-06-17 12:30:14] OK: studies
+[2026-06-17 12:30:14] OK: solutions
+[2026-06-17 12:30:14] OK: datasets
+[2026-06-17 12:30:14] OK: plots
+[2026-06-17 12:30:14] OK: exports
+[2026-06-17 12:30:16] OK: model problems
+[2026-06-17 12:30:16] OK: plots for export
+[2026-06-17 12:30:16] FAIL: export plot Velocity (spf): Node "exports/Velocity (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity (spf)" does not exist in model tree.
+
+[2026-06-17 12:30:18] OK: created Image2D export for plot Velocity (spf)
+[2026-06-17 12:30:18] FAIL: export plot Pressure (spf): Node "exports/Pressure (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Pressure (spf)" does not exist in model tree.
+
+[2026-06-17 12:30:18] OK: created Image2D export for plot Pressure (spf)
+[2026-06-17 12:30:18] FAIL: export plot Velocity, 3D (spf): Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+
+[2026-06-17 12:30:19] OK: created Image3D export for plot Velocity, 3D (spf)
+[2026-06-17 12:30:19] FAIL: export plot 3D Plot Group 4: Node "exports/3D Plot Group 4" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/3D Plot Group 4" does not exist in model tree.
+
+[2026-06-17 12:30:19] OK: created Image3D export for plot 3D Plot Group 4
+[2026-06-17 12:30:19] OK: export nodes
+[2026-06-17 12:30:21] Saved Stage 1 copies: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\01_v0_checked\models\ring_fountain_v0_checked.mph; D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\01_v0_checked\models\ring_fountain_v0_checked_20260617_122958.mph
+[2026-06-17 12:30:23] OK: plots for export
+[2026-06-17 12:30:23] FAIL: export plot Velocity (spf): Node "exports/Velocity (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity (spf)" does not exist in model tree.
+
+[2026-06-17 12:30:24] OK: created Image2D export for plot Velocity (spf)
+[2026-06-17 12:30:24] FAIL: export plot Pressure (spf): Node "exports/Pressure (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Pressure (spf)" does not exist in model tree.
+
+[2026-06-17 12:30:24] OK: created Image2D export for plot Pressure (spf)
+[2026-06-17 12:30:24] FAIL: export plot Velocity, 3D (spf): Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+
+[2026-06-17 12:30:25] OK: created Image3D export for plot Velocity, 3D (spf)
+[2026-06-17 12:30:25] FAIL: export plot 3D Plot Group 4: Node "exports/3D Plot Group 4" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/3D Plot Group 4" does not exist in model tree.
+
+[2026-06-17 12:30:25] OK: created Image3D export for plot 3D Plot Group 4
+[2026-06-17 12:30:25] OK: export nodes
+[2026-06-17 12:30:25] OK: run export Image 1
+[2026-06-17 12:30:25] OK: run export Image 1a
+[2026-06-17 12:30:26] OK: run export Image 1b
+[2026-06-17 12:30:26] OK: run export Image 41
+[2026-06-17 12:30:26] OK: run export Image 2
+[2026-06-17 12:30:26] OK: run export Image 2a
+[2026-06-17 12:30:27] OK: run export Image 2b
+[2026-06-17 12:30:27] OK: run export Image 42
+[2026-06-17 12:30:30] Sweep set U0=0.01[m/s]
+[2026-06-17 12:30:42] Sweep set U0=0.02[m/s]
+[2026-06-17 12:30:54] Sweep set U0=0.05[m/s]
+[2026-06-17 12:31:07] Sweep set U0=0.10[m/s]
+[2026-06-17 12:31:33] Sweep set h_ring=1[mm]
+[2026-06-17 12:31:58] Sweep set h_ring=2[mm]
+[2026-06-17 12:32:24] Sweep set h_ring=4[mm]
+[2026-06-17 12:32:49] Sweep set Ri=0.3*Ro
+[2026-06-17 12:33:14] Sweep set Ri=0.4*Ro
+[2026-06-17 12:33:44] Sweep set Ri=0.5*Ro
+[2026-06-17 12:34:11] Sweep set Ri=0.6*Ro
+[2026-06-17 12:34:27] XLSX export failed: No module named 'openpyxl'
+[2026-06-17 12:34:27] OK: plots for export
+[2026-06-17 12:34:27] FAIL: export plot Velocity (spf): Node "exports/Velocity (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity (spf)" does not exist in model tree.
+
+[2026-06-17 12:34:27] OK: created Image2D export for plot Velocity (spf)
+[2026-06-17 12:34:27] FAIL: export plot Pressure (spf): Node "exports/Pressure (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Pressure (spf)" does not exist in model tree.
+
+[2026-06-17 12:34:27] OK: created Image2D export for plot Pressure (spf)
+[2026-06-17 12:34:27] FAIL: export plot Velocity, 3D (spf): Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/Velocity, 3D (spf)" does not exist in model tree.
+
+[2026-06-17 12:34:28] OK: created Image3D export for plot Velocity, 3D (spf)
+[2026-06-17 12:34:28] FAIL: export plot 3D Plot Group 4: Node "exports/3D Plot Group 4" does not exist in model tree.
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage0_2.py", line 72, in safe
+    value = fn(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\tmp\comsol-mcp-link\.venv\Lib\site-packages\mph\model.py", line 837, in export
+    raise ValueError(error)
+ValueError: Node "exports/3D Plot Group 4" does not exist in model tree.
+
+[2026-06-17 12:34:28] OK: created Image3D export for plot 3D Plot Group 4
+[2026-06-17 12:34:28] OK: export nodes
+[2026-06-17 12:34:28] OK: run export Image 1
+[2026-06-17 12:34:28] OK: run export Image 1a
+[2026-06-17 12:34:29] OK: run export Image 1b
+[2026-06-17 12:34:29] OK: run export Image 41
+[2026-06-17 12:34:29] OK: run export Image 2
+[2026-06-17 12:34:29] OK: run export Image 2a
+[2026-06-17 12:34:30] OK: run export Image 2b
+[2026-06-17 12:34:30] OK: run export Image 42
+[2026-06-17 12:34:30] OK: run export Image 3
+[2026-06-17 12:34:30] OK: run export Image 3a
+[2026-06-17 12:34:31] OK: run export Image 3b
+[2026-06-17 12:34:31] OK: run export Image 43
+[2026-06-17 12:34:31] OK: save Stage 2 latest copy
+[2026-06-17 12:34:32] OK: save Stage 2 timestamp copy
+[2026-06-17 12:34:32] Finished automation

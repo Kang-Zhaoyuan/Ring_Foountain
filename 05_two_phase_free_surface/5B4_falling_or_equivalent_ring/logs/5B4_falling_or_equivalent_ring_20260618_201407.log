@@ -1,0 +1,11 @@
+[2026-06-18 20:14:07] A: reviewing C4 imports and gates.
+[2026-06-18 20:14:12] B: loading C4 best and constructing 5B4 base model.
+[2026-06-18 20:14:23] C: running static regression.
+[2026-06-18 20:14:23] Solving C_static_regression: Vtarget=0[m/s], t_end=0.005[s], dt=1e-4[s].
+[2026-06-18 20:15:12] D: running equivalent falling velocity ladder.
+[2026-06-18 20:15:12] Solving D1: Vtarget=1e-3[m/s], t_end=0.005[s], dt=1e-4[s].
+[2026-06-18 20:15:56] Solving D2: Vtarget=2e-3[m/s], t_end=0.005[s], dt=1e-4[s].
+[2026-06-18 20:16:40] Solving D3: Vtarget=5e-3[m/s], t_end=0.008[s], dt=1e-4[s].
+[2026-06-18 20:17:59] Solving D4: Vtarget=1e-2[m/s], t_end=0.010[s], dt=1e-4[s].
+[2026-06-18 20:19:48] Updating README, CHANGELOG, and SCRIPT_MANIFEST.
+[2026-06-18 20:19:48] 5B4 completed.

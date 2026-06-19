@@ -1,0 +1,3 @@
+﻿artifact,source,Vtarget,t_end,timestamp_model,model,timestamp_java,java
+best_model,highest passing D short-time case,1e-2[m/s],0.010[s],D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\models\ring_fountain_v5B4_best_20260618_202100.mph,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\models\ring_fountain_v5B4_best.mph,,
+best_java,highest passing D short-time case,1e-2[m/s],0.010[s],,,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\exports\ring_fountain_v5B4_best_20260618_202100.java,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B4_falling_or_equivalent_ring\exports\ring_fountain_v5B4_best.java

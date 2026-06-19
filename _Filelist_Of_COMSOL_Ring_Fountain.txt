@@ -1,0 +1,1663 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 000000FC 6497:C20A
+D:.
+|   5B4_stage_archive.zip
+|   CHANGELOG.md
+|   README.md
+|   _Filelist_Of_COMSOL_Ring_Fountain.txt
+|   
++---00_audit_v0
+|   +---images
+|   |       v0_3D_Plot_Group_4.png
+|   |       v0_Pressure__spf_.png
+|   |       v0_Velocity__3D__spf_.png
+|   |       v0_Velocity__spf_.png
+|   |       
+|   +---logs
+|   |       automation_20260617_122424.log
+|   |       automation_20260617_122958.log
+|   |       automation_20260617_123632.log
+|   |       
+|   \---reports
+|           v0_export_status.json
+|           v0_model_audit.json
+|           v0_model_audit.md
+|           v0_model_audit.txt
+|           
++---01_v0_checked
+|   +---images
+|   |       v0_checked_3D_Plot_Group_4.png
+|   |       v0_checked_Pressure__spf_.png
+|   |       v0_checked_Velocity__3D__spf_.png
+|   |       v0_checked_Velocity__spf_.png
+|   |       
+|   +---logs
+|   +---models
+|   |       ring_fountain_v0_checked.mph
+|   |       ring_fountain_v0_checked_20260617_122424.mph
+|   |       ring_fountain_v0_checked_20260617_122958.mph
+|   |       ring_fountain_v0_checked_20260617_123632.mph
+|   |       
+|   +---reports
+|   |       v0_checked_report.md
+|   |       
+|   \---tables
+|           derived_values_attempt.csv
+|           
++---02_1_metric_calibration
+|   +---images
+|   |       metric_pressure.png
+|   |       metric_regions_schematic.png
+|   |       metric_velocity_magnitude.png
+|   |       metric_vertical_velocity.png
+|   |       
+|   +---logs
+|   |       stage2_1_plus_20260617_180844.log
+|   |       stage2_1_plus_20260617_181039.log
+|   |       stage2_1_plus_20260617_181429.log
+|   |       stage2_1_plus_20260617_181832.log
+|   |       stage2_1_plus_run_summary.json
+|   |       
+|   +---models
+|   |       ring_fountain_v0_metric_calibrated.mph
+|   |       ring_fountain_v0_metric_calibrated_20260617_180844.mph
+|   |       ring_fountain_v0_metric_calibrated_20260617_181039.mph
+|   |       ring_fountain_v0_metric_calibrated_20260617_181429.mph
+|   |       ring_fountain_v0_metric_calibrated_20260617_181832.mph
+|   |       
+|   +---reports
+|   |       metric_calibration_report.md
+|   |       
+|   \---tables
+|           metric_calibration_baseline.csv
+|           metric_calibration_baseline.xlsx
+|           
++---02_2_clean_param_sweep
+|   +---images
+|   |       h_ring_vs_p_max_ring_near.png
+|   |       h_ring_vs_vz_max_center_above.png
+|   |       Ri_over_Ro_vs_p_max_ring_near.png
+|   |       Ri_over_Ro_vs_vz_max_center_above.png
+|   |       U0_vs_p_max_ring_near.png
+|   |       U0_vs_vz_max_center_above.png
+|   |       
+|   +---logs
+|   +---models
+|   |       ring_fountain_v1_clean_param_sweep.mph
+|   |       ring_fountain_v1_clean_param_sweep_20260617_181039.mph
+|   |       ring_fountain_v1_clean_param_sweep_20260617_181429.mph
+|   |       ring_fountain_v1_clean_param_sweep_20260617_181832.mph
+|   |       
+|   +---reports
+|   |       clean_param_sweep_report.md
+|   |       
+|   \---tables
+|           clean_param_sweep_results.csv
+|           clean_param_sweep_results.xlsx
+|           
++---02_3_clean_sweep_review
+|   +---images
+|   +---logs
+|   +---models
+|   +---reports
+|   |       param_sweep_clean_review.md
+|   |       param_sweep_clean_summary_cn.md
+|   |       
+|   \---tables
++---02_param_sweep
+|   +---images
+|   |       param_sweep_3D_Plot_Group_4.png
+|   |       param_sweep_Pressure__spf_.png
+|   |       param_sweep_Velocity__3D__spf_.png
+|   |       param_sweep_Velocity__spf_.png
+|   |       
+|   +---logs
+|   +---models
+|   |       ring_fountain_v1_param_sweep.mph
+|   |       ring_fountain_v1_param_sweep_20260617_122424.mph
+|   |       ring_fountain_v1_param_sweep_20260617_122958.mph
+|   |       ring_fountain_v1_param_sweep_20260617_123632.mph
+|   |       
+|   +---reports
+|   |       param_sweep_report.md
+|   |       
+|   \---tables
+|           param_sweep_results.csv
+|           param_sweep_results.xlsx
+|           
++---03_relative_flow_model
+|   +---images
+|   |       relative_pressure.png
+|   |       relative_velocity.png
+|   |       relative_vertical_velocity.png
+|   |       
+|   +---logs
+|   +---models
+|   |       ring_fountain_v2_relative_flow.mph
+|   |       ring_fountain_v2_relative_flow_20260617_181429.mph
+|   |       ring_fountain_v2_relative_flow_20260617_181832.mph
+|   |       
+|   +---reports
+|   |       relative_flow_model_report.md
+|   |       
+|   \---tables
+|           H_kin_proxy_estimate.csv
+|           H_kin_proxy_estimate.xlsx
+|           
++---04_moving_ring_model
+|   |   stage4_1_boundary_review_summary.json
+|   |   stage4_2_formal_summary.json
+|   |   
+|   +---frames
+|   +---images
+|   |   |   moving_ring_axial_velocity_w.png
+|   |   |   moving_ring_pressure.png
+|   |   |   moving_ring_ring_near_velocity_vectors.png
+|   |   |   moving_ring_velocity_magnitude_spfU.png
+|   |   |   ring_boundary_candidate_highlight.png
+|   |   |   ring_boundary_full_model_ids.png
+|   |   |   ring_boundary_local_ids.png
+|   |   |   
+|   |   \---frames
+|   |           moving_ring_velocity_frame_001.png
+|   |           moving_ring_velocity_frame_002.png
+|   |           moving_ring_velocity_frame_003.png
+|   |           moving_ring_velocity_frame_004.png
+|   |           moving_ring_velocity_frame_005.png
+|   |           
+|   +---logs
+|   |       stage4_1_boundary_review_20260617_193341.log
+|   |       stage4_2a_20260617_195128.log
+|   |       stage4_2a_20260617_195235.log
+|   |       stage4_2a_20260617_195402.log
+|   |       stage4_2a_20260617_195622.log
+|   |       stage4_2_formal_20260617_200014.log
+|   |       stage4_2_property_probe_20260617_194354.json
+|   |       stage4_2_property_probe_20260617_194433.json
+|   |       
+|   +---models
+|   |       ring_fountain_v3_boundary_named.mph
+|   |       ring_fountain_v3_boundary_named_20260617_195128.mph
+|   |       ring_fountain_v3_boundary_named_20260617_195235.mph
+|   |       ring_fountain_v3_boundary_named_20260617_195402.mph
+|   |       ring_fountain_v3_boundary_named_20260617_195622.mph
+|   |       ring_fountain_v3_boundary_review_package.mph
+|   |       ring_fountain_v3_boundary_review_package_20260617_193341.mph
+|   |       ring_fountain_v3_moving_ring.mph
+|   |       ring_fountain_v3_moving_ring_20260617_181429.mph
+|   |       ring_fountain_v3_moving_ring_20260617_181832.mph
+|   |       ring_fountain_v3_moving_ring_20260617_200014.mph
+|   |       _tmp_wall_property_test.mph
+|   |       
+|   +---relative_velocity_check
+|   |   |   stage4_2a_summary.json
+|   |   |   
+|   |   +---frames
+|   |   +---images
+|   |   |       case_A_stationary_ring_axial_velocity_w.png
+|   |   |       case_A_stationary_ring_ring_near_relative_velocity.png
+|   |   |       case_A_stationary_ring_ring_near_velocity_vectors.png
+|   |   |       case_A_stationary_ring_velocity_magnitude_spfU.png
+|   |   |       case_A_stationary_ring_w_relative_to_ring.png
+|   |   |       case_B_same_downward_axial_velocity_w.png
+|   |   |       case_B_same_downward_ring_near_relative_velocity.png
+|   |   |       case_B_same_downward_ring_near_velocity_vectors.png
+|   |   |       case_B_same_downward_velocity_magnitude_spfU.png
+|   |   |       case_B_same_downward_w_relative_to_ring.png
+|   |   |       case_C_opposite_relative_axial_velocity_w.png
+|   |   |       case_C_opposite_relative_ring_near_relative_velocity.png
+|   |   |       case_C_opposite_relative_ring_near_velocity_vectors.png
+|   |   |       case_C_opposite_relative_velocity_magnitude_spfU.png
+|   |   |       case_C_opposite_relative_w_relative_to_ring.png
+|   |   |       
+|   |   +---logs
+|   |   |       case_A_stationary_ring_error_20260617_195128.log
+|   |   |       case_A_stationary_ring_error_20260617_195235.log
+|   |   |       case_B_same_downward_error_20260617_195128.log
+|   |   |       case_B_same_downward_error_20260617_195235.log
+|   |   |       case_C_opposite_relative_error_20260617_195128.log
+|   |   |       case_C_opposite_relative_error_20260617_195235.log
+|   |   |       
+|   |   +---models
+|   |   |       case_A_stationary_ring.mph
+|   |   |       case_A_stationary_ring_20260617_195402.mph
+|   |   |       case_A_stationary_ring_20260617_195622.mph
+|   |   |       case_B_same_downward.mph
+|   |   |       case_B_same_downward_20260617_195402.mph
+|   |   |       case_B_same_downward_20260617_195622.mph
+|   |   |       case_C_opposite_relative.mph
+|   |   |       case_C_opposite_relative_20260617_195402.mph
+|   |   |       case_C_opposite_relative_20260617_195622.mph
+|   |   |       
+|   |   +---reports
+|   |   |       relative_velocity_check_report.md
+|   |   |       
+|   |   \---tables
+|   |           case_A_stationary_ring_center_hole_w_t.csv
+|   |           case_B_same_downward_center_hole_w_t.csv
+|   |           case_C_opposite_relative_center_hole_w_t.csv
+|   |           
+|   +---reports
+|   |       moving_ring_model_report.md
+|   |       ring_boundary_manual_review_package.md
+|   |       
+|   \---tables
+|           moving_ring_center_hole_w_t.csv
+|           moving_ring_frame_index.csv
+|           ring_boundary_all_boundaries.csv
+|           ring_boundary_all_boundaries.xlsx
+|           
++---05_two_phase_free_surface
+|   |   stage5a_summary.json
+|   |   stage5b2_to_5e_summary.json
+|   |   stage5_cleanup_5b_5c_summary.json
+|   |   
+|   +---5B2_clean_baseline_rebuild
+|   |   |   5B2_clean_baseline_audit_summary.json
+|   |   |   
+|   |   +---images
+|   |   |   |   Route_LS_manual_clean_phils_final.png
+|   |   |   |   Route_LS_manual_clean_velocity_magnitude.png
+|   |   |   |   
+|   |   |   \---Route_LS_manual_clean
+|   |   |       |   5B2_clean_manual_static_H_vs_t.png
+|   |   |       |   
+|   |   |       \---frames
+|   |   |               5B2_clean_manual_static_interface_frame_001.png
+|   |   |               5B2_clean_manual_static_interface_frame_002.png
+|   |   |               5B2_clean_manual_static_interface_frame_003.png
+|   |   |               5B2_clean_manual_static_interface_frame_004.png
+|   |   |               5B2_clean_manual_static_interface_frame_005.png
+|   |   |               5B2_clean_manual_static_interface_frame_006.png
+|   |   |               5B2_clean_manual_static_interface_frame_007.png
+|   |   |               5B2_clean_manual_static_interface_frame_008.png
+|   |   |               5B2_clean_manual_static_interface_frame_009.png
+|   |   |               5B2_clean_manual_static_interface_frame_010.png
+|   |   |               5B2_clean_manual_static_interface_frame_011.png
+|   |   |               5B2_clean_manual_static_interface_frame_012.png
+|   |   |               5B2_clean_manual_static_interface_frame_013.png
+|   |   |               5B2_clean_manual_static_interface_frame_014.png
+|   |   |               5B2_clean_manual_static_interface_frame_015.png
+|   |   |               5B2_clean_manual_static_interface_frame_016.png
+|   |   |               5B2_clean_manual_static_interface_frame_017.png
+|   |   |               5B2_clean_manual_static_interface_frame_018.png
+|   |   |               5B2_clean_manual_static_interface_frame_019.png
+|   |   |               5B2_clean_manual_static_interface_frame_020.png
+|   |   |               5B2_clean_manual_static_interface_frame_021.png
+|   |   |               5B2_clean_manual_static_interface_frame_022.png
+|   |   |               5B2_clean_manual_static_interface_frame_023.png
+|   |   |               5B2_clean_manual_static_interface_frame_024.png
+|   |   |               5B2_clean_manual_static_interface_frame_025.png
+|   |   |               5B2_clean_manual_static_interface_frame_026.png
+|   |   |               5B2_clean_manual_static_interface_frame_027.png
+|   |   |               5B2_clean_manual_static_interface_frame_028.png
+|   |   |               5B2_clean_manual_static_interface_frame_029.png
+|   |   |               5B2_clean_manual_static_interface_frame_030.png
+|   |   |               5B2_clean_manual_static_interface_frame_031.png
+|   |   |               5B2_clean_manual_static_interface_frame_032.png
+|   |   |               5B2_clean_manual_static_interface_frame_033.png
+|   |   |               5B2_clean_manual_static_interface_frame_034.png
+|   |   |               5B2_clean_manual_static_interface_frame_035.png
+|   |   |               5B2_clean_manual_static_interface_frame_036.png
+|   |   |               5B2_clean_manual_static_interface_frame_037.png
+|   |   |               5B2_clean_manual_static_interface_frame_038.png
+|   |   |               5B2_clean_manual_static_interface_frame_039.png
+|   |   |               5B2_clean_manual_static_interface_frame_040.png
+|   |   |               5B2_clean_manual_static_interface_frame_041.png
+|   |   |               
+|   |   +---logs
+|   |   |       5B2_clean_baseline_audit_20260618_123412.log
+|   |   |       A_physics_audit_20260618_123412.json
+|   |   |       B_clean_static_baseline_summary_20260618_154707.json
+|   |   |       B_clean_static_baseline_summary_20260618_154857.json
+|   |   |       B_clean_static_baseline_summary_20260618_155151.json
+|   |   |       B_clean_static_baseline_summary_20260618_155456.json
+|   |   |       Route_LS_manual_clean_error_20260618_154707.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B2_clean_static_baseline_best.mph
+|   |   |       ring_fountain_v5B2_clean_static_baseline_manual_20260618_154857.mph
+|   |   |       ring_fountain_v5B2_clean_static_baseline_manual_20260618_155151.mph
+|   |   |       ring_fountain_v5B2_clean_static_baseline_manual_20260618_155456.mph
+|   |   |       ring_fountain_v5B2_clean_static_baseline_manual_solved_20260618_154857.mph
+|   |   |       ring_fountain_v5B2_clean_static_baseline_manual_solved_20260618_155151.mph
+|   |   |       ring_fountain_v5B2_clean_static_baseline_manual_solved_20260618_155456.mph
+|   |   |       
+|   |   +---reports
+|   |   |       A_physics_audit.md
+|   |   |       B_clean_static_baseline_report.md
+|   |   |       
+|   |   \---tables
+|   |           A_multiphysics_audit.csv
+|   |           A_physics_feature_audit.csv
+|   |           A_variable_audit.csv
+|   |           clean_baseline_route_comparison.csv
+|   |           
+|   +---5B2_static_ring_free_surface_smoke
+|   |   +---images
+|   |   |   |   5B2_1_boundary_number_map.png
+|   |   |   |   5B2_1_density_rho.png
+|   |   |   |   5B2_1_phils_cloud_with_colorbar.png
+|   |   |   |   5B2_1_phils_interface_line.png
+|   |   |   |   5B2_1_ring_boundary_local_map.png
+|   |   |   |   5B2_1_ring_candidate_highlight.png
+|   |   |   |   5B2_1_static_ring_H_vs_t.png
+|   |   |   |   5B2_1_viscosity_mu.png
+|   |   |   |   
+|   |   |   \---frames
+|   |   |           5B2_1_static_ring_interface_frame_001.png
+|   |   |           5B2_1_static_ring_interface_frame_002.png
+|   |   |           5B2_1_static_ring_interface_frame_003.png
+|   |   |           5B2_1_static_ring_interface_frame_004.png
+|   |   |           5B2_1_static_ring_interface_frame_005.png
+|   |   |           5B2_1_static_ring_interface_frame_006.png
+|   |   |           5B2_1_static_ring_interface_frame_007.png
+|   |   |           5B2_1_static_ring_interface_frame_008.png
+|   |   |           5B2_1_static_ring_interface_frame_009.png
+|   |   |           
+|   |   +---logs
+|   |   |       5B2_1_error_20260617_214957.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B2_1_static_ring_free_surface.mph
+|   |   |       ring_fountain_v5B2_1_static_ring_free_surface_20260617_215636.mph
+|   |   |       ring_fountain_v5B2_1_static_ring_free_surface_20260617_220004.mph
+|   |   |       ring_fountain_v5B2_1_static_ring_free_surface_20260617_220333.mph
+|   |   |       ring_fountain_v5B2_3_static_ring_free_surface_boundary_confirmed.mph
+|   |   |       ring_fountain_v5B2_3_static_ring_free_surface_boundary_confirmed_20260617_215636.mph
+|   |   |       ring_fountain_v5B2_3_static_ring_free_surface_boundary_confirmed_20260617_220004.mph
+|   |   |       ring_fountain_v5B2_3_static_ring_free_surface_boundary_confirmed_20260617_220333.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B2_1_static_ring_free_surface_report.md
+|   |   |       5B2_2_ring_boundary_review_package.md
+|   |   |       5B2_3_boundary_confirmed_report.md
+|   |   |       
+|   |   \---tables
+|   |           5B2_1_boundary_table.csv
+|   |           
+|   +---5B3_C2_alternative_wall_strategy
+|   |   |   5B3_C2_alternative_wall_strategy_summary.json
+|   |   |   
+|   |   +---images
+|   |   |   \---C2_2_static
+|   |   |       |   C2_2_static_H_vs_t.png
+|   |   |       |   C2_2_static_phils_final.png
+|   |   |       |   
+|   |   |       \---frames
+|   |   |               C2_2_static_interface_frame_001.png
+|   |   |               C2_2_static_interface_frame_002.png
+|   |   |               C2_2_static_interface_frame_003.png
+|   |   |               C2_2_static_interface_frame_004.png
+|   |   |               C2_2_static_interface_frame_005.png
+|   |   |               C2_2_static_interface_frame_006.png
+|   |   |               C2_2_static_interface_frame_007.png
+|   |   |               C2_2_static_interface_frame_008.png
+|   |   |               C2_2_static_interface_frame_009.png
+|   |   |               C2_2_static_interface_frame_010.png
+|   |   |               C2_2_static_interface_frame_011.png
+|   |   |               C2_2_static_interface_frame_012.png
+|   |   |               C2_2_static_interface_frame_013.png
+|   |   |               C2_2_static_interface_frame_014.png
+|   |   |               C2_2_static_interface_frame_015.png
+|   |   |               C2_2_static_interface_frame_016.png
+|   |   |               C2_2_static_interface_frame_017.png
+|   |   |               C2_2_static_interface_frame_018.png
+|   |   |               C2_2_static_interface_frame_019.png
+|   |   |               C2_2_static_interface_frame_020.png
+|   |   |               C2_2_static_interface_frame_021.png
+|   |   |               C2_2_static_interface_frame_022.png
+|   |   |               C2_2_static_interface_frame_023.png
+|   |   |               C2_2_static_interface_frame_024.png
+|   |   |               C2_2_static_interface_frame_025.png
+|   |   |               C2_2_static_interface_frame_026.png
+|   |   |               C2_2_static_interface_frame_027.png
+|   |   |               C2_2_static_interface_frame_028.png
+|   |   |               C2_2_static_interface_frame_029.png
+|   |   |               C2_2_static_interface_frame_030.png
+|   |   |               C2_2_static_interface_frame_031.png
+|   |   |               C2_2_static_interface_frame_032.png
+|   |   |               C2_2_static_interface_frame_033.png
+|   |   |               C2_2_static_interface_frame_034.png
+|   |   |               C2_2_static_interface_frame_035.png
+|   |   |               C2_2_static_interface_frame_036.png
+|   |   |               C2_2_static_interface_frame_037.png
+|   |   |               C2_2_static_interface_frame_038.png
+|   |   |               C2_2_static_interface_frame_039.png
+|   |   |               C2_2_static_interface_frame_040.png
+|   |   |               C2_2_static_interface_frame_041.png
+|   |   |               
+|   |   +---logs
+|   |   |       5B3_C2_alternative_wall_strategy_20260618_163329.log
+|   |   |       5B3_C2_alternative_wall_strategy_20260618_163533.log
+|   |   |       5B3_C2_alternative_wall_strategy_20260618_163644.log
+|   |   |       5B3_C2_alternative_wall_strategy_20260618_163957.log
+|   |   |       5B3_C2_alternative_wall_strategy_20260618_164252.log
+|   |   |       5B3_C2_alternative_wall_strategy_20260618_164605.log
+|   |   |       C2_0_feature_probe_20260618_163329.json
+|   |   |       C2_0_feature_probe_20260618_163533.json
+|   |   |       C2_0_feature_probe_20260618_163644.json
+|   |   |       C2_0_feature_probe_20260618_163957.json
+|   |   |       C2_0_feature_probe_20260618_164252.json
+|   |   |       C2_0_feature_probe_20260618_164605.json
+|   |   |       C2_1_wetted_wall_20260618_163329.json
+|   |   |       C2_1_wetted_wall_20260618_163533.json
+|   |   |       C2_1_wetted_wall_20260618_163644.json
+|   |   |       C2_1_wetted_wall_20260618_163957.json
+|   |   |       C2_1_wetted_wall_20260618_164252.json
+|   |   |       C2_1_wetted_wall_20260618_164605.json
+|   |   |       C2_2_rebuilt_selectable_wall_20260618_163329.json
+|   |   |       C2_2_rebuilt_selectable_wall_20260618_163533.json
+|   |   |       C2_2_rebuilt_selectable_wall_20260618_163644.json
+|   |   |       C2_2_rebuilt_selectable_wall_20260618_163957.json
+|   |   |       C2_2_rebuilt_selectable_wall_20260618_164252.json
+|   |   |       C2_2_rebuilt_selectable_wall_20260618_164605.json
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B3_C2c_rebuilt_selectable_wall_model.mph
+|   |   |       ring_fountain_v5B3_C2c_rebuilt_selectable_wall_model_20260618_164605.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B3_C2_alternative_wall_strategy_final_report.md
+|   |   |       C2_0_feature_probe_report.md
+|   |   |       C2_1_wetted_wall_report.md
+|   |   |       C2_2_rebuilt_selectable_wall_report.md
+|   |   |       
+|   |   \---tables
+|   |           C2_0_feature_probe.csv
+|   |           C2_1_wetted_wall_cases.csv
+|   |           C2_2_rebuilt_cases.csv
+|   |           
+|   +---5B3_C3_boundary_semantics_audit
+|   |   |   5B3_C3_boundary_semantics_audit_summary.json
+|   |   |   
+|   |   +---images
+|   |   +---logs
+|   |   |       5B3_C3_boundary_semantics_audit_20260618_170810.log
+|   |   |       5B3_C3_boundary_semantics_audit_20260618_171006.log
+|   |   |       5B3_C3_boundary_semantics_audit_20260618_171128.log
+|   |   |       5B3_C3_boundary_semantics_audit_20260618_171313.log
+|   |   |       5B3_C3_boundary_semantics_audit_20260618_171450.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B3_C3_minimal_moving_wall_test.mph
+|   |   |       ring_fountain_v5B3_C3_minimal_moving_wall_test_20260618_171128.mph
+|   |   |       ring_fountain_v5B3_C3_minimal_moving_wall_test_20260618_171313.mph
+|   |   |       ring_fountain_v5B3_C3_minimal_moving_wall_test_20260618_171450.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B3_C3_boundary_semantics_audit_final_report.md
+|   |   |       C3_0_C2_result_review.md
+|   |   |       C3_1_feature_name_audit.md
+|   |   |       C3_2_minimal_moving_wall_test.md
+|   |   |       C3_3_single_phase_ring_moving_wall_test.md
+|   |   |       C3_4_ring_free_surface_true_moving_wall_test.md
+|   |   |       
+|   |   \---tables
+|   |           C3_1_feature_name_audit.csv
+|   |           C3_2_minimal_moving_wall_cases.csv
+|   |           C3_3_single_phase_ring_moving_wall_cases.csv
+|   |           C3_4_ring_free_surface_true_moving_wall_cases.csv
+|   |           
+|   +---5B3_C4_seed_based_ring_smoke
+|   |   |   5B3_C4_seed_based_ring_smoke_summary.json
+|   |   |   
+|   |   +---exports
+|   |   |       ring_fountain_v5B3_C4_best.java
+|   |   |       ring_fountain_v5B3_C4_best_20260618_182058.java
+|   |   |       
+|   |   +---frames
+|   |   |       D_static_ring_interface_frame_001.png
+|   |   |       D_static_ring_interface_frame_002.png
+|   |   |       D_static_ring_interface_frame_003.png
+|   |   |       D_static_ring_interface_frame_004.png
+|   |   |       D_static_ring_interface_frame_005.png
+|   |   |       D_static_ring_interface_frame_006.png
+|   |   |       D_static_ring_interface_frame_007.png
+|   |   |       D_static_ring_interface_frame_008.png
+|   |   |       D_static_ring_interface_frame_009.png
+|   |   |       D_static_ring_interface_frame_010.png
+|   |   |       D_static_ring_interface_frame_011.png
+|   |   |       D_static_ring_interface_frame_012.png
+|   |   |       D_static_ring_interface_frame_013.png
+|   |   |       D_static_ring_interface_frame_014.png
+|   |   |       D_static_ring_interface_frame_015.png
+|   |   |       D_static_ring_interface_frame_016.png
+|   |   |       D_static_ring_interface_frame_017.png
+|   |   |       D_static_ring_interface_frame_018.png
+|   |   |       D_static_ring_interface_frame_019.png
+|   |   |       D_static_ring_interface_frame_020.png
+|   |   |       D_static_ring_interface_frame_021.png
+|   |   |       E_V1e-4_interface_frame_001.png
+|   |   |       E_V1e-4_interface_frame_002.png
+|   |   |       E_V1e-4_interface_frame_003.png
+|   |   |       E_V1e-4_interface_frame_004.png
+|   |   |       E_V1e-4_interface_frame_005.png
+|   |   |       E_V1e-4_interface_frame_006.png
+|   |   |       E_V1e-4_interface_frame_007.png
+|   |   |       E_V1e-4_interface_frame_008.png
+|   |   |       E_V1e-4_interface_frame_009.png
+|   |   |       E_V1e-4_interface_frame_010.png
+|   |   |       E_V1e-4_interface_frame_011.png
+|   |   |       E_V1e-4_interface_frame_012.png
+|   |   |       E_V1e-4_interface_frame_013.png
+|   |   |       E_V1e-4_interface_frame_014.png
+|   |   |       E_V1e-4_interface_frame_015.png
+|   |   |       E_V1e-4_interface_frame_016.png
+|   |   |       E_V1e-4_interface_frame_017.png
+|   |   |       E_V1e-4_interface_frame_018.png
+|   |   |       E_V1e-4_interface_frame_019.png
+|   |   |       E_V1e-4_interface_frame_020.png
+|   |   |       E_V1e-4_interface_frame_021.png
+|   |   |       F_V1em3_interface_frame_001.png
+|   |   |       F_V1em3_interface_frame_002.png
+|   |   |       F_V1em3_interface_frame_003.png
+|   |   |       F_V1em3_interface_frame_004.png
+|   |   |       F_V1em3_interface_frame_005.png
+|   |   |       F_V1em3_interface_frame_006.png
+|   |   |       F_V1em3_interface_frame_007.png
+|   |   |       F_V1em3_interface_frame_008.png
+|   |   |       F_V1em3_interface_frame_009.png
+|   |   |       F_V1em3_interface_frame_010.png
+|   |   |       F_V1em3_interface_frame_011.png
+|   |   |       F_V1em3_interface_frame_012.png
+|   |   |       F_V1em3_interface_frame_013.png
+|   |   |       F_V1em3_interface_frame_014.png
+|   |   |       F_V1em3_interface_frame_015.png
+|   |   |       F_V1em3_interface_frame_016.png
+|   |   |       F_V1em3_interface_frame_017.png
+|   |   |       F_V1em3_interface_frame_018.png
+|   |   |       F_V1em3_interface_frame_019.png
+|   |   |       F_V1em3_interface_frame_020.png
+|   |   |       F_V1em3_interface_frame_021.png
+|   |   |       F_V5em4_interface_frame_001.png
+|   |   |       F_V5em4_interface_frame_002.png
+|   |   |       F_V5em4_interface_frame_003.png
+|   |   |       F_V5em4_interface_frame_004.png
+|   |   |       F_V5em4_interface_frame_005.png
+|   |   |       F_V5em4_interface_frame_006.png
+|   |   |       F_V5em4_interface_frame_007.png
+|   |   |       F_V5em4_interface_frame_008.png
+|   |   |       F_V5em4_interface_frame_009.png
+|   |   |       F_V5em4_interface_frame_010.png
+|   |   |       F_V5em4_interface_frame_011.png
+|   |   |       F_V5em4_interface_frame_012.png
+|   |   |       F_V5em4_interface_frame_013.png
+|   |   |       F_V5em4_interface_frame_014.png
+|   |   |       F_V5em4_interface_frame_015.png
+|   |   |       F_V5em4_interface_frame_016.png
+|   |   |       F_V5em4_interface_frame_017.png
+|   |   |       F_V5em4_interface_frame_018.png
+|   |   |       F_V5em4_interface_frame_019.png
+|   |   |       F_V5em4_interface_frame_020.png
+|   |   |       F_V5em4_interface_frame_021.png
+|   |   |       
+|   |   +---images
+|   |   |       C_boundary_map.png
+|   |   |       D_static_ring_H_vs_t.png
+|   |   |       D_static_ring_phils_final.png
+|   |   |       E_V1e-4_H_vs_t.png
+|   |   |       E_V1e-4_phils_final.png
+|   |   |       E_V1e-4_velocity_magnitude.png
+|   |   |       F_1em3_H_vs_t.png
+|   |   |       F_1em3_phils_final.png
+|   |   |       F_1em3_velocity_magnitude.png
+|   |   |       F_5em4_H_vs_t.png
+|   |   |       F_5em4_phils_final.png
+|   |   |       F_5em4_velocity_magnitude.png
+|   |   |       
+|   |   +---logs
+|   |   |       5B3_C4_seed_based_ring_smoke_20260618_181815.log
+|   |   |       5B3_C4_seed_based_ring_smoke_20260618_181911.log
+|   |   |       5B3_C4_seed_based_ring_smoke_20260618_182058.log
+|   |   |       C_ring_twophase_build.log
+|   |   |       D_static_ring_baseline.log
+|   |   |       F_velocity_ramp_smoke.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B3_C4_1em3_smoke.mph
+|   |   |       ring_fountain_v5B3_C4_5em4_smoke.mph
+|   |   |       ring_fountain_v5B3_C4_best.mph
+|   |   |       ring_fountain_v5B3_C4_best_20260618_182058.mph
+|   |   |       ring_fountain_v5B3_C4_ring_twophase_smoke_base.mph
+|   |   |       ring_fountain_v5B3_C4_ring_twophase_smoke_base_20260618_181911.mph
+|   |   |       ring_fountain_v5B3_C4_ring_twophase_smoke_base_20260618_182058.mph
+|   |   |       ring_fountain_v5B3_C4_static_ring_baseline.mph
+|   |   |       ring_fountain_v5B3_C4_V1e-4_smoke.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B3_C4_seed_based_ring_smoke_final_report.md
+|   |   |       A_gui_auto_seed_import_review.md
+|   |   |       B_seed_java_reusable_api_skeleton.md
+|   |   |       C_ring_twophase_geometry_and_boundary_report.md
+|   |   |       D_static_ring_baseline_report.md
+|   |   |       E_V1e-4_smoke_report.md
+|   |   |       F_1em3_smoke_report.md
+|   |   |       F_5em4_smoke_report.md
+|   |   |       F_velocity_ramp_smoke_report.md
+|   |   |       G_reproducibility_and_java_export_report.md
+|   |   |       
+|   |   +---scripts
+|   |   |       ring_fountain_stage5b3_C4_seed_based_ring_smoke.py
+|   |   |       
+|   |   \---tables
+|   |           A_gui_auto_seed_api_names.csv
+|   |           B_extracted_seed_api_skeleton.csv
+|   |           C_boundary_selection_table.csv
+|   |           D_static_ring_H_vs_t.csv
+|   |           E_V1e-4_H_vs_t.csv
+|   |           F_1em3_H_vs_t.csv
+|   |           F_5em4_H_vs_t.csv
+|   |           F_velocity_ramp_smoke_cases.csv
+|   |           G_best_model_manifest.csv
+|   |           
+|   +---5B3_GUI_auto_seed
+|   |   |   5B3_GUI_auto_seed_summary.json
+|   |   |   
+|   |   +---exports
+|   |   |       reference_capillary_filling_ls.java
+|   |   |       ring_fountain_gui_auto_seed_minimal_twophase_wall.java
+|   |   |       
+|   |   +---logs
+|   |   |       5B3_GUI_auto_seed_20260618_174704.log
+|   |   |       B_local_search.log
+|   |   |       reference_export_test.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_gui_auto_seed_minimal_twophase_wall.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B3_GUI_auto_seed_final_report.md
+|   |   |       A_previous_stage_review.md
+|   |   |       B_local_installation_search.md
+|   |   |       C_api_seed_attempt.md
+|   |   |       D_gui_automation_seed_attempt.md
+|   |   |       F_exported_java_api_analysis.md
+|   |   |       
+|   |   +---screenshots
+|   |   +---scripts
+|   |   |       ring_fountain_stage5b3_GUI_auto_seed.py
+|   |   |       
+|   |   \---tables
+|   |           C_api_seed_cases.csv
+|   |           C_seed_model_metadata.json
+|   |           D_gui_automation_steps.csv
+|   |           feature_name_discovery.csv
+|   |           F_extracted_api_names.csv
+|   |           
+|   +---5B3_minimal_retry
+|   |   |   5B2_clean_and_5B3_minimal_retry_summary.json
+|   |   |   
+|   |   +---images
+|   |   +---logs
+|   |   |       5B2_clean_and_5B3_minimal_20260618_154707.log
+|   |   |       5B2_clean_and_5B3_minimal_20260618_154857.log
+|   |   |       5B2_clean_and_5B3_minimal_20260618_155151.log
+|   |   |       5B2_clean_and_5B3_minimal_20260618_155456.log
+|   |   |       C_wall_nonoverlap_audit_20260618_155456.json
+|   |   |       S1_vertical_edges_only_V0p002_t0p01_error_20260618_154857.log
+|   |   |       S1_vertical_edges_only_V0p002_t0p01_error_20260618_155151.log
+|   |   |       S2_bottom_edge_only_V0p002_t0p01_error_20260618_154857.log
+|   |   |       S2_bottom_edge_only_V0p002_t0p01_error_20260618_155151.log
+|   |   |       S3_top_edge_only_V0p002_t0p01_error_20260618_154857.log
+|   |   |       S3_top_edge_only_V0p002_t0p01_error_20260618_155151.log
+|   |   |       S4_horizontal_edges_only_V0p002_t0p01_error_20260618_154857.log
+|   |   |       S4_horizontal_edges_only_V0p002_t0p01_error_20260618_155151.log
+|   |   |       S5_all_edges_V0p002_t0p01_error_20260618_154857.log
+|   |   |       S5_all_edges_V0p002_t0p01_error_20260618_155151.log
+|   |   |       
+|   |   +---models
+|   |   +---reports
+|   |   |       5B2_clean_and_5B3_minimal_retry_final_report.md
+|   |   |       C_wall_nonoverlap_audit.md
+|   |   |       D_minimal_moving_wall_retry_report.md
+|   |   |       
+|   |   \---tables
+|   |           minimal_moving_wall_cases.csv
+|   |           
+|   +---5B3_moving_wall_ring_free_surface
+|   |   +---images
+|   |   |   \---frames
+|   |   +---logs
+|   |   |       repair1_V001_t003_ramp_error_20260617_220004.log
+|   |   |       repair1_V001_t003_ramp_error_20260617_220333.log
+|   |   |       repair2_V002_t003_ramp_error_20260617_220004.log
+|   |   |       repair2_V002_t003_ramp_error_20260617_220333.log
+|   |   |       repair3_V001_t002_ramp_error_20260617_220004.log
+|   |   |       repair3_V001_t002_ramp_error_20260617_220333.log
+|   |   |       V002_t012_error_20260617_215636.log
+|   |   |       V002_t012_error_20260617_220004.log
+|   |   |       V002_t012_error_20260617_220333.log
+|   |   |       V005_t012_error_20260617_215636.log
+|   |   |       V005_t012_error_20260617_220004.log
+|   |   |       V005_t012_error_20260617_220333.log
+|   |   |       V010_t012_error_20260617_215636.log
+|   |   |       V010_t012_error_20260617_220004.log
+|   |   |       V010_t012_error_20260617_220333.log
+|   |   |       
+|   |   +---models
+|   |   +---reports
+|   |   |       5B3_moving_wall_ring_free_surface_report.md
+|   |   |       5B3_stop_report.md
+|   |   |       
+|   |   \---tables
+|   |           5B3_case_review.csv
+|   |           
+|   +---5B3_stability_repair
+|   |   |   5B3_stability_repair_summary.json
+|   |   |   
+|   |   +---images
+|   |   |   +---frames
+|   |   |   \---R1_static_baseline
+|   |   |       |   5B3_R1_static_baseline_H_vs_t.png
+|   |   |       |   
+|   |   |       \---frames
+|   |   |               5B3_R1_static_baseline_interface_frame_001.png
+|   |   |               5B3_R1_static_baseline_interface_frame_002.png
+|   |   |               5B3_R1_static_baseline_interface_frame_003.png
+|   |   |               5B3_R1_static_baseline_interface_frame_004.png
+|   |   |               5B3_R1_static_baseline_interface_frame_005.png
+|   |   |               5B3_R1_static_baseline_interface_frame_006.png
+|   |   |               5B3_R1_static_baseline_interface_frame_007.png
+|   |   |               5B3_R1_static_baseline_interface_frame_008.png
+|   |   |               5B3_R1_static_baseline_interface_frame_009.png
+|   |   |               5B3_R1_static_baseline_interface_frame_010.png
+|   |   |               5B3_R1_static_baseline_interface_frame_011.png
+|   |   |               5B3_R1_static_baseline_interface_frame_012.png
+|   |   |               5B3_R1_static_baseline_interface_frame_013.png
+|   |   |               5B3_R1_static_baseline_interface_frame_014.png
+|   |   |               5B3_R1_static_baseline_interface_frame_015.png
+|   |   |               5B3_R1_static_baseline_interface_frame_016.png
+|   |   |               5B3_R1_static_baseline_interface_frame_017.png
+|   |   |               5B3_R1_static_baseline_interface_frame_018.png
+|   |   |               5B3_R1_static_baseline_interface_frame_019.png
+|   |   |               5B3_R1_static_baseline_interface_frame_020.png
+|   |   |               5B3_R1_static_baseline_interface_frame_021.png
+|   |   |               5B3_R1_static_baseline_interface_frame_022.png
+|   |   |               5B3_R1_static_baseline_interface_frame_023.png
+|   |   |               5B3_R1_static_baseline_interface_frame_024.png
+|   |   |               5B3_R1_static_baseline_interface_frame_025.png
+|   |   |               5B3_R1_static_baseline_interface_frame_026.png
+|   |   |               5B3_R1_static_baseline_interface_frame_027.png
+|   |   |               5B3_R1_static_baseline_interface_frame_028.png
+|   |   |               5B3_R1_static_baseline_interface_frame_029.png
+|   |   |               5B3_R1_static_baseline_interface_frame_030.png
+|   |   |               5B3_R1_static_baseline_interface_frame_031.png
+|   |   |               5B3_R1_static_baseline_interface_frame_032.png
+|   |   |               5B3_R1_static_baseline_interface_frame_033.png
+|   |   |               5B3_R1_static_baseline_interface_frame_034.png
+|   |   |               5B3_R1_static_baseline_interface_frame_035.png
+|   |   |               5B3_R1_static_baseline_interface_frame_036.png
+|   |   |               5B3_R1_static_baseline_interface_frame_037.png
+|   |   |               5B3_R1_static_baseline_interface_frame_038.png
+|   |   |               5B3_R1_static_baseline_interface_frame_039.png
+|   |   |               5B3_R1_static_baseline_interface_frame_040.png
+|   |   |               5B3_R1_static_baseline_interface_frame_041.png
+|   |   |               5B3_R1_static_baseline_interface_frame_042.png
+|   |   |               5B3_R1_static_baseline_interface_frame_043.png
+|   |   |               5B3_R1_static_baseline_interface_frame_044.png
+|   |   |               5B3_R1_static_baseline_interface_frame_045.png
+|   |   |               5B3_R1_static_baseline_interface_frame_046.png
+|   |   |               5B3_R1_static_baseline_interface_frame_047.png
+|   |   |               5B3_R1_static_baseline_interface_frame_048.png
+|   |   |               5B3_R1_static_baseline_interface_frame_049.png
+|   |   |               5B3_R1_static_baseline_interface_frame_050.png
+|   |   |               5B3_R1_static_baseline_interface_frame_051.png
+|   |   |               5B3_R1_static_baseline_interface_frame_052.png
+|   |   |               5B3_R1_static_baseline_interface_frame_053.png
+|   |   |               5B3_R1_static_baseline_interface_frame_054.png
+|   |   |               5B3_R1_static_baseline_interface_frame_055.png
+|   |   |               5B3_R1_static_baseline_interface_frame_056.png
+|   |   |               5B3_R1_static_baseline_interface_frame_057.png
+|   |   |               5B3_R1_static_baseline_interface_frame_058.png
+|   |   |               5B3_R1_static_baseline_interface_frame_059.png
+|   |   |               5B3_R1_static_baseline_interface_frame_060.png
+|   |   |               5B3_R1_static_baseline_interface_frame_061.png
+|   |   |               5B3_R1_static_baseline_interface_frame_062.png
+|   |   |               5B3_R1_static_baseline_interface_frame_063.png
+|   |   |               5B3_R1_static_baseline_interface_frame_064.png
+|   |   |               5B3_R1_static_baseline_interface_frame_065.png
+|   |   |               5B3_R1_static_baseline_interface_frame_066.png
+|   |   |               5B3_R1_static_baseline_interface_frame_067.png
+|   |   |               5B3_R1_static_baseline_interface_frame_068.png
+|   |   |               5B3_R1_static_baseline_interface_frame_069.png
+|   |   |               5B3_R1_static_baseline_interface_frame_070.png
+|   |   |               5B3_R1_static_baseline_interface_frame_071.png
+|   |   |               5B3_R1_static_baseline_interface_frame_072.png
+|   |   |               5B3_R1_static_baseline_interface_frame_073.png
+|   |   |               5B3_R1_static_baseline_interface_frame_074.png
+|   |   |               5B3_R1_static_baseline_interface_frame_075.png
+|   |   |               5B3_R1_static_baseline_interface_frame_076.png
+|   |   |               5B3_R1_static_baseline_interface_frame_077.png
+|   |   |               5B3_R1_static_baseline_interface_frame_078.png
+|   |   |               5B3_R1_static_baseline_interface_frame_079.png
+|   |   |               5B3_R1_static_baseline_interface_frame_080.png
+|   |   |               5B3_R1_static_baseline_interface_frame_081.png
+|   |   |               5B3_R1_static_baseline_interface_frame_082.png
+|   |   |               5B3_R1_static_baseline_interface_frame_083.png
+|   |   |               5B3_R1_static_baseline_interface_frame_084.png
+|   |   |               5B3_R1_static_baseline_interface_frame_085.png
+|   |   |               5B3_R1_static_baseline_interface_frame_086.png
+|   |   |               5B3_R1_static_baseline_interface_frame_087.png
+|   |   |               5B3_R1_static_baseline_interface_frame_088.png
+|   |   |               5B3_R1_static_baseline_interface_frame_089.png
+|   |   |               5B3_R1_static_baseline_interface_frame_090.png
+|   |   |               5B3_R1_static_baseline_interface_frame_091.png
+|   |   |               5B3_R1_static_baseline_interface_frame_092.png
+|   |   |               5B3_R1_static_baseline_interface_frame_093.png
+|   |   |               5B3_R1_static_baseline_interface_frame_094.png
+|   |   |               5B3_R1_static_baseline_interface_frame_095.png
+|   |   |               5B3_R1_static_baseline_interface_frame_096.png
+|   |   |               5B3_R1_static_baseline_interface_frame_097.png
+|   |   |               5B3_R1_static_baseline_interface_frame_098.png
+|   |   |               5B3_R1_static_baseline_interface_frame_099.png
+|   |   |               5B3_R1_static_baseline_interface_frame_100.png
+|   |   |               5B3_R1_static_baseline_interface_frame_101.png
+|   |   |               
+|   |   +---logs
+|   |   |       5B3_R0_wall_feature_audit_20260618_112627.json
+|   |   |       5B3_R0_wall_feature_audit_20260618_113750.json
+|   |   |       5B3_stability_repair_20260618_112627.log
+|   |   |       5B3_stability_repair_20260618_113750.log
+|   |   |       
+|   |   +---models
+|   |   +---reports
+|   |   |       5B3_R0_wall_feature_audit.md
+|   |   |       5B3_R1_static_baseline_report.md
+|   |   |       5B3_R2_grouped_moving_wall_report.md
+|   |   |       5B3_R3_fillet_repair_report.md
+|   |   |       5B3_R4_physics_route_report.md
+|   |   |       5B3_stability_repair_final_report.md
+|   |   |       
+|   |   \---tables
+|   |           moving_wall_group_tests.csv
+|   |           static_baseline_H_vs_t.csv
+|   |           
+|   +---5B4_falling_or_equivalent_ring
+|   |   |   5B4_falling_or_equivalent_ring_summary.json
+|   |   |   
+|   |   +---exports
+|   |   |       ring_fountain_v5B4_best.java
+|   |   |       ring_fountain_v5B4_best_20260618_202100.java
+|   |   |       
+|   |   +---frames
+|   |   |       C_static_regression_interface_frame_001.png
+|   |   |       C_static_regression_interface_frame_002.png
+|   |   |       C_static_regression_interface_frame_003.png
+|   |   |       C_static_regression_interface_frame_004.png
+|   |   |       C_static_regression_interface_frame_005.png
+|   |   |       C_static_regression_interface_frame_006.png
+|   |   |       C_static_regression_interface_frame_007.png
+|   |   |       C_static_regression_interface_frame_008.png
+|   |   |       C_static_regression_interface_frame_009.png
+|   |   |       C_static_regression_interface_frame_010.png
+|   |   |       C_static_regression_interface_frame_011.png
+|   |   |       C_static_regression_interface_frame_012.png
+|   |   |       C_static_regression_interface_frame_013.png
+|   |   |       C_static_regression_interface_frame_014.png
+|   |   |       C_static_regression_interface_frame_015.png
+|   |   |       C_static_regression_interface_frame_016.png
+|   |   |       C_static_regression_interface_frame_017.png
+|   |   |       C_static_regression_interface_frame_018.png
+|   |   |       C_static_regression_interface_frame_019.png
+|   |   |       C_static_regression_interface_frame_020.png
+|   |   |       C_static_regression_interface_frame_021.png
+|   |   |       C_static_regression_interface_frame_022.png
+|   |   |       C_static_regression_interface_frame_023.png
+|   |   |       C_static_regression_interface_frame_024.png
+|   |   |       C_static_regression_interface_frame_025.png
+|   |   |       C_static_regression_interface_frame_026.png
+|   |   |       C_static_regression_interface_frame_027.png
+|   |   |       C_static_regression_interface_frame_028.png
+|   |   |       C_static_regression_interface_frame_029.png
+|   |   |       C_static_regression_interface_frame_030.png
+|   |   |       C_static_regression_interface_frame_031.png
+|   |   |       C_static_regression_interface_frame_032.png
+|   |   |       C_static_regression_interface_frame_033.png
+|   |   |       C_static_regression_interface_frame_034.png
+|   |   |       C_static_regression_interface_frame_035.png
+|   |   |       C_static_regression_interface_frame_036.png
+|   |   |       C_static_regression_interface_frame_037.png
+|   |   |       C_static_regression_interface_frame_038.png
+|   |   |       C_static_regression_interface_frame_039.png
+|   |   |       C_static_regression_interface_frame_040.png
+|   |   |       C_static_regression_interface_frame_041.png
+|   |   |       C_static_regression_interface_frame_042.png
+|   |   |       C_static_regression_interface_frame_043.png
+|   |   |       C_static_regression_interface_frame_044.png
+|   |   |       C_static_regression_interface_frame_045.png
+|   |   |       C_static_regression_interface_frame_046.png
+|   |   |       C_static_regression_interface_frame_047.png
+|   |   |       C_static_regression_interface_frame_048.png
+|   |   |       C_static_regression_interface_frame_049.png
+|   |   |       C_static_regression_interface_frame_050.png
+|   |   |       C_static_regression_interface_frame_051.png
+|   |   |       D1_interface_frame_001.png
+|   |   |       D1_interface_frame_002.png
+|   |   |       D1_interface_frame_003.png
+|   |   |       D1_interface_frame_004.png
+|   |   |       D1_interface_frame_005.png
+|   |   |       D1_interface_frame_006.png
+|   |   |       D1_interface_frame_007.png
+|   |   |       D1_interface_frame_008.png
+|   |   |       D1_interface_frame_009.png
+|   |   |       D1_interface_frame_010.png
+|   |   |       D1_interface_frame_011.png
+|   |   |       D1_interface_frame_012.png
+|   |   |       D1_interface_frame_013.png
+|   |   |       D1_interface_frame_014.png
+|   |   |       D1_interface_frame_015.png
+|   |   |       D1_interface_frame_016.png
+|   |   |       D1_interface_frame_017.png
+|   |   |       D1_interface_frame_018.png
+|   |   |       D1_interface_frame_019.png
+|   |   |       D1_interface_frame_020.png
+|   |   |       D1_interface_frame_021.png
+|   |   |       D1_interface_frame_022.png
+|   |   |       D1_interface_frame_023.png
+|   |   |       D1_interface_frame_024.png
+|   |   |       D1_interface_frame_025.png
+|   |   |       D1_interface_frame_026.png
+|   |   |       D1_interface_frame_027.png
+|   |   |       D1_interface_frame_028.png
+|   |   |       D1_interface_frame_029.png
+|   |   |       D1_interface_frame_030.png
+|   |   |       D1_interface_frame_031.png
+|   |   |       D1_interface_frame_032.png
+|   |   |       D1_interface_frame_033.png
+|   |   |       D1_interface_frame_034.png
+|   |   |       D1_interface_frame_035.png
+|   |   |       D1_interface_frame_036.png
+|   |   |       D1_interface_frame_037.png
+|   |   |       D1_interface_frame_038.png
+|   |   |       D1_interface_frame_039.png
+|   |   |       D1_interface_frame_040.png
+|   |   |       D1_interface_frame_041.png
+|   |   |       D1_interface_frame_042.png
+|   |   |       D1_interface_frame_043.png
+|   |   |       D1_interface_frame_044.png
+|   |   |       D1_interface_frame_045.png
+|   |   |       D1_interface_frame_046.png
+|   |   |       D1_interface_frame_047.png
+|   |   |       D1_interface_frame_048.png
+|   |   |       D1_interface_frame_049.png
+|   |   |       D1_interface_frame_050.png
+|   |   |       D1_interface_frame_051.png
+|   |   |       D2_interface_frame_001.png
+|   |   |       D2_interface_frame_002.png
+|   |   |       D2_interface_frame_003.png
+|   |   |       D2_interface_frame_004.png
+|   |   |       D2_interface_frame_005.png
+|   |   |       D2_interface_frame_006.png
+|   |   |       D2_interface_frame_007.png
+|   |   |       D2_interface_frame_008.png
+|   |   |       D2_interface_frame_009.png
+|   |   |       D2_interface_frame_010.png
+|   |   |       D2_interface_frame_011.png
+|   |   |       D2_interface_frame_012.png
+|   |   |       D2_interface_frame_013.png
+|   |   |       D2_interface_frame_014.png
+|   |   |       D2_interface_frame_015.png
+|   |   |       D2_interface_frame_016.png
+|   |   |       D2_interface_frame_017.png
+|   |   |       D2_interface_frame_018.png
+|   |   |       D2_interface_frame_019.png
+|   |   |       D2_interface_frame_020.png
+|   |   |       D2_interface_frame_021.png
+|   |   |       D2_interface_frame_022.png
+|   |   |       D2_interface_frame_023.png
+|   |   |       D2_interface_frame_024.png
+|   |   |       D2_interface_frame_025.png
+|   |   |       D2_interface_frame_026.png
+|   |   |       D2_interface_frame_027.png
+|   |   |       D2_interface_frame_028.png
+|   |   |       D2_interface_frame_029.png
+|   |   |       D2_interface_frame_030.png
+|   |   |       D2_interface_frame_031.png
+|   |   |       D2_interface_frame_032.png
+|   |   |       D2_interface_frame_033.png
+|   |   |       D2_interface_frame_034.png
+|   |   |       D2_interface_frame_035.png
+|   |   |       D2_interface_frame_036.png
+|   |   |       D2_interface_frame_037.png
+|   |   |       D2_interface_frame_038.png
+|   |   |       D2_interface_frame_039.png
+|   |   |       D2_interface_frame_040.png
+|   |   |       D2_interface_frame_041.png
+|   |   |       D2_interface_frame_042.png
+|   |   |       D2_interface_frame_043.png
+|   |   |       D2_interface_frame_044.png
+|   |   |       D2_interface_frame_045.png
+|   |   |       D2_interface_frame_046.png
+|   |   |       D2_interface_frame_047.png
+|   |   |       D2_interface_frame_048.png
+|   |   |       D2_interface_frame_049.png
+|   |   |       D2_interface_frame_050.png
+|   |   |       D2_interface_frame_051.png
+|   |   |       D3_interface_frame_001.png
+|   |   |       D3_interface_frame_002.png
+|   |   |       D3_interface_frame_003.png
+|   |   |       D3_interface_frame_004.png
+|   |   |       D3_interface_frame_005.png
+|   |   |       D3_interface_frame_006.png
+|   |   |       D3_interface_frame_007.png
+|   |   |       D3_interface_frame_008.png
+|   |   |       D3_interface_frame_009.png
+|   |   |       D3_interface_frame_010.png
+|   |   |       D3_interface_frame_011.png
+|   |   |       D3_interface_frame_012.png
+|   |   |       D3_interface_frame_013.png
+|   |   |       D3_interface_frame_014.png
+|   |   |       D3_interface_frame_015.png
+|   |   |       D3_interface_frame_016.png
+|   |   |       D3_interface_frame_017.png
+|   |   |       D3_interface_frame_018.png
+|   |   |       D3_interface_frame_019.png
+|   |   |       D3_interface_frame_020.png
+|   |   |       D3_interface_frame_021.png
+|   |   |       D3_interface_frame_022.png
+|   |   |       D3_interface_frame_023.png
+|   |   |       D3_interface_frame_024.png
+|   |   |       D3_interface_frame_025.png
+|   |   |       D3_interface_frame_026.png
+|   |   |       D3_interface_frame_027.png
+|   |   |       D3_interface_frame_028.png
+|   |   |       D3_interface_frame_029.png
+|   |   |       D3_interface_frame_030.png
+|   |   |       D3_interface_frame_031.png
+|   |   |       D3_interface_frame_032.png
+|   |   |       D3_interface_frame_033.png
+|   |   |       D3_interface_frame_034.png
+|   |   |       D3_interface_frame_035.png
+|   |   |       D3_interface_frame_036.png
+|   |   |       D3_interface_frame_037.png
+|   |   |       D3_interface_frame_038.png
+|   |   |       D3_interface_frame_039.png
+|   |   |       D3_interface_frame_040.png
+|   |   |       D3_interface_frame_041.png
+|   |   |       D3_interface_frame_042.png
+|   |   |       D3_interface_frame_043.png
+|   |   |       D3_interface_frame_044.png
+|   |   |       D3_interface_frame_045.png
+|   |   |       D3_interface_frame_046.png
+|   |   |       D3_interface_frame_047.png
+|   |   |       D3_interface_frame_048.png
+|   |   |       D3_interface_frame_049.png
+|   |   |       D3_interface_frame_050.png
+|   |   |       D3_interface_frame_051.png
+|   |   |       D3_interface_frame_052.png
+|   |   |       D3_interface_frame_053.png
+|   |   |       D3_interface_frame_054.png
+|   |   |       D3_interface_frame_055.png
+|   |   |       D3_interface_frame_056.png
+|   |   |       D3_interface_frame_057.png
+|   |   |       D3_interface_frame_058.png
+|   |   |       D3_interface_frame_059.png
+|   |   |       D3_interface_frame_060.png
+|   |   |       D3_interface_frame_061.png
+|   |   |       D3_interface_frame_062.png
+|   |   |       D3_interface_frame_063.png
+|   |   |       D3_interface_frame_064.png
+|   |   |       D3_interface_frame_065.png
+|   |   |       D3_interface_frame_066.png
+|   |   |       D3_interface_frame_067.png
+|   |   |       D3_interface_frame_068.png
+|   |   |       D3_interface_frame_069.png
+|   |   |       D3_interface_frame_070.png
+|   |   |       D3_interface_frame_071.png
+|   |   |       D3_interface_frame_072.png
+|   |   |       D3_interface_frame_073.png
+|   |   |       D3_interface_frame_074.png
+|   |   |       D3_interface_frame_075.png
+|   |   |       D3_interface_frame_076.png
+|   |   |       D3_interface_frame_077.png
+|   |   |       D3_interface_frame_078.png
+|   |   |       D3_interface_frame_079.png
+|   |   |       D3_interface_frame_080.png
+|   |   |       D3_interface_frame_081.png
+|   |   |       D4_interface_frame_001.png
+|   |   |       D4_interface_frame_002.png
+|   |   |       D4_interface_frame_003.png
+|   |   |       D4_interface_frame_004.png
+|   |   |       D4_interface_frame_005.png
+|   |   |       D4_interface_frame_006.png
+|   |   |       D4_interface_frame_007.png
+|   |   |       D4_interface_frame_008.png
+|   |   |       D4_interface_frame_009.png
+|   |   |       D4_interface_frame_010.png
+|   |   |       D4_interface_frame_011.png
+|   |   |       D4_interface_frame_012.png
+|   |   |       D4_interface_frame_013.png
+|   |   |       D4_interface_frame_014.png
+|   |   |       D4_interface_frame_015.png
+|   |   |       D4_interface_frame_016.png
+|   |   |       D4_interface_frame_017.png
+|   |   |       D4_interface_frame_018.png
+|   |   |       D4_interface_frame_019.png
+|   |   |       D4_interface_frame_020.png
+|   |   |       D4_interface_frame_021.png
+|   |   |       D4_interface_frame_022.png
+|   |   |       D4_interface_frame_023.png
+|   |   |       D4_interface_frame_024.png
+|   |   |       D4_interface_frame_025.png
+|   |   |       D4_interface_frame_026.png
+|   |   |       D4_interface_frame_027.png
+|   |   |       D4_interface_frame_028.png
+|   |   |       D4_interface_frame_029.png
+|   |   |       D4_interface_frame_030.png
+|   |   |       D4_interface_frame_031.png
+|   |   |       D4_interface_frame_032.png
+|   |   |       D4_interface_frame_033.png
+|   |   |       D4_interface_frame_034.png
+|   |   |       D4_interface_frame_035.png
+|   |   |       D4_interface_frame_036.png
+|   |   |       D4_interface_frame_037.png
+|   |   |       D4_interface_frame_038.png
+|   |   |       D4_interface_frame_039.png
+|   |   |       D4_interface_frame_040.png
+|   |   |       D4_interface_frame_041.png
+|   |   |       D4_interface_frame_042.png
+|   |   |       D4_interface_frame_043.png
+|   |   |       D4_interface_frame_044.png
+|   |   |       D4_interface_frame_045.png
+|   |   |       D4_interface_frame_046.png
+|   |   |       D4_interface_frame_047.png
+|   |   |       D4_interface_frame_048.png
+|   |   |       D4_interface_frame_049.png
+|   |   |       D4_interface_frame_050.png
+|   |   |       D4_interface_frame_051.png
+|   |   |       D4_interface_frame_052.png
+|   |   |       D4_interface_frame_053.png
+|   |   |       D4_interface_frame_054.png
+|   |   |       D4_interface_frame_055.png
+|   |   |       D4_interface_frame_056.png
+|   |   |       D4_interface_frame_057.png
+|   |   |       D4_interface_frame_058.png
+|   |   |       D4_interface_frame_059.png
+|   |   |       D4_interface_frame_060.png
+|   |   |       D4_interface_frame_061.png
+|   |   |       D4_interface_frame_062.png
+|   |   |       D4_interface_frame_063.png
+|   |   |       D4_interface_frame_064.png
+|   |   |       D4_interface_frame_065.png
+|   |   |       D4_interface_frame_066.png
+|   |   |       D4_interface_frame_067.png
+|   |   |       D4_interface_frame_068.png
+|   |   |       D4_interface_frame_069.png
+|   |   |       D4_interface_frame_070.png
+|   |   |       D4_interface_frame_071.png
+|   |   |       D4_interface_frame_072.png
+|   |   |       D4_interface_frame_073.png
+|   |   |       D4_interface_frame_074.png
+|   |   |       D4_interface_frame_075.png
+|   |   |       D4_interface_frame_076.png
+|   |   |       D4_interface_frame_077.png
+|   |   |       D4_interface_frame_078.png
+|   |   |       D4_interface_frame_079.png
+|   |   |       D4_interface_frame_080.png
+|   |   |       D4_interface_frame_081.png
+|   |   |       D4_interface_frame_082.png
+|   |   |       D4_interface_frame_083.png
+|   |   |       D4_interface_frame_084.png
+|   |   |       D4_interface_frame_085.png
+|   |   |       D4_interface_frame_086.png
+|   |   |       D4_interface_frame_087.png
+|   |   |       D4_interface_frame_088.png
+|   |   |       D4_interface_frame_089.png
+|   |   |       D4_interface_frame_090.png
+|   |   |       D4_interface_frame_091.png
+|   |   |       D4_interface_frame_092.png
+|   |   |       D4_interface_frame_093.png
+|   |   |       D4_interface_frame_094.png
+|   |   |       D4_interface_frame_095.png
+|   |   |       D4_interface_frame_096.png
+|   |   |       D4_interface_frame_097.png
+|   |   |       D4_interface_frame_098.png
+|   |   |       D4_interface_frame_099.png
+|   |   |       D4_interface_frame_100.png
+|   |   |       D4_interface_frame_101.png
+|   |   |       E_extended_stability_interface_frame_001.png
+|   |   |       E_extended_stability_interface_frame_002.png
+|   |   |       E_extended_stability_interface_frame_003.png
+|   |   |       E_extended_stability_interface_frame_004.png
+|   |   |       E_extended_stability_interface_frame_005.png
+|   |   |       E_extended_stability_interface_frame_006.png
+|   |   |       E_extended_stability_interface_frame_007.png
+|   |   |       E_extended_stability_interface_frame_008.png
+|   |   |       E_extended_stability_interface_frame_009.png
+|   |   |       E_extended_stability_interface_frame_010.png
+|   |   |       E_extended_stability_interface_frame_011.png
+|   |   |       E_extended_stability_interface_frame_012.png
+|   |   |       E_extended_stability_interface_frame_013.png
+|   |   |       E_extended_stability_interface_frame_014.png
+|   |   |       E_extended_stability_interface_frame_015.png
+|   |   |       E_extended_stability_interface_frame_016.png
+|   |   |       E_extended_stability_interface_frame_017.png
+|   |   |       E_extended_stability_interface_frame_018.png
+|   |   |       E_extended_stability_interface_frame_019.png
+|   |   |       E_extended_stability_interface_frame_020.png
+|   |   |       E_extended_stability_interface_frame_021.png
+|   |   |       E_extended_stability_interface_frame_022.png
+|   |   |       E_extended_stability_interface_frame_023.png
+|   |   |       E_extended_stability_interface_frame_024.png
+|   |   |       E_extended_stability_interface_frame_025.png
+|   |   |       E_extended_stability_interface_frame_026.png
+|   |   |       E_extended_stability_interface_frame_027.png
+|   |   |       E_extended_stability_interface_frame_028.png
+|   |   |       E_extended_stability_interface_frame_029.png
+|   |   |       E_extended_stability_interface_frame_030.png
+|   |   |       E_extended_stability_interface_frame_031.png
+|   |   |       E_extended_stability_interface_frame_032.png
+|   |   |       E_extended_stability_interface_frame_033.png
+|   |   |       E_extended_stability_interface_frame_034.png
+|   |   |       E_extended_stability_interface_frame_035.png
+|   |   |       E_extended_stability_interface_frame_036.png
+|   |   |       E_extended_stability_interface_frame_037.png
+|   |   |       E_extended_stability_interface_frame_038.png
+|   |   |       E_extended_stability_interface_frame_039.png
+|   |   |       E_extended_stability_interface_frame_040.png
+|   |   |       E_extended_stability_interface_frame_041.png
+|   |   |       E_extended_stability_interface_frame_042.png
+|   |   |       E_extended_stability_interface_frame_043.png
+|   |   |       E_extended_stability_interface_frame_044.png
+|   |   |       E_extended_stability_interface_frame_045.png
+|   |   |       E_extended_stability_interface_frame_046.png
+|   |   |       E_extended_stability_interface_frame_047.png
+|   |   |       E_extended_stability_interface_frame_048.png
+|   |   |       E_extended_stability_interface_frame_049.png
+|   |   |       E_extended_stability_interface_frame_050.png
+|   |   |       E_extended_stability_interface_frame_051.png
+|   |   |       E_extended_stability_interface_frame_052.png
+|   |   |       E_extended_stability_interface_frame_053.png
+|   |   |       E_extended_stability_interface_frame_054.png
+|   |   |       E_extended_stability_interface_frame_055.png
+|   |   |       E_extended_stability_interface_frame_056.png
+|   |   |       E_extended_stability_interface_frame_057.png
+|   |   |       E_extended_stability_interface_frame_058.png
+|   |   |       E_extended_stability_interface_frame_059.png
+|   |   |       E_extended_stability_interface_frame_060.png
+|   |   |       E_extended_stability_interface_frame_061.png
+|   |   |       E_extended_stability_interface_frame_062.png
+|   |   |       E_extended_stability_interface_frame_063.png
+|   |   |       E_extended_stability_interface_frame_064.png
+|   |   |       E_extended_stability_interface_frame_065.png
+|   |   |       E_extended_stability_interface_frame_066.png
+|   |   |       E_extended_stability_interface_frame_067.png
+|   |   |       E_extended_stability_interface_frame_068.png
+|   |   |       E_extended_stability_interface_frame_069.png
+|   |   |       E_extended_stability_interface_frame_070.png
+|   |   |       E_extended_stability_interface_frame_071.png
+|   |   |       E_extended_stability_interface_frame_072.png
+|   |   |       E_extended_stability_interface_frame_073.png
+|   |   |       E_extended_stability_interface_frame_074.png
+|   |   |       E_extended_stability_interface_frame_075.png
+|   |   |       E_extended_stability_interface_frame_076.png
+|   |   |       E_extended_stability_interface_frame_077.png
+|   |   |       E_extended_stability_interface_frame_078.png
+|   |   |       E_extended_stability_interface_frame_079.png
+|   |   |       E_extended_stability_interface_frame_080.png
+|   |   |       E_extended_stability_interface_frame_081.png
+|   |   |       E_extended_stability_interface_frame_082.png
+|   |   |       E_extended_stability_interface_frame_083.png
+|   |   |       E_extended_stability_interface_frame_084.png
+|   |   |       E_extended_stability_interface_frame_085.png
+|   |   |       E_extended_stability_interface_frame_086.png
+|   |   |       E_extended_stability_interface_frame_087.png
+|   |   |       E_extended_stability_interface_frame_088.png
+|   |   |       E_extended_stability_interface_frame_089.png
+|   |   |       E_extended_stability_interface_frame_090.png
+|   |   |       E_extended_stability_interface_frame_091.png
+|   |   |       E_extended_stability_interface_frame_092.png
+|   |   |       E_extended_stability_interface_frame_093.png
+|   |   |       E_extended_stability_interface_frame_094.png
+|   |   |       E_extended_stability_interface_frame_095.png
+|   |   |       E_extended_stability_interface_frame_096.png
+|   |   |       E_extended_stability_interface_frame_097.png
+|   |   |       E_extended_stability_interface_frame_098.png
+|   |   |       E_extended_stability_interface_frame_099.png
+|   |   |       E_extended_stability_interface_frame_100.png
+|   |   |       E_extended_stability_interface_frame_101.png
+|   |   |       E_extended_stability_interface_frame_102.png
+|   |   |       E_extended_stability_interface_frame_103.png
+|   |   |       E_extended_stability_interface_frame_104.png
+|   |   |       E_extended_stability_interface_frame_105.png
+|   |   |       E_extended_stability_interface_frame_106.png
+|   |   |       E_extended_stability_interface_frame_107.png
+|   |   |       E_extended_stability_interface_frame_108.png
+|   |   |       E_extended_stability_interface_frame_109.png
+|   |   |       E_extended_stability_interface_frame_110.png
+|   |   |       E_extended_stability_interface_frame_111.png
+|   |   |       E_extended_stability_interface_frame_112.png
+|   |   |       E_extended_stability_interface_frame_113.png
+|   |   |       E_extended_stability_interface_frame_114.png
+|   |   |       E_extended_stability_interface_frame_115.png
+|   |   |       E_extended_stability_interface_frame_116.png
+|   |   |       E_extended_stability_interface_frame_117.png
+|   |   |       E_extended_stability_interface_frame_118.png
+|   |   |       E_extended_stability_interface_frame_119.png
+|   |   |       E_extended_stability_interface_frame_120.png
+|   |   |       E_extended_stability_interface_frame_121.png
+|   |   |       E_extended_stability_interface_frame_122.png
+|   |   |       E_extended_stability_interface_frame_123.png
+|   |   |       E_extended_stability_interface_frame_124.png
+|   |   |       E_extended_stability_interface_frame_125.png
+|   |   |       E_extended_stability_interface_frame_126.png
+|   |   |       E_extended_stability_interface_frame_127.png
+|   |   |       E_extended_stability_interface_frame_128.png
+|   |   |       E_extended_stability_interface_frame_129.png
+|   |   |       E_extended_stability_interface_frame_130.png
+|   |   |       E_extended_stability_interface_frame_131.png
+|   |   |       E_extended_stability_interface_frame_132.png
+|   |   |       E_extended_stability_interface_frame_133.png
+|   |   |       E_extended_stability_interface_frame_134.png
+|   |   |       E_extended_stability_interface_frame_135.png
+|   |   |       E_extended_stability_interface_frame_136.png
+|   |   |       E_extended_stability_interface_frame_137.png
+|   |   |       E_extended_stability_interface_frame_138.png
+|   |   |       E_extended_stability_interface_frame_139.png
+|   |   |       E_extended_stability_interface_frame_140.png
+|   |   |       E_extended_stability_interface_frame_141.png
+|   |   |       E_extended_stability_interface_frame_142.png
+|   |   |       E_extended_stability_interface_frame_143.png
+|   |   |       E_extended_stability_interface_frame_144.png
+|   |   |       E_extended_stability_interface_frame_145.png
+|   |   |       E_extended_stability_interface_frame_146.png
+|   |   |       E_extended_stability_interface_frame_147.png
+|   |   |       E_extended_stability_interface_frame_148.png
+|   |   |       E_extended_stability_interface_frame_149.png
+|   |   |       E_extended_stability_interface_frame_150.png
+|   |   |       E_extended_stability_interface_frame_151.png
+|   |   |       E_extended_stability_interface_frame_152.png
+|   |   |       E_extended_stability_interface_frame_153.png
+|   |   |       E_extended_stability_interface_frame_154.png
+|   |   |       E_extended_stability_interface_frame_155.png
+|   |   |       E_extended_stability_interface_frame_156.png
+|   |   |       E_extended_stability_interface_frame_157.png
+|   |   |       E_extended_stability_interface_frame_158.png
+|   |   |       E_extended_stability_interface_frame_159.png
+|   |   |       E_extended_stability_interface_frame_160.png
+|   |   |       E_extended_stability_interface_frame_161.png
+|   |   |       E_extended_stability_interface_frame_162.png
+|   |   |       E_extended_stability_interface_frame_163.png
+|   |   |       E_extended_stability_interface_frame_164.png
+|   |   |       E_extended_stability_interface_frame_165.png
+|   |   |       E_extended_stability_interface_frame_166.png
+|   |   |       E_extended_stability_interface_frame_167.png
+|   |   |       E_extended_stability_interface_frame_168.png
+|   |   |       E_extended_stability_interface_frame_169.png
+|   |   |       E_extended_stability_interface_frame_170.png
+|   |   |       E_extended_stability_interface_frame_171.png
+|   |   |       E_extended_stability_interface_frame_172.png
+|   |   |       E_extended_stability_interface_frame_173.png
+|   |   |       E_extended_stability_interface_frame_174.png
+|   |   |       E_extended_stability_interface_frame_175.png
+|   |   |       E_extended_stability_interface_frame_176.png
+|   |   |       E_extended_stability_interface_frame_177.png
+|   |   |       E_extended_stability_interface_frame_178.png
+|   |   |       E_extended_stability_interface_frame_179.png
+|   |   |       E_extended_stability_interface_frame_180.png
+|   |   |       E_extended_stability_interface_frame_181.png
+|   |   |       E_extended_stability_interface_frame_182.png
+|   |   |       E_extended_stability_interface_frame_183.png
+|   |   |       E_extended_stability_interface_frame_184.png
+|   |   |       E_extended_stability_interface_frame_185.png
+|   |   |       E_extended_stability_interface_frame_186.png
+|   |   |       E_extended_stability_interface_frame_187.png
+|   |   |       E_extended_stability_interface_frame_188.png
+|   |   |       E_extended_stability_interface_frame_189.png
+|   |   |       E_extended_stability_interface_frame_190.png
+|   |   |       E_extended_stability_interface_frame_191.png
+|   |   |       E_extended_stability_interface_frame_192.png
+|   |   |       E_extended_stability_interface_frame_193.png
+|   |   |       E_extended_stability_interface_frame_194.png
+|   |   |       E_extended_stability_interface_frame_195.png
+|   |   |       E_extended_stability_interface_frame_196.png
+|   |   |       E_extended_stability_interface_frame_197.png
+|   |   |       E_extended_stability_interface_frame_198.png
+|   |   |       E_extended_stability_interface_frame_199.png
+|   |   |       E_extended_stability_interface_frame_200.png
+|   |   |       E_extended_stability_interface_frame_201.png
+|   |   |       
+|   |   +---images
+|   |   |   |   B_boundary_map.png
+|   |   |   |   C_static_regression_H_vs_t.png
+|   |   |   |   C_static_regression_phils_final.png
+|   |   |   |   D1_H_vs_t.png
+|   |   |   |   D1_phils_final.png
+|   |   |   |   D1_velocity_magnitude.png
+|   |   |   |   D2_H_vs_t.png
+|   |   |   |   D2_phils_final.png
+|   |   |   |   D2_velocity_magnitude.png
+|   |   |   |   D3_H_vs_t.png
+|   |   |   |   D3_phils_final.png
+|   |   |   |   D3_velocity_magnitude.png
+|   |   |   |   D4_H_vs_t.png
+|   |   |   |   D4_phils_final.png
+|   |   |   |   D4_velocity_magnitude.png
+|   |   |   |   D_velocity_ladder_summary.png
+|   |   |   |   E_extended_stability_H_vs_t.png
+|   |   |   |   E_extended_stability_phils_final.png
+|   |   |   |   E_extended_stability_velocity_magnitude.png
+|   |   |   |   
+|   |   |   \---frames
+|   |   +---logs
+|   |   |       5B4_falling_or_equivalent_ring_20260618_201122.log
+|   |   |       5B4_falling_or_equivalent_ring_20260618_201407.log
+|   |   |       5B4_falling_or_equivalent_ring_20260618_202100.log
+|   |   |       B_base_model_construction.log
+|   |   |       C_static_regression.log
+|   |   |       C_static_regression_error_20260618_201122.log
+|   |   |       D1.log
+|   |   |       D2.log
+|   |   |       D3.log
+|   |   |       D4.log
+|   |   |       E_extended_stability.log
+|   |   |       fatal_error_20260618_201407.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B4_best.mph
+|   |   |       ring_fountain_v5B4_best_20260618_202100.mph
+|   |   |       ring_fountain_v5B4_D1_1e-3.mph
+|   |   |       ring_fountain_v5B4_D2_2e-3.mph
+|   |   |       ring_fountain_v5B4_D3_5e-3.mph
+|   |   |       ring_fountain_v5B4_D4_1e-2.mph
+|   |   |       ring_fountain_v5B4_equivalent_falling_ring_base.mph
+|   |   |       ring_fountain_v5B4_equivalent_falling_ring_base_20260618_201122.mph
+|   |   |       ring_fountain_v5B4_equivalent_falling_ring_base_20260618_201407.mph
+|   |   |       ring_fountain_v5B4_equivalent_falling_ring_base_20260618_202100.mph
+|   |   |       ring_fountain_v5B4_extended_stability.mph
+|   |   |       ring_fountain_v5B4_static_regression.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B4_falling_or_equivalent_ring_final_report.md
+|   |   |       A_C4_import_review.md
+|   |   |       B_base_model_construction_report.md
+|   |   |       C_static_regression_report.md
+|   |   |       D_velocity_ladder_report.md
+|   |   |       E_extended_stability_report.md
+|   |   |       G_best_model_and_java_export_report.md
+|   |   |       
+|   |   +---scripts
+|   |   |       ring_fountain_stage5b4_falling_or_equivalent_ring.py
+|   |   |       
+|   |   \---tables
+|   |           A_C4_gate_review.csv
+|   |           B_boundary_and_feature_check.csv
+|   |           C_static_regression_H_vs_t.csv
+|   |           C_static_regression_H_vs_t_summary.csv
+|   |           D1_H_vs_t.csv
+|   |           D2_H_vs_t.csv
+|   |           D3_H_vs_t.csv
+|   |           D4_H_vs_t.csv
+|   |           D_velocity_ladder_cases.csv
+|   |           E_extended_stability_case.csv
+|   |           E_extended_stability_H_vs_t.csv
+|   |           G_best_model_manifest.csv
+|   |           
+|   +---5C_jet1_extraction
+|   |   +---images
+|   |   |   \---frames
+|   |   +---logs
+|   |   +---models
+|   |   +---reports
+|   |   \---tables
+|   +---5D_jet2_detection
+|   |   +---images
+|   |   |   \---frames
+|   |   +---logs
+|   |   +---models
+|   |   +---reports
+|   |   \---tables
+|   +---5E_stage5_review
+|   |   +---images
+|   |   |   \---frames
+|   |   +---logs
+|   |   +---models
+|   |   +---reports
+|   |   \---tables
+|   +---images
+|   |   |   5A_static_interface_final.png
+|   |   |   
+|   |   +---5A_review
+|   |   |       5A_density_rho.png
+|   |   |       5A_interface_overlay_frame_001.png
+|   |   |       5A_interface_overlay_frame_002.png
+|   |   |       5A_interface_overlay_frame_003.png
+|   |   |       5A_interface_overlay_frame_004.png
+|   |   |       5A_interface_overlay_frame_005.png
+|   |   |       5A_phils_0p5_interface_line.png
+|   |   |       5A_phils_cloud_with_colorbar.png
+|   |   |       5A_phils_sample_scatter.png
+|   |   |       5A_viscosity_mu.png
+|   |   |       
+|   |   +---5B1_center_forcing
+|   |   |   |   5B1_axial_velocity_w.png
+|   |   |   |   5B1_center_forcing_H_vs_t.png
+|   |   |   |   5B1_local_velocity_vectors.png
+|   |   |   |   5B1_phils_final.png
+|   |   |   |   5B1_velocity_magnitude.png
+|   |   |   |   
+|   |   |   \---frames
+|   |   |           5B1_center_forcing_interface_frame_001.png
+|   |   |           5B1_center_forcing_interface_frame_002.png
+|   |   |           5B1_center_forcing_interface_frame_003.png
+|   |   |           5B1_center_forcing_interface_frame_004.png
+|   |   |           5B1_center_forcing_interface_frame_005.png
+|   |   |           5B1_center_forcing_interface_frame_006.png
+|   |   |           5B1_center_forcing_interface_frame_007.png
+|   |   |           5B1_center_forcing_interface_frame_008.png
+|   |   |           5B1_center_forcing_interface_frame_009.png
+|   |   |           5B1_center_forcing_interface_frame_010.png
+|   |   |           5B1_center_forcing_interface_frame_011.png
+|   |   |           5B1_center_forcing_interface_frame_012.png
+|   |   |           5B1_center_forcing_interface_frame_013.png
+|   |   |           5B1_center_forcing_interface_frame_014.png
+|   |   |           5B1_center_forcing_interface_frame_015.png
+|   |   |           5B1_center_forcing_interface_frame_016.png
+|   |   |           5B1_center_forcing_interface_frame_017.png
+|   |   |           
+|   |   +---5B2_fixed_ring
+|   |   |   \---frames
+|   |   +---5C_Hmax
+|   |   |   |   H_vs_t.png
+|   |   |   |   
+|   |   |   \---frames
+|   |   \---frames
+|   |           5A_static_interface_frame_001.png
+|   |           5A_static_interface_frame_002.png
+|   |           5A_static_interface_frame_003.png
+|   |           5A_static_interface_frame_004.png
+|   |           5A_static_interface_frame_005.png
+|   |           
+|   +---logs
+|   |       5B1_error_20260617_205306.log
+|   |       5B2_error_20260617_210003.log
+|   |       5B2_error_20260617_210214.log
+|   |       5B2_error_20260617_210438.log
+|   |       stage5a_physics_probe_20260617_200417.json
+|   |       stage5a_static_interface_20260617_200620.log
+|   |       stage5a_static_interface_20260617_200806.log
+|   |       stage5a_static_interface_20260617_200912.log
+|   |       stage5a_static_interface_20260617_201044.log
+|   |       stage5a_static_interface_error_20260617_200620.log
+|   |       stage5a_static_interface_error_20260617_200806.log
+|   |       stage5b2_to_5e_20260617_214957.log
+|   |       stage5b2_to_5e_20260617_215636.log
+|   |       stage5b2_to_5e_20260617_220004.log
+|   |       stage5b2_to_5e_20260617_220333.log
+|   |       stage5_cleanup_5b_5c_20260617_205306.log
+|   |       stage5_cleanup_5b_5c_20260617_205513.log
+|   |       stage5_cleanup_5b_5c_20260617_205716.log
+|   |       stage5_cleanup_5b_5c_20260617_210003.log
+|   |       stage5_cleanup_5b_5c_20260617_210214.log
+|   |       stage5_cleanup_5b_5c_20260617_210438.log
+|   |       stage5_ls_property_probe.json
+|   |       
+|   +---models
+|   |       ring_fountain_v4_5A_static_interface.mph
+|   |       ring_fountain_v4_5A_static_interface_20260617_200620.mph
+|   |       ring_fountain_v4_5A_static_interface_20260617_200806.mph
+|   |       ring_fountain_v4_5A_static_interface_20260617_200912.mph
+|   |       ring_fountain_v4_5A_static_interface_20260617_201044.mph
+|   |       ring_fountain_v4_5B1_center_forcing.mph
+|   |       ring_fountain_v4_5B1_center_forcing_20260617_205513.mph
+|   |       ring_fountain_v4_5B1_center_forcing_20260617_205716.mph
+|   |       ring_fountain_v4_5B1_center_forcing_20260617_210003.mph
+|   |       ring_fountain_v4_5B1_center_forcing_20260617_210214.mph
+|   |       ring_fountain_v4_5B1_center_forcing_20260617_210438.mph
+|   |       
+|   +---reports
+|   |       5A_static_interface_report.md
+|   |       5A_visual_review_package.md
+|   |       5B1_center_forcing_report.md
+|   |       5B2_0_route_and_failure_diagnosis.md
+|   |       5B2_fixed_ring_moving_wall_report.md
+|   |       Hmax_extraction_report.md
+|   |       
+|   \---tables
+|           5A_review_frame_index.csv
+|           5A_static_interface_frame_index.csv
+|           5A_static_interface_metrics.csv
+|           5B1_center_forcing_frame_index.csv
+|           5B1_center_forcing_H_vs_t.csv
+|           5B2_1_static_ring_frame_index.csv
+|           5B2_1_static_ring_H_vs_t.csv
+|           5B2_clean_manual_static_frame_index.csv
+|           5B2_clean_manual_static_H_vs_t.csv
+|           5B3_R1_static_baseline_frame_index.csv
+|           5B3_R1_static_baseline_H_vs_t.csv
+|           C2_2_static_frame_index.csv
+|           C2_2_static_H_vs_t.csv
+|           Hmax_summary.csv
+|           H_vs_t.csv
+|           
++---ring_fountain_v0_single_phase
+|       README.txt
+|       ring_fountain_v0_single_phase.mph
+|       
+\---scripts
+    |   ring_fountain_stage0_2.py
+    |   ring_fountain_stage2_1_plus.py
+    |   ring_fountain_stage4_1_boundary_review.py
+    |   ring_fountain_stage4_2a.py
+    |   ring_fountain_stage4_2_formal.py
+    |   ring_fountain_stage4_2_probe.py
+    |   ring_fountain_stage5a_probe.py
+    |   ring_fountain_stage5a_static_interface.py
+    |   ring_fountain_stage5b2_clean_and_5b3_minimal.py
+    |   ring_fountain_stage5b2_clean_baseline_audit.py
+    |   ring_fountain_stage5b2_to_5e.py
+    |   ring_fountain_stage5b3_C2_alternative_wall_strategy.py
+    |   ring_fountain_stage5b3_C3_boundary_semantics_audit.py
+    |   ring_fountain_stage5b3_C4_seed_based_ring_smoke.py
+    |   ring_fountain_stage5b3_GUI_auto_seed.py
+    |   ring_fountain_stage5b3_stability_repair.py
+    |   ring_fountain_stage5b4_falling_or_equivalent_ring.py
+    |   ring_fountain_stage5_cleanup_5b_5c.py
+    |   SCRIPT_MANIFEST.md
+    |   
+    \---__pycache__
+            ring_fountain_stage4_1_boundary_review.cpython-311.pyc
+            ring_fountain_stage4_2a.cpython-311.pyc
+            ring_fountain_stage5_cleanup_5b_5c.cpython-311.pyc
+            

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "java.lang.Thread.java", line 0, in java.lang.Thread.run
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b2_clean_and_5b3_minimal.py", line 326, in run_manual_clean_route
+    actions = clean_manual_model(model)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_stage5b2_clean_and_5b3_minimal.py", line 252, in clean_manual_model
+    wall.selection().set(jints(all_boundaries(model)))
+com.comsol.util.exceptions.com.comsol.util.exceptions.FlException: Exception:
+	com.comsol.util.exceptions.FlException: Selection is not editable.
+Messages:
+	Selection is not editable.
+

@@ -1,0 +1,63 @@
+﻿metric,expression,unit,status,error,value,method
+u_max_maxop,maxop1(spf.U),m/s,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 1
+",,
+u_max_max,max(spf.U),m/s,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Function called with wrong number of arguments.
+Messages:
+	Function called with wrong number of arguments.
+	- Function name: max
+	- Number of arguments used: 1
+	- Number of arguments expected: 2
+	- Feature: Evaluation 2
+",,
+p_max_p,maxop1(p),Pa,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 3
+",,
+p_max_spf_p,maxop1(spf.p),Pa,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 4
+",,
+vz_max_v,maxop1(v),m/s,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 5
+",,
+vz_max_w,maxop1(w),m/s,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Unknown function or operator.
+Messages:
+	Unknown function or operator.
+	- Name: maxop1
+	- Feature: Evaluation 6
+",,
+u_max_field,spf.U,m/s,ok,,0.06790171944503055,Python max over evaluated field samples
+p_max_field,p,Pa,ok,,606700.6894202387,Python max over evaluated field samples
+p_max_spf_field,spf.p,Pa,failed,"Exception:
+	com.comsol.util.exceptions.FlException: Failed to evaluate expression.
+Messages:
+	Cannot evaluate expression.
+
+	Undefined variable.
+	- Variable: spf.p
+	- Geometry: geom1
+	- Domain: 1
+
+	Failed to evaluate expression.
+	- Expression: spf.p
+	- Feature: Evaluation 7
+",,Python field max fallback
+vz_max_v_field,v,m/s,ok,,0.0,Python max over evaluated field samples
+vz_max_w_field,w,m/s,ok,,0.06414448455098092,Python max over evaluated field samples

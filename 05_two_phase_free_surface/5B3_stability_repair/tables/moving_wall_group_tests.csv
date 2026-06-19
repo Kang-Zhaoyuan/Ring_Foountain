@@ -1,0 +1,2 @@
+﻿case_id,moving_boundaries,V_ring,t_end,solve_status,failure_time,failure_message,Hmax,H(final)-H(0),interface_quality,notes
+NOT_RUN,,0.005[m/s],0.02[s],not_run,,R1 static baseline failed strict stability gate,,,not_run,R2 blocked by 5B2_baseline_not_stable

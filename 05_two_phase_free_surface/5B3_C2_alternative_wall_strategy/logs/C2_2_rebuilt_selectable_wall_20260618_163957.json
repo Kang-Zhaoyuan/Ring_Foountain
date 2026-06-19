@@ -1,0 +1,45 @@
+{
+  "status": "FAIL",
+  "report": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\reports\\C2_2_rebuilt_selectable_wall_report.md",
+  "csv": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\05_two_phase_free_surface\\5B3_C2_alternative_wall_strategy\\tables\\C2_2_rebuilt_cases.csv",
+  "rows": [
+    {
+      "case_id": "C2_2_static_baseline",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "all walls static",
+      "V_test": 0,
+      "t_end": "0.02[s]",
+      "solve_status": "FAIL",
+      "failure_time": "",
+      "failure_message": "",
+      "H0": 0.00016578850821326202,
+      "Hfinal": 0.0012302583025517093,
+      "delta_H": 0.0010644697943384472,
+      "Hmax": 0.0012302583025517093,
+      "interface_quality": "clear/continuous",
+      "wall_overlap_status": "not_applicable_static",
+      "notes": "rebuilt reduced model without gravity; reproduces clean baseline stability check"
+    },
+    {
+      "case_id": "C2_2_failure",
+      "route": "rebuilt manual LaminarFlow + LevelSet",
+      "boundary_set": "",
+      "V_test": "",
+      "t_end": "",
+      "solve_status": "FAIL",
+      "failure_time": "",
+      "failure_message": "RuntimeError: rebuilt static baseline did not pass stability gate",
+      "H0": NaN,
+      "Hfinal": NaN,
+      "delta_H": NaN,
+      "Hmax": NaN,
+      "interface_quality": "",
+      "wall_overlap_status": "UNKNOWN_OR_FAIL",
+      "notes": "Traceback (most recent call last):\n  File \"C:\\Users\\kqdx\\Documents\\COMSOL仿真方法\\ring_fountain_stage5b3_C2_alternative_wall_strategy.py\", line 823, in stage_c2_2\n    raise RuntimeError(\"rebuilt static baseline did not pass stability gate\")\nRuntimeError: rebuilt static baseline did not pass stability gate\n"
+    }
+  ],
+  "best_model": "",
+  "setup": {},
+  "named_selections": {},
+  "ALLOW_RESUME_STAGE5": "NO"
+}

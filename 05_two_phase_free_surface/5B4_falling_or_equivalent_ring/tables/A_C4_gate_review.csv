@@ -1,0 +1,11 @@
+﻿item,value,status
+C4 PASS,PASS,PASS
+ALLOW_5B4,YES,PASS
+ALLOW_5C,NO,PASS
+ALLOW_STAGE6,NO,PASS
+C4 best model exists,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_C4_seed_based_ring_smoke\models\ring_fountain_v5B3_C4_best.mph,PASS
+C4 best Java exists,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_C4_seed_based_ring_smoke\exports\ring_fountain_v5B3_C4_best.java,PASS
+C4 final report exists,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5B3_C4_seed_based_ring_smoke\reports\5B3_C4_seed_based_ring_smoke_final_report.md,PASS
+README exists,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\README.md,PASS
+CHANGELOG exists,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\CHANGELOG.md,PASS
+SCRIPT_MANIFEST exists,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\SCRIPT_MANIFEST.md,PASS
