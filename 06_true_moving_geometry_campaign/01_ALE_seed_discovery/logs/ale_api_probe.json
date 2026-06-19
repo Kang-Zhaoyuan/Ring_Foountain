@@ -1,0 +1,183 @@
+[
+  {
+    "kind": "physics",
+    "name": "MovingMesh",
+    "tag": "p_movingme",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "FreeDeformation",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Cannot create feature in the specified element dimension.\r\nMessages:\r\n\tCannot create feature in the specified element dimension.\r\n\t- Feature: FreeDeformation\r\n\t- Edim: 1\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "PrescribedMeshDisplacement",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "PrescribedMeshVelocity",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "Fixed",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: Fixed.\r\nMessages:\r\n\tUnknown feature ID: Fixed.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "PrescribedDeformation",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Cannot create feature in the specified element dimension.\r\nMessages:\r\n\tCannot create feature in the specified element dimension.\r\n\t- Feature: PrescribedDeformation\r\n\t- Edim: 1\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "MovingWall",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: MovingWall.\r\nMessages:\r\n\tUnknown feature ID: MovingWall.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "MovingMesh",
+    "name": "DeformingDomain",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: DeformingDomain.\r\nMessages:\r\n\tUnknown feature ID: DeformingDomain.\r\n"
+  },
+  {
+    "kind": "physics",
+    "name": "DeformedGeometry",
+    "tag": "p_deformed",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "FreeDeformation",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Cannot create feature in the specified element dimension.\r\nMessages:\r\n\tCannot create feature in the specified element dimension.\r\n\t- Feature: FreeDeformation\r\n\t- Edim: 1\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "PrescribedMeshDisplacement",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "PrescribedMeshVelocity",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "Fixed",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: Fixed.\r\nMessages:\r\n\tUnknown feature ID: Fixed.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "PrescribedDeformation",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Cannot create feature in the specified element dimension.\r\nMessages:\r\n\tCannot create feature in the specified element dimension.\r\n\t- Feature: PrescribedDeformation\r\n\t- Edim: 1\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "MovingWall",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: MovingWall.\r\nMessages:\r\n\tUnknown feature ID: MovingWall.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "DeformedGeometry",
+    "name": "DeformingDomain",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: DeformingDomain.\r\nMessages:\r\n\tUnknown feature ID: DeformingDomain.\r\n"
+  },
+  {
+    "kind": "physics",
+    "name": "ALE",
+    "tag": "p_ale",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: ALE\r\n"
+  },
+  {
+    "kind": "physics",
+    "name": "MovingMeshALE",
+    "tag": "p_movingme",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: MovingMeshALE\r\n"
+  },
+  {
+    "kind": "physics",
+    "name": "DeformingDomain",
+    "tag": "p_deformin",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown physics interface.\r\nMessages:\r\n\tUnknown physics interface.\r\n\t- Physics interface: DeformingDomain\r\n"
+  },
+  {
+    "kind": "physics",
+    "name": "SolidMechanics",
+    "tag": "p_solidmec",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "FreeDeformation",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: FreeDeformation.\r\nMessages:\r\n\tUnknown feature ID: FreeDeformation.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "PrescribedMeshDisplacement",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: PrescribedMeshDisplacement.\r\nMessages:\r\n\tUnknown feature ID: PrescribedMeshDisplacement.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "PrescribedMeshVelocity",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: PrescribedMeshVelocity.\r\nMessages:\r\n\tUnknown feature ID: PrescribedMeshVelocity.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "Fixed",
+    "status": "PASS"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "PrescribedDeformation",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: PrescribedDeformation.\r\nMessages:\r\n\tUnknown feature ID: PrescribedDeformation.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "MovingWall",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: MovingWall.\r\nMessages:\r\n\tUnknown feature ID: MovingWall.\r\n"
+  },
+  {
+    "kind": "feature",
+    "physics": "SolidMechanics",
+    "name": "DeformingDomain",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown feature ID: DeformingDomain.\r\nMessages:\r\n\tUnknown feature ID: DeformingDomain.\r\n"
+  }
+]

@@ -1,0 +1,2 @@
+﻿case_id,solve_status,failure_message,ring_boundary_motion_verified
+SKIPPED,SKIP,Phase 4 minimal two-phase ALE seed did not pass; true moving ring smoke was not attempted.,False

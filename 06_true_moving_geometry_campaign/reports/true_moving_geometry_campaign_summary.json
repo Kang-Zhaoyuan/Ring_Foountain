@@ -1,0 +1,125 @@
+{
+  "run_id": "20260619_124109",
+  "script": {
+    "script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign.py",
+    "timestamp_script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign_20260619_124109.py",
+    "local_script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign.py",
+    "sha256": "ac5bad780f3e86f4db23ca74b5f3f47e9b807581e1dc7b5e2cdd67e55c697df0"
+  },
+  "Phase0": {
+    "status": "PASS",
+    "ALLOW_PHASE1": "YES"
+  },
+  "Phase1": {
+    "status": "PASS",
+    "ALLOW_PHASE2": "YES"
+  },
+  "Phase2": {
+    "status": "PASS",
+    "ALLOW_PHASE3": "YES",
+    "candidates": [
+      {
+        "api_kind": "physics",
+        "api_name": "MovingMesh",
+        "status": "PASS",
+        "source": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\01_ALE_seed_discovery\\logs\\ale_api_probe.json"
+      },
+      {
+        "api_kind": "physics",
+        "api_name": "DeformedGeometry",
+        "status": "PASS",
+        "source": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\01_ALE_seed_discovery\\logs\\ale_api_probe.json"
+      },
+      {
+        "api_kind": "feature",
+        "api_name": "FreeDeformation",
+        "status": "PASS on domain edim=2",
+        "source": "minimal ALE probe"
+      },
+      {
+        "api_kind": "feature",
+        "api_name": "PrescribedMeshDisplacement",
+        "status": "PASS",
+        "properties": "useDx, dx",
+        "source": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\01_ALE_seed_discovery\\logs\\ale_feature_property_probe.json"
+      },
+      {
+        "api_kind": "feature",
+        "api_name": "PrescribedMeshVelocity",
+        "status": "PASS",
+        "properties": "useVx, vx",
+        "source": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\01_ALE_seed_discovery\\logs\\ale_feature_property_probe.json"
+      }
+    ]
+  },
+  "Phase3": {
+    "status": "PASS",
+    "ALLOW_PHASE4": "YES",
+    "rows": [
+      {
+        "inner_solution": 1,
+        "t_min": 0.0,
+        "t_max": 0.0,
+        "y-Y_min": -4.2221781626494703e-13,
+        "y-Y_max": 2.223221606811876e-14,
+        "x-X_min": -6.938893903907228e-18,
+        "x-X_max": 1.0408340855860843e-17,
+        "time_s": 0.0,
+        "mesh_displacement_y_min_m": -4.2221781626494703e-13
+      },
+      {
+        "inner_solution": 11,
+        "t_min": 0.001,
+        "t_max": 0.001,
+        "y-Y_min": -1.0555555554972451e-07,
+        "y-Y_max": 5.5555555641961796e-09,
+        "x-X_min": -6.938893903907228e-18,
+        "x-X_max": 1.0408340855860843e-17,
+        "time_s": 0.001,
+        "mesh_displacement_y_min_m": -1.0555555554972451e-07
+      },
+      {
+        "inner_solution": 21,
+        "t_min": 0.002,
+        "t_max": 0.002,
+        "y-Y_min": -2.1111111110638792e-07,
+        "y-Y_max": 1.1111111121453465e-08,
+        "x-X_min": -6.938893903907228e-18,
+        "x-X_max": 1.0408340855860843e-17,
+        "time_s": 0.002,
+        "mesh_displacement_y_min_m": -2.1111111110638792e-07
+      }
+    ]
+  },
+  "Phase4": {
+    "status": "FAIL",
+    "ALLOW_PHASE5": "NO",
+    "rows": [
+      {
+        "case_id": "minimal_twophase_ALE",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "motion_y_min_m": NaN,
+        "interface_points": 53,
+        "TwoPhaseFlowLevelSet": "tpf1",
+        "WettedWall": "ww1",
+        "MovingMesh": "ale"
+      }
+    ],
+    "model": {
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed_20260619_124109.mph",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed.mph"
+    },
+    "java": {
+      "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed_20260619_124109.java",
+      "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed.java"
+    }
+  },
+  "Phase5": {
+    "status": "SKIP",
+    "ALLOW_PHASE6": "NO",
+    "ring_boundary_motion_verified": false,
+    "reason": "Phase 4 minimal two-phase ALE seed did not pass; true moving ring smoke was not attempted."
+  },
+  "TRUE_MOVING_GEOMETRY_BRANCH": "FAIL"
+}

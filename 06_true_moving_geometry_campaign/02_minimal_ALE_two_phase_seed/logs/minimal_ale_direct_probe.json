@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "error": "",
+  "evals": [
+    {
+      "expr": "ale.dX",
+      "status": "FAIL",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: ale.dX\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: ale.dX\r\n\t- Feature: Evaluation 1\r\n"
+    },
+    {
+      "expr": "ale.dY",
+      "status": "FAIL",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: ale.dY\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: ale.dY\r\n\t- Feature: Evaluation 2\r\n"
+    },
+    {
+      "expr": "ale.u",
+      "status": "FAIL",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: ale.u\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: ale.u\r\n\t- Feature: Evaluation 3\r\n"
+    },
+    {
+      "expr": "ale.v",
+      "status": "FAIL",
+      "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Failed to evaluate expression.\r\nMessages:\r\n\tCannot evaluate expression.\r\n\r\n\tUndefined variable.\r\n\t- Variable: ale.v\r\n\t- Geometry: geom1\r\n\t- Domain: 1\r\n\r\n\tFailed to evaluate expression.\r\n\t- Expression: ale.v\r\n\t- Feature: Evaluation 4\r\n"
+    },
+    {
+      "expr": "x-X",
+      "status": "PASS",
+      "min": -6.938893903907228e-18,
+      "max": 1.0408340855860843e-17
+    },
+    {
+      "expr": "y-Y",
+      "status": "PASS",
+      "min": -4.2221781626494703e-13,
+      "max": 2.223221606811876e-14
+    },
+    {
+      "expr": "x",
+      "status": "PASS",
+      "min": -1.2037062152420224e-35,
+      "max": 0.02000000000000001
+    },
+    {
+      "expr": "y",
+      "status": "PASS",
+      "min": -7.077792545623092e-33,
+      "max": 0.0199999999998
+    }
+  ]
+}

@@ -189,3 +189,16 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - `ALLOW_STAGE6 = NO`.
 - Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\05_two_phase_free_surface\5D_jet2_detection\reports\5D_jet2_detection_final_report.md`.
 <!-- 5D_JET2_DETECTION:END -->
+
+<!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:START -->
+## True Moving Geometry Campaign
+
+- Run ID: `20260619_124109`.
+- Fixed-geometry branch is frozen as toolchain validation / negative control.
+- True-moving-geometry branch is now the active physical modelling branch.
+- Minimal ALE single-physics: `PASS`.
+- Minimal two-phase ALE seed: `FAIL`.
+- No real Hmax has been produced.
+- No Stage 6 parameter sweep has been performed.
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\reports\true_moving_geometry_campaign_final_report.md`.
+<!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:END -->

@@ -69,3 +69,9 @@ D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts
 
 | `ring_fountain_stage5d_jet2_detection.py` | 5D Jet2 / later-stage Worthington-like detection | `20260619_110135` | `ac73e1d83f721661009373473a678be90c2434366a08457c81036ac00d5cceaf` |
 <!-- 5D_JET2_DETECTION_SCRIPT:END -->
+
+<!-- TRUE_MOVING_GEOMETRY_CAMPAIGN_SCRIPT:START -->
+## True Moving Geometry Campaign Script
+
+| `ring_fountain_stage6_true_moving_geometry_campaign.py` | true-moving-geometry transition campaign | `20260619_124109` | `ac5bad780f3e86f4db23ca74b5f3f47e9b807581e1dc7b5e2cdd67e55c697df0` |
+<!-- TRUE_MOVING_GEOMETRY_CAMPAIGN_SCRIPT:END -->

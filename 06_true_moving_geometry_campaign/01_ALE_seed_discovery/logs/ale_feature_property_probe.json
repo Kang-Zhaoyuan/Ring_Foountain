@@ -1,0 +1,148 @@
+[
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "action": "properties",
+    "status": "PASS",
+    "properties": [
+      "useDx",
+      "dx",
+      "weakConstraints",
+      "coordinateSystem",
+      "StudyStep",
+      "pairContrib"
+    ]
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "U0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter U0.\r\nMessages:\r\n\tUnknown parameter U0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "u0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter u0.\r\nMessages:\r\n\tUnknown parameter u0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "dmesh",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter dmesh.\r\nMessages:\r\n\tUnknown parameter dmesh.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "displ",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter displ.\r\nMessages:\r\n\tUnknown parameter displ.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "meshdispl",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter meshdispl.\r\nMessages:\r\n\tUnknown parameter meshdispl.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "umesh",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter umesh.\r\nMessages:\r\n\tUnknown parameter umesh.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "PrescribedMeshDisplacement",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter PrescribedMeshDisplacement.\r\nMessages:\r\n\tUnknown parameter PrescribedMeshDisplacement.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "V0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter V0.\r\nMessages:\r\n\tUnknown parameter V0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "v0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter v0.\r\nMessages:\r\n\tUnknown parameter v0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshDisplacement",
+    "property": "vmesh",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter vmesh.\r\nMessages:\r\n\tUnknown parameter vmesh.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "action": "properties",
+    "status": "PASS",
+    "properties": [
+      "useVx",
+      "vx",
+      "weakConstraints",
+      "coordinateSystem",
+      "StudyStep",
+      "pairContrib"
+    ]
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "U0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter U0.\r\nMessages:\r\n\tUnknown parameter U0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "u0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter u0.\r\nMessages:\r\n\tUnknown parameter u0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "dmesh",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter dmesh.\r\nMessages:\r\n\tUnknown parameter dmesh.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "displ",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter displ.\r\nMessages:\r\n\tUnknown parameter displ.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "meshdispl",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter meshdispl.\r\nMessages:\r\n\tUnknown parameter meshdispl.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "umesh",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter umesh.\r\nMessages:\r\n\tUnknown parameter umesh.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "PrescribedMeshDisplacement",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter PrescribedMeshDisplacement.\r\nMessages:\r\n\tUnknown parameter PrescribedMeshDisplacement.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "V0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter V0.\r\nMessages:\r\n\tUnknown parameter V0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "v0",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter v0.\r\nMessages:\r\n\tUnknown parameter v0.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  },
+  {
+    "feature": "PrescribedMeshVelocity",
+    "property": "vmesh",
+    "status": "FAIL",
+    "error": "Exception:\r\n\tcom.comsol.util.exceptions.FlException: Unknown parameter vmesh.\r\nMessages:\r\n\tUnknown parameter vmesh.\r\n\t- Feature: Moving Mesh (ale)\r\n"
+  }
+]

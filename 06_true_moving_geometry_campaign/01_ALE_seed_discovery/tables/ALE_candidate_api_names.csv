@@ -1,0 +1,6 @@
+﻿api_kind,api_name,status,source,properties
+physics,MovingMesh,PASS,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\01_ALE_seed_discovery\logs\ale_api_probe.json,
+physics,DeformedGeometry,PASS,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\01_ALE_seed_discovery\logs\ale_api_probe.json,
+feature,FreeDeformation,PASS on domain edim=2,minimal ALE probe,
+feature,PrescribedMeshDisplacement,PASS,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\01_ALE_seed_discovery\logs\ale_feature_property_probe.json,"useDx, dx"
+feature,PrescribedMeshVelocity,PASS,D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\01_ALE_seed_discovery\logs\ale_feature_property_probe.json,"useVx, vx"

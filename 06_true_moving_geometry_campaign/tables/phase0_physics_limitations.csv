@@ -1,0 +1,5 @@
+﻿limitation,status,meaning
+fixed_geometry,present,The ring geometry is stationary; only wall velocity was prescribed.
+interface_response,weak,Free-surface response remained about 0.2 mm diagnostic scale.
+Jet1_detected,NO,Consistent with insufficient physical forcing from fixed geometry.
+Stage6_parameter_sweep,forbidden,Would tune a negative control rather than a physical falling-ring model.

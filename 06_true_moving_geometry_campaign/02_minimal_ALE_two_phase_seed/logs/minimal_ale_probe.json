@@ -1,0 +1,56 @@
+{
+  "solve_status": "PASS",
+  "error": "",
+  "evals": [
+    {
+      "expr": "ale.dX",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "ale.dY",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "ale.disp",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "ale.spatial.disp",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "x-X",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "y-Y",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "X",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "Y",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "x",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    },
+    {
+      "expr": "y",
+      "status": "FAIL",
+      "error": "The solution has not been computed."
+    }
+  ]
+}

@@ -117,3 +117,13 @@
 - Performed existing-window Jet2 screening and optional extended-window detection when needed.
 - Did not enter 5E or Stage 6; no parameter sweep or real Hmax output was performed.
 <!-- 5D_JET2_DETECTION:END -->
+
+<!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:START -->
+## True Moving Geometry Campaign
+
+- Run ID: `20260619_124109`.
+- Accepted teacher critique of the fixed-geometry branch.
+- Froze fixed-geometry branch as negative control.
+- Discovered Moving Mesh/ALE API and attempted minimal ALE seeds.
+- No Stage 6 parameter sweep or real Hmax output was performed.
+<!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:END -->

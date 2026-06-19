@@ -1,0 +1,4 @@
+﻿criterion,fixed_geometry_branch,true_moving_branch
+true_geometry_motion,NO,NOT_AVAILABLE
+wall_velocity_only,YES,NO_PASSING_RING_MODEL
+continue_stage6,NO,NO
