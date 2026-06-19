@@ -75,3 +75,10 @@ D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts
 
 | `ring_fountain_stage6_true_moving_geometry_campaign.py` | true-moving-geometry transition campaign | `20260619_125524` | `74773c0835e7043b8b77e7b2c427275f77bfded09d2e20748408f7fcb3456f9f` |
 <!-- TRUE_MOVING_GEOMETRY_CAMPAIGN_SCRIPT:END -->
+
+## TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR_SCRIPT
+
+- Canonical script: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\ring_fountain_06_R1_true_moving_geometry_diagnostic_repair.py`.
+- Local script copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\scripts\ring_fountain_06_R1_true_moving_geometry_diagnostic_repair.py`.
+- Run id: `20260619_165307`.
+- Purpose: repair free-surface and mesh diagnostics, then run gated displacement ladder.

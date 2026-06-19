@@ -1,0 +1,7 @@
+﻿case_id,Vring,t_end,actual_displacement,H0,Hfinal,H_robust_final_minus_H0,interface_points_initial,interface_points_final,mesh_quality_min,ring_boundary_motion_verified,java_exported
+T0,0[m/s],0.002[s],-1.734723475976807e-17,nan,nan,nan,0,23,not_evaluated,True,True
+T1,1e-4[m/s],0.002[s],-2.0000000000011328e-07,nan,nan,nan,0,23,not_evaluated,True,True
+T2,5e-4[m/s],0.002[s],-1.0000000000001327e-06,nan,nan,nan,0,23,not_evaluated,True,True
+S1,1e-4[m/s],0.005[s],-5.000000000000664e-07,nan,nan,nan,0,26,not_evaluated,True,True
+S2,5e-4[m/s],0.005[s],-2.500000000000332e-06,nan,nan,nan,0,26,not_evaluated,True,True
+S3,1e-3[m/s],0.005[s],-5.00000000000023e-06,nan,nan,nan,0,26,not_evaluated,True,True

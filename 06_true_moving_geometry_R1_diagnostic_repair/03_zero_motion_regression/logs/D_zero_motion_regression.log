@@ -1,0 +1,272 @@
+[
+  {
+    "case_id": "D0",
+    "Vring": "0[m/s]",
+    "t_end": "0.005[s]",
+    "dt": "1e-4[s]",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "inner": 51,
+    "reldetjacmin_min": 1.0,
+    "reldetjacmin_mean": 1.0,
+    "reldetjac_min": 1.0,
+    "reldetjac_mean": 1.0,
+    "qual_min": 1.0,
+    "qual_mean": 1.0,
+    "dvol_min": 1.0,
+    "dvol_mean": 1.0,
+    "max_mesh_displacement": 1.734723475976807e-17,
+    "ring_boundary_displacement_measured": -2.6020852139652106e-18,
+    "min_element_size": 1.9999999999881224e-07,
+    "min_ring_near_element_size": 1.3000000000000858e-06,
+    "max_mesh_displacement_over_min_element_size": 8.673617379935547e-11,
+    "max_mesh_displacement_over_min_ring_near_element_size": 1.334402673828225e-11,
+    "mesh_quality_min": 1.0,
+    "mesh_quality_mean": 1.0,
+    "negative_or_inverted_element_flag": false,
+    "mesh_quality_method": "COMSOL reldetjac/reldetjacmin plus coordinate-spacing proxy",
+    "expected_displacement": -0.0,
+    "measured_displacement": -2.6020852139652106e-18,
+    "displacement_error": -2.6020852139652106e-18,
+    "ring_motion_verified": true,
+    "H0": -1.9262450361298093e-07,
+    "Hfinal": 3.735300898977926e-06,
+    "H_robust_final_minus_H0": 3.927925402590907e-06,
+    "H_robust_max_minus_H0": 3.927925402590907e-06,
+    "Hmax": "not_real_Hmax",
+    "interface_points_initial": 120,
+    "interface_points_final": 120,
+    "number_of_interface_components_final": 1,
+    "interface_quality": "weak_or_spiky",
+    "pseudo_spike_detected": true,
+    "near_top_flag": false,
+    "visible_interface_deformation": false,
+    "velocity_field_quality": "not_final_physics_diagnostic",
+    "pressure_field_quality": "not_final_physics_diagnostic",
+    "case_pass": false,
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D0_20260619_165307.mph",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D0.mph",
+    "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D0_20260619_165307.java",
+    "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D0.java",
+    "metadata": {
+      "boundaries": {
+        "axis": [
+          1
+        ],
+        "top_open": [
+          3
+        ],
+        "bottom_wall": [
+          2
+        ],
+        "outer_wall": [
+          8
+        ],
+        "ring_inner": [
+          4
+        ],
+        "ring_outer": [
+          7
+        ],
+        "ring_top": [
+          6
+        ],
+        "ring_bottom": [
+          5
+        ],
+        "sel_ring_wall_confirmed": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "Vring": "0[m/s]",
+      "t_end": "0.005[s]",
+      "dt": "1e-4[s]",
+      "ALE_feature": "ale/move_ring",
+      "ALE_property": "dx = [0, -Vring*t]",
+      "WettedWall": "ww1 on sel_ring_wall_confirmed"
+    }
+  },
+  {
+    "case_id": "D1",
+    "Vring": "1e-4[m/s]",
+    "t_end": "0.005[s]",
+    "dt": "1e-4[s]",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "inner": 51,
+    "reldetjacmin_min": 1.0,
+    "reldetjacmin_mean": 1.0,
+    "reldetjac_min": 1.0,
+    "reldetjac_mean": 1.0,
+    "qual_min": 1.0,
+    "qual_mean": 1.0,
+    "dvol_min": 1.0,
+    "dvol_mean": 1.0,
+    "max_mesh_displacement": 5.000000000000664e-07,
+    "ring_boundary_displacement_measured": -5.000000000000664e-07,
+    "min_element_size": 1.9999999999881224e-07,
+    "min_ring_near_element_size": 1.3000000000000858e-06,
+    "max_mesh_displacement_over_min_element_size": 2.500000000015179,
+    "max_mesh_displacement_over_min_ring_near_element_size": 0.3846153846154103,
+    "mesh_quality_min": 1.0,
+    "mesh_quality_mean": 1.0,
+    "negative_or_inverted_element_flag": false,
+    "mesh_quality_method": "COMSOL reldetjac/reldetjacmin plus coordinate-spacing proxy",
+    "expected_displacement": -5.000000000000001e-07,
+    "measured_displacement": -5.000000000000664e-07,
+    "displacement_error": -6.6280328122649e-20,
+    "ring_motion_verified": true,
+    "H0": -1.9262474571340158e-07,
+    "Hfinal": 3.7243766147450425e-06,
+    "H_robust_final_minus_H0": 3.9170013604584445e-06,
+    "H_robust_max_minus_H0": 3.9170013604584445e-06,
+    "Hmax": "not_real_Hmax",
+    "interface_points_initial": 120,
+    "interface_points_final": 120,
+    "number_of_interface_components_final": 1,
+    "interface_quality": "weak_or_spiky",
+    "pseudo_spike_detected": true,
+    "near_top_flag": false,
+    "visible_interface_deformation": false,
+    "velocity_field_quality": "not_final_physics_diagnostic",
+    "pressure_field_quality": "not_final_physics_diagnostic",
+    "case_pass": false,
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D1_20260619_165307.mph",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D1.mph",
+    "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D1_20260619_165307.java",
+    "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D1.java",
+    "metadata": {
+      "boundaries": {
+        "axis": [
+          1
+        ],
+        "top_open": [
+          3
+        ],
+        "bottom_wall": [
+          2
+        ],
+        "outer_wall": [
+          8
+        ],
+        "ring_inner": [
+          4
+        ],
+        "ring_outer": [
+          7
+        ],
+        "ring_top": [
+          6
+        ],
+        "ring_bottom": [
+          5
+        ],
+        "sel_ring_wall_confirmed": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "Vring": "1e-4[m/s]",
+      "t_end": "0.005[s]",
+      "dt": "1e-4[s]",
+      "ALE_feature": "ale/move_ring",
+      "ALE_property": "dx = [0, -Vring*t]",
+      "WettedWall": "ww1 on sel_ring_wall_confirmed"
+    }
+  },
+  {
+    "case_id": "D2",
+    "Vring": "1e-3[m/s]",
+    "t_end": "0.005[s]",
+    "dt": "1e-4[s]",
+    "solve_status": "PASS",
+    "failure_message": "",
+    "inner": 51,
+    "reldetjacmin_min": 1.0,
+    "reldetjacmin_mean": 1.0,
+    "reldetjac_min": 1.0,
+    "reldetjac_mean": 1.0,
+    "qual_min": 1.0,
+    "qual_mean": 1.0,
+    "dvol_min": 1.0,
+    "dvol_mean": 1.0,
+    "max_mesh_displacement": 5.00000000000023e-06,
+    "ring_boundary_displacement_measured": -5.00000000000023e-06,
+    "min_element_size": 1.9999999999881224e-07,
+    "min_ring_near_element_size": 1.3000000000000858e-06,
+    "max_mesh_displacement_over_min_element_size": 25.00000000014962,
+    "max_mesh_displacement_over_min_ring_near_element_size": 3.846153846153769,
+    "mesh_quality_min": 1.0,
+    "mesh_quality_mean": 1.0,
+    "negative_or_inverted_element_flag": false,
+    "mesh_quality_method": "COMSOL reldetjac/reldetjacmin plus coordinate-spacing proxy",
+    "expected_displacement": -5e-06,
+    "measured_displacement": -5.00000000000023e-06,
+    "displacement_error": -2.295459287059154e-19,
+    "ring_motion_verified": true,
+    "H0": -1.9262692468354067e-07,
+    "Hfinal": 3.6253624619500306e-06,
+    "H_robust_final_minus_H0": 3.817989386633571e-06,
+    "H_robust_max_minus_H0": 3.822499867882809e-06,
+    "Hmax": "not_real_Hmax",
+    "interface_points_initial": 120,
+    "interface_points_final": 120,
+    "number_of_interface_components_final": 1,
+    "interface_quality": "weak_or_spiky",
+    "pseudo_spike_detected": true,
+    "near_top_flag": false,
+    "visible_interface_deformation": false,
+    "velocity_field_quality": "not_final_physics_diagnostic",
+    "pressure_field_quality": "not_final_physics_diagnostic",
+    "case_pass": false,
+    "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D2_20260619_165307.mph",
+    "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D2.mph",
+    "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D2_20260619_165307.java",
+    "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D2.java",
+    "metadata": {
+      "boundaries": {
+        "axis": [
+          1
+        ],
+        "top_open": [
+          3
+        ],
+        "bottom_wall": [
+          2
+        ],
+        "outer_wall": [
+          8
+        ],
+        "ring_inner": [
+          4
+        ],
+        "ring_outer": [
+          7
+        ],
+        "ring_top": [
+          6
+        ],
+        "ring_bottom": [
+          5
+        ],
+        "sel_ring_wall_confirmed": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "Vring": "1e-3[m/s]",
+      "t_end": "0.005[s]",
+      "dt": "1e-4[s]",
+      "ALE_feature": "ale/move_ring",
+      "ALE_property": "dx = [0, -Vring*t]",
+      "WettedWall": "ww1 on sel_ring_wall_confirmed"
+    }
+  }
+]

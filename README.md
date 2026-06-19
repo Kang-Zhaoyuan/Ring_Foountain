@@ -204,3 +204,17 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No Stage 6 parameter sweep has been performed.
 - Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\reports\true_moving_geometry_campaign_final_report.md`.
 <!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:END -->
+
+<!-- TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR:START -->
+## TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR
+
+- Run id: `20260619_165307`.
+- Previous true-moving-geometry campaign `20260619_125524`: `PASS_MINIMAL`.
+- 06_R1 diagnostic repair: `FAIL`.
+- Interface diagnostic repaired: `YES`.
+- Mesh quality diagnostic repaired: `YES`.
+- Maximum verified physical displacement: `0.0` m.
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- Current outputs remain diagnostic and are not final ring-fountain physics conclusions.
+<!-- TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR:END -->

@@ -128,3 +128,15 @@
 - Attempted true moving ring smoke and short stability extension where allowed by gates.
 - No Stage 6 parameter sweep or real Hmax output was performed.
 <!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:END -->
+
+<!-- TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR:START -->
+## 2026-06-19T17:09:08 - TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR
+
+- R1 branch: `FAIL`.
+- Interface diagnostic: `PASS`.
+- Mesh quality diagnostic: `PASS`.
+- Zero/micro regression: `FAIL`.
+- Max displacement: `0.0` m.
+- Stage 6 sweep: `NO`.
+- Real Hmax output: `NO`.
+<!-- TRUE_GEOMETRY_R1_DIAGNOSTIC_REPAIR:END -->

@@ -1,0 +1,6 @@
+[2026-06-19 16:53:07] Phase A: importing and reviewing previous campaign.
+[2026-06-19 16:53:19] Phase B: repairing free-surface diagnostics.
+[2026-06-19 16:53:19] Phase B loading smoke_best: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\03_true_moving_ring_smoke\models\true_moving_ring_smoke_best_20260619_125524.mph
+[2026-06-19 16:54:35] Phase B loading stability_best: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\04_true_moving_ring_stability\models\true_moving_ring_smoke_best_20260619_125524.mph
+[2026-06-19 16:57:47] Phase C: mesh quality diagnostic.
+[2026-06-19 16:58:19] Phase D: zero and micro motion regression.

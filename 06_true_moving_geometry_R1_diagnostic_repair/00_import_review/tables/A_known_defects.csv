@@ -1,0 +1,5 @@
+﻿defect,evidence,repair_phase
+H0/Hfinal nan,previous case tables contain nan values,B
+interface_points_initial = 0,previous run extracted before/with wrong diagnostic path,B
+mesh_quality_min = not_evaluated,previous true ring cases wrote not_evaluated,C
+displacement too small for physics conclusion,largest previous displacement was 5e-6 m,E

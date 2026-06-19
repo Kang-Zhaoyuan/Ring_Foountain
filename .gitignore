@@ -1,4 +1,4 @@
-﻿# Local OS/editor noise
+# Local OS/editor noise
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -12,3 +12,6 @@ desktop.ini
 # Python caches
 __pycache__/
 *.pyc
+
+# Local stage archives
+*.zip
