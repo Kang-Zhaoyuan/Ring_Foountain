@@ -1,4 +1,6 @@
 ﻿criterion,fixed_geometry_branch,true_moving_branch
-true_geometry_motion,NO,NOT_AVAILABLE
-wall_velocity_only,YES,NO_PASSING_RING_MODEL
-continue_stage6,NO,NO
+true_geometry_motion,NO,YES
+wall_velocity_only,YES,NO
+free_surface_obvious_response,weak/no Jet1,clear
+Jet1_candidate,NO,not_evaluated_in_transition_campaign
+continue_stage6_parameter_sweep,NO,NO

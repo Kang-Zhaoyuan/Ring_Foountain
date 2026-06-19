@@ -1,10 +1,10 @@
 {
-  "run_id": "20260619_124109",
+  "run_id": "20260619_125524",
   "script": {
     "script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign.py",
-    "timestamp_script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign_20260619_124109.py",
+    "timestamp_script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign_20260619_125524.py",
     "local_script": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\scripts\\ring_fountain_stage6_true_moving_geometry_campaign.py",
-    "sha256": "ac5bad780f3e86f4db23ca74b5f3f47e9b807581e1dc7b5e2cdd67e55c697df0"
+    "sha256": "74773c0835e7043b8b77e7b2c427275f77bfded09d2e20748408f7fcb3456f9f"
   },
   "Phase0": {
     "status": "PASS",
@@ -92,34 +92,476 @@
     ]
   },
   "Phase4": {
-    "status": "FAIL",
-    "ALLOW_PHASE5": "NO",
+    "status": "PASS",
+    "ALLOW_PHASE5": "YES",
     "rows": [
       {
         "case_id": "minimal_twophase_ALE",
         "solve_status": "PASS",
         "failure_message": "",
-        "motion_y_min_m": NaN,
-        "interface_points": 53,
+        "motion_vertical_min_m": -2.111111111115921e-07,
+        "motion_expression": "z-Z",
+        "interface_points": 54,
         "TwoPhaseFlowLevelSet": "tpf1",
         "WettedWall": "ww1",
         "MovingMesh": "ale"
       }
     ],
     "model": {
-      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed_20260619_124109.mph",
-      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed.mph"
+      "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed_20260619_125524.mph",
+      "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed_20260619_125524.mph",
+      "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\models\\minimal_twophase_ALE_wettedwall_seed.mph"
     },
     "java": {
-      "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed_20260619_124109.java",
-      "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed.java"
+      "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed_20260619_125524.java",
+      "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed_20260619_125524.java",
+      "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\02_minimal_ALE_two_phase_seed\\exports\\minimal_twophase_ALE_wettedwall_seed.java"
     }
   },
   "Phase5": {
-    "status": "SKIP",
-    "ALLOW_PHASE6": "NO",
-    "ring_boundary_motion_verified": false,
-    "reason": "Phase 4 minimal two-phase ALE seed did not pass; true moving ring smoke was not attempted."
+    "status": "PASS",
+    "ALLOW_PHASE6": "YES",
+    "ring_boundary_motion_verified": true,
+    "interface_quality": "clear",
+    "rows": [
+      {
+        "case_id": "T0",
+        "Vring": "0[m/s]",
+        "t_end": "0.002[s]",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "ring_boundary_motion_verified": true,
+        "mesh_motion_vertical_min_m": -1.734723475976807e-17,
+        "motion_expression": "z-Z",
+        "mesh_quality_min": "not_evaluated",
+        "interface_quality": "clear",
+        "H0": NaN,
+        "Hfinal": NaN,
+        "H_robust_final_minus_H0": NaN,
+        "Hmax": "not_real_Hmax",
+        "pseudo_spike_detected": "not_evaluated",
+        "near_top_flag": false,
+        "interface_points_initial": 0,
+        "interface_points_final": 23,
+        "ring_boundaries": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "final_inner_solution": 21,
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\models\\T0_20260619_125524.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\models\\T0_20260619_125524.mph",
+        "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T0.java",
+        "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T0_20260619_125524.java",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T0_20260619_125524.java",
+        "metadata": {
+          "boundaries": {
+            "axis": [
+              1
+            ],
+            "top_open": [
+              3
+            ],
+            "bottom_wall": [
+              2
+            ],
+            "outer_wall": [
+              8
+            ],
+            "ring_inner": [
+              4
+            ],
+            "ring_outer": [
+              7
+            ],
+            "ring_top": [
+              6
+            ],
+            "ring_bottom": [
+              5
+            ],
+            "sel_ring_wall_confirmed": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "Vring": "0[m/s]",
+          "t_end": "0.002[s]",
+          "dt": "1e-4[s]",
+          "ALE_feature": "ale/move_ring",
+          "ALE_property": "dx = [0, -Vring*t]",
+          "WettedWall": "ww1 on sel_ring_wall_confirmed"
+        }
+      },
+      {
+        "case_id": "T1",
+        "Vring": "1e-4[m/s]",
+        "t_end": "0.002[s]",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "ring_boundary_motion_verified": true,
+        "mesh_motion_vertical_min_m": -2.0000000000011328e-07,
+        "motion_expression": "z-Z",
+        "mesh_quality_min": "not_evaluated",
+        "interface_quality": "clear",
+        "H0": NaN,
+        "Hfinal": NaN,
+        "H_robust_final_minus_H0": NaN,
+        "Hmax": "not_real_Hmax",
+        "pseudo_spike_detected": "not_evaluated",
+        "near_top_flag": false,
+        "interface_points_initial": 0,
+        "interface_points_final": 23,
+        "ring_boundaries": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "final_inner_solution": 21,
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\models\\T1_20260619_125524.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\models\\T1_20260619_125524.mph",
+        "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T1.java",
+        "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T1_20260619_125524.java",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T1_20260619_125524.java",
+        "metadata": {
+          "boundaries": {
+            "axis": [
+              1
+            ],
+            "top_open": [
+              3
+            ],
+            "bottom_wall": [
+              2
+            ],
+            "outer_wall": [
+              8
+            ],
+            "ring_inner": [
+              4
+            ],
+            "ring_outer": [
+              7
+            ],
+            "ring_top": [
+              6
+            ],
+            "ring_bottom": [
+              5
+            ],
+            "sel_ring_wall_confirmed": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "Vring": "1e-4[m/s]",
+          "t_end": "0.002[s]",
+          "dt": "1e-4[s]",
+          "ALE_feature": "ale/move_ring",
+          "ALE_property": "dx = [0, -Vring*t]",
+          "WettedWall": "ww1 on sel_ring_wall_confirmed"
+        }
+      },
+      {
+        "case_id": "T2",
+        "Vring": "5e-4[m/s]",
+        "t_end": "0.002[s]",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "ring_boundary_motion_verified": true,
+        "mesh_motion_vertical_min_m": -1.0000000000001327e-06,
+        "motion_expression": "z-Z",
+        "mesh_quality_min": "not_evaluated",
+        "interface_quality": "clear",
+        "H0": NaN,
+        "Hfinal": NaN,
+        "H_robust_final_minus_H0": NaN,
+        "Hmax": "not_real_Hmax",
+        "pseudo_spike_detected": "not_evaluated",
+        "near_top_flag": false,
+        "interface_points_initial": 0,
+        "interface_points_final": 23,
+        "ring_boundaries": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "final_inner_solution": 21,
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\models\\T2_20260619_125524.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\models\\T2_20260619_125524.mph",
+        "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T2.java",
+        "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T2_20260619_125524.java",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\03_true_moving_ring_smoke\\exports\\T2_20260619_125524.java",
+        "metadata": {
+          "boundaries": {
+            "axis": [
+              1
+            ],
+            "top_open": [
+              3
+            ],
+            "bottom_wall": [
+              2
+            ],
+            "outer_wall": [
+              8
+            ],
+            "ring_inner": [
+              4
+            ],
+            "ring_outer": [
+              7
+            ],
+            "ring_top": [
+              6
+            ],
+            "ring_bottom": [
+              5
+            ],
+            "sel_ring_wall_confirmed": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "Vring": "5e-4[m/s]",
+          "t_end": "0.002[s]",
+          "dt": "1e-4[s]",
+          "ALE_feature": "ale/move_ring",
+          "ALE_property": "dx = [0, -Vring*t]",
+          "WettedWall": "ww1 on sel_ring_wall_confirmed"
+        }
+      }
+    ]
   },
-  "TRUE_MOVING_GEOMETRY_BRANCH": "FAIL"
+  "Phase6": {
+    "status": "PASS_MINIMAL",
+    "rows": [
+      {
+        "case_id": "S1",
+        "Vring": "1e-4[m/s]",
+        "t_end": "0.005[s]",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "ring_boundary_motion_verified": true,
+        "mesh_motion_vertical_min_m": -5.000000000000664e-07,
+        "motion_expression": "z-Z",
+        "mesh_quality_min": "not_evaluated",
+        "interface_quality": "clear",
+        "H0": NaN,
+        "Hfinal": NaN,
+        "H_robust_final_minus_H0": NaN,
+        "Hmax": "not_real_Hmax",
+        "pseudo_spike_detected": "not_evaluated",
+        "near_top_flag": false,
+        "interface_points_initial": 0,
+        "interface_points_final": 26,
+        "ring_boundaries": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "final_inner_solution": 51,
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\models\\S1_20260619_125524.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\models\\S1_20260619_125524.mph",
+        "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S1.java",
+        "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S1_20260619_125524.java",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S1_20260619_125524.java",
+        "metadata": {
+          "boundaries": {
+            "axis": [
+              1
+            ],
+            "top_open": [
+              3
+            ],
+            "bottom_wall": [
+              2
+            ],
+            "outer_wall": [
+              8
+            ],
+            "ring_inner": [
+              4
+            ],
+            "ring_outer": [
+              7
+            ],
+            "ring_top": [
+              6
+            ],
+            "ring_bottom": [
+              5
+            ],
+            "sel_ring_wall_confirmed": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "Vring": "1e-4[m/s]",
+          "t_end": "0.005[s]",
+          "dt": "1e-4[s]",
+          "ALE_feature": "ale/move_ring",
+          "ALE_property": "dx = [0, -Vring*t]",
+          "WettedWall": "ww1 on sel_ring_wall_confirmed"
+        }
+      },
+      {
+        "case_id": "S2",
+        "Vring": "5e-4[m/s]",
+        "t_end": "0.005[s]",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "ring_boundary_motion_verified": true,
+        "mesh_motion_vertical_min_m": -2.500000000000332e-06,
+        "motion_expression": "z-Z",
+        "mesh_quality_min": "not_evaluated",
+        "interface_quality": "clear",
+        "H0": NaN,
+        "Hfinal": NaN,
+        "H_robust_final_minus_H0": NaN,
+        "Hmax": "not_real_Hmax",
+        "pseudo_spike_detected": "not_evaluated",
+        "near_top_flag": false,
+        "interface_points_initial": 0,
+        "interface_points_final": 26,
+        "ring_boundaries": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "final_inner_solution": 51,
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\models\\S2_20260619_125524.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\models\\S2_20260619_125524.mph",
+        "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S2.java",
+        "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S2_20260619_125524.java",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S2_20260619_125524.java",
+        "metadata": {
+          "boundaries": {
+            "axis": [
+              1
+            ],
+            "top_open": [
+              3
+            ],
+            "bottom_wall": [
+              2
+            ],
+            "outer_wall": [
+              8
+            ],
+            "ring_inner": [
+              4
+            ],
+            "ring_outer": [
+              7
+            ],
+            "ring_top": [
+              6
+            ],
+            "ring_bottom": [
+              5
+            ],
+            "sel_ring_wall_confirmed": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "Vring": "5e-4[m/s]",
+          "t_end": "0.005[s]",
+          "dt": "1e-4[s]",
+          "ALE_feature": "ale/move_ring",
+          "ALE_property": "dx = [0, -Vring*t]",
+          "WettedWall": "ww1 on sel_ring_wall_confirmed"
+        }
+      },
+      {
+        "case_id": "S3",
+        "Vring": "1e-3[m/s]",
+        "t_end": "0.005[s]",
+        "solve_status": "PASS",
+        "failure_message": "",
+        "ring_boundary_motion_verified": true,
+        "mesh_motion_vertical_min_m": -5.00000000000023e-06,
+        "motion_expression": "z-Z",
+        "mesh_quality_min": "not_evaluated",
+        "interface_quality": "clear",
+        "H0": NaN,
+        "Hfinal": NaN,
+        "H_robust_final_minus_H0": NaN,
+        "Hmax": "not_real_Hmax",
+        "pseudo_spike_detected": "not_evaluated",
+        "near_top_flag": false,
+        "interface_points_initial": 0,
+        "interface_points_final": 26,
+        "ring_boundaries": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "final_inner_solution": 51,
+        "timestamp_model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\models\\S3_20260619_125524.mph",
+        "model": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\models\\S3_20260619_125524.mph",
+        "canonical_note": "canonical existed and was not overwritten: D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S3.java",
+        "timestamp_java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S3_20260619_125524.java",
+        "java": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_campaign\\04_true_moving_ring_stability\\exports\\S3_20260619_125524.java",
+        "metadata": {
+          "boundaries": {
+            "axis": [
+              1
+            ],
+            "top_open": [
+              3
+            ],
+            "bottom_wall": [
+              2
+            ],
+            "outer_wall": [
+              8
+            ],
+            "ring_inner": [
+              4
+            ],
+            "ring_outer": [
+              7
+            ],
+            "ring_top": [
+              6
+            ],
+            "ring_bottom": [
+              5
+            ],
+            "sel_ring_wall_confirmed": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "Vring": "1e-3[m/s]",
+          "t_end": "0.005[s]",
+          "dt": "1e-4[s]",
+          "ALE_feature": "ale/move_ring",
+          "ALE_property": "dx = [0, -Vring*t]",
+          "WettedWall": "ww1 on sel_ring_wall_confirmed"
+        }
+      }
+    ]
+  },
+  "TRUE_MOVING_GEOMETRY_BRANCH": "PASS_MINIMAL"
 }

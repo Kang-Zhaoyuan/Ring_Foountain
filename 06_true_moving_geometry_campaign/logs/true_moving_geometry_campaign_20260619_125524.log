@@ -1,0 +1,39 @@
+[2026-06-19 12:55:24] Phase 0: project state review.
+[2026-06-19 12:55:24] Phase 1: freezing fixed-geometry branch.
+[2026-06-19 12:55:24] Phase 2: ALE API discovery.
+[2026-06-19 12:55:29] Phase 3: minimal ALE single-physics smoke.
+[2026-06-19 12:55:35] Phase 4: attempting minimal TwoPhase + WettedWall + ALE seed.
+[2026-06-19 12:55:56] Phase 4 interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:55:56] Phase 5: true moving ring smoke test.
+[2026-06-19 12:55:59] T0 initial interface extraction warning: Could not determine default dataset.
+[2026-06-19 12:56:10] T0 final interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:11] T0 frame 1 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:11] T0 frame 10 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:12] T0 frame 21 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:14] T1 initial interface extraction warning: Could not determine default dataset.
+[2026-06-19 12:56:24] T1 final interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:24] T1 frame 1 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:25] T1 frame 10 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:25] T1 frame 21 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:28] T2 initial interface extraction warning: Could not determine default dataset.
+[2026-06-19 12:56:38] T2 final interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:38] T2 frame 1 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:39] T2 frame 10 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:39] T2 frame 21 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:39] Phase 6: short true-moving-geometry stability extension.
+[2026-06-19 12:56:41] S1 initial interface extraction warning: Could not determine default dataset.
+[2026-06-19 12:56:54] S1 final interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:55] S1 frame 1 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:56] S1 frame 25 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:56] S1 frame 51 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:56:59] S2 initial interface extraction warning: Could not determine default dataset.
+[2026-06-19 12:57:15] S2 final interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:16] S2 frame 1 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:17] S2 frame 25 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:18] S2 frame 51 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:20] S3 initial interface extraction warning: Could not determine default dataset.
+[2026-06-19 12:57:36] S3 final interface extraction warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:36] S3 frame 1 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:37] S3 frame 25 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:38] S3 frame 51 render warning: list indices must be integers or slices, not tuple
+[2026-06-19 12:57:38] True moving geometry campaign completed.

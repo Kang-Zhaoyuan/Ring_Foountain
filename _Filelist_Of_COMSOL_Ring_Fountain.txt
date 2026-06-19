@@ -1,7 +1,11 @@
 卷 Data 的文件夹 PATH 列表
-卷序列号为 000000FC 6497:C20A
+卷序列号为 00000064 6497:C20A
 D:.
-|   5B4_stage_archive.zip
+|   .gitattributes
+|   .gitignore
+|   06_true_moving_geometry_stage_archive.zip
+|   5B4_R1_stage_archive.zip
+|   5C_stage_archive.zip
 |   CHANGELOG.md
 |   README.md
 |   _Filelist_Of_COMSOL_Ring_Fountain.txt
@@ -1494,20 +1498,1088 @@ D:.
 |   |           E_extended_stability_H_vs_t.csv
 |   |           G_best_model_manifest.csv
 |   |           
+|   +---5B4_R1_extended_stability_repair
+|   |   |   5B4_R1_extended_stability_repair_summary.json
+|   |   |   
+|   |   +---exports
+|   |   |       ring_fountain_v5B4_R1_best.java
+|   |   |       ring_fountain_v5B4_R1_best_20260618_225535.java
+|   |   |       
+|   |   +---frames
+|   |   |       C_E0_D4_repeat_interface_frame_001.png
+|   |   |       C_E0_D4_repeat_interface_frame_002.png
+|   |   |       C_E0_D4_repeat_interface_frame_003.png
+|   |   |       C_E0_D4_repeat_interface_frame_004.png
+|   |   |       C_E0_D4_repeat_interface_frame_005.png
+|   |   |       C_E0_D4_repeat_interface_frame_006.png
+|   |   |       C_E0_D4_repeat_interface_frame_007.png
+|   |   |       C_E0_D4_repeat_interface_frame_008.png
+|   |   |       C_E0_D4_repeat_interface_frame_009.png
+|   |   |       C_E0_D4_repeat_interface_frame_010.png
+|   |   |       C_E0_D4_repeat_interface_frame_011.png
+|   |   |       C_E0_D4_repeat_interface_frame_012.png
+|   |   |       C_E0_D4_repeat_interface_frame_013.png
+|   |   |       C_E0_D4_repeat_interface_frame_014.png
+|   |   |       C_E0_D4_repeat_interface_frame_015.png
+|   |   |       C_E0_D4_repeat_interface_frame_016.png
+|   |   |       C_E0_D4_repeat_interface_frame_017.png
+|   |   |       C_E0_D4_repeat_interface_frame_018.png
+|   |   |       C_E0_D4_repeat_interface_frame_019.png
+|   |   |       C_E0_D4_repeat_interface_frame_020.png
+|   |   |       C_E0_D4_repeat_interface_frame_021.png
+|   |   |       C_E0_D4_repeat_interface_frame_022.png
+|   |   |       C_E0_D4_repeat_interface_frame_023.png
+|   |   |       C_E0_D4_repeat_interface_frame_024.png
+|   |   |       C_E0_D4_repeat_interface_frame_025.png
+|   |   |       C_E0_D4_repeat_interface_frame_026.png
+|   |   |       C_E0_D4_repeat_interface_frame_027.png
+|   |   |       C_E0_D4_repeat_interface_frame_028.png
+|   |   |       C_E0_D4_repeat_interface_frame_029.png
+|   |   |       C_E0_D4_repeat_interface_frame_030.png
+|   |   |       C_E0_D4_repeat_interface_frame_031.png
+|   |   |       C_E0_D4_repeat_interface_frame_032.png
+|   |   |       C_E0_D4_repeat_interface_frame_033.png
+|   |   |       C_E0_D4_repeat_interface_frame_034.png
+|   |   |       C_E0_D4_repeat_interface_frame_035.png
+|   |   |       C_E0_D4_repeat_interface_frame_036.png
+|   |   |       C_E0_D4_repeat_interface_frame_037.png
+|   |   |       C_E0_D4_repeat_interface_frame_038.png
+|   |   |       C_E0_D4_repeat_interface_frame_039.png
+|   |   |       C_E0_D4_repeat_interface_frame_040.png
+|   |   |       C_E0_D4_repeat_interface_frame_041.png
+|   |   |       C_E0_D4_repeat_interface_frame_042.png
+|   |   |       C_E0_D4_repeat_interface_frame_043.png
+|   |   |       C_E0_D4_repeat_interface_frame_044.png
+|   |   |       C_E0_D4_repeat_interface_frame_045.png
+|   |   |       C_E0_D4_repeat_interface_frame_046.png
+|   |   |       C_E0_D4_repeat_interface_frame_047.png
+|   |   |       C_E0_D4_repeat_interface_frame_048.png
+|   |   |       C_E0_D4_repeat_interface_frame_049.png
+|   |   |       C_E0_D4_repeat_interface_frame_050.png
+|   |   |       C_E0_D4_repeat_interface_frame_051.png
+|   |   |       C_E0_D4_repeat_interface_frame_052.png
+|   |   |       C_E0_D4_repeat_interface_frame_053.png
+|   |   |       C_E0_D4_repeat_interface_frame_054.png
+|   |   |       C_E0_D4_repeat_interface_frame_055.png
+|   |   |       C_E0_D4_repeat_interface_frame_056.png
+|   |   |       C_E0_D4_repeat_interface_frame_057.png
+|   |   |       C_E0_D4_repeat_interface_frame_058.png
+|   |   |       C_E0_D4_repeat_interface_frame_059.png
+|   |   |       C_E0_D4_repeat_interface_frame_060.png
+|   |   |       C_E0_D4_repeat_interface_frame_061.png
+|   |   |       C_E0_D4_repeat_interface_frame_062.png
+|   |   |       C_E0_D4_repeat_interface_frame_063.png
+|   |   |       C_E0_D4_repeat_interface_frame_064.png
+|   |   |       C_E0_D4_repeat_interface_frame_065.png
+|   |   |       C_E0_D4_repeat_interface_frame_066.png
+|   |   |       C_E0_D4_repeat_interface_frame_067.png
+|   |   |       C_E0_D4_repeat_interface_frame_068.png
+|   |   |       C_E0_D4_repeat_interface_frame_069.png
+|   |   |       C_E0_D4_repeat_interface_frame_070.png
+|   |   |       C_E0_D4_repeat_interface_frame_071.png
+|   |   |       C_E0_D4_repeat_interface_frame_072.png
+|   |   |       C_E0_D4_repeat_interface_frame_073.png
+|   |   |       C_E0_D4_repeat_interface_frame_074.png
+|   |   |       C_E0_D4_repeat_interface_frame_075.png
+|   |   |       C_E0_D4_repeat_interface_frame_076.png
+|   |   |       C_E0_D4_repeat_interface_frame_077.png
+|   |   |       C_E0_D4_repeat_interface_frame_078.png
+|   |   |       C_E0_D4_repeat_interface_frame_079.png
+|   |   |       C_E0_D4_repeat_interface_frame_080.png
+|   |   |       C_E0_D4_repeat_interface_frame_081.png
+|   |   |       C_E0_D4_repeat_interface_frame_082.png
+|   |   |       C_E0_D4_repeat_interface_frame_083.png
+|   |   |       C_E0_D4_repeat_interface_frame_084.png
+|   |   |       C_E0_D4_repeat_interface_frame_085.png
+|   |   |       C_E0_D4_repeat_interface_frame_086.png
+|   |   |       C_E0_D4_repeat_interface_frame_087.png
+|   |   |       C_E0_D4_repeat_interface_frame_088.png
+|   |   |       C_E0_D4_repeat_interface_frame_089.png
+|   |   |       C_E0_D4_repeat_interface_frame_090.png
+|   |   |       C_E0_D4_repeat_interface_frame_091.png
+|   |   |       C_E0_D4_repeat_interface_frame_092.png
+|   |   |       C_E0_D4_repeat_interface_frame_093.png
+|   |   |       C_E0_D4_repeat_interface_frame_094.png
+|   |   |       C_E0_D4_repeat_interface_frame_095.png
+|   |   |       C_E0_D4_repeat_interface_frame_096.png
+|   |   |       C_E0_D4_repeat_interface_frame_097.png
+|   |   |       C_E0_D4_repeat_interface_frame_098.png
+|   |   |       C_E0_D4_repeat_interface_frame_099.png
+|   |   |       C_E0_D4_repeat_interface_frame_100.png
+|   |   |       C_E0_D4_repeat_interface_frame_101.png
+|   |   |       C_E0_D4_repeat_interface_frame_102.png
+|   |   |       C_E0_D4_repeat_interface_frame_103.png
+|   |   |       C_E0_D4_repeat_interface_frame_104.png
+|   |   |       C_E0_D4_repeat_interface_frame_105.png
+|   |   |       C_E0_D4_repeat_interface_frame_106.png
+|   |   |       C_E0_D4_repeat_interface_frame_107.png
+|   |   |       C_E0_D4_repeat_interface_frame_108.png
+|   |   |       C_E0_D4_repeat_interface_frame_109.png
+|   |   |       C_E0_D4_repeat_interface_frame_110.png
+|   |   |       C_E0_D4_repeat_interface_frame_111.png
+|   |   |       C_E0_D4_repeat_interface_frame_112.png
+|   |   |       C_E0_D4_repeat_interface_frame_113.png
+|   |   |       C_E0_D4_repeat_interface_frame_114.png
+|   |   |       C_E0_D4_repeat_interface_frame_115.png
+|   |   |       C_E0_D4_repeat_interface_frame_116.png
+|   |   |       C_E0_D4_repeat_interface_frame_117.png
+|   |   |       C_E0_D4_repeat_interface_frame_118.png
+|   |   |       C_E0_D4_repeat_interface_frame_119.png
+|   |   |       C_E0_D4_repeat_interface_frame_120.png
+|   |   |       C_E0_D4_repeat_interface_frame_121.png
+|   |   |       C_E0_D4_repeat_interface_frame_122.png
+|   |   |       C_E0_D4_repeat_interface_frame_123.png
+|   |   |       C_E0_D4_repeat_interface_frame_124.png
+|   |   |       C_E0_D4_repeat_interface_frame_125.png
+|   |   |       C_E0_D4_repeat_interface_frame_126.png
+|   |   |       C_E0_D4_repeat_interface_frame_127.png
+|   |   |       C_E0_D4_repeat_interface_frame_128.png
+|   |   |       C_E0_D4_repeat_interface_frame_129.png
+|   |   |       C_E0_D4_repeat_interface_frame_130.png
+|   |   |       C_E0_D4_repeat_interface_frame_131.png
+|   |   |       C_E0_D4_repeat_interface_frame_132.png
+|   |   |       C_E0_D4_repeat_interface_frame_133.png
+|   |   |       C_E0_D4_repeat_interface_frame_134.png
+|   |   |       C_E0_D4_repeat_interface_frame_135.png
+|   |   |       C_E0_D4_repeat_interface_frame_136.png
+|   |   |       C_E0_D4_repeat_interface_frame_137.png
+|   |   |       C_E0_D4_repeat_interface_frame_138.png
+|   |   |       C_E0_D4_repeat_interface_frame_139.png
+|   |   |       C_E0_D4_repeat_interface_frame_140.png
+|   |   |       C_E0_D4_repeat_interface_frame_141.png
+|   |   |       C_E0_D4_repeat_interface_frame_142.png
+|   |   |       C_E0_D4_repeat_interface_frame_143.png
+|   |   |       C_E0_D4_repeat_interface_frame_144.png
+|   |   |       C_E0_D4_repeat_interface_frame_145.png
+|   |   |       C_E0_D4_repeat_interface_frame_146.png
+|   |   |       C_E0_D4_repeat_interface_frame_147.png
+|   |   |       C_E0_D4_repeat_interface_frame_148.png
+|   |   |       C_E0_D4_repeat_interface_frame_149.png
+|   |   |       C_E0_D4_repeat_interface_frame_150.png
+|   |   |       C_E0_D4_repeat_interface_frame_151.png
+|   |   |       C_E0_D4_repeat_interface_frame_152.png
+|   |   |       C_E0_D4_repeat_interface_frame_153.png
+|   |   |       C_E0_D4_repeat_interface_frame_154.png
+|   |   |       C_E0_D4_repeat_interface_frame_155.png
+|   |   |       C_E0_D4_repeat_interface_frame_156.png
+|   |   |       C_E0_D4_repeat_interface_frame_157.png
+|   |   |       C_E0_D4_repeat_interface_frame_158.png
+|   |   |       C_E0_D4_repeat_interface_frame_159.png
+|   |   |       C_E0_D4_repeat_interface_frame_160.png
+|   |   |       C_E0_D4_repeat_interface_frame_161.png
+|   |   |       C_E0_D4_repeat_interface_frame_162.png
+|   |   |       C_E0_D4_repeat_interface_frame_163.png
+|   |   |       C_E0_D4_repeat_interface_frame_164.png
+|   |   |       C_E0_D4_repeat_interface_frame_165.png
+|   |   |       C_E0_D4_repeat_interface_frame_166.png
+|   |   |       C_E0_D4_repeat_interface_frame_167.png
+|   |   |       C_E0_D4_repeat_interface_frame_168.png
+|   |   |       C_E0_D4_repeat_interface_frame_169.png
+|   |   |       C_E0_D4_repeat_interface_frame_170.png
+|   |   |       C_E0_D4_repeat_interface_frame_171.png
+|   |   |       C_E0_D4_repeat_interface_frame_172.png
+|   |   |       C_E0_D4_repeat_interface_frame_173.png
+|   |   |       C_E0_D4_repeat_interface_frame_174.png
+|   |   |       C_E0_D4_repeat_interface_frame_175.png
+|   |   |       C_E0_D4_repeat_interface_frame_176.png
+|   |   |       C_E0_D4_repeat_interface_frame_177.png
+|   |   |       C_E0_D4_repeat_interface_frame_178.png
+|   |   |       C_E0_D4_repeat_interface_frame_179.png
+|   |   |       C_E0_D4_repeat_interface_frame_180.png
+|   |   |       C_E0_D4_repeat_interface_frame_181.png
+|   |   |       C_E0_D4_repeat_interface_frame_182.png
+|   |   |       C_E0_D4_repeat_interface_frame_183.png
+|   |   |       C_E0_D4_repeat_interface_frame_184.png
+|   |   |       C_E0_D4_repeat_interface_frame_185.png
+|   |   |       C_E0_D4_repeat_interface_frame_186.png
+|   |   |       C_E0_D4_repeat_interface_frame_187.png
+|   |   |       C_E0_D4_repeat_interface_frame_188.png
+|   |   |       C_E0_D4_repeat_interface_frame_189.png
+|   |   |       C_E0_D4_repeat_interface_frame_190.png
+|   |   |       C_E0_D4_repeat_interface_frame_191.png
+|   |   |       C_E0_D4_repeat_interface_frame_192.png
+|   |   |       C_E0_D4_repeat_interface_frame_193.png
+|   |   |       C_E0_D4_repeat_interface_frame_194.png
+|   |   |       C_E0_D4_repeat_interface_frame_195.png
+|   |   |       C_E0_D4_repeat_interface_frame_196.png
+|   |   |       C_E0_D4_repeat_interface_frame_197.png
+|   |   |       C_E0_D4_repeat_interface_frame_198.png
+|   |   |       C_E0_D4_repeat_interface_frame_199.png
+|   |   |       C_E0_D4_repeat_interface_frame_200.png
+|   |   |       C_E0_D4_repeat_interface_frame_201.png
+|   |   |       
+|   |   +---images
+|   |   |       B_E_H_diagnostic_comparison.png
+|   |   |       C_E0_D4_repeat_H_vs_t.png
+|   |   |       C_E0_D4_repeat_phils_final.png
+|   |   |       C_E0_D4_repeat_velocity_magnitude.png
+|   |   |       
+|   |   +---logs
+|   |   |       5B4_R1_extended_stability_repair_20260618_225535.log
+|   |   |       C_E0_D4_repeat.log
+|   |   |       
+|   |   +---models
+|   |   |       ring_fountain_v5B4_R1_best.mph
+|   |   |       ring_fountain_v5B4_R1_best_20260618_225535.mph
+|   |   |       ring_fountain_v5B4_R1_E0_D4_repeat.mph
+|   |   |       ring_fountain_v5B4_R1_E0_D4_repeat_20260618_225535.mph
+|   |   |       
+|   |   +---reports
+|   |   |       5B4_R1_extended_stability_repair_final_report.md
+|   |   |       A_5B4_failure_review.md
+|   |   |       B_interface_diagnostic_audit.md
+|   |   |       C_E0_D4_repeat_report.md
+|   |   |       F_R1_best_model_report.md
+|   |   |       
+|   |   +---scripts
+|   |   |       ring_fountain_stage5b4_R1_extended_stability_repair.py
+|   |   |       ring_fountain_stage5b4_R1_extended_stability_repair_20260618_225535.py
+|   |   |       
+|   |   \---tables
+|   |           A_5B4_gate_review.csv
+|   |           B_recomputed_E_interface_diagnostics.csv
+|   |           C_E0_D4_repeat_H_diagnostics.csv
+|   |           F_R1_best_model_manifest.csv
+|   |           
 |   +---5C_jet1_extraction
+|   |   |   5C_jet1_extraction_summary.json
+|   |   |   
+|   |   +---exports
+|   |   |       ring_fountain_v5C_jet1_extraction_best.java
+|   |   |       ring_fountain_v5C_jet1_extraction_best_20260618_233323.java
+|   |   |       
+|   |   +---frames
+|   |   |       C_interface_frame_001.png
+|   |   |       C_interface_frame_002.png
+|   |   |       C_interface_frame_003.png
+|   |   |       C_interface_frame_004.png
+|   |   |       C_interface_frame_005.png
+|   |   |       C_interface_frame_006.png
+|   |   |       C_interface_frame_007.png
+|   |   |       C_interface_frame_008.png
+|   |   |       C_interface_frame_009.png
+|   |   |       C_interface_frame_010.png
+|   |   |       C_interface_frame_011.png
+|   |   |       C_interface_frame_012.png
+|   |   |       C_interface_frame_013.png
+|   |   |       C_interface_frame_014.png
+|   |   |       C_interface_frame_015.png
+|   |   |       C_interface_frame_016.png
+|   |   |       C_interface_frame_017.png
+|   |   |       C_interface_frame_018.png
+|   |   |       C_interface_frame_019.png
+|   |   |       C_interface_frame_020.png
+|   |   |       C_interface_frame_021.png
+|   |   |       C_interface_frame_022.png
+|   |   |       C_interface_frame_023.png
+|   |   |       C_interface_frame_024.png
+|   |   |       C_interface_frame_025.png
+|   |   |       C_interface_frame_026.png
+|   |   |       C_interface_frame_027.png
+|   |   |       C_interface_frame_028.png
+|   |   |       C_interface_frame_029.png
+|   |   |       C_interface_frame_030.png
+|   |   |       C_interface_frame_031.png
+|   |   |       C_interface_frame_032.png
+|   |   |       C_interface_frame_033.png
+|   |   |       C_interface_frame_034.png
+|   |   |       C_interface_frame_035.png
+|   |   |       C_interface_frame_036.png
+|   |   |       C_interface_frame_037.png
+|   |   |       C_interface_frame_038.png
+|   |   |       C_interface_frame_039.png
+|   |   |       C_interface_frame_040.png
+|   |   |       C_interface_frame_041.png
+|   |   |       C_interface_frame_042.png
+|   |   |       C_interface_frame_043.png
+|   |   |       C_interface_frame_044.png
+|   |   |       C_interface_frame_045.png
+|   |   |       C_interface_frame_046.png
+|   |   |       C_interface_frame_047.png
+|   |   |       C_interface_frame_048.png
+|   |   |       C_interface_frame_049.png
+|   |   |       C_interface_frame_050.png
+|   |   |       C_interface_frame_051.png
+|   |   |       C_interface_frame_052.png
+|   |   |       C_interface_frame_053.png
+|   |   |       C_interface_frame_054.png
+|   |   |       C_interface_frame_055.png
+|   |   |       C_interface_frame_056.png
+|   |   |       C_interface_frame_057.png
+|   |   |       C_interface_frame_058.png
+|   |   |       C_interface_frame_059.png
+|   |   |       C_interface_frame_060.png
+|   |   |       C_interface_frame_061.png
+|   |   |       C_interface_frame_062.png
+|   |   |       C_interface_frame_063.png
+|   |   |       C_interface_frame_064.png
+|   |   |       C_interface_frame_065.png
+|   |   |       C_interface_frame_066.png
+|   |   |       C_interface_frame_067.png
+|   |   |       C_interface_frame_068.png
+|   |   |       C_interface_frame_069.png
+|   |   |       C_interface_frame_070.png
+|   |   |       C_interface_frame_071.png
+|   |   |       C_interface_frame_072.png
+|   |   |       C_interface_frame_073.png
+|   |   |       C_interface_frame_074.png
+|   |   |       C_interface_frame_075.png
+|   |   |       C_interface_frame_076.png
+|   |   |       C_interface_frame_077.png
+|   |   |       C_interface_frame_078.png
+|   |   |       C_interface_frame_079.png
+|   |   |       C_interface_frame_080.png
+|   |   |       C_interface_frame_081.png
+|   |   |       C_interface_frame_082.png
+|   |   |       C_interface_frame_083.png
+|   |   |       C_interface_frame_084.png
+|   |   |       C_interface_frame_085.png
+|   |   |       C_interface_frame_086.png
+|   |   |       C_interface_frame_087.png
+|   |   |       C_interface_frame_088.png
+|   |   |       C_interface_frame_089.png
+|   |   |       C_interface_frame_090.png
+|   |   |       C_interface_frame_091.png
+|   |   |       C_interface_frame_092.png
+|   |   |       C_interface_frame_093.png
+|   |   |       C_interface_frame_094.png
+|   |   |       C_interface_frame_095.png
+|   |   |       C_interface_frame_096.png
+|   |   |       C_interface_frame_097.png
+|   |   |       C_interface_frame_098.png
+|   |   |       C_interface_frame_099.png
+|   |   |       C_interface_frame_100.png
+|   |   |       C_interface_frame_101.png
+|   |   |       C_interface_frame_102.png
+|   |   |       C_interface_frame_103.png
+|   |   |       C_interface_frame_104.png
+|   |   |       C_interface_frame_105.png
+|   |   |       C_interface_frame_106.png
+|   |   |       C_interface_frame_107.png
+|   |   |       C_interface_frame_108.png
+|   |   |       C_interface_frame_109.png
+|   |   |       C_interface_frame_110.png
+|   |   |       C_interface_frame_111.png
+|   |   |       C_interface_frame_112.png
+|   |   |       C_interface_frame_113.png
+|   |   |       C_interface_frame_114.png
+|   |   |       C_interface_frame_115.png
+|   |   |       C_interface_frame_116.png
+|   |   |       C_interface_frame_117.png
+|   |   |       C_interface_frame_118.png
+|   |   |       C_interface_frame_119.png
+|   |   |       C_interface_frame_120.png
+|   |   |       C_interface_frame_121.png
+|   |   |       C_interface_frame_122.png
+|   |   |       C_interface_frame_123.png
+|   |   |       C_interface_frame_124.png
+|   |   |       C_interface_frame_125.png
+|   |   |       C_interface_frame_126.png
+|   |   |       C_interface_frame_127.png
+|   |   |       C_interface_frame_128.png
+|   |   |       C_interface_frame_129.png
+|   |   |       C_interface_frame_130.png
+|   |   |       C_interface_frame_131.png
+|   |   |       C_interface_frame_132.png
+|   |   |       C_interface_frame_133.png
+|   |   |       C_interface_frame_134.png
+|   |   |       C_interface_frame_135.png
+|   |   |       C_interface_frame_136.png
+|   |   |       C_interface_frame_137.png
+|   |   |       C_interface_frame_138.png
+|   |   |       C_interface_frame_139.png
+|   |   |       C_interface_frame_140.png
+|   |   |       C_interface_frame_141.png
+|   |   |       C_interface_frame_142.png
+|   |   |       C_interface_frame_143.png
+|   |   |       C_interface_frame_144.png
+|   |   |       C_interface_frame_145.png
+|   |   |       C_interface_frame_146.png
+|   |   |       C_interface_frame_147.png
+|   |   |       C_interface_frame_148.png
+|   |   |       C_interface_frame_149.png
+|   |   |       C_interface_frame_150.png
+|   |   |       C_interface_frame_151.png
+|   |   |       C_interface_frame_152.png
+|   |   |       C_interface_frame_153.png
+|   |   |       C_interface_frame_154.png
+|   |   |       C_interface_frame_155.png
+|   |   |       C_interface_frame_156.png
+|   |   |       C_interface_frame_157.png
+|   |   |       C_interface_frame_158.png
+|   |   |       C_interface_frame_159.png
+|   |   |       C_interface_frame_160.png
+|   |   |       C_interface_frame_161.png
+|   |   |       C_interface_frame_162.png
+|   |   |       C_interface_frame_163.png
+|   |   |       C_interface_frame_164.png
+|   |   |       C_interface_frame_165.png
+|   |   |       C_interface_frame_166.png
+|   |   |       C_interface_frame_167.png
+|   |   |       C_interface_frame_168.png
+|   |   |       C_interface_frame_169.png
+|   |   |       C_interface_frame_170.png
+|   |   |       C_interface_frame_171.png
+|   |   |       C_interface_frame_172.png
+|   |   |       C_interface_frame_173.png
+|   |   |       C_interface_frame_174.png
+|   |   |       C_interface_frame_175.png
+|   |   |       C_interface_frame_176.png
+|   |   |       C_interface_frame_177.png
+|   |   |       C_interface_frame_178.png
+|   |   |       C_interface_frame_179.png
+|   |   |       C_interface_frame_180.png
+|   |   |       C_interface_frame_181.png
+|   |   |       C_interface_frame_182.png
+|   |   |       C_interface_frame_183.png
+|   |   |       C_interface_frame_184.png
+|   |   |       C_interface_frame_185.png
+|   |   |       C_interface_frame_186.png
+|   |   |       C_interface_frame_187.png
+|   |   |       C_interface_frame_188.png
+|   |   |       C_interface_frame_189.png
+|   |   |       C_interface_frame_190.png
+|   |   |       C_interface_frame_191.png
+|   |   |       C_interface_frame_192.png
+|   |   |       C_interface_frame_193.png
+|   |   |       C_interface_frame_194.png
+|   |   |       C_interface_frame_195.png
+|   |   |       C_interface_frame_196.png
+|   |   |       C_interface_frame_197.png
+|   |   |       C_interface_frame_198.png
+|   |   |       C_interface_frame_199.png
+|   |   |       C_interface_frame_200.png
+|   |   |       C_interface_frame_201.png
+|   |   |       D_jet1_candidate_frame_001.png
+|   |   |       D_jet1_candidate_frame_067.png
+|   |   |       D_jet1_candidate_frame_134.png
+|   |   |       D_jet1_candidate_frame_201.png
+|   |   |       E_velocity_support_frame_001_p.png
+|   |   |       E_velocity_support_frame_001_phils.png
+|   |   |       E_velocity_support_frame_001_U.png
+|   |   |       E_velocity_support_frame_001_w.png
+|   |   |       E_velocity_support_frame_067_p.png
+|   |   |       E_velocity_support_frame_067_phils.png
+|   |   |       E_velocity_support_frame_067_U.png
+|   |   |       E_velocity_support_frame_067_w.png
+|   |   |       E_velocity_support_frame_134_p.png
+|   |   |       E_velocity_support_frame_134_phils.png
+|   |   |       E_velocity_support_frame_134_U.png
+|   |   |       E_velocity_support_frame_134_w.png
+|   |   |       E_velocity_support_frame_201_p.png
+|   |   |       E_velocity_support_frame_201_phils.png
+|   |   |       E_velocity_support_frame_201_U.png
+|   |   |       E_velocity_support_frame_201_w.png
+|   |   |       
 |   |   +---images
+|   |   |   |   B_jet1_ROI_map.png
+|   |   |   |   C_interface_height_comparison.png
+|   |   |   |   D_jet1_candidate_H_vs_t.png
+|   |   |   |   D_jet1_candidate_location_vs_t.png
+|   |   |   |   E_axial_velocity_selected_frames.png
+|   |   |   |   E_pressure_selected_frames.png
+|   |   |   |   E_velocity_magnitude_selected_frames.png
+|   |   |   |   
 |   |   |   \---frames
 |   |   +---logs
+|   |   |       5C_jet1_extraction_20260618_233323.log
+|   |   |       C_interface_sequence_extraction.log
+|   |   |       D_jet1_candidate_detection.log
+|   |   |       
 |   |   +---models
+|   |   |       ring_fountain_v5C_jet1_extraction_best.mph
+|   |   |       ring_fountain_v5C_jet1_extraction_best_20260618_233323.mph
+|   |   |       
 |   |   +---reports
+|   |   |       5C_jet1_extraction_final_report.md
+|   |   |       A_5B4_R1_import_review.md
+|   |   |       B_jet1_definition_and_ROI_report.md
+|   |   |       C_interface_sequence_extraction_report.md
+|   |   |       D_jet1_candidate_detection_report.md
+|   |   |       E_velocity_field_support_report.md
+|   |   |       F_5C_best_artifact_report.md
+|   |   |       
+|   |   +---scripts
+|   |   |       ring_fountain_stage5c_jet1_extraction.py
+|   |   |       ring_fountain_stage5c_jet1_extraction_20260618_233323.py
+|   |   |       
 |   |   \---tables
+|   |           A_5B4_R1_gate_review.csv
+|   |           B_jet1_ROI_definition.csv
+|   |           C_interface_sequence_diagnostics.csv
+|   |           D_jet1_candidate_summary.csv
+|   |           D_jet1_candidate_timeseries.csv
+|   |           E_velocity_support_metrics.csv
+|   |           F_5C_best_artifact_manifest.csv
+|   |           
 |   +---5D_jet2_detection
+|   |   |   5D_jet2_detection_summary.json
+|   |   |   
+|   |   +---exports
+|   |   |       ring_fountain_v5D_jet2_detection_best.java
+|   |   |       ring_fountain_v5D_jet2_detection_best_20260619_110135.java
+|   |   |       
+|   |   +---frames
+|   |   |       C_existing_window_jet2_frame_001.png
+|   |   |       C_existing_window_jet2_frame_002.png
+|   |   |       C_existing_window_jet2_frame_003.png
+|   |   |       C_existing_window_jet2_frame_004.png
+|   |   |       C_existing_window_jet2_frame_005.png
+|   |   |       C_existing_window_jet2_frame_006.png
+|   |   |       C_existing_window_jet2_frame_007.png
+|   |   |       C_existing_window_jet2_frame_008.png
+|   |   |       C_existing_window_jet2_frame_009.png
+|   |   |       C_existing_window_jet2_frame_010.png
+|   |   |       C_existing_window_jet2_frame_011.png
+|   |   |       C_existing_window_jet2_frame_012.png
+|   |   |       C_existing_window_jet2_frame_013.png
+|   |   |       C_existing_window_jet2_frame_014.png
+|   |   |       C_existing_window_jet2_frame_015.png
+|   |   |       C_existing_window_jet2_frame_016.png
+|   |   |       C_existing_window_jet2_frame_017.png
+|   |   |       C_existing_window_jet2_frame_018.png
+|   |   |       C_existing_window_jet2_frame_019.png
+|   |   |       C_existing_window_jet2_frame_020.png
+|   |   |       C_existing_window_jet2_frame_021.png
+|   |   |       C_existing_window_jet2_frame_022.png
+|   |   |       C_existing_window_jet2_frame_023.png
+|   |   |       C_existing_window_jet2_frame_024.png
+|   |   |       C_existing_window_jet2_frame_025.png
+|   |   |       C_existing_window_jet2_frame_026.png
+|   |   |       C_existing_window_jet2_frame_027.png
+|   |   |       C_existing_window_jet2_frame_028.png
+|   |   |       C_existing_window_jet2_frame_029.png
+|   |   |       C_existing_window_jet2_frame_030.png
+|   |   |       C_existing_window_jet2_frame_031.png
+|   |   |       C_existing_window_jet2_frame_032.png
+|   |   |       C_existing_window_jet2_frame_033.png
+|   |   |       C_existing_window_jet2_frame_034.png
+|   |   |       C_existing_window_jet2_frame_035.png
+|   |   |       C_existing_window_jet2_frame_036.png
+|   |   |       C_existing_window_jet2_frame_037.png
+|   |   |       C_existing_window_jet2_frame_038.png
+|   |   |       C_existing_window_jet2_frame_039.png
+|   |   |       C_existing_window_jet2_frame_040.png
+|   |   |       C_existing_window_jet2_frame_041.png
+|   |   |       C_existing_window_jet2_frame_042.png
+|   |   |       C_existing_window_jet2_frame_043.png
+|   |   |       C_existing_window_jet2_frame_044.png
+|   |   |       C_existing_window_jet2_frame_045.png
+|   |   |       C_existing_window_jet2_frame_046.png
+|   |   |       C_existing_window_jet2_frame_047.png
+|   |   |       C_existing_window_jet2_frame_048.png
+|   |   |       C_existing_window_jet2_frame_049.png
+|   |   |       C_existing_window_jet2_frame_050.png
+|   |   |       C_existing_window_jet2_frame_051.png
+|   |   |       C_existing_window_jet2_frame_052.png
+|   |   |       C_existing_window_jet2_frame_053.png
+|   |   |       C_existing_window_jet2_frame_054.png
+|   |   |       C_existing_window_jet2_frame_055.png
+|   |   |       C_existing_window_jet2_frame_056.png
+|   |   |       C_existing_window_jet2_frame_057.png
+|   |   |       C_existing_window_jet2_frame_058.png
+|   |   |       C_existing_window_jet2_frame_059.png
+|   |   |       C_existing_window_jet2_frame_060.png
+|   |   |       C_existing_window_jet2_frame_061.png
+|   |   |       C_existing_window_jet2_frame_062.png
+|   |   |       C_existing_window_jet2_frame_063.png
+|   |   |       C_existing_window_jet2_frame_064.png
+|   |   |       C_existing_window_jet2_frame_065.png
+|   |   |       C_existing_window_jet2_frame_066.png
+|   |   |       C_existing_window_jet2_frame_067.png
+|   |   |       C_existing_window_jet2_frame_068.png
+|   |   |       C_existing_window_jet2_frame_069.png
+|   |   |       C_existing_window_jet2_frame_070.png
+|   |   |       C_existing_window_jet2_frame_071.png
+|   |   |       C_existing_window_jet2_frame_072.png
+|   |   |       C_existing_window_jet2_frame_073.png
+|   |   |       C_existing_window_jet2_frame_074.png
+|   |   |       C_existing_window_jet2_frame_075.png
+|   |   |       C_existing_window_jet2_frame_076.png
+|   |   |       C_existing_window_jet2_frame_077.png
+|   |   |       C_existing_window_jet2_frame_078.png
+|   |   |       C_existing_window_jet2_frame_079.png
+|   |   |       C_existing_window_jet2_frame_080.png
+|   |   |       C_existing_window_jet2_frame_081.png
+|   |   |       C_existing_window_jet2_frame_082.png
+|   |   |       C_existing_window_jet2_frame_083.png
+|   |   |       C_existing_window_jet2_frame_084.png
+|   |   |       C_existing_window_jet2_frame_085.png
+|   |   |       C_existing_window_jet2_frame_086.png
+|   |   |       C_existing_window_jet2_frame_087.png
+|   |   |       C_existing_window_jet2_frame_088.png
+|   |   |       C_existing_window_jet2_frame_089.png
+|   |   |       C_existing_window_jet2_frame_090.png
+|   |   |       C_existing_window_jet2_frame_091.png
+|   |   |       C_existing_window_jet2_frame_092.png
+|   |   |       C_existing_window_jet2_frame_093.png
+|   |   |       C_existing_window_jet2_frame_094.png
+|   |   |       C_existing_window_jet2_frame_095.png
+|   |   |       C_existing_window_jet2_frame_096.png
+|   |   |       C_existing_window_jet2_frame_097.png
+|   |   |       C_existing_window_jet2_frame_098.png
+|   |   |       C_existing_window_jet2_frame_099.png
+|   |   |       C_existing_window_jet2_frame_100.png
+|   |   |       C_existing_window_jet2_frame_101.png
+|   |   |       C_existing_window_jet2_frame_102.png
+|   |   |       C_existing_window_jet2_frame_103.png
+|   |   |       C_existing_window_jet2_frame_104.png
+|   |   |       C_existing_window_jet2_frame_105.png
+|   |   |       C_existing_window_jet2_frame_106.png
+|   |   |       C_existing_window_jet2_frame_107.png
+|   |   |       C_existing_window_jet2_frame_108.png
+|   |   |       C_existing_window_jet2_frame_109.png
+|   |   |       C_existing_window_jet2_frame_110.png
+|   |   |       C_existing_window_jet2_frame_111.png
+|   |   |       C_existing_window_jet2_frame_112.png
+|   |   |       C_existing_window_jet2_frame_113.png
+|   |   |       C_existing_window_jet2_frame_114.png
+|   |   |       C_existing_window_jet2_frame_115.png
+|   |   |       C_existing_window_jet2_frame_116.png
+|   |   |       C_existing_window_jet2_frame_117.png
+|   |   |       C_existing_window_jet2_frame_118.png
+|   |   |       C_existing_window_jet2_frame_119.png
+|   |   |       C_existing_window_jet2_frame_120.png
+|   |   |       C_existing_window_jet2_frame_121.png
+|   |   |       C_existing_window_jet2_frame_122.png
+|   |   |       C_existing_window_jet2_frame_123.png
+|   |   |       C_existing_window_jet2_frame_124.png
+|   |   |       C_existing_window_jet2_frame_125.png
+|   |   |       C_existing_window_jet2_frame_126.png
+|   |   |       C_existing_window_jet2_frame_127.png
+|   |   |       C_existing_window_jet2_frame_128.png
+|   |   |       C_existing_window_jet2_frame_129.png
+|   |   |       C_existing_window_jet2_frame_130.png
+|   |   |       C_existing_window_jet2_frame_131.png
+|   |   |       C_existing_window_jet2_frame_132.png
+|   |   |       C_existing_window_jet2_frame_133.png
+|   |   |       C_existing_window_jet2_frame_134.png
+|   |   |       C_existing_window_jet2_frame_135.png
+|   |   |       C_existing_window_jet2_frame_136.png
+|   |   |       C_existing_window_jet2_frame_137.png
+|   |   |       C_existing_window_jet2_frame_138.png
+|   |   |       C_existing_window_jet2_frame_139.png
+|   |   |       C_existing_window_jet2_frame_140.png
+|   |   |       C_existing_window_jet2_frame_141.png
+|   |   |       C_existing_window_jet2_frame_142.png
+|   |   |       C_existing_window_jet2_frame_143.png
+|   |   |       C_existing_window_jet2_frame_144.png
+|   |   |       C_existing_window_jet2_frame_145.png
+|   |   |       C_existing_window_jet2_frame_146.png
+|   |   |       C_existing_window_jet2_frame_147.png
+|   |   |       C_existing_window_jet2_frame_148.png
+|   |   |       C_existing_window_jet2_frame_149.png
+|   |   |       C_existing_window_jet2_frame_150.png
+|   |   |       C_existing_window_jet2_frame_151.png
+|   |   |       C_existing_window_jet2_frame_152.png
+|   |   |       C_existing_window_jet2_frame_153.png
+|   |   |       C_existing_window_jet2_frame_154.png
+|   |   |       C_existing_window_jet2_frame_155.png
+|   |   |       C_existing_window_jet2_frame_156.png
+|   |   |       C_existing_window_jet2_frame_157.png
+|   |   |       C_existing_window_jet2_frame_158.png
+|   |   |       C_existing_window_jet2_frame_159.png
+|   |   |       C_existing_window_jet2_frame_160.png
+|   |   |       C_existing_window_jet2_frame_161.png
+|   |   |       C_existing_window_jet2_frame_162.png
+|   |   |       C_existing_window_jet2_frame_163.png
+|   |   |       C_existing_window_jet2_frame_164.png
+|   |   |       C_existing_window_jet2_frame_165.png
+|   |   |       C_existing_window_jet2_frame_166.png
+|   |   |       C_existing_window_jet2_frame_167.png
+|   |   |       C_existing_window_jet2_frame_168.png
+|   |   |       C_existing_window_jet2_frame_169.png
+|   |   |       C_existing_window_jet2_frame_170.png
+|   |   |       C_existing_window_jet2_frame_171.png
+|   |   |       C_existing_window_jet2_frame_172.png
+|   |   |       C_existing_window_jet2_frame_173.png
+|   |   |       C_existing_window_jet2_frame_174.png
+|   |   |       C_existing_window_jet2_frame_175.png
+|   |   |       C_existing_window_jet2_frame_176.png
+|   |   |       C_existing_window_jet2_frame_177.png
+|   |   |       C_existing_window_jet2_frame_178.png
+|   |   |       C_existing_window_jet2_frame_179.png
+|   |   |       C_existing_window_jet2_frame_180.png
+|   |   |       C_existing_window_jet2_frame_181.png
+|   |   |       C_existing_window_jet2_frame_182.png
+|   |   |       C_existing_window_jet2_frame_183.png
+|   |   |       C_existing_window_jet2_frame_184.png
+|   |   |       C_existing_window_jet2_frame_185.png
+|   |   |       C_existing_window_jet2_frame_186.png
+|   |   |       C_existing_window_jet2_frame_187.png
+|   |   |       C_existing_window_jet2_frame_188.png
+|   |   |       C_existing_window_jet2_frame_189.png
+|   |   |       C_existing_window_jet2_frame_190.png
+|   |   |       C_existing_window_jet2_frame_191.png
+|   |   |       C_existing_window_jet2_frame_192.png
+|   |   |       C_existing_window_jet2_frame_193.png
+|   |   |       C_existing_window_jet2_frame_194.png
+|   |   |       C_existing_window_jet2_frame_195.png
+|   |   |       C_existing_window_jet2_frame_196.png
+|   |   |       C_existing_window_jet2_frame_197.png
+|   |   |       C_existing_window_jet2_frame_198.png
+|   |   |       C_existing_window_jet2_frame_199.png
+|   |   |       C_existing_window_jet2_frame_200.png
+|   |   |       C_existing_window_jet2_frame_201.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_001.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_002.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_003.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_004.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_005.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_006.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_007.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_008.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_009.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_010.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_011.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_012.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_013.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_014.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_015.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_016.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_017.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_018.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_019.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_020.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_021.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_022.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_023.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_024.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_025.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_026.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_027.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_028.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_029.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_030.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_031.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_032.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_033.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_034.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_035.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_036.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_037.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_038.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_039.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_040.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_041.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_042.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_043.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_044.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_045.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_046.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_047.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_048.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_049.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_050.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_051.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_052.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_053.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_054.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_055.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_056.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_057.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_058.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_059.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_060.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_061.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_062.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_063.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_064.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_065.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_066.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_067.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_068.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_069.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_070.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_071.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_072.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_073.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_074.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_075.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_076.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_077.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_078.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_079.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_080.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_081.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_082.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_083.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_084.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_085.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_086.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_087.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_088.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_089.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_090.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_091.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_092.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_093.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_094.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_095.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_096.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_097.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_098.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_099.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_100.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_101.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_102.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_103.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_104.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_105.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_106.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_107.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_108.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_109.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_110.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_111.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_112.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_113.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_114.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_115.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_116.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_117.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_118.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_119.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_120.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_121.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_122.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_123.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_124.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_125.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_126.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_127.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_128.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_129.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_130.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_131.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_132.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_133.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_134.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_135.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_136.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_137.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_138.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_139.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_140.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_141.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_142.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_143.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_144.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_145.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_146.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_147.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_148.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_149.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_150.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_151.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_152.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_153.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_154.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_155.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_156.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_157.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_158.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_159.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_160.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_161.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_162.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_163.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_164.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_165.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_166.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_167.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_168.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_169.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_170.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_171.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_172.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_173.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_174.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_175.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_176.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_177.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_178.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_179.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_180.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_181.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_182.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_183.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_184.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_185.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_186.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_187.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_188.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_189.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_190.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_191.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_192.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_193.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_194.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_195.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_196.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_197.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_198.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_199.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_200.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_201.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_202.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_203.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_204.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_205.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_206.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_207.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_208.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_209.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_210.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_211.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_212.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_213.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_214.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_215.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_216.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_217.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_218.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_219.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_220.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_221.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_222.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_223.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_224.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_225.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_226.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_227.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_228.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_229.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_230.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_231.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_232.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_233.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_234.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_235.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_236.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_237.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_238.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_239.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_240.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_241.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_242.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_243.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_244.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_245.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_246.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_247.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_248.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_249.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_250.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_251.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_252.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_253.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_254.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_255.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_256.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_257.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_258.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_259.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_260.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_261.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_262.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_263.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_264.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_265.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_266.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_267.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_268.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_269.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_270.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_271.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_272.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_273.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_274.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_275.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_276.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_277.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_278.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_279.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_280.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_281.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_282.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_283.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_284.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_285.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_286.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_287.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_288.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_289.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_290.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_291.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_292.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_293.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_294.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_295.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_296.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_297.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_298.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_299.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_300.png
+|   |   |       D_extended_window_jet2_D_ext_030_frame_301.png
+|   |   |       E_jet2_support_frame_001_p.png
+|   |   |       E_jet2_support_frame_001_phils.png
+|   |   |       E_jet2_support_frame_001_U.png
+|   |   |       E_jet2_support_frame_001_w.png
+|   |   |       E_jet2_support_frame_067_p.png
+|   |   |       E_jet2_support_frame_067_phils.png
+|   |   |       E_jet2_support_frame_067_U.png
+|   |   |       E_jet2_support_frame_067_w.png
+|   |   |       E_jet2_support_frame_134_p.png
+|   |   |       E_jet2_support_frame_134_phils.png
+|   |   |       E_jet2_support_frame_134_U.png
+|   |   |       E_jet2_support_frame_134_w.png
+|   |   |       E_jet2_support_frame_201_p.png
+|   |   |       E_jet2_support_frame_201_phils.png
+|   |   |       E_jet2_support_frame_201_U.png
+|   |   |       E_jet2_support_frame_201_w.png
+|   |   |       
 |   |   +---images
+|   |   |   |   B_jet2_ROI_map.png
+|   |   |   |   C_existing_window_jet2_H_vs_t.png
+|   |   |   |   D_extended_window_jet2_H_vs_t.png
+|   |   |   |   E_jet2_axial_velocity_selected_frames.png
+|   |   |   |   E_jet2_pressure_selected_frames.png
+|   |   |   |   E_jet2_velocity_magnitude_selected_frames.png
+|   |   |   |   
 |   |   |   \---frames
 |   |   +---logs
+|   |   |       5D_jet2_detection_20260619_110135.log
+|   |   |       C_existing_window_jet2_screening.log
+|   |   |       D_extended_window_jet2_detection.log
+|   |   |       
 |   |   +---models
+|   |   |       ring_fountain_v5D_D_ext_030.mph
+|   |   |       ring_fountain_v5D_D_ext_030_20260619_110135.mph
+|   |   |       ring_fountain_v5D_jet2_detection_best.mph
+|   |   |       ring_fountain_v5D_jet2_detection_best_20260619_110135.mph
+|   |   |       
 |   |   +---reports
+|   |   |       5D_jet2_detection_final_report.md
+|   |   |       A_5C_import_review.md
+|   |   |       B_jet2_definition_and_ROI_report.md
+|   |   |       C_existing_window_jet2_screening_report.md
+|   |   |       D_extended_window_jet2_detection_report.md
+|   |   |       E_jet2_velocity_pressure_support_report.md
+|   |   |       F_5D_best_artifact_report.md
+|   |   |       
+|   |   +---scripts
+|   |   |       ring_fountain_stage5d_jet2_detection.py
+|   |   |       ring_fountain_stage5d_jet2_detection_20260619_110135.py
+|   |   |       
 |   |   \---tables
+|   |           A_5C_gate_review.csv
+|   |           B_jet2_ROI_definition.csv
+|   |           C_existing_window_jet2_timeseries.csv
+|   |           D_extended_window_cases.csv
+|   |           E_jet2_support_metrics.csv
+|   |           F_5D_best_artifact_manifest.csv
+|   |           
 |   +---5E_stage5_review
 |   |   +---images
 |   |   |   \---frames
@@ -1631,33 +2703,286 @@ D:.
 |           Hmax_summary.csv
 |           H_vs_t.csv
 |           
++---06_true_moving_geometry_campaign
+|   +---00_fixed_geometry_freeze
+|   |       5B3_C4_seed_based_ring_smoke_final_report.md
+|   |       5B3_GUI_auto_seed_final_report.md
+|   |       5B4_R1_extended_stability_repair_final_report.md
+|   |       5C_jet1_extraction_final_report.md
+|   |       C_interface_height_comparison.png
+|   |       D_jet1_candidate_H_vs_t.png
+|   |       E_axial_velocity_selected_frames.png
+|   |       E_velocity_magnitude_selected_frames.png
+|   |       fixed_geometry_branch_artifact_manifest.csv
+|   |       fixed_geometry_branch_freeze_report.md
+|   |       ring_fountain_v5C_jet1_extraction_best.java
+|   |       ring_fountain_v5C_jet1_extraction_best.mph
+|   |       
+|   +---01_ALE_seed_discovery
+|   |   +---logs
+|   |   |       ale_api_probe.json
+|   |   |       ALE_discovery.log
+|   |   |       ale_feature_property_probe.json
+|   |   |       
+|   |   +---reports
+|   |   |       ALE_API_discovery_report.md
+|   |   |       
+|   |   \---tables
+|   |           ALE_candidate_api_names.csv
+|   |           
+|   +---02_minimal_ALE_two_phase_seed
+|   |   +---exports
+|   |   |       minimal_ALE_single_physics_smoke.java
+|   |   |       minimal_ALE_single_physics_smoke_direct.java
+|   |   |       minimal_ALE_single_physics_smoke_probe.java
+|   |   |       minimal_twophase_ALE_wettedwall_seed.java
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_124109.java
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_124758.java
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_125007.java
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_125136.java
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_125524.java
+|   |   |       
+|   |   +---images
+|   |   |       minimal_ALE_mesh_before_after.png
+|   |   |       minimal_twophase_ALE_interface.png
+|   |   |       minimal_twophase_ALE_mesh_motion.png
+|   |   |       
+|   |   +---logs
+|   |   |       minimal_ale_direct_probe.json
+|   |   |       minimal_ale_probe.json
+|   |   |       
+|   |   +---models
+|   |   |       minimal_ALE_single_physics_smoke.mph
+|   |   |       minimal_ALE_single_physics_smoke_direct.mph
+|   |   |       minimal_ALE_single_physics_smoke_probe.mph
+|   |   |       minimal_twophase_ALE_wettedwall_seed.mph
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_124109.mph
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_124758.mph
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_125007.mph
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_125136.mph
+|   |   |       minimal_twophase_ALE_wettedwall_seed_20260619_125524.mph
+|   |   |       
+|   |   +---reports
+|   |   |       minimal_ALE_single_physics_smoke_report.md
+|   |   |       minimal_twophase_ALE_wettedwall_seed_report.md
+|   |   |       
+|   |   \---tables
+|   |           minimal_ALE_mesh_motion.csv
+|   |           minimal_twophase_ALE_cases.csv
+|   |           
+|   +---03_true_moving_ring_smoke
+|   |   +---exports
+|   |   |       T0.java
+|   |   |       T0_20260619_125136.java
+|   |   |       T0_20260619_125524.java
+|   |   |       T1.java
+|   |   |       T1_20260619_125136.java
+|   |   |       T1_20260619_125524.java
+|   |   |       T2.java
+|   |   |       T2_20260619_125136.java
+|   |   |       T2_20260619_125524.java
+|   |   |       true_moving_ring_smoke_best.java
+|   |   |       true_moving_ring_smoke_best_20260619_125136.java
+|   |   |       true_moving_ring_smoke_best_20260619_125524.java
+|   |   |       
+|   |   +---frames
+|   |   |       T0_frame_01.png
+|   |   |       T0_frame_10.png
+|   |   |       T0_frame_11.png
+|   |   |       T0_frame_21.png
+|   |   |       T1_frame_01.png
+|   |   |       T1_frame_10.png
+|   |   |       T1_frame_11.png
+|   |   |       T1_frame_21.png
+|   |   |       T2_frame_01.png
+|   |   |       T2_frame_10.png
+|   |   |       T2_frame_11.png
+|   |   |       T2_frame_21.png
+|   |   |       
+|   |   +---images
+|   |   |       ring_motion_verification.png
+|   |   |       T0_interface_final.png
+|   |   |       T1_interface_final.png
+|   |   |       T2_interface_final.png
+|   |   |       
+|   |   +---models
+|   |   |       T0.mph
+|   |   |       T0_20260619_125136.mph
+|   |   |       T0_20260619_125524.mph
+|   |   |       T1.mph
+|   |   |       T1_20260619_125136.mph
+|   |   |       T1_20260619_125524.mph
+|   |   |       T2.mph
+|   |   |       T2_20260619_125136.mph
+|   |   |       T2_20260619_125524.mph
+|   |   |       true_moving_ring_smoke_best.mph
+|   |   |       true_moving_ring_smoke_best_20260619_125136.mph
+|   |   |       true_moving_ring_smoke_best_20260619_125524.mph
+|   |   |       
+|   |   +---reports
+|   |   |       true_moving_ring_smoke_report.md
+|   |   |       
+|   |   \---tables
+|   |           true_moving_ring_smoke_cases.csv
+|   |           
+|   +---04_true_moving_ring_stability
+|   |   +---exports
+|   |   |       S1.java
+|   |   |       S1_20260619_125136.java
+|   |   |       S1_20260619_125524.java
+|   |   |       S2.java
+|   |   |       S2_20260619_125136.java
+|   |   |       S2_20260619_125524.java
+|   |   |       S3.java
+|   |   |       S3_20260619_125136.java
+|   |   |       S3_20260619_125524.java
+|   |   |       true_moving_ring_smoke_best.java
+|   |   |       true_moving_ring_smoke_best_20260619_125136.java
+|   |   |       true_moving_ring_smoke_best_20260619_125524.java
+|   |   |       
+|   |   +---frames
+|   |   |       S1_frame_01.png
+|   |   |       S1_frame_11.png
+|   |   |       S1_frame_21.png
+|   |   |       S1_frame_25.png
+|   |   |       S1_frame_51.png
+|   |   |       S2_frame_01.png
+|   |   |       S2_frame_11.png
+|   |   |       S2_frame_21.png
+|   |   |       S2_frame_25.png
+|   |   |       S2_frame_51.png
+|   |   |       S3_frame_01.png
+|   |   |       S3_frame_11.png
+|   |   |       S3_frame_21.png
+|   |   |       S3_frame_25.png
+|   |   |       S3_frame_51.png
+|   |   |       
+|   |   +---images
+|   |   |       S1_interface_final.png
+|   |   |       S2_interface_final.png
+|   |   |       S3_interface_final.png
+|   |   |       
+|   |   +---models
+|   |   |       S1.mph
+|   |   |       S1_20260619_125136.mph
+|   |   |       S1_20260619_125524.mph
+|   |   |       S2.mph
+|   |   |       S2_20260619_125136.mph
+|   |   |       S2_20260619_125524.mph
+|   |   |       S3.mph
+|   |   |       S3_20260619_125136.mph
+|   |   |       S3_20260619_125524.mph
+|   |   |       true_moving_ring_smoke_best.mph
+|   |   |       true_moving_ring_smoke_best_20260619_125136.mph
+|   |   |       true_moving_ring_smoke_best_20260619_125524.mph
+|   |   |       
+|   |   +---reports
+|   |   |       true_moving_ring_stability_report.md
+|   |   |       
+|   |   \---tables
+|   |           true_moving_ring_stability_cases.csv
+|   |           
+|   +---05_physical_validity_review
+|   |       true_vs_fixed_geometry_comparison.csv
+|   |       true_vs_fixed_geometry_review.md
+|   |       
+|   +---exports
+|   +---frames
+|   +---images
+|   +---logs
+|   |       true_moving_geometry_campaign_20260619_124109.log
+|   |       true_moving_geometry_campaign_20260619_124758.log
+|   |       true_moving_geometry_campaign_20260619_125007.log
+|   |       true_moving_geometry_campaign_20260619_125136.log
+|   |       true_moving_geometry_campaign_20260619_125524.log
+|   |       
+|   +---models
+|   +---reports
+|   |       phase0_project_state_review.md
+|   |       true_moving_geometry_campaign_final_report.md
+|   |       true_moving_geometry_campaign_summary.json
+|   |       
+|   +---scripts
+|   |       ring_fountain_stage6_true_moving_geometry_campaign.py
+|   |       ring_fountain_stage6_true_moving_geometry_campaign_20260619_124109.py
+|   |       ring_fountain_stage6_true_moving_geometry_campaign_20260619_124758.py
+|   |       ring_fountain_stage6_true_moving_geometry_campaign_20260619_125007.py
+|   |       ring_fountain_stage6_true_moving_geometry_campaign_20260619_125136.py
+|   |       ring_fountain_stage6_true_moving_geometry_campaign_20260619_125524.py
+|   |       
+|   \---tables
+|           phase0_gate_history.csv
+|           phase0_physics_limitations.csv
+|           
 +---ring_fountain_v0_single_phase
 |       README.txt
 |       ring_fountain_v0_single_phase.mph
 |       
-\---scripts
-    |   ring_fountain_stage0_2.py
-    |   ring_fountain_stage2_1_plus.py
-    |   ring_fountain_stage4_1_boundary_review.py
-    |   ring_fountain_stage4_2a.py
-    |   ring_fountain_stage4_2_formal.py
-    |   ring_fountain_stage4_2_probe.py
-    |   ring_fountain_stage5a_probe.py
-    |   ring_fountain_stage5a_static_interface.py
-    |   ring_fountain_stage5b2_clean_and_5b3_minimal.py
-    |   ring_fountain_stage5b2_clean_baseline_audit.py
-    |   ring_fountain_stage5b2_to_5e.py
-    |   ring_fountain_stage5b3_C2_alternative_wall_strategy.py
-    |   ring_fountain_stage5b3_C3_boundary_semantics_audit.py
-    |   ring_fountain_stage5b3_C4_seed_based_ring_smoke.py
-    |   ring_fountain_stage5b3_GUI_auto_seed.py
-    |   ring_fountain_stage5b3_stability_repair.py
-    |   ring_fountain_stage5b4_falling_or_equivalent_ring.py
-    |   ring_fountain_stage5_cleanup_5b_5c.py
-    |   SCRIPT_MANIFEST.md
++---scripts
+|   |   ring_fountain_stage0_2.py
+|   |   ring_fountain_stage2_1_plus.py
+|   |   ring_fountain_stage4_1_boundary_review.py
+|   |   ring_fountain_stage4_2a.py
+|   |   ring_fountain_stage4_2_formal.py
+|   |   ring_fountain_stage4_2_probe.py
+|   |   ring_fountain_stage5a_probe.py
+|   |   ring_fountain_stage5a_static_interface.py
+|   |   ring_fountain_stage5b2_clean_and_5b3_minimal.py
+|   |   ring_fountain_stage5b2_clean_baseline_audit.py
+|   |   ring_fountain_stage5b2_to_5e.py
+|   |   ring_fountain_stage5b3_C2_alternative_wall_strategy.py
+|   |   ring_fountain_stage5b3_C3_boundary_semantics_audit.py
+|   |   ring_fountain_stage5b3_C4_seed_based_ring_smoke.py
+|   |   ring_fountain_stage5b3_GUI_auto_seed.py
+|   |   ring_fountain_stage5b3_stability_repair.py
+|   |   ring_fountain_stage5b4_falling_or_equivalent_ring.py
+|   |   ring_fountain_stage5b4_R1_extended_stability_repair.py
+|   |   ring_fountain_stage5b4_R1_extended_stability_repair_20260618_225535.py
+|   |   ring_fountain_stage5c_jet1_extraction.py
+|   |   ring_fountain_stage5c_jet1_extraction_20260618_233323.py
+|   |   ring_fountain_stage5d_jet2_detection.py
+|   |   ring_fountain_stage5d_jet2_detection_20260619_110135.py
+|   |   ring_fountain_stage5_cleanup_5b_5c.py
+|   |   ring_fountain_stage6_true_moving_geometry_campaign.py
+|   |   ring_fountain_stage6_true_moving_geometry_campaign_20260619_124109.py
+|   |   ring_fountain_stage6_true_moving_geometry_campaign_20260619_124758.py
+|   |   ring_fountain_stage6_true_moving_geometry_campaign_20260619_125007.py
+|   |   ring_fountain_stage6_true_moving_geometry_campaign_20260619_125136.py
+|   |   ring_fountain_stage6_true_moving_geometry_campaign_20260619_125524.py
+|   |   SCRIPT_MANIFEST.md
+|   |   
+|   \---__pycache__
+|           ring_fountain_stage4_1_boundary_review.cpython-311.pyc
+|           ring_fountain_stage4_2a.cpython-311.pyc
+|           ring_fountain_stage5b4_falling_or_equivalent_ring.cpython-311.pyc
+|           ring_fountain_stage5b4_R1_extended_stability_repair.cpython-311.pyc
+|           ring_fountain_stage5c_jet1_extraction.cpython-311.pyc
+|           ring_fountain_stage5_cleanup_5b_5c.cpython-311.pyc
+|           
+\---理论推导
+    |   IYPT2026_Ring_Fountain_Literature_Reference_Book_v3.1.pdf
+    |   IYPT2026_Ring_Fountain_Literature_Reference_Book_v3.1_manifest.txt
+    |   ring_fountain_core_conclusions.pdf
     |   
-    \---__pycache__
-            ring_fountain_stage4_1_boundary_review.cpython-311.pyc
-            ring_fountain_stage4_2a.cpython-311.pyc
-            ring_fountain_stage5_cleanup_5b_5c.cpython-311.pyc
+    \---参考资料
+            Controlled_impact_of_a_disk_on_a_water_surface_cavity_dynamics.pdf
+            Dynamics_and_universal_scaling_of_Worthington_jets_in_the_cavity-free_regime.pdf
+            Dynamics_of_transient_cavities.pdf
+            Generation_and_breakup_of_Worthington_jets_after_cavity_collapse._Part_1._Jet_formation.pdf
+            High-Speed_Jet_Formation_after_Solid_Object_Impact.pdf
+            IYPT2026_Ring_Fountain_Literature_Reference_Book.pdf
+            IYPT2026_Ring_Fountain_Literature_Reference_Book_v3.0.pdf
+            IYPT2026_Ring_Fountain_Literature_Reference_Book_v3.0_manifest.txt
+            Making_a_splash_with_water_repellency.pdf
+            mayyer_cumulative_effect_en_v9.pdf
+            mayyer_cumulative_effect_zh_v9.pdf
+            Splash_(fluid_mechanics).pdf
+            Splash_wave_and_crown_breakup_after_disc__impact_on_a_liquid_surface.pdf
+            The_water_entry_of_slender_axisymmetric_bodies.pdf
+            water-entry-of-cups-and-disks.pdf
+            Water_entry_and_related_problems.pdf
+            Water_Entry_of_Projectiles.pdf
+            Why_Dropping_a_Stone_Makes_a_Jet.pdf
+            _Filelist_Of_参考资料.txt
+            Кумулятивный эффект в простых опытах (Майер В.В.).djvu
             

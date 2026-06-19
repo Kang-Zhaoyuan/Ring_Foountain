@@ -121,9 +121,10 @@
 <!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:START -->
 ## True Moving Geometry Campaign
 
-- Run ID: `20260619_124109`.
+- Run ID: `20260619_125524`.
 - Accepted teacher critique of the fixed-geometry branch.
 - Froze fixed-geometry branch as negative control.
 - Discovered Moving Mesh/ALE API and attempted minimal ALE seeds.
+- Attempted true moving ring smoke and short stability extension where allowed by gates.
 - No Stage 6 parameter sweep or real Hmax output was performed.
 <!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:END -->

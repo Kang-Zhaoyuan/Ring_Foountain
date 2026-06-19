@@ -193,11 +193,13 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 <!-- TRUE_MOVING_GEOMETRY_CAMPAIGN:START -->
 ## True Moving Geometry Campaign
 
-- Run ID: `20260619_124109`.
+- Run ID: `20260619_125524`.
 - Fixed-geometry branch is frozen as toolchain validation / negative control.
 - True-moving-geometry branch is now the active physical modelling branch.
 - Minimal ALE single-physics: `PASS`.
-- Minimal two-phase ALE seed: `FAIL`.
+- Minimal two-phase ALE seed: `PASS`.
+- True moving ring smoke: `PASS`.
+- Short stability extension: `PASS_MINIMAL`.
 - No real Hmax has been produced.
 - No Stage 6 parameter sweep has been performed.
 - Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_campaign\reports\true_moving_geometry_campaign_final_report.md`.

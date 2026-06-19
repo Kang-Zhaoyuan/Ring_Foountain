@@ -1,2 +1,2 @@
-﻿case_id,solve_status,failure_message,motion_y_min_m,interface_points,TwoPhaseFlowLevelSet,WettedWall,MovingMesh
-minimal_twophase_ALE,PASS,,nan,53,tpf1,ww1,ale
+﻿case_id,solve_status,failure_message,motion_vertical_min_m,motion_expression,interface_points,TwoPhaseFlowLevelSet,WettedWall,MovingMesh
+minimal_twophase_ALE,PASS,,-2.111111111115921e-07,z-Z,54,tpf1,ww1,ale

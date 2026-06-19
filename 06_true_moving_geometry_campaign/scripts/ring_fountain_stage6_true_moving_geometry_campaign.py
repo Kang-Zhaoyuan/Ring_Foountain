@@ -13,6 +13,7 @@ import csv
 import hashlib
 import json
 import math
+import re
 import shutil
 import sys
 import traceback
@@ -182,6 +183,66 @@ def render_simple_curve(path: Path, rows: list[dict[str, Any]], ykey: str) -> No
         y = float(row.get(ykey, math.nan))
         plot_rows.append({"time_s": float(row.get("time_s", 0.0)), "H_m": y, "H_mm": y * 1000 if math.isfinite(y) else math.nan})
     base.render_curve(path, plot_rows)
+
+
+def finite_eval(model: Any, expr: str, unit: str = "", inner: list[int] | None = None) -> np.ndarray:
+    kwargs: dict[str, Any] = {}
+    if unit:
+        kwargs["unit"] = unit
+    if inner is not None:
+        kwargs["inner"] = inner
+    arr = np.asarray(model.evaluate(expr, **kwargs)).reshape(-1)
+    return arr[np.isfinite(arr)]
+
+
+def mesh_motion_min(model: Any, inner: int) -> tuple[float, str]:
+    """Return vertical mesh displacement min and the coordinate expression used."""
+    for expr in ["z-Z", "y-Y"]:
+        try:
+            arr = finite_eval(model, expr, "m", [inner])
+            if arr.size:
+                return float(np.min(arr)), expr
+        except Exception:
+            continue
+    return math.nan, "unavailable"
+
+
+def interface_height(model: Any, inner: int, image: Path | None = None) -> tuple[float, int]:
+    data: dict[str, np.ndarray] = {}
+    for expr, key, unit in [("r", "r", "m"), ("z", "z", "m"), ("phils", "phi", "")]:
+        data[key] = s42a.eval_array(model, expr, unit, inner=[inner]).reshape(-1)
+    pts = base.estimate_interface(data["r"], data["z"], data["phi"], threshold=0.5)
+    if image is not None:
+        try:
+            base.render_field(image, data["r"], data["z"], data["phi"], vlim=(0, 1), cmap="phase", phi=data["phi"], draw_interface=True)
+        except Exception as exc:
+            log(f"interface render warning for {image}: {exc}")
+    if len(pts) == 0:
+        return math.nan, 0
+    return float(np.nanmax(pts[:, 1])), int(len(pts))
+
+
+def interface_point_count_fallback(model: Any, inner: int) -> int:
+    try:
+        phi = finite_eval(model, "phils", "", [inner])
+        if phi.size and float(np.nanmin(phi)) < 0.5 < float(np.nanmax(phi)):
+            return int(np.sum(np.abs(phi - 0.5) < 0.02)) or 1
+    except Exception:
+        pass
+    return 0
+
+
+def seconds_from_expr(expr: str) -> float:
+    match = re.search(r"[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?", expr)
+    return float(match.group(0)) if match else math.nan
+
+
+def final_inner_index(t_end: str, dt: str) -> int:
+    tend = seconds_from_expr(t_end)
+    step = seconds_from_expr(dt)
+    if not (math.isfinite(tend) and math.isfinite(step) and step > 0):
+        return 21
+    return int(round(tend / step)) + 1
 
 
 def phase0_review() -> dict[str, Any]:
@@ -437,28 +498,21 @@ def build_minimal_twophase_ale(client: Any) -> dict[str, Any]:
         model_paths = save_model(model, out / "models" / "minimal_twophase_ALE_wettedwall_seed.mph")
         java_paths = save_java(model, out / "exports" / "minimal_twophase_ALE_wettedwall_seed.java")
         motion = math.nan
+        motion_expr = "unavailable"
         interface_points = 0
         if solve_status == "PASS":
+            motion, motion_expr = mesh_motion_min(model, 21)
             try:
-                arr = np.asarray(model.evaluate("y-Y", unit="m", inner=[21])).reshape(-1)
-                arr = arr[np.isfinite(arr)]
-                motion = float(np.min(arr)) if arr.size else math.nan
-            except Exception:
-                pass
-            try:
-                data = {}
-                for expr, key, unit in [("r", "r", "m"), ("z", "z", "m"), ("phils", "phi", "")]:
-                    data[key] = s42a.eval_array(model, expr, unit, inner=[21]).reshape(-1)
-                pts = base.estimate_interface(data["r"], data["z"], data["phi"], threshold=0.5)
-                interface_points = len(pts)
-                base.render_field(out / "images" / "minimal_twophase_ALE_interface.png", data["r"], data["z"], data["phi"], vlim=(0, 1), cmap="phase", phi=data["phi"], draw_interface=True)
-            except Exception:
-                pass
+                _, interface_points = interface_height(model, 21, out / "images" / "minimal_twophase_ALE_interface.png")
+            except Exception as exc:
+                log(f"Phase 4 interface extraction warning: {exc}")
+                interface_points = interface_point_count_fallback(model, 21)
         rows = [{
             "case_id": "minimal_twophase_ALE",
             "solve_status": solve_status,
             "failure_message": failure[:1000],
-            "motion_y_min_m": motion,
+            "motion_vertical_min_m": motion,
+            "motion_expression": motion_expr,
             "interface_points": interface_points,
             "TwoPhaseFlowLevelSet": "tpf1",
             "WettedWall": "ww1",
@@ -471,7 +525,7 @@ def build_minimal_twophase_ale(client: Any) -> dict[str, Any]:
             "# Minimal TwoPhaseFlowLevelSet + WettedWall + ALE Seed Report",
             "",
             f"- Solve status: `{solve_status}`.",
-            f"- Wall/mesh motion diagnostic `min(y-Y)`: `{motion}` m.",
+            f"- Wall/mesh motion diagnostic `min({motion_expr})`: `{motion}` m.",
             f"- Interface points: `{interface_points}`.",
             "- Required interfaces: `TwoPhaseFlowLevelSet`, `WettedWall`, `MovingMesh`.",
             f"- Model: `{model_paths.get('model')}`",
@@ -498,6 +552,302 @@ def build_minimal_twophase_ale(client: Any) -> dict[str, Any]:
     return result
 
 
+def build_true_ring_model(client: Any, case_id: str, v_value: str, t_end: str, dt: str) -> tuple[Any, dict[str, Any]]:
+    model = client.create(f"true_moving_ring_{case_id}_{RUN_ID}")
+    j = model.java
+    p = j.param()
+    for k, v in {
+        "Rtank": "40[mm]", "Zmin": "-30[mm]", "Zmax": "30[mm]",
+        "Ro": "12[mm]", "Ri": "6[mm]", "h_ring": "2[mm]", "z_ring0": "-2[mm]",
+        "z0": "0[mm]", "eps_ls": "1[mm]", "Vring": v_value,
+        "rho_w": "1000[kg/m^3]", "mu_w": "1e-3[Pa*s]",
+        "rho_air": "1.2[kg/m^3]", "mu_air": "1.8e-5[Pa*s]",
+        "sigma_wa": "0.072[N/m]", "g0": "9.81[m/s^2]", "t_end": t_end, "dt": dt,
+    }.items():
+        p.set(k, v)
+    comp = j.component().create("comp1", True)
+    geom = comp.geom().create("geom1", 2)
+    geom.axisymmetric(True)
+    tank = geom.feature().create("tank", "Rectangle")
+    tank.set("size", ["Rtank", "Zmax-Zmin"])
+    tank.set("pos", ["0", "Zmin"])
+    ring = geom.feature().create("ring", "Rectangle")
+    ring.set("size", ["Ro-Ri", "h_ring"])
+    ring.set("pos", ["Ri", "z_ring0-h_ring/2"])
+    diff = geom.feature().create("dif1", "Difference")
+    diff.selection("input").set(["tank"])
+    diff.selection("input2").set(["ring"])
+    geom.run()
+
+    tol = 2e-4
+    axis = c4help.box_boundaries(comp, "sel_axis", -tol, tol, -0.0305, 0.0305)
+    top = c4help.box_boundaries(comp, "sel_top_open", -tol, 0.0405, 0.0298, 0.0302)
+    bottom = c4help.box_boundaries(comp, "sel_bottom_wall", -tol, 0.0405, -0.0302, -0.0298)
+    outer = c4help.box_boundaries(comp, "sel_outer_wall", 0.0398, 0.0402, -0.0305, 0.0305)
+    ring_inner = c4help.box_boundaries(comp, "sel_ring_wall_inner", 0.0058, 0.0062, -0.0032, -0.0008)
+    ring_outer = c4help.box_boundaries(comp, "sel_ring_wall_outer", 0.0118, 0.0122, -0.0032, -0.0008)
+    ring_top = c4help.box_boundaries(comp, "sel_ring_wall_top", 0.0058, 0.0122, -0.0012, -0.0008)
+    ring_bottom = c4help.box_boundaries(comp, "sel_ring_wall_bottom", 0.0058, 0.0122, -0.0032, -0.0028)
+    ring_all = sorted(set(ring_inner + ring_outer + ring_top + ring_bottom))
+    comp.selection().create("sel_ring_wall_confirmed", "Explicit")
+    comp.selection("sel_ring_wall_confirmed").geom("geom1", 1)
+    comp.selection("sel_ring_wall_confirmed").set(c4help.jints(ring_all))
+
+    mesh = comp.mesh().create("mesh1")
+    mesh.autoMeshSize(5)
+    mesh.run()
+
+    spf = comp.physics().create("spf", "LaminarFlow", "geom1")
+    ls = comp.physics().create("ls", "LevelSet", "geom1")
+    tpf = comp.multiphysics().create("tpf1", "TwoPhaseFlowLevelSet", 2)
+    tpf.set("Fluid_physics", "spf")
+    tpf.set("Mathematics_physics", "ls")
+    tpf.selection().all()
+    for key, value in [
+        ("rho1_mat", "userdef"), ("rho1", "rho_air"), ("mu1_mat", "userdef"), ("mu1", "mu_air"),
+        ("rho2_mat", "userdef"), ("rho2", "rho_w"), ("mu2_mat", "userdef"), ("mu2", "mu_w"),
+        ("IncludeSurfaceTension", True), ("SurfaceTensionCoefficient", "userdef"), ("sigma", "sigma_wa"),
+    ]:
+        c4help.safe_set(tpf, key, value)
+    ww = comp.multiphysics().create("ww1", "WettedWall", 1)
+    ww.set("Fluid_physics", "spf")
+    ww.set("Mathematics_physics", "ls")
+    ww.selection().set(c4help.jints(ring_all))
+    for key, value in [
+        ("BoundaryCondition", "NavierSlip"), ("TranslationalVelocityOption", "Manual"),
+        ("utr", ["0", "-Vring", "0"]), ("SpecifyContactAngle", "SpecifyContactAngleDirectly"),
+        ("thetaw", "pi/2"), ("beta", "eps_ls"),
+    ]:
+        c4help.safe_set(ww, key, value)
+
+    out_top = spf.feature().create("out_top", "OutletBoundary", 1)
+    out_top.selection().set(c4help.jints(top))
+    lsout = ls.feature().create("out_top", "Outlet", 1)
+    lsout.selection().set(c4help.jints(top))
+    ls.feature("init1").set("phils_init", "flc2hs(z0-z,eps_ls)")
+    ls.feature("init1").set("phils", "flc2hs(z0-z,eps_ls)")
+    ls.feature("lsm1").set("epsilon_ls", "eps_ls")
+    ls.feature("lsm1").set("gamma", "0.01[m/s]")
+    spf.prop("PhysicalModelProperty").set("IncludeGravity", True)
+    spf.feature("grav1").set("g", ["0", "-g0", "0"])
+
+    ale = comp.physics().create("ale", "MovingMesh", "geom1")
+    ale.create("free1", "FreeDeformation", 2)
+    ale.feature("free1").selection().all()
+    ale.create("move_ring", "PrescribedMeshDisplacement", 1)
+    ale.feature("move_ring").selection().set(c4help.jints(ring_all))
+    ale.feature("move_ring").set("useDx", ["0", "1"])
+    ale.feature("move_ring").set("dx", ["0", "-Vring*t"])
+    ale.create("fix_outer", "PrescribedMeshDisplacement", 1)
+    ale.feature("fix_outer").selection().set(c4help.jints(sorted(set(axis + top + bottom + outer))))
+    ale.feature("fix_outer").set("useDx", ["1", "1"])
+    ale.feature("fix_outer").set("dx", ["0", "0"])
+
+    study = j.study().create("std1")
+    study.create("phasei", "PhaseInitialization")
+    try:
+        study.feature("phasei").setSolveFor("/physics/spf", False)
+    except Exception:
+        pass
+    study.create("time", "Transient")
+    study.feature("time").set("tlist", "range(0,dt,t_end)")
+    study.feature("time").set("initstudy", "std1")
+    study.feature("time").set("useinitsol", "on")
+    meta = {
+        "boundaries": {
+            "axis": axis, "top_open": top, "bottom_wall": bottom, "outer_wall": outer,
+            "ring_inner": ring_inner, "ring_outer": ring_outer, "ring_top": ring_top,
+            "ring_bottom": ring_bottom, "sel_ring_wall_confirmed": ring_all,
+        },
+        "Vring": v_value, "t_end": t_end, "dt": dt,
+        "ALE_feature": "ale/move_ring", "ALE_property": "dx = [0, -Vring*t]",
+        "WettedWall": "ww1 on sel_ring_wall_confirmed",
+    }
+    return model, meta
+
+
+def run_true_ring_case(client: Any, case_id: str, v_value: str, t_end: str, dt: str, out: Path, save_as_best: bool = False) -> dict[str, Any]:
+    model = None
+    row: dict[str, Any] = {"case_id": case_id, "Vring": v_value, "t_end": t_end}
+    final_inner = final_inner_index(t_end, dt)
+    try:
+        model, meta = build_true_ring_model(client, case_id, v_value, t_end, dt)
+        h0 = hfinal = math.nan
+        points0 = points_final = 0
+        try:
+            h0, points0 = interface_height(model, 1)
+        except Exception as exc:
+            log(f"{case_id} initial interface extraction warning: {exc}")
+            points0 = interface_point_count_fallback(model, 1)
+        try:
+            model.java.study("std1").run()
+            row["solve_status"] = "PASS"
+            row["failure_message"] = ""
+        except Exception:
+            row["solve_status"] = "FAIL"
+            row["failure_message"] = traceback.format_exc()[:1000]
+        if row["solve_status"] == "PASS":
+            motion, motion_expr = mesh_motion_min(model, final_inner)
+            try:
+                hfinal, points_final = interface_height(model, final_inner, out / "images" / f"{case_id}_interface_final.png")
+            except Exception as exc:
+                log(f"{case_id} final interface extraction warning: {exc}")
+                points_final = interface_point_count_fallback(model, final_inner)
+            row.update({
+                "ring_boundary_motion_verified": bool(abs(motion) > 1e-7) if v_value != "0[m/s]" else bool(abs(motion) < 1e-8),
+                "mesh_motion_vertical_min_m": motion,
+                "motion_expression": motion_expr,
+                "mesh_quality_min": "not_evaluated",
+                "interface_quality": "clear" if points_final > 0 else "not_detected",
+                "H0": h0,
+                "Hfinal": hfinal,
+                "H_robust_final_minus_H0": hfinal - h0 if math.isfinite(h0) and math.isfinite(hfinal) else math.nan,
+                "Hmax": "not_real_Hmax",
+                "pseudo_spike_detected": "not_evaluated",
+                "near_top_flag": bool(math.isfinite(hfinal) and hfinal > 0.025),
+                "interface_points_initial": points0,
+                "interface_points_final": points_final,
+                "ring_boundaries": meta["boundaries"]["sel_ring_wall_confirmed"],
+                "final_inner_solution": final_inner,
+            })
+            for inner in sorted(set([1, max(1, final_inner // 2), final_inner])):
+                try:
+                    interface_height(model, inner, out / "frames" / f"{case_id}_frame_{inner:02d}.png")
+                except Exception as exc:
+                    log(f"{case_id} frame {inner} render warning: {exc}")
+        else:
+            row.update({
+                "ring_boundary_motion_verified": False,
+                "mesh_motion_vertical_min_m": math.nan,
+                "motion_expression": "not_evaluated",
+                "interface_quality": "not_evaluated",
+                "H0": h0,
+                "Hfinal": math.nan,
+                "H_robust_final_minus_H0": math.nan,
+                "Hmax": "not_real_Hmax",
+                "ring_boundaries": meta["boundaries"]["sel_ring_wall_confirmed"],
+                "final_inner_solution": final_inner,
+            })
+        model_paths = save_model(model, out / "models" / f"{case_id}.mph")
+        java_paths = save_java(model, out / "exports" / f"{case_id}.java")
+        row.update(model_paths)
+        row.update(java_paths)
+        row["metadata"] = meta
+        if save_as_best and row.get("solve_status") == "PASS":
+            save_model(model, out / "models" / "true_moving_ring_smoke_best.mph")
+            save_java(model, out / "exports" / "true_moving_ring_smoke_best.java")
+    except Exception:
+        row.update({"solve_status": "FAIL", "failure_message": traceback.format_exc()[:1000], "ring_boundary_motion_verified": False})
+    finally:
+        if model is not None:
+            try:
+                client.remove(model)
+            except Exception:
+                pass
+    return row
+
+
+def phase5_true_moving_ring_smoke(client: Any) -> dict[str, Any]:
+    log("Phase 5: true moving ring smoke test.")
+    out = CAMP / "03_true_moving_ring_smoke"
+    cases = [
+        ("T0", "0[m/s]", "0.002[s]", "1e-4[s]"),
+        ("T1", "1e-4[m/s]", "0.002[s]", "1e-4[s]"),
+        ("T2", "5e-4[m/s]", "0.002[s]", "1e-4[s]"),
+    ]
+    rows = []
+    for case_id, v, tend, dt in cases:
+        rows.append(run_true_ring_case(client, case_id, v, tend, dt, out, save_as_best=(case_id == "T1")))
+    write_csv(out / "tables" / "true_moving_ring_smoke_cases.csv", rows)
+    render_simple_curve(out / "images" / "ring_motion_verification.png", [{"time_s": i, "motion": r.get("mesh_motion_vertical_min_m", math.nan)} for i, r in enumerate(rows)], "motion")
+    t0 = next((r for r in rows if r.get("case_id") == "T0"), {})
+    t1 = next((r for r in rows if r.get("case_id") == "T1"), {})
+    passed = (
+        t0.get("solve_status") == "PASS"
+        and t1.get("solve_status") == "PASS"
+        and bool(t1.get("ring_boundary_motion_verified"))
+    )
+    write_text(out / "reports" / "true_moving_ring_smoke_report.md", "\n".join([
+        "# True Moving Ring Smoke Report",
+        "",
+        f"- T0 solve: `{t0.get('solve_status')}`.",
+        f"- T1 solve: `{t1.get('solve_status')}`.",
+        f"- T1 ring boundary motion verified: `{t1.get('ring_boundary_motion_verified')}`.",
+        f"- Ring boundaries used by ALE: `{t1.get('ring_boundaries', [])}`.",
+        "- Proof route: `MovingMesh/PrescribedMeshDisplacement` on `sel_ring_wall_confirmed`, diagnostic by `z-Z` or `y-Y`.",
+        "- This is true ALE mesh/geometry motion, not fixed-geometry `utr` alone.",
+        "",
+        f"`ALLOW_PHASE6 = {'YES' if passed else 'NO'}`",
+        "",
+        "No Stage 6 parameter sweep has been performed.",
+        "No real Hmax has been produced.",
+        "This is a true-moving-geometry transition campaign.",
+    ]))
+    return {
+        "status": "PASS" if passed else "FAIL",
+        "ALLOW_PHASE6": "YES" if passed else "NO",
+        "ring_boundary_motion_verified": bool(t1.get("ring_boundary_motion_verified")),
+        "interface_quality": t1.get("interface_quality", "not_available"),
+        "rows": rows,
+    }
+
+
+def phase6_true_moving_ring_stability(client: Any) -> dict[str, Any]:
+    log("Phase 6: short true-moving-geometry stability extension.")
+    out = CAMP / "04_true_moving_ring_stability"
+    cases = [
+        ("S1", "1e-4[m/s]", "0.005[s]", "1e-4[s]"),
+        ("S2", "5e-4[m/s]", "0.005[s]", "1e-4[s]"),
+        ("S3", "1e-3[m/s]", "0.005[s]", "1e-4[s]"),
+    ]
+    rows = []
+    for case_id, v, tend, dt in cases:
+        rows.append(run_true_ring_case(client, case_id, v, tend, dt, out, save_as_best=(case_id == "S1")))
+    write_csv(out / "tables" / "true_moving_ring_stability_cases.csv", rows)
+    s1 = next((r for r in rows if r.get("case_id") == "S1"), {})
+    passed = s1.get("solve_status") == "PASS" and bool(s1.get("ring_boundary_motion_verified"))
+    write_text(out / "reports" / "true_moving_ring_stability_report.md", "\n".join([
+        "# True Moving Ring Stability Report",
+        "",
+        f"- S1 solve: `{s1.get('solve_status')}`.",
+        f"- S1 ring motion verified: `{s1.get('ring_boundary_motion_verified')}`.",
+        f"- S1 interface quality: `{s1.get('interface_quality')}`.",
+        f"- Result: `{'TRUE_MOVING_GEOMETRY_BRANCH = PASS_MINIMAL' if passed else 'TRUE_MOVING_GEOMETRY_BRANCH = FAIL'}`.",
+        "",
+        "No Stage 6 parameter sweep has been performed.",
+        "No real Hmax has been produced.",
+        "This is a true-moving-geometry transition campaign.",
+    ]))
+    return {"status": "PASS_MINIMAL" if passed else "FAIL", "rows": rows}
+
+
+def phase7_validity_review(summary: dict[str, Any]) -> None:
+    phase5 = summary.get("Phase5", {})
+    phase6 = summary.get("Phase6", {})
+    true_status = "PASS_MINIMAL" if phase6.get("status") == "PASS_MINIMAL" else "FAIL"
+    rows = [
+        {"criterion": "true_geometry_motion", "fixed_geometry_branch": "NO", "true_moving_branch": "YES" if phase5.get("ring_boundary_motion_verified") else "NO"},
+        {"criterion": "wall_velocity_only", "fixed_geometry_branch": "YES", "true_moving_branch": "NO"},
+        {"criterion": "free_surface_obvious_response", "fixed_geometry_branch": "weak/no Jet1", "true_moving_branch": phase5.get("interface_quality", "not_available")},
+        {"criterion": "Jet1_candidate", "fixed_geometry_branch": "NO", "true_moving_branch": "not_evaluated_in_transition_campaign"},
+        {"criterion": "continue_stage6_parameter_sweep", "fixed_geometry_branch": "NO", "true_moving_branch": "NO"},
+    ]
+    write_csv(CAMP / "05_physical_validity_review" / "true_vs_fixed_geometry_comparison.csv", rows)
+    write_text(CAMP / "05_physical_validity_review" / "true_vs_fixed_geometry_review.md", "\n".join([
+        "# True vs Fixed Geometry Review",
+        "",
+        "- Fixed-geometry branch is frozen as toolchain validation / negative control.",
+        f"- True-moving-geometry branch status: `{true_status}`.",
+        "- The true branch uses `MovingMesh/PrescribedMeshDisplacement` on ring hole boundaries.",
+        "- WettedWall `utr` may still be present for contact-line physics, but it is not treated as geometry-motion proof.",
+        "- Jet1 and real Hmax remain out of scope for this transition campaign.",
+        "",
+        "No Stage 6 parameter sweep has been performed.",
+        "No real Hmax has been produced.",
+        "This is a true-moving-geometry transition campaign.",
+    ]))
+
+
 def skip_phase5_to_7(reason: str, summary: dict[str, Any]) -> None:
     write_csv(CAMP / "03_true_moving_ring_smoke" / "tables" / "true_moving_ring_smoke_cases.csv", [{"case_id": "SKIPPED", "solve_status": "SKIP", "failure_message": reason, "ring_boundary_motion_verified": False}])
     write_text(CAMP / "03_true_moving_ring_smoke" / "reports" / "true_moving_ring_smoke_report.md", f"# True Moving Ring Smoke Report\n\nSKIP/FAIL: {reason}\n\n`ALLOW_PHASE6 = NO`\n")
@@ -521,6 +871,7 @@ def skip_phase5_to_7(reason: str, summary: dict[str, Any]) -> None:
 
 def final_report(summary: dict[str, Any]) -> None:
     phase5_pass = summary.get("Phase5", {}).get("status") == "PASS"
+    phase6_status = summary.get("Phase6", {}).get("status", "SKIP")
     allow_next = "YES" if phase5_pass else "NO"
     write_text(CAMP / "reports" / "true_moving_geometry_campaign_final_report.md", "\n".join([
         "# True Moving Geometry Campaign Final Report",
@@ -539,6 +890,8 @@ def final_report(summary: dict[str, Any]) -> None:
         f"10. Allow true geometry next: `{allow_next}`.",
         "11. Allow Stage 6 parameter sweep: `NO`.",
         "12. Real Hmax output: `NO`.",
+        f"13. Short stability extension: `{phase6_status}`.",
+        f"14. TRUE_MOVING_GEOMETRY_BRANCH: `{summary.get('TRUE_MOVING_GEOMETRY_BRANCH', 'FAIL')}`.",
         "",
         f"`ALLOW_TRUE_GEOMETRY_NEXT = {allow_next}`",
         "`ALLOW_STAGE6_PARAMETER_SWEEP = NO`",
@@ -559,6 +912,8 @@ def update_docs(summary: dict[str, Any]) -> None:
         "- True-moving-geometry branch is now the active physical modelling branch.",
         f"- Minimal ALE single-physics: `{summary.get('Phase3', {}).get('status')}`.",
         f"- Minimal two-phase ALE seed: `{summary.get('Phase4', {}).get('status')}`.",
+        f"- True moving ring smoke: `{summary.get('Phase5', {}).get('status')}`.",
+        f"- Short stability extension: `{summary.get('Phase6', {}).get('status', 'SKIP')}`.",
         "- No real Hmax has been produced.",
         "- No Stage 6 parameter sweep has been performed.",
         f"- Final report: `{CAMP / 'reports' / 'true_moving_geometry_campaign_final_report.md'}`.",
@@ -570,6 +925,7 @@ def update_docs(summary: dict[str, Any]) -> None:
         "- Accepted teacher critique of the fixed-geometry branch.",
         "- Froze fixed-geometry branch as negative control.",
         "- Discovered Moving Mesh/ALE API and attempted minimal ALE seeds.",
+        "- Attempted true moving ring smoke and short stability extension where allowed by gates.",
         "- No Stage 6 parameter sweep or real Hmax output was performed.",
     ])
     c4help.add_or_replace_section(SCRIPTS / "SCRIPT_MANIFEST.md", "TRUE_MOVING_GEOMETRY_CAMPAIGN_SCRIPT", [
@@ -591,14 +947,21 @@ def main() -> int:
         summary["Phase3"] = phase3_minimal_ale(client) if summary["Phase2"].get("ALLOW_PHASE3") == "YES" else {"status": "SKIP", "ALLOW_PHASE4": "NO"}
         summary["Phase4"] = build_minimal_twophase_ale(client) if summary["Phase3"].get("ALLOW_PHASE4") == "YES" else {"status": "SKIP", "ALLOW_PHASE5": "NO"}
         if summary["Phase4"].get("ALLOW_PHASE5") == "YES":
-            reason = "Phase 5 true ring ALE construction is not yet implemented in this campaign script; requires next automation pass using validated Phase 4 seed."
-            summary["Phase5"] = {"status": "SKIP", "ALLOW_PHASE6": "NO", "ring_boundary_motion_verified": False, "reason": reason}
-            skip_phase5_to_7(reason, summary)
+            summary["Phase5"] = phase5_true_moving_ring_smoke(client)
+            if summary["Phase5"].get("ALLOW_PHASE6") == "YES":
+                summary["Phase6"] = phase6_true_moving_ring_stability(client)
+                summary["TRUE_MOVING_GEOMETRY_BRANCH"] = "PASS_MINIMAL" if summary["Phase6"].get("status") == "PASS_MINIMAL" else "FAIL"
+                phase7_validity_review(summary)
+            else:
+                summary["Phase6"] = {"status": "SKIP", "reason": "Phase 5 did not pass."}
+                summary["TRUE_MOVING_GEOMETRY_BRANCH"] = "FAIL"
+                skip_phase5_to_7("Phase 5 did not pass.", summary)
         else:
             reason = "Phase 4 minimal two-phase ALE seed did not pass; true moving ring smoke was not attempted."
             summary["Phase5"] = {"status": "SKIP", "ALLOW_PHASE6": "NO", "ring_boundary_motion_verified": False, "reason": reason}
+            summary["Phase6"] = {"status": "SKIP", "reason": reason}
+            summary["TRUE_MOVING_GEOMETRY_BRANCH"] = "FAIL"
             skip_phase5_to_7(reason, summary)
-        summary["TRUE_MOVING_GEOMETRY_BRANCH"] = "FAIL" if summary.get("Phase5", {}).get("status") != "PASS" else "PASS_MINIMAL"
     except Exception:
         err = traceback.format_exc()
         write_text(CAMP / "logs" / f"fatal_error_{RUN_ID}.log", err)

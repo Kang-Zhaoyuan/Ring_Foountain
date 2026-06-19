@@ -1,0 +1,6 @@
+[2026-06-19 12:50:07] Phase 0: project state review.
+[2026-06-19 12:50:07] Phase 1: freezing fixed-geometry branch.
+[2026-06-19 12:50:07] Phase 2: ALE API discovery.
+[2026-06-19 12:50:12] Phase 3: minimal ALE single-physics smoke.
+[2026-06-19 12:50:18] Phase 4: attempting minimal TwoPhase + WettedWall + ALE seed.
+[2026-06-19 12:50:39] True moving geometry campaign completed.
