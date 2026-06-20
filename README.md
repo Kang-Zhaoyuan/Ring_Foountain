@@ -334,19 +334,23 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 <!-- TRUE_GEOMETRY_R3_RAW_ARRAY_EXTRACTION_RECOMPUTE:START -->
 ## TRUE_GEOMETRY_R3_RAW_ARRAY_EXTRACTION_RECOMPUTE
 
-- Run id: `20260620_142426`
+- Latest run id: `20260620_150203`
 - Scope: raw-array extraction plus postprocessing recompute from existing saved models.
-- Attempted priority cases: `2`
-- T004 status: `PARTIAL`
-- `RAW_ARRAY_EXTRACTION_COMPLETED = PARTIAL`
-- `POSTPROCESSING_MEMORY_ERROR_RESOLVED = YES`
-- `INTERFACE_QUALITY_EXTRACTION_REPAIRED = YES`
+- T004 completed G2/G3 only; T005 continues remaining wetted-wall/contactline cases.
+- T005 attempted remaining cases: `2`
+- T005 status: `PARTIAL`
+- `RAW_ARRAY_EXTRACTION_COMPLETED_REMAINING_CASES = PARTIAL`
+- `POSTPROCESSING_MEMORY_ERROR_RESOLVED_REMAINING_CASES = YES`
+- `INTERFACE_QUALITY_EXTRACTION_REPAIRED_REMAINING_CASES = YES`
+- `W10_PLAIN_WALL_BASELINE_STATUS = PASS`
+- `W0_CURRENT_WETTEDWALL_STATUS = PASS`
 - `ALLOW_NEXT_DISPLACEMENT_LADDER = NO`
 - `ALLOW_STAGE6 = NO`
 - `ALLOW_REAL_HMAX_OUTPUT = NO`
-- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_raw_array_extraction_recompute\reports\T004_final_report.md`
-- Progress table: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_raw_array_extraction_recompute\tables\T004_progress.csv`
+- T005 final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_raw_array_extraction_recompute\reports\T005_final_report.md`
+- T005 merged metrics: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_raw_array_extraction_recompute\tables\T005_merged_T004_T005_metrics.csv`
 - No Stage 6 parameter sweep has been performed.
 - No real Hmax has been produced.
 - No true-geometry Jet1 detection has been performed.
 <!-- TRUE_GEOMETRY_R3_RAW_ARRAY_EXTRACTION_RECOMPUTE:END -->
+
