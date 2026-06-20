@@ -1,37 +1,31 @@
-# T007 — Diagnostic D0/D1/D2 Displacement Regression with Repaired Postprocessing
+# T008 — Narrow Diagnostic Displacement Ladder
 
-Generated time: 2026-06-20 15:45 Asia/Shanghai
+Generated time: 2026-06-20 16:00 Asia/Shanghai
 
 Active: YES
 
-Source review: `reviews/20260620_154500_R007_review_and_plan.md`
+Source review: `reviews/20260620_160000_R008_review_and_plan.md`
 
 ## 0. Current repository state to respect
 
-T006 completed the R3 raw-array extraction/postprocessing repair track for the targeted static/contactline baseline set.
+T007 successfully recovered and reran D0/D1/D2 displacement regression semantics using the repaired R3 raw-array/postprocessing path.
 
-T004/T005/T006 now provide nine recomputed PASS rows:
+T007 evidence:
 
-- `G2_ring_deeper_submerged`
-- `G3_ring_far_below_surface`
-- `W10_plain_wall_no_wettedwall_diagnostic`
-- `W0_current_wettedwall`
-- `W2_contact_angle_60deg`
-- `W3_contact_angle_120deg`
-- `W4_contact_angle_150deg`
-- `W7_user_defined_slip_0p1mm`
-- `W8_user_defined_slip_0p5mm`
+- `D0_zero_motion_regression`: expected approximately `0`, measured `-2.6020852139652106e-18`, PASS
+- `D1_micro_motion_regression`: expected `-5e-07`, measured `-5.000000000000664e-07`, PASS
+- `D2_micro_motion_regression`: expected `-5e-06`, measured `-5.00000000000023e-06`, PASS
 
-For all nine rows, extraction and postprocess passed, `interface_quality = clear`, and `memory_error_resolved = YES`.
+All three D cases passed extraction and postprocessing, had `interface_quality=clear`, and had `memory_error_resolved=YES`.
 
-Historical R1 zero/micro-motion regression failed:
+T007 also explicitly states:
 
-- `06_true_moving_geometry_R1_diagnostic_repair/03_zero_motion_regression/reports/D_zero_and_micro_motion_regression_report.md`
-- D0/D1/D2 case pass flags were all false.
-- `Hmax` remained `not_real_Hmax`.
-- `ALLOW_DISPLACEMENT_LADDER = NO`.
+- `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = NO`
+- `ALLOW_STAGE6 = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
 
-The purpose of T007 is not to advance physics, but to revisit that narrow D0/D1/D2 regression using the repaired R3 raw-array extraction/postprocessing workflow.
+The purpose of T008 is not to advance physics, but to test a slightly larger diagnostic displacement ladder under the repaired extraction/postprocessing path.
 
 ## 1. Hard gates
 
@@ -43,34 +37,35 @@ The purpose of T007 is not to advance physics, but to revisit that narrow D0/D1/
 - Do not run Stage 6.
 - Do not run a broad parameter sweep.
 - Do not generate Jet1/Jet2 physical conclusions.
-- Do not overwrite previous T004/T005/T006 evidence.
+- Do not overwrite previous T004/T005/T006/T007 evidence.
+- `HMAX_IS_REAL_PHYSICAL_OUTPUT` must remain `NO` for all T008 outputs.
 
 Allowed scope:
 
-- `ALLOW_DIAGNOSTIC_D0_D1_D2_RERUN = YES`
+- `ALLOW_NARROW_DIAGNOSTIC_DISPLACEMENT_LADDER = YES`
 - `ALLOW_RAW_ARRAY_EXTRACTION = YES`
 - `ALLOW_POSTPROCESSING_RECOMPUTE = YES`
 
-This task may output `ALLOW_NEXT_DISPLACEMENT_LADDER = YES/NO` only as a recommendation to the Review Agent. It must not open Stage 6 or real Hmax.
+This task may output `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES/NO` only as a recommendation to the Review Agent if, and only if, the diagnostic ladder is clean. It must not open Stage 6 or real Hmax.
 
 ## 2. Required input files
 
 Read these before doing any work:
 
-1. `reviews/20260620_154500_R007_review_and_plan.md`
-2. `reviews/20260620_154500_R007_run_trace.md`
-3. `tasks/20260620_153000_T006_finish_remaining_contact_angle_slip_extraction.md`
-4. `06_true_moving_geometry_R3_raw_array_extraction_recompute/reports/T006_final_report.md`
-5. `06_true_moving_geometry_R3_raw_array_extraction_recompute/tables/T006_merged_T004_T005_T006_metrics.csv`
-6. `06_true_moving_geometry_R1_diagnostic_repair/03_zero_motion_regression/reports/D_zero_and_micro_motion_regression_report.md`
-7. The script that generated the old R1 D0/D1/D2 regression, if available.
-8. Relevant R1/R2/R3 true-moving-geometry scripts and logs needed to reproduce D0/D1/D2 definitions.
+1. `reviews/20260620_160000_R008_review_and_plan.md`
+2. `reviews/20260620_160000_R008_run_trace.md`
+3. `tasks/20260620_154500_T007_diagnostic_d0_d1_d2_displacement_regression.md`
+4. `06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T007_final_report.md`
+5. `06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T007_A_d0_d1_d2_semantics.md`
+6. `06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T007_recomputed_metrics.csv`
+7. `06_true_moving_geometry_R3_diagnostic_displacement_regression/scripts/T007_d0_d1_d2_displacement_regression.py`
+8. Relevant R1/R2/R3 scripts and model/export paths needed to build D-ladder cases consistently with D0/D1/D2.
 
 If a required file is missing, record it explicitly and continue with available evidence.
 
 ## 3. Output directory convention
 
-Create a new T007-specific output directory:
+Continue using the diagnostic displacement regression output family, but use T008 filenames:
 
 ```text
 06_true_moving_geometry_R3_diagnostic_displacement_regression/
@@ -83,62 +78,66 @@ Create a new T007-specific output directory:
 └── scripts/
 ```
 
-Do not delete or overwrite previous R1/R2/R3/T004/T005/T006 outputs.
+Do not delete or overwrite previous T007 rows, arrays, logs, images, or scripts.
 
 ## 4. Main objective
 
-Reproduce or rebuild only the D0/D1/D2 zero/micro-motion diagnostic regression, using the repaired R3 raw-array extraction and postprocessing method.
+Run a narrow diagnostic displacement ladder extending D0/D1/D2 by no more than three new displacement amplitudes.
 
-This is a diagnostic regression rerun. It is not Stage 6 and not a physical Hmax result.
+This is a diagnostic ladder only. It is not Stage 6, not Jet1 detection, not a broad parameter sweep, and not a real Hmax task.
 
 ## 5. Required case scope
 
-Use the original D0/D1/D2 definitions if they can be recovered from prior scripts/reports. If the exact definitions cannot be recovered, stop and write `HUMAN_REQUIRED` rather than inventing new amplitudes.
+Anchor cases already validated:
 
-Required cases:
+- D0: `Vring = 0[m/s]`, expected displacement `0`
+- D1: `Vring = 1e-4[m/s]`, expected displacement `-5e-07[m]`
+- D2: `Vring = 1e-3[m/s]`, expected displacement `-5e-06[m]`
 
-1. `D0_zero_motion_regression`
-2. `D1_micro_motion_regression`
-3. `D2_micro_motion_regression`
+Do not rerun D0/D1/D2 unless needed for verification. Preserve their existing evidence.
 
-Recommended baseline source:
+Add at most three new diagnostic ladder cases. Recommended default cases:
 
-- Use the repaired R3 baseline/contactline evidence from T004/T005/T006 to select the cleanest static baseline candidate.
-- Record which baseline candidate is used and why.
+1. `D3_diagnostic_displacement_1e_minus_5m`: `Vring = 2e-3[m/s]`, `t_end = 0.005[s]`, expected displacement `-1e-05[m]`
+2. `D4_diagnostic_displacement_2p5e_minus_5m`: `Vring = 5e-3[m/s]`, `t_end = 0.005[s]`, expected displacement `-2.5e-05[m]`
+3. `D5_diagnostic_displacement_5e_minus_5m`: `Vring = 1e-2[m/s]`, `t_end = 0.005[s]`, expected displacement `-5e-05[m]`
+
+If those amplitudes are inconsistent with recoverable prior semantics or model stability constraints, do not invent alternatives silently. Write the exact reason and either reduce the ladder or mark `HUMAN_REQUIRED`.
 
 ## 6. Required work plan
 
-### Phase A — Recover D0/D1/D2 semantics
+### Phase A — Ladder semantics and manifest
 
 Produce:
 
 ```text
-06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T007_A_d0_d1_d2_semantics.md
-06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T007_case_manifest.csv
+06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T008_A_ladder_semantics.md
+06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T008_case_manifest.csv
 ```
 
 The semantics report must specify:
 
-- source files used to recover D0/D1/D2 definitions,
-- displacement or motion settings for each case,
-- baseline model/case used,
-- whether the definitions exactly match historical R1 semantics,
+- D0/D1/D2 semantics reused from T007,
+- new D3/D4/D5 semantics,
+- exact `Vring`, `t_end`, `dt`, expected displacement,
+- model creation or model reuse path,
+- whether each new case is diagnostic-only,
 - whether any ambiguity remains.
 
-If definitions are ambiguous, stop before running new models and write `T007_STATUS = HUMAN_REQUIRED`.
+If definitions are ambiguous, stop before running new models and write `T008_STATUS = HUMAN_REQUIRED`.
 
-### Phase B — Build or patch diagnostic script
+### Phase B — Build or patch diagnostic ladder script
 
 Produce:
 
 ```text
-06_true_moving_geometry_R3_diagnostic_displacement_regression/scripts/T007_d0_d1_d2_displacement_regression.py
+06_true_moving_geometry_R3_diagnostic_displacement_regression/scripts/T008_narrow_displacement_ladder.py
 ```
 
 Requirements:
 
 - Reuse the repaired raw-array extraction/postprocessing functions where possible.
-- Process exactly one D case at a time.
+- Process exactly one new D-ladder case at a time.
 - Write per-case logs immediately.
 - Write per-case raw or compact sampled arrays immediately under `arrays/`.
 - Preserve exact exception class and message.
@@ -146,17 +145,18 @@ Requirements:
 - Do not run Stage 6.
 - Do not output real Hmax.
 
-### Phase C — Execute bounded diagnostic regression
+### Phase C — Execute bounded diagnostic ladder
 
-Run only D0/D1/D2 if COMSOL access is available.
+Run only the new D3/D4/D5 diagnostic cases if COMSOL access is available and semantics are clear.
 
 Required outputs:
 
 ```text
-06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T007_progress.csv
-06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T007_recomputed_metrics.csv
-06_true_moving_geometry_R3_diagnostic_displacement_regression/logs/T007_*.log
-06_true_moving_geometry_R3_diagnostic_displacement_regression/arrays/T007_*.npz
+06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T008_progress.csv
+06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T008_recomputed_metrics.csv
+06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T008_merged_T007_T008_metrics.csv
+06_true_moving_geometry_R3_diagnostic_displacement_regression/logs/T008_*.log
+06_true_moving_geometry_R3_diagnostic_displacement_regression/arrays/T008_*.npz
 ```
 
 ### Phase D — Reviewer figures
@@ -164,9 +164,9 @@ Required outputs:
 If diagnostic metrics exist, generate:
 
 ```text
-06_true_moving_geometry_R3_diagnostic_displacement_regression/images/T007_d0_d1_d2_status_summary.png
-06_true_moving_geometry_R3_diagnostic_displacement_regression/images/T007_displacement_response_summary.png
-06_true_moving_geometry_R3_diagnostic_displacement_regression/images/T007_interface_quality_summary.png
+06_true_moving_geometry_R3_diagnostic_displacement_regression/images/T008_ladder_displacement_response.png
+06_true_moving_geometry_R3_diagnostic_displacement_regression/images/T008_ladder_error_summary.png
+06_true_moving_geometry_R3_diagnostic_displacement_regression/images/T008_interface_quality_summary.png
 ```
 
 If images cannot be generated, write the exact reason and commands in the final report.
@@ -176,23 +176,23 @@ If images cannot be generated, write the exact reason and commands in the final 
 Produce:
 
 ```text
-06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T007_final_report.md
-06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T007_gate_summary.json
+06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T008_final_report.md
+06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T008_gate_summary.json
 ```
 
 The final report must explicitly state:
 
-- `T007_STATUS = PASS/FAIL/PARTIAL/HUMAN_REQUIRED`
-- `D0_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
-- `D1_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
-- `D2_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
-- `D0_D1_D2_SEMANTICS_RECOVERED = YES/NO/PARTIAL`
+- `T008_STATUS = PASS/FAIL/PARTIAL/HUMAN_REQUIRED`
+- `D3_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
+- `D4_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
+- `D5_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
+- `D_LADDER_SEMANTICS_CLEAR = YES/NO/PARTIAL`
 - `RAW_ARRAY_EXTRACTION_COMPLETED = YES/NO/PARTIAL`
 - `POSTPROCESSING_MEMORY_ERROR_RESOLVED = YES/NO/PARTIAL`
 - `INTERFACE_QUALITY_EXTRACTION_REPAIRED = YES/NO/PARTIAL`
+- `DISPLACEMENT_RESPONSE_MONOTONIC_OR_EXPLAINED = YES/NO/PARTIAL`
 - `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
-- `ALLOW_NEXT_DISPLACEMENT_LADDER = YES/NO`
-- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = NO`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES/NO`
 - `ALLOW_STAGE6 = NO`
 - `ALLOW_REAL_HMAX_OUTPUT = NO`
 
@@ -220,11 +220,12 @@ At the end of your run, report:
 4. exact table paths,
 5. exact array paths,
 6. exact image paths or reason images were not generated,
-7. D0/D1/D2 semantics source,
+7. D3/D4/D5 semantics source,
 8. per-case diagnostic status,
 9. whether MemoryError was resolved,
 10. whether `interface_quality=extraction_failed` was resolved,
-11. gate values,
-12. next recommended task.
+11. whether displacement response is monotonic or otherwise explained,
+12. gate values,
+13. next recommended task.
 
 Do not answer only in chat. Push all generated outputs to GitHub.
