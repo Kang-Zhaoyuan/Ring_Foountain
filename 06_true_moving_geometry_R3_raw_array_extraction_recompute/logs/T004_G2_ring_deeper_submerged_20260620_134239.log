@@ -1,0 +1,13 @@
+start 2026-06-20T13:42:47
+model_loaded
+arrays_evaluated
+array_file_written D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_raw_array_extraction_recompute\arrays\01_G2_ring_deeper_submerged_20260620_134239.npz
+exception
+Traceback (most recent call last):
+  File "D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_raw_array_extraction_recompute\scripts\T004_raw_array_extraction_recompute.py", line 257, in process_case
+    _, s0 = t3.safe_regional_metrics(case_id, 1, t0, r0s, z0s, p0s, ri, ro, z_ring0, h_ring)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_postprocessing_memory_repair\scripts\T003_postprocessing_memory_repair.py", line 283, in safe_regional_metrics
+    by.setdefault(region, []).append((r0, z0))
+MemoryError
+
