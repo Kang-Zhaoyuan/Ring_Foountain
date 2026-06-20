@@ -415,3 +415,28 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No real Hmax has been produced.
 - No further current-metric Jet1 branch expansion is allowed.
 <!-- TRUE_GEOMETRY_R3_STAGE6_DECISION_AUDIT:END -->
+
+<!-- TRUE_GEOMETRY_R3_MODEL_SEMANTICS_REPAIR:START -->
+## TRUE_GEOMETRY_R3_MODEL_SEMANTICS_REPAIR
+
+- Run id: `20260620_173514`
+- Scope: T013 true-geometry model-semantics repair and Stage 6 acceptance criteria only.
+- T013 status: `PASS`
+- `MODEL_SEMANTICS_REPAIRED = PARTIAL`
+- `ALE_RING_MOTION_SEMANTICS_VALID = PARTIAL`
+- `WETTEDWALL_CONTACTLINE_SEMANTICS_VALID = UNKNOWN`
+- `INTERFACE_EXTRACTION_PHYSICAL_VALIDITY = PARTIAL`
+- `REAL_HMAX_DEFINITION_READY = PARTIAL`
+- `STAGE6_ACCEPTANCE_CRITERIA_READY = YES`
+- `CURRENT_JET1_BRANCH_ALLOWED = NO`
+- `ALLOW_STAGE6_NOW = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- `ALLOW_BOUNDED_STAGE6_PRECHECK = YES`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_model_semantics_repair\reports\T013_final_report.md`
+- Acceptance criteria: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_model_semantics_repair\reports\T013_stage6_acceptance_criteria.md`
+- Source inventory: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_model_semantics_repair\tables\T013_semantics_source_inventory.csv`
+- Consistency matrix: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_model_semantics_repair\tables\T013_semantics_consistency_matrix.csv`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- Current Jet1 branch remains closed.
+<!-- TRUE_GEOMETRY_R3_MODEL_SEMANTICS_REPAIR:END -->
