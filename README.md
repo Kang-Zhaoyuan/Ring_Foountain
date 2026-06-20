@@ -392,3 +392,26 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No Jet1/Jet2 physical conclusion has been made.
 <!-- TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC:END -->
 
+
+<!-- TRUE_GEOMETRY_R3_STAGE6_DECISION_AUDIT:START -->
+## TRUE_GEOMETRY_R3_STAGE6_DECISION_AUDIT
+
+- Run id: `20260620_171937`
+- Scope: T012 Stage 6 path decision and model-semantics audit only.
+- T012 status: `PASS`
+- `CURRENT_PRIMARY_BLOCKER = model_semantics_and_physical_interpretation`
+- `CURRENT_TRUE_GEOMETRY_JET1_BRANCH_STATUS = NEGATIVE`
+- `FASTEST_STAGE6_PATH = repair_true_geometry_model_semantics`
+- `ALLOW_STAGE6_NOW = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- `ALLOW_CONTINUE_CURRENT_JET1_BRANCH = NO`
+- `ALLOW_MODEL_SEMANTICS_REPAIR_TASK = YES`
+- `ALLOW_REDEFINE_JET1_THRESHOLD_TASK = NO`
+- `ALLOW_REDIRECT_TO_NON_JET1_STAGE6_MECHANISM = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_decision_audit\reports\T012_final_report.md`
+- Evidence ledger: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_decision_audit\tables\T012_stage6_evidence_ledger.csv`
+- Decision matrix: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_decision_audit\tables\T012_stage6_path_decision_matrix.csv`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No further current-metric Jet1 branch expansion is allowed.
+<!-- TRUE_GEOMETRY_R3_STAGE6_DECISION_AUDIT:END -->

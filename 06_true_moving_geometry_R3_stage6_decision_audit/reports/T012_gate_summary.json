@@ -1,0 +1,13 @@
+{
+  "T012_STATUS": "PASS",
+  "CURRENT_PRIMARY_BLOCKER": "model_semantics_and_physical_interpretation",
+  "CURRENT_TRUE_GEOMETRY_JET1_BRANCH_STATUS": "NEGATIVE",
+  "FASTEST_STAGE6_PATH": "repair_true_geometry_model_semantics",
+  "ALLOW_STAGE6_NOW": "NO",
+  "ALLOW_REAL_HMAX_OUTPUT": "NO",
+  "ALLOW_CONTINUE_CURRENT_JET1_BRANCH": "NO",
+  "ALLOW_MODEL_SEMANTICS_REPAIR_TASK": "YES",
+  "ALLOW_REDEFINE_JET1_THRESHOLD_TASK": "NO",
+  "ALLOW_REDIRECT_TO_NON_JET1_STAGE6_MECHANISM": "NO",
+  "RECOMMENDED_NEXT_TASK": "Bounded true-geometry model-semantics repair: audit ALE ring motion, WettedWall/contactline semantics, interface/ROI definitions, and real-Hmax acceptance criteria without Stage 6 or broad sweep."
+}

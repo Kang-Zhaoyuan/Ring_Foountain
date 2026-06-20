@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+  <rect width="980" height="420" fill="#ffffff"/>
+  <style>
+    .title { font: 700 24px Arial, sans-serif; fill: #111827; }
+    .label { font: 600 16px Arial, sans-serif; fill: #111827; }
+    .small { font: 13px Arial, sans-serif; fill: #374151; }
+    .box { fill: #f9fafb; stroke: #9ca3af; stroke-width: 1.5; rx: 8; }
+    .no { fill: #fee2e2; stroke: #ef4444; stroke-width: 1.5; rx: 8; }
+    .yes { fill: #dcfce7; stroke: #22c55e; stroke-width: 1.5; rx: 8; }
+    .arrow { stroke: #6b7280; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <text x="40" y="45" class="title">T012 Stage 6 Path Decision</text>
+
+  <rect x="40" y="85" width="250" height="95" class="box"/>
+  <text x="60" y="115" class="label">Numerical pipeline</text>
+  <text x="60" y="142" class="small">T004-T008 extraction and</text>
+  <text x="60" y="162" class="small">diagnostic displacement pass</text>
+
+  <rect x="365" y="85" width="250" height="95" class="no"/>
+  <text x="385" y="115" class="label">Current Jet1 branch</text>
+  <text x="385" y="142" class="small">T011 evidence is NEGATIVE</text>
+  <text x="385" y="162" class="small">J1 ROI delta lower than J0</text>
+
+  <rect x="690" y="85" width="250" height="95" class="no"/>
+  <text x="710" y="115" class="label">Stage 6 now</text>
+  <text x="710" y="142" class="small">NO: real Hmax not validated</text>
+  <text x="710" y="162" class="small">NO: physics criteria blocked</text>
+
+  <line x1="290" y1="132" x2="365" y2="132" class="arrow"/>
+  <line x1="615" y1="132" x2="690" y2="132" class="arrow"/>
+
+  <rect x="215" y="245" width="550" height="105" class="yes"/>
+  <text x="240" y="278" class="label">Fastest defensible next path</text>
+  <text x="240" y="306" class="small">Repair true-geometry model semantics and acceptance criteria first.</text>
+  <text x="240" y="328" class="small">No COMSOL/Stage 6/real Hmax until a separate task explicitly opens that gate.</text>
+  <line x1="490" y1="180" x2="490" y2="245" class="arrow"/>
+</svg>
