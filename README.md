@@ -293,3 +293,22 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No true-geometry Jet1 detection has been performed.
 <!-- TRUE_GEOMETRY_R3_PHASE3_DIAGNOSTIC_REPAIR:END -->
 
+<!-- TRUE_GEOMETRY_R3_AUDIT_COMPLETION_PACKAGE:START -->
+## TRUE_GEOMETRY_R3_AUDIT_COMPLETION_PACKAGE
+
+- Run id: `20260620_123221`
+- Scope: audit-completion packaging for existing R3 outputs only.
+- Audit package status: `PASS`
+- Images indexed: `15`
+- Table-like artifacts indexed: `12`
+- `ALLOW_STAGE6 = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_audit_completion_package\reports\R3_audit_completion_final_report.md`
+- Manifest: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_audit_completion_package\manifests\R3_artifact_manifest.csv`
+- Image contact sheet: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_audit_completion_package\images\R3_image_contact_sheet.png`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+<!-- TRUE_GEOMETRY_R3_AUDIT_COMPLETION_PACKAGE:END -->
+

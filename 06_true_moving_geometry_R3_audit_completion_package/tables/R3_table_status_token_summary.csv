@@ -1,0 +1,51 @@
+﻿status_token,table_count
+FAIL(1),3
+NO(4),3
+case_pass=True(1),3
+PASS(26),1
+FAIL(2),1
+weak_or_spiky(23),1
+PASS(8),1
+FAIL(8),1
+FAIL_DIAGNOSTIC(8),1
+NO(8),1
+weak_or_spiky(8),1
+status=FAIL_DIAGNOSTIC(6),1
+min_mesh_quality=1.0(6),1
+fail_time_s=0.005(5),1
+fail_time_s=0.001(1),1
+case_pass=False(3),1
+case_pass=False(23),1
+case_pass=False(5),1
+solve_status=PASS(4),1
+solve_status=SKIP(2),1
+interface_quality=extraction_failed(2),1
+"failure_message=Traceback (most recent call last):
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py"", line 430, in evaluate_model
+    _, s0 = regional_metrics_from_arrays(case_id, 1, t0, r0, z0, p0, ri, ro, z_ring0, h_ring)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py"", line 350, in regional_metrics_from_arrays
+    by.setdefault(region_of(p[0], p[1], ri, ro, z_ring0, h_ring), []).append(p)
+MemoryError(2)",1
+failure_message=Skipped after current/deeper/far-below ring controls showed same failure type,1
+switching to WettedWall/contactline root cause.(2),1
+mesh_quality_proxy=1.0(2),1
+interface_quality=clear(1),1
+interface_quality=weak_or_spiky(1),1
+solve_status=PASS(7),1
+"failure_message=Traceback (most recent call last):
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py"", line 430, in evaluate_model
+    _, s0 = regional_metrics_from_arrays(case_id, 1, t0, r0, z0, p0, ri, ro, z_ring0, h_ring)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py"", line 350, in regional_metrics_from_arrays
+    by.setdefault(region_of(p[0], p[1], ri, ro, z_ring0, h_ring), []).append(p)
+MemoryError(7)",1
+interface_quality=extraction_failed(7),1
+mesh_quality_proxy=1.0(7),1
+case_pass=False(7),1
+PASS(7),1
+FAIL(3),1
+FAIL_DIAGNOSTIC(1),1
+NO(10),1
+YES(4),1
+weak_or_spiky(1),1
