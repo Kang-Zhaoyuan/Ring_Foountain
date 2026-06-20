@@ -8,18 +8,20 @@ Repository: `Kang-Zhaoyuan/Ring_Foountain`
 | T002 | 2026-06-20 12:00 | NO | `reviews/20260620_120000_R002_review_and_plan.md` | `tasks/20260620_120000_T002_audit_completion_r3_outputs.md` | Audit-completion package for latest R3 outputs; index all updated images/tables and prepare contact sheets/manifests for strict Review Agent verification. | `ALLOW_STAGE6 = NO` |
 | T003 | 2026-06-20 12:45 | NO | `reviews/20260620_124500_R003_review_and_plan.md` | `tasks/20260620_124500_T003_r3_postprocessing_memory_repair.md` | Repair the R3 postprocessing/regional-metrics extraction blocker causing `MemoryError` and `interface_quality=extraction_failed`; no physics-stage advancement. | `ALLOW_STAGE6 = NO` |
 | T004 | 2026-06-20 13:20 | NO | `reviews/20260620_132000_R004_review_and_plan.md` | `tasks/20260620_132000_T004_raw_array_extraction_recompute.md` | Perform resumable raw-array extraction from saved `.mph` models and recompute postprocessing metrics case-by-case; no physics-stage advancement. | `ALLOW_STAGE6 = NO` |
-| T005 | 2026-06-20 15:00 | YES | `reviews/20260620_150000_R005_review_and_plan.md` | `tasks/20260620_150000_T005_continue_raw_array_extraction_remaining_cases.md` | Continue T004 raw-array extraction/recompute for remaining W10/W0/contact-angle/slip baseline-discriminating cases; no physics-stage advancement. | `ALLOW_STAGE6 = NO` |
+| T005 | 2026-06-20 15:00 | NO | `reviews/20260620_150000_R005_review_and_plan.md` | `tasks/20260620_150000_T005_continue_raw_array_extraction_remaining_cases.md` | Continue T004 raw-array extraction/recompute for remaining W10/W0/contact-angle/slip baseline-discriminating cases; no physics-stage advancement. | `ALLOW_STAGE6 = NO` |
+| T006 | 2026-06-20 15:30 | YES | `reviews/20260620_153000_R006_review_and_plan.md` | `tasks/20260620_153000_T006_finish_remaining_contact_angle_slip_extraction.md` | Finish raw-array extraction/recompute for remaining W2/W3/W4/W7/W8 contact-angle/slip cases; no physics-stage advancement. | `ALLOW_STAGE6 = NO` |
 
 ## Current active task
 
-`tasks/NEXT_TASK.md` is currently synchronized with `tasks/20260620_150000_T005_continue_raw_array_extraction_remaining_cases.md`.
+`tasks/NEXT_TASK.md` is currently synchronized with `tasks/20260620_153000_T006_finish_remaining_contact_angle_slip_extraction.md`.
 
 ## Notes
 
 - Codex must treat `tasks/NEXT_TASK.md` as the active instruction source.
 - Archived task files are immutable unless a correction is explicitly recorded.
-- Review Agent may allow Stage 6 in a future task if evidence supports it, but current T005 does not allow Stage 6.
+- Review Agent may allow Stage 6 in a future task if evidence supports it, but current T006 does not allow Stage 6.
 - T002 passed audit packaging, but did not establish physics validity.
 - T003 produced a memory-safe implementation but did not resolve the actual blocker because raw arrays were not materialized and COMSOL reload exceeded runtime.
-- T004 partially resolved the blocker for G2/G3 only: raw extraction and postprocess PASS for those two cases, but W10/W0/contact-angle/slip baselines remain unattempted.
-- T005 targets the remaining narrowed blocker: complete durable raw-array extraction and recompute for the baseline-discriminating wetted-wall/contactline cases.
+- T004 partially resolved the blocker for G2/G3 only: raw extraction and postprocess PASS for those two cases, but W10/W0/contact-angle/slip baselines remained unattempted.
+- T005 resolved W10/W0 raw extraction and postprocess recompute, but the remaining contact-angle/slip cases W2/W3/W4/W7/W8 still need durable extraction/recompute.
+- T006 continues the same raw-array extraction/recompute path for those remaining cases and keeps Stage 6/real Hmax/Jet1 blocked.
