@@ -1,0 +1,2 @@
+[2026-06-20 13:17:42] affected ring rows: 4; affected wetted rows: 7
+[2026-06-20 13:17:42] T003_ATTEMPT_COMSOL is not set; writing deferred recompute rows without COMSOL reload.

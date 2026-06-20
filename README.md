@@ -312,3 +312,21 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No true-geometry Jet1 detection has been performed.
 <!-- TRUE_GEOMETRY_R3_AUDIT_COMPLETION_PACKAGE:END -->
 
+<!-- TRUE_GEOMETRY_R3_POSTPROCESSING_MEMORY_REPAIR:START -->
+## TRUE_GEOMETRY_R3_POSTPROCESSING_MEMORY_REPAIR
+
+- Run id: `20260620_131742`
+- Scope: postprocessing/regional-metrics repair only.
+- T003 status: `PARTIAL`
+- `POSTPROCESSING_MEMORY_ERROR_RESOLVED = NO`
+- `INTERFACE_QUALITY_EXTRACTION_REPAIRED = NO`
+- `CREDIBLE_STATIC_BASELINE_AFTER_POSTPROCESSING = NO`
+- `CREDIBLE_MICRO_MOTION_BASELINE_AFTER_POSTPROCESSING = UNKNOWN`
+- `ALLOW_NEXT_DISPLACEMENT_LADDER = NO`
+- `ALLOW_STAGE6 = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_postprocessing_memory_repair\reports\T003_final_report.md`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+<!-- TRUE_GEOMETRY_R3_POSTPROCESSING_MEMORY_REPAIR:END -->
