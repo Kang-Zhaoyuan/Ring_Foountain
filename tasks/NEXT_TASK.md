@@ -1,32 +1,35 @@
-# T010 — True-Geometry Jet1 Diagnostic Evidence Task
+# T011 — Jet1 Threshold and ROI Semantics Audit
 
-Generated time: 2026-06-20 16:45 Asia/Shanghai
+Generated time: 2026-06-20 17:00 Asia/Shanghai
 
 Active: YES
 
-Source review: `reviews/20260620_164500_R010_review_and_plan.md`
+Source review: `reviews/20260620_170000_R011_review_and_plan.md`
 
 ## 0. Current repository state to respect
 
-T004/T005/T006 repaired and validated the raw-array extraction/postprocessing path over nine baseline/contactline rows.
+T010 generated a narrow true-geometry Jet1 diagnostic evidence package from saved J0/J1 models.
 
-T007 recovered and validated D0/D1/D2 zero/micro-motion displacement semantics.
+T010 diagnostic pipeline status:
 
-T008 passed a narrow D3/D4/D5 diagnostic displacement ladder numerically:
+- `T010_STATUS = PASS`
+- `JET1_DIAGNOSTIC_SEMANTICS_RECOVERED = YES`
+- `J0_STATUS = PASS`
+- `J1_STATUS = PASS`
+- `RAW_ARRAY_EXTRACTION_COMPLETED = YES`
+- `POSTPROCESSING_MEMORY_ERROR_RESOLVED = YES`
+- `INTERFACE_QUALITY_EXTRACTION_REPAIRED = YES`
+- `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
+- `JET1_PHYSICAL_CONCLUSION_MADE = NO`
 
-- D3 expected `-1e-05 m`, measured approximately `-1e-05 m`
-- D4 expected `-2.5e-05 m`, measured approximately `-2.5e-05 m`
-- D5 expected `-5e-05 m`, measured approximately `-5e-05 m`
+T010 shape evidence:
 
-T009 completed the visual/SVG/CSV-backed audit of T008 figures:
+- J0 `jet1_roi_max_delta_m = 6.0691962701962614e-06`, `shape_threshold_crossed=False`
+- J1 `jet1_roi_max_delta_m = 4.34916959663216e-06`, `shape_threshold_crossed=False`
 
-- `T008_DISPLACEMENT_RESPONSE_FIGURE_AUDITED = YES`
-- `T008_ERROR_SUMMARY_FIGURE_AUDITED = YES`
-- `T008_INTERFACE_QUALITY_FIGURE_AUDITED = YES`
-- `T008_FIGURES_MATCH_SOURCE_TABLES = YES`
-- `T008_NUMERIC_EVIDENCE_UNCHANGED = YES`
+J1 does not exceed J0 under the reported ROI max-delta metric. Therefore T010 is not evidence of physical Jet1 detection.
 
-R010 therefore opens only one narrow next step: true-geometry Jet1 diagnostic evidence generation.
+The purpose of T011 is to audit Jet1 ROI and threshold semantics before any further Jet1 diagnostic expansion.
 
 ## 1. Hard gates
 
@@ -34,42 +37,44 @@ R010 therefore opens only one narrow next step: true-geometry Jet1 diagnostic ev
 - `ALLOW_REAL_HMAX_OUTPUT = NO`
 - `ALLOW_PARAMETER_SWEEP = NO`
 - `ALLOW_JET1_PHYSICAL_CONCLUSION = NO`
+- `ALLOW_TRUE_GEOMETRY_JET1_DETECTION = NO`
 - `ALLOW_STAGE_ADVANCEMENT = NO`
 - Do not claim physical fountain height.
 - Do not output validated real Hmax.
 - Do not run Stage 6.
 - Do not run a broad parameter sweep.
 - Do not produce Jet1/Jet2 physical conclusions.
-- Do not overwrite previous T004/T005/T006/T007/T008/T009 evidence.
+- Do not overwrite previous T004/T005/T006/T007/T008/T009/T010 evidence.
 
 Allowed scope:
 
-- `ALLOW_TRUE_GEOMETRY_JET1_DIAGNOSTIC = YES_NARROW_ONLY`
-- `ALLOW_RAW_ARRAY_EXTRACTION = YES`
-- `ALLOW_POSTPROCESSING_RECOMPUTE = YES`
-- `ALLOW_AUDIT_FIGURES = YES`
+- `ALLOW_JET1_THRESHOLD_AUDIT = YES`
+- `ALLOW_TABLE_RECOMPUTE_FROM_EXISTING_CSV = YES`
+- `ALLOW_SVG_CSV_BACKED_AUDIT_FIGURES = YES`
 
-This task may output `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES/NO` only as a recommendation for Review Agent. It must not open Stage 6 or real Hmax.
+This task should not run COMSOL unless strictly necessary to read already-saved metadata. Prefer report/table/script audit and deterministic recomputation from existing CSV/JSON/SVG evidence.
 
 ## 2. Required input files
 
 Read these before doing any work:
 
-1. `reviews/20260620_164500_R010_review_and_plan.md`
-2. `reviews/20260620_164500_R010_run_trace.md`
-3. `tasks/20260620_160000_T008_narrow_diagnostic_displacement_ladder.md`
-4. `tasks/20260620_163000_T009_t008_visual_audit_completion.md`
-5. `06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T008_final_report.md`
-6. `06_true_moving_geometry_R3_diagnostic_displacement_regression/reports/T009_t008_visual_audit_report.md`
-7. `06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T008_recomputed_metrics.csv`
-8. `06_true_moving_geometry_R3_diagnostic_displacement_regression/tables/T009_t008_figure_manifest.csv`
-9. Relevant R3 true-moving-geometry scripts and saved models needed to define a Jet1 diagnostic consistently.
+1. `reviews/20260620_170000_R011_review_and_plan.md`
+2. `reviews/20260620_170000_R011_run_trace.md`
+3. `tasks/20260620_164500_T010_true_geometry_jet1_diagnostic.md`
+4. `06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T010_final_report.md`
+5. `06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T010_A_jet1_semantics.md`
+6. `06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T010_gate_summary.json`
+7. `06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T010_recomputed_metrics.csv`
+8. `06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T010_figure_manifest.csv`
+9. Fixed-geometry 5C ROI report: `05_two_phase_free_surface/5C_jet1_extraction/reports/B_jet1_definition_and_ROI_report.md`
+10. Fixed-geometry 5C candidate/exclusion report: `05_two_phase_free_surface/5C_jet1_extraction/reports/D_jet1_candidate_detection_report.md`
+11. Any available 5C tables/scripts defining threshold constants or exclusion logic.
 
-If a required file is missing, record it explicitly and continue with available evidence. If Jet1 diagnostic semantics are ambiguous, stop and write `HUMAN_REQUIRED` rather than inventing definitions.
+If a required file is missing, record it explicitly and continue with available evidence.
 
 ## 3. Output directory convention
 
-Create a new T010-specific diagnostic directory:
+Continue using the T010 diagnostic directory, but use T011 filenames:
 
 ```text
 06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/
@@ -77,139 +82,99 @@ Create a new T010-specific diagnostic directory:
 ├── tables/
 ├── images/
 ├── logs/
-├── arrays/
-├── models/
 └── scripts/
 ```
 
-Do not delete or overwrite previous evidence.
+Do not delete or overwrite T010 outputs.
 
 ## 4. Main objective
 
-Generate a narrow, auditable true-geometry Jet1 diagnostic evidence package.
+Audit whether the current Jet1 ROI/threshold semantics are coherent and whether T010 supports any further true-geometry Jet1 diagnostic expansion.
 
-This is not Stage 6. It is not a real Hmax task. It is not a Jet1 physical-conclusion task.
+This is an audit task only. It is not Stage 6, not a real Hmax task, and not a Jet1 detection task.
 
-The diagnostic should answer only:
+T011 should answer:
 
-1. Can a true-geometry Jet1 diagnostic case be defined unambiguously from existing R3 semantics?
-2. Can the case be run or loaded under bounded runtime?
-3. Can raw arrays be extracted with the repaired postprocessing pipeline?
-4. Are interface quality, displacement consistency, and diagnostic shape indicators auditable?
-5. Is there enough evidence for Review Agent to decide whether a later, still-bounded Jet1 track is justified?
+1. What exactly is the fixed-geometry 5C Jet1 ROI and threshold/exclusion logic?
+2. Which parts of 5C logic are valid to reuse in true geometry, and which are only diagnostic analogues?
+3. Why did T010 set `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES` despite `shape_threshold_crossed=False` for both J0 and J1?
+4. Is J1-vs-J0 evidence positive, neutral, or negative under the current ROI metric?
+5. What exact evidence would be required before any further Jet1 diagnostic run is justified?
 
-## 5. Required case scope
+## 5. Required work plan
 
-Run at most two diagnostic cases:
-
-1. `J0_static_baseline_for_jet1_diagnostic`
-2. `J1_true_geometry_jet1_diagnostic`
-
-If model semantics are not recoverable, produce the semantics report and stop with `T010_STATUS = HUMAN_REQUIRED`.
-
-If runtime is limited, complete J0 first and write durable progress before attempting J1.
-
-## 6. Required work plan
-
-### Phase A — Jet1 diagnostic semantics
+### Phase A — Collect Jet1 threshold sources
 
 Produce:
 
 ```text
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T010_A_jet1_semantics.md
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T010_case_manifest.csv
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T011_A_threshold_source_audit.md
 ```
 
-The semantics report must specify:
+Include:
 
-- source files used to recover Jet1 diagnostic definitions,
-- exact model or script base,
-- how J0 and J1 differ,
-- whether any Stage 6 logic is excluded,
-- whether real Hmax is excluded,
-- whether the definitions are diagnostic-only,
-- whether any ambiguity remains.
+- all files inspected,
+- ROI definitions found,
+- threshold constants found,
+- exclusion rules found,
+- whether each source is fixed-geometry-only or true-geometry-compatible.
 
-If ambiguity remains, stop before running models and write `T010_STATUS = HUMAN_REQUIRED`.
-
-### Phase B — Build diagnostic script
+### Phase B — Recompute T010 threshold interpretation from existing table
 
 Produce:
 
 ```text
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/scripts/T010_true_geometry_jet1_diagnostic.py
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T011_threshold_recompute.csv
 ```
 
-Requirements:
-
-- Reuse repaired raw-array extraction/postprocessing functions where possible.
-- Process one case at a time.
-- Write per-case logs immediately.
-- Write per-case raw or compact sampled arrays immediately under `arrays/`.
-- Preserve exact exception class and message.
-- Do not collapse failures into generic `extraction_failed`.
-- Do not run Stage 6.
-- Do not output real Hmax.
-
-### Phase C — Execute bounded diagnostic
-
-Run only J0/J1 if semantics are clear and COMSOL access is available.
-
-Required outputs:
+Required columns:
 
 ```text
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T010_progress.csv
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T010_recomputed_metrics.csv
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/logs/T010_*.log
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/arrays/T010_*.npz
+case_id,legacy_case_id,source_case,roi_max_delta_m,shape_threshold_crossed,interface_quality,case_pass_after_recompute,HMAX_IS_REAL_PHYSICAL_OUTPUT,JET1_PHYSICAL_CONCLUSION_MADE,J1_minus_J0_delta_m,normalized_vs_J0,interpretation
 ```
 
-### Phase D — Reviewer figures
+The interpretation must be one of:
 
-If diagnostic metrics exist, generate both PNG and SVG/CSV-backed audit figures:
+- `positive_diagnostic_evidence`
+- `neutral_diagnostic_evidence`
+- `negative_or_no_jet1_evidence`
+- `ambiguous_requires_human_review`
+
+### Phase C — Figure audit from existing CSV
+
+Produce SVG/CSV-backed figures only:
 
 ```text
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T010_interface_quality_summary.png
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T010_interface_quality_summary.svg
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T010_diagnostic_shape_summary.png
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T010_diagnostic_shape_summary.svg
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T010_case_status_summary.png
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T010_case_status_summary.svg
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T011_j0_j1_roi_delta_comparison.svg
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/images/T011_threshold_decision_summary.svg
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T011_figure_manifest.csv
 ```
 
-Also produce:
+No new COMSOL run is required.
 
-```text
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/tables/T010_figure_manifest.csv
-```
-
-Each figure manifest row must include original path, SVG path, source table, source columns, visual audit status, and notes.
-
-### Phase E — Final report
+### Phase D — Final report and gate summary
 
 Produce:
 
 ```text
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T010_final_report.md
-06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T010_gate_summary.json
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T011_final_report.md
+06_true_moving_geometry_R3_true_geometry_jet1_diagnostic/reports/T011_gate_summary.json
 ```
 
 The final report must explicitly state:
 
-- `T010_STATUS = PASS/FAIL/PARTIAL/HUMAN_REQUIRED`
-- `JET1_DIAGNOSTIC_SEMANTICS_RECOVERED = YES/NO/PARTIAL`
-- `J0_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
-- `J1_STATUS = PASS/FAIL/UNKNOWN/NOT_ATTEMPTED`
-- `RAW_ARRAY_EXTRACTION_COMPLETED = YES/NO/PARTIAL`
-- `POSTPROCESSING_MEMORY_ERROR_RESOLVED = YES/NO/PARTIAL`
-- `INTERFACE_QUALITY_EXTRACTION_REPAIRED = YES/NO/PARTIAL`
+- `T011_STATUS = PASS/FAIL/PARTIAL/HUMAN_REQUIRED`
+- `JET1_THRESHOLD_SOURCES_RECOVERED = YES/NO/PARTIAL`
+- `T010_THRESHOLD_INTERPRETATION_RECOMPUTED = YES/NO`
+- `J1_VS_J0_EVIDENCE = POSITIVE/NEUTRAL/NEGATIVE/AMBIGUOUS`
+- `T010_ALLOW_NEXT_TRUE_GEOMETRY_JET1_CONSISTENT_WITH_THRESHOLD = YES/NO/PARTIAL`
 - `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
 - `JET1_PHYSICAL_CONCLUSION_MADE = NO`
 - `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES/NO`
 - `ALLOW_STAGE6 = NO`
 - `ALLOW_REAL_HMAX_OUTPUT = NO`
 
-## 7. README and task-index updates
+## 6. README and task-index updates
 
 Update README only in a bounded section if useful:
 
@@ -223,7 +188,7 @@ Update `tasks/BUILDER_POLLING_LOG.csv` as usual.
 
 Do not overwrite archived task files.
 
-## 8. Final Codex response requirements
+## 7. Final Codex response requirements
 
 At the end of your run, report:
 
@@ -231,14 +196,11 @@ At the end of your run, report:
 2. generated files,
 3. exact report paths,
 4. exact table paths,
-5. exact array paths,
-6. exact image paths,
-7. Jet1 diagnostic semantics source,
-8. per-case diagnostic status,
-9. whether MemoryError was resolved,
-10. whether `interface_quality=extraction_failed` was resolved,
-11. figure manifest path,
-12. gate values,
-13. next recommended task.
+5. exact figure paths,
+6. threshold source files inspected,
+7. J1-vs-J0 interpretation,
+8. whether T010's Jet1 recommendation was consistent with threshold evidence,
+9. gate values,
+10. next recommended task.
 
 Do not answer only in chat. Push all generated outputs to GitHub.
