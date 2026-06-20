@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620" role="img" aria-labelledby="title desc">
+<title>T009 SVG audit: T008 D3-D5 displacement response</title>
+<desc>{&quot;source_table&quot;: &quot;D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R3_diagnostic_displacement_regression\\tables\\T008_recomputed_metrics.csv&quot;, &quot;source_columns&quot;: [&quot;legacy_case_id&quot;, &quot;expected_displacement_m&quot;, &quot;measured_ring_displacement_m&quot;], &quot;rows&quot;: [{&quot;legacy_case_id&quot;: &quot;D3&quot;, &quot;expected_displacement_m&quot;: &quot;-1e-05&quot;, &quot;measured_ring_displacement_m&quot;: &quot;-1.0000000000000026e-05&quot;}, {&quot;legacy_case_id&quot;: &quot;D4&quot;, &quot;expected_displacement_m&quot;: &quot;-2.5e-05&quot;, &quot;measured_ring_displacement_m&quot;: &quot;-2.5000000000000282e-05&quot;}, {&quot;legacy_case_id&quot;: &quot;D5&quot;, &quot;expected_displacement_m&quot;: &quot;-5e-05&quot;, &quot;measured_ring_displacement_m&quot;: &quot;-5.000000000000013e-05&quot;}]}</desc>
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<text x="32" y="42" font-family="Arial, sans-serif" font-size="24" fill="#111">T009 SVG audit: T008 D3-D5 displacement response</text>
+<line x1="90" y1="105" x2="90" y2="415" stroke="#111" stroke-width="1"/>
+<line x1="90" y1="105.00" x2="940" y2="105.00" stroke="#555" stroke-width="1"/>
+<text x="90" y="493" font-family="Arial, sans-serif" font-size="14" fill="#111">Source: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_diagnostic_displacement_regression\tables\T008_recomputed_metrics.csv</text>
+<text x="90" y="89" font-family="Arial, sans-serif" font-size="14" fill="#111">Measured displacement, um; expected shown in labels</text>
+<rect x="187.67" y="105.00" width="88.00" height="62.00" fill="#3f6fbf"/>
+<text x="231.67" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#111">D3</text>
+<text x="231.67" y="95.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111">meas -10 um; exp -10 um</text>
+<rect x="471.00" y="105.00" width="88.00" height="155.00" fill="#3f6fbf"/>
+<text x="515.00" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#111">D4</text>
+<text x="515.00" y="95.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111">meas -25 um; exp -25 um</text>
+<rect x="754.33" y="105.00" width="88.00" height="310.00" fill="#3f6fbf"/>
+<text x="798.33" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#111">D5</text>
+<text x="798.33" y="95.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111">meas -50 um; exp -50 um</text>
+</svg>

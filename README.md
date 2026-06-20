@@ -355,21 +355,20 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 <!-- TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION:START -->
 ## TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION
 
-- Run id: `20260620_161207`
-- Scope: T007 D0/D1/D2 plus T008 narrow diagnostic D3/D4/D5 displacement ladder.
-- T008 status: `PASS`
-- `D3_STATUS = PASS`
-- `D4_STATUS = PASS`
-- `D5_STATUS = PASS`
-- `D_LADDER_SEMANTICS_CLEAR = YES`
-- `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
-- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES`
+- Run id: `20260620_163005`
+- Scope: T009 SVG/CSV-backed visual audit completion for T008 figures; no COMSOL run.
+- T009 status: `PASS`
+- `T008_DISPLACEMENT_RESPONSE_FIGURE_AUDITED = YES`
+- `T008_ERROR_SUMMARY_FIGURE_AUDITED = YES`
+- `T008_INTERFACE_QUALITY_FIGURE_AUDITED = YES`
+- `T008_NUMERIC_EVIDENCE_UNCHANGED = YES`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1_RECOMMENDATION = YES`
 - `ALLOW_STAGE6 = NO`
 - `ALLOW_REAL_HMAX_OUTPUT = NO`
-- T008 final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_diagnostic_displacement_regression\reports\T008_final_report.md`
-- T008 merged metrics: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_diagnostic_displacement_regression\tables\T008_merged_T007_T008_metrics.csv`
+- T009 visual audit report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_diagnostic_displacement_regression\reports\T009_t008_visual_audit_report.md`
+- T009 figure manifest: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_diagnostic_displacement_regression\tables\T009_t008_figure_manifest.csv`
 - No Stage 6 parameter sweep has been performed.
 - No real Hmax has been produced.
-- No true-geometry Jet1 detection has been performed.
+- No true-geometry Jet1 detection has been performed in T009.
 <!-- TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION:END -->
 
