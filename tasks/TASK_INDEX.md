@@ -16,17 +16,18 @@ Repository: `Kang-Zhaoyuan/Ring_Foountain`
 | T010 | 2026-06-20 16:45 | NO | `reviews/20260620_164500_R010_review_and_plan.md` | `tasks/20260620_164500_T010_true_geometry_jet1_diagnostic.md` | Narrow true-geometry Jet1 diagnostic evidence generation only; no Stage 6, real Hmax, broad parameter sweep, or Jet1 physical conclusions. | `ALLOW_STAGE6 = NO` |
 | T011 | 2026-06-20 17:00 | NO | `reviews/20260620_170000_R011_review_and_plan.md` | `tasks/20260620_170000_T011_jet1_threshold_roi_audit.md` | Audit Jet1 ROI/threshold semantics and J1-vs-J0 evidence before any further Jet1 diagnostic expansion; no COMSOL, Stage 6, real Hmax, or Jet1 physical conclusion. | `ALLOW_STAGE6 = NO` |
 | T012 | 2026-06-20 17:15 | NO | `reviews/20260620_171500_R012_review_and_plan.md` | `tasks/20260620_171500_T012_stage6_path_decision_audit.md` | Decide the fastest scientifically defensible Stage 6 path after T011 negative Jet1 evidence; no COMSOL, Stage 6, real Hmax, or Jet1 expansion. | `ALLOW_STAGE6 = NO` |
-| T013 | 2026-06-20 17:30 | YES | `reviews/20260620_173000_R013_review_and_plan.md` | `tasks/20260620_173000_T013_true_geometry_model_semantics_repair.md` | Repair true-geometry model semantics and define Stage 6 acceptance criteria; no Stage 6, real Hmax, parameter sweep, or current Jet1 continuation. | `ALLOW_STAGE6 = NO` |
+| T013 | 2026-06-20 17:30 | NO | `reviews/20260620_173000_R013_review_and_plan.md` | `tasks/20260620_173000_T013_true_geometry_model_semantics_repair.md` | Repair true-geometry model semantics and define Stage 6 acceptance criteria; no Stage 6, real Hmax, parameter sweep, or current Jet1 continuation. | `ALLOW_STAGE6 = NO` |
+| T014 | 2026-06-20 17:50 | YES | `reviews/20260620_175000_R014_review_and_plan.md` | `tasks/20260620_175000_T014_bounded_stage6_acceptance_precheck.md` | Execute the T013 Stage 6 acceptance criteria as a bounded no-Stage6 precheck against existing candidate evidence; no real Hmax or Stage 6. | `ALLOW_STAGE6 = NO` |
 
 ## Current active task
 
-`tasks/NEXT_TASK.md` is currently synchronized with `tasks/20260620_173000_T013_true_geometry_model_semantics_repair.md`.
+`tasks/NEXT_TASK.md` is currently synchronized with `tasks/20260620_175000_T014_bounded_stage6_acceptance_precheck.md`.
 
 ## Notes
 
 - Codex must treat `tasks/NEXT_TASK.md` as the active instruction source.
 - Archived task files are immutable unless a correction is explicitly recorded.
-- Review Agent may allow Stage 6 in a future task if evidence supports it, but current T013 does not allow Stage 6.
+- Review Agent may allow Stage 6 in a future task if evidence supports it, but current T014 does not allow Stage 6.
 - T002 passed audit packaging, but did not establish physics validity.
 - T003 produced a memory-safe implementation but did not resolve the actual blocker because raw arrays were not materialized and COMSOL reload exceeded runtime.
 - T004/T005/T006 repaired and validated the raw-array extraction/postprocessing path over nine baseline/control rows.
@@ -36,4 +37,5 @@ Repository: `Kang-Zhaoyuan/Ring_Foountain`
 - T010 completed a narrow true-geometry Jet1 diagnostic pipeline pass, but the reported shape threshold was not crossed for J0 or J1; J1 ROI max delta was lower than J0, and no Jet1 physical conclusion was made.
 - T011 recovered Jet1 threshold/ROI semantics and found J1-vs-J0 evidence NEGATIVE; T010's Jet1 continuation recommendation was inconsistent with threshold evidence.
 - T012 decided that the current primary blocker is model semantics and physical interpretation, and that the fastest Stage 6 path is true-geometry model-semantics repair.
-- T013 is the bounded model-semantics repair task required before any future Stage 6 consideration.
+- T013 defined explicit Stage 6 acceptance criteria, but decisive categories remain PARTIAL/UNKNOWN/NO.
+- T014 executes those criteria as a bounded no-Stage6 acceptance precheck against existing evidence.
