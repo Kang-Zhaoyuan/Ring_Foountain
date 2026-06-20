@@ -1,0 +1,43 @@
+[
+  {
+    "case_id": "D0",
+    "status": "reused_R2_timeseries_due_memory_guard",
+    "roughness_peak_to_peak": "0.0010595430631147296",
+    "pseudo_spike_regional_flag": true,
+    "principal_spike_region": "global",
+    "note": "R3 heavy reload of D0 hit Python MemoryError; R2 exported interface diagnostics were reused for D0 only."
+  },
+  {
+    "case_id": "C1",
+    "status": "reused_R2_control_csv_due_memory_guard",
+    "roughness_peak_to_peak": "0.0006310623377184026",
+    "pseudo_spike_regional_flag": true,
+    "principal_spike_region": "global",
+    "ring_present": "True",
+    "ALE_present": "False",
+    "case_pass": "False",
+    "note": "R3 avoids heavy reload of R2 control models after ComsolUI/memory issues; Phase 3 performs fresh geometry controls."
+  },
+  {
+    "case_id": "C2",
+    "status": "reused_R2_control_csv_due_memory_guard",
+    "roughness_peak_to_peak": "0.0010595430631147283",
+    "pseudo_spike_regional_flag": true,
+    "principal_spike_region": "global",
+    "ring_present": "True",
+    "ALE_present": "True",
+    "case_pass": "False",
+    "note": "R3 avoids heavy reload of R2 control models after ComsolUI/memory issues; Phase 3 performs fresh geometry controls."
+  },
+  {
+    "case_id": "C3",
+    "status": "reused_R2_control_csv_due_memory_guard",
+    "roughness_peak_to_peak": "5.3444025116730526e-05",
+    "pseudo_spike_regional_flag": false,
+    "principal_spike_region": "none_clear",
+    "ring_present": "False",
+    "ALE_present": "False",
+    "case_pass": "True",
+    "note": "R3 avoids heavy reload of R2 control models after ComsolUI/memory issues; Phase 3 performs fresh geometry controls."
+  }
+]

@@ -170,3 +170,29 @@
 - No Stage 6 parameter sweep has been performed.
 - No real Hmax has been produced.
 - No true-geometry Jet1 detection has been performed.
+
+## TRUE_GEOMETRY_R3_RING_CONTACTLINE_ISOLATION
+
+- Run id: `20260619_214105`
+- 06_R2 found that D0 static ring-present case is also weak_or_spiky.
+- R2 does not support a velocity-amplified ALE-LS oscillation claim.
+- 06_R3 isolates ring geometry / WettedWall / contact line / mesh / initialization causes.
+- R3 branch: `FAIL_EXCEPTION`
+- Principal spike region: `unknown`
+- Ring-present static baseline: `unknown`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+
+## TRUE_GEOMETRY_R3_RING_CONTACTLINE_ISOLATION
+
+- Run id: `20260620_062253`
+- 06_R2 found that D0 static ring-present case is also weak_or_spiky.
+- R2 does not support a velocity-amplified ALE-LS oscillation claim.
+- 06_R3 isolates ring geometry / WettedWall / contact line / mesh / initialization causes.
+- R3 branch: `FAIL_NO_CREDIBLE_BASELINE`
+- Principal spike region: `global`
+- Ring-present static baseline: `NO`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.

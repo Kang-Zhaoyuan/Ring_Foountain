@@ -1,0 +1,17 @@
+[2026-06-19 21:41:05] Phase 0 start
+[2026-06-19 21:41:05] Phase 0 done
+[2026-06-19 21:41:05] Phase 1 start
+[2026-06-19 21:41:05] Phase 1 done
+[2026-06-19 21:41:09] Phase 2 start
+[2026-06-19 21:41:09] Phase 2 loading D0: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R1_diagnostic_repair\03_zero_motion_regression\models\D0.mph
+[2026-06-19 22:16:22] Traceback (most recent call last):
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py", line 1242, in main
+    summary["Phase2"] = phase2(client)
+                        ^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py", line 674, in phase2
+    rr, ss = regional_metrics_from_arrays(cid, inner, t, r, z, p)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kqdx\Documents\COMSOL仿真方法\ring_fountain_06_R3_ring_contactline_isolation.py", line 349, in regional_metrics_from_arrays
+    by.setdefault(region_of(p[0], p[1], ri, ro, z_ring0, h_ring), []).append(p)
+MemoryError
+

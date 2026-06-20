@@ -1,0 +1,18 @@
+[2026-06-20 02:21:52] Phase 0 start
+[2026-06-20 02:21:52] Phase 0 done
+[2026-06-20 02:21:52] Phase 1 start
+[2026-06-20 02:21:52] Phase 1 done
+[2026-06-20 02:22:01] Phase 2 start
+[2026-06-20 02:22:01] Phase 2 done with memory guard
+[2026-06-20 02:22:01] Phase 3 start
+[2026-06-20 02:22:01] Phase 3 running G2_ring_deeper_submerged
+[2026-06-20 02:54:01] Phase 3 running G3_ring_far_below_surface
+[2026-06-20 03:35:21] Phase 3 done
+[2026-06-20 03:35:21] Phase 4 start
+[2026-06-20 03:35:21] Phase 4 running W0_current_wettedwall
+[2026-06-20 04:08:12] Phase 4 running W2_contact_angle_60deg
+[2026-06-20 04:40:29] Phase 4 running W3_contact_angle_120deg
+[2026-06-20 05:12:37] Phase 4 running W4_contact_angle_150deg
+[2026-06-20 05:44:45] Phase 4 running W7_user_defined_slip_0p1mm
+[2026-06-20 06:17:50] Phase 4 running W8_user_defined_slip_0p5mm
+[2026-06-20 06:51:22] Phase 4 running W10_plain_wall_no_wettedwall_diagnostic

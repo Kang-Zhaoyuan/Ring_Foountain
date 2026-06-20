@@ -1,0 +1,12 @@
+[2026-06-19 22:18:12] Phase 0 start
+[2026-06-19 22:18:12] Phase 0 done
+[2026-06-19 22:18:12] Phase 1 start
+[2026-06-19 22:18:12] Phase 1 done
+[2026-06-19 22:18:18] Phase 2 start
+[2026-06-19 22:18:18] Phase 2 loading C1: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R2_interface_noise_isolation\models\C1_static_no_ALE_20260619_210233.mph
+[2026-06-19 22:51:00] Phase 2 loading C2: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R2_interface_noise_isolation\models\C2_static_ALE_zero_displacement_20260619_210233.mph
+[2026-06-19 23:24:23] Phase 2 loading C3: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R2_interface_noise_isolation\models\C3_static_no_ring_rectangular_seed_20260619_210233.mph
+[2026-06-19 23:56:41] Phase 2 done
+[2026-06-19 23:56:41] Phase 3 start
+[2026-06-19 23:56:41] Phase 3 running G0_no_ring_rectangular_repeat
+[2026-06-20 00:32:16] Phase 3 running G1_ring_current_position_repeat

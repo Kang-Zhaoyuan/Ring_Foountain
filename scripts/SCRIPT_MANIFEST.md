@@ -96,3 +96,17 @@ D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts
 - Local copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R2_interface_noise_isolation\scripts\ring_fountain_06_R2_interface_noise_isolation.py`
 - Run id: `20260619_210233`
 - Purpose: isolate R1 pseudo_spike source and attempt safe R2 zero/micro-motion baseline stabilization.
+
+## TRUE_GEOMETRY_R3_RING_CONTACTLINE_ISOLATION_SCRIPT
+
+- Canonical: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\ring_fountain_06_R3_ring_contactline_isolation.py`
+- Local copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_ring_contactline_isolation\scripts\ring_fountain_06_R3_ring_contactline_isolation.py`
+- Run id: `20260619_214105`
+- Purpose: isolate ring contact-line, WettedWall, geometry, mesh, and initialization causes behind R2 pseudo-spike.
+
+## TRUE_GEOMETRY_R3_RING_CONTACTLINE_ISOLATION_SCRIPT
+
+- Canonical: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\scripts\ring_fountain_06_R3_ring_contactline_isolation.py`
+- Local copy: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_ring_contactline_isolation\scripts\ring_fountain_06_R3_ring_contactline_isolation.py`
+- Run id: `20260620_062253`
+- Purpose: isolate ring contact-line, WettedWall, geometry, mesh, and initialization causes behind R2 pseudo-spike.

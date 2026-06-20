@@ -1,0 +1,13 @@
+[2026-06-20 00:20:15] Phase 0 start
+[2026-06-20 00:20:15] Phase 0 done
+[2026-06-20 00:20:15] Phase 1 start
+[2026-06-20 00:20:15] Phase 1 done
+[2026-06-20 00:20:22] Phase 2 start
+[2026-06-20 00:20:22] Phase 2 done with memory guard
+[2026-06-20 00:20:22] Phase 3 start
+[2026-06-20 00:20:22] Phase 3 running G0_no_ring_rectangular_repeat
+[2026-06-20 00:26:40] Phase 3 running G1_ring_current_position_repeat
+[2026-06-20 01:07:45] Phase 3 running G2_ring_deeper_submerged
+[2026-06-20 01:42:28] Phase 3 running G3_ring_far_below_surface
+[2026-06-20 02:17:41] Phase 3 running G4_ring_above_surface_air_side
+[2026-06-20 02:42:11] Phase 3 running G5_ring_thinner_or_smaller_gap_control

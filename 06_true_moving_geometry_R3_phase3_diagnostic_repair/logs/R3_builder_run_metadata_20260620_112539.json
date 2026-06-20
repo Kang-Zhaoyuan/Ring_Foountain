@@ -1,0 +1,14 @@
+{
+  "run_id": "20260620_112539",
+  "started_log": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R3_phase3_diagnostic_repair\\logs\\R3_B_minimal_phase3_repro_20260620_112539.log",
+  "active_task": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\tasks\\NEXT_TASK.md",
+  "active_task_sha256": "f5619a73e04d4a545a9d7fc8e9f49bc84925a6428cdd8686e9600c630d506a30",
+  "output_dir": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R3_phase3_diagnostic_repair",
+  "gates": {
+    "R3_STATUS": "FAIL",
+    "ALLOW_NEXT_DISPLACEMENT_LADDER": "NO",
+    "ALLOW_NEXT_TRUE_GEOMETRY_JET1": "NO",
+    "ALLOW_STAGE6": "NO",
+    "ALLOW_REAL_HMAX_OUTPUT": "NO"
+  }
+}

@@ -1,0 +1,8 @@
+﻿case_id,source,H0,Hfinal,H_final_minus_H0,pseudo_spike_ROI_flag,case_pass,ring_present,ALE_present
+D0,R2_reextracted_H,-1.278299464787261e-06,3.251740196620563e-06,4.530039661407824e-06,True,,,
+D1,R2_reextracted_H,-1.278300511427954e-06,3.240000092515828e-06,4.518300603943782e-06,True,,,
+D2,R2_reextracted_H,-1.2783099299695842e-06,3.1369737160320853e-06,4.4152836460016696e-06,True,,,
+C0_existing_D0_repostprocess,R2_control,,,4.530039661407824e-06,True,False,True,True
+C1_static_no_ALE,R2_control,,,1.0577477302089508e-05,True,False,True,False
+C2_static_ALE_present_zero_displacement,R2_control,,,4.530039661407919e-06,True,False,True,True
+C3_static_no_ring_rectangular_seed,R2_control,,,4.437619580785759e-06,False,True,False,False

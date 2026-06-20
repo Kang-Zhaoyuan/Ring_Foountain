@@ -248,3 +248,48 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No Stage 6 parameter sweep has been performed.
 - No real Hmax has been produced.
 - No true-geometry Jet1 detection has been performed.
+
+## TRUE_GEOMETRY_R3_RING_CONTACTLINE_ISOLATION
+
+- Run id: `20260619_214105`
+- 06_R2 found that D0 static ring-present case is also weak_or_spiky.
+- R2 does not support a velocity-amplified ALE-LS oscillation claim.
+- 06_R3 isolates ring geometry / WettedWall / contact line / mesh / initialization causes.
+- R3 branch: `FAIL_EXCEPTION`
+- Principal spike region: `unknown`
+- Ring-present static baseline: `unknown`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+
+## TRUE_GEOMETRY_R3_RING_CONTACTLINE_ISOLATION
+
+- Run id: `20260620_062253`
+- 06_R2 found that D0 static ring-present case is also weak_or_spiky.
+- R2 does not support a velocity-amplified ALE-LS oscillation claim.
+- 06_R3 isolates ring geometry / WettedWall / contact line / mesh / initialization causes.
+- R3 branch: `FAIL_NO_CREDIBLE_BASELINE`
+- Principal spike region: `global`
+- Ring-present static baseline: `NO`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+
+<!-- TRUE_GEOMETRY_R3_PHASE3_DIAGNOSTIC_REPAIR:START -->
+## TRUE_GEOMETRY_R3_PHASE3_DIAGNOSTIC_REPAIR
+
+- Run id: `20260620_113028`
+- Source state: true-moving-geometry R2 `FAIL_PHASE3`.
+- Scope: R3 Phase-3 diagnostic repair only.
+- R3 status: `FAIL`
+- `ALLOW_NEXT_DISPLACEMENT_LADDER = NO`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = NO`
+- `ALLOW_STAGE6 = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_phase3_diagnostic_repair\reports\R3_final_report.md`
+- Repair ladder table: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_phase3_diagnostic_repair\tables\R3_C_repair_ladder_summary.csv`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+<!-- TRUE_GEOMETRY_R3_PHASE3_DIAGNOSTIC_REPAIR:END -->
+

@@ -1,0 +1,5 @@
+﻿case_id,region,roughness_peak_to_peak,pseudo_spike_regional_flag,contamination_flags
+D0,global,0.0010595430631147296,True,memory_guard_reused_R2
+C1,global,0.0006310623377184026,True,memory_guard_reused_R2_control_csv
+C2,global,0.0010595430631147283,True,memory_guard_reused_R2_control_csv
+C3,none_clear,5.3444025116730526e-05,False,memory_guard_reused_R2_control_csv

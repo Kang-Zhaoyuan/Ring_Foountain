@@ -1,0 +1,8 @@
+[2026-06-20 06:22:53] Phase 0 start
+[2026-06-20 06:22:53] Phase 0 done
+[2026-06-20 06:22:53] Phase 1 start
+[2026-06-20 06:22:53] Phase 1 done
+[2026-06-20 06:23:01] Phase 2 start
+[2026-06-20 06:23:01] Phase 2 done with memory guard
+[2026-06-20 06:23:01] Phase 3 start
+[2026-06-20 06:23:01] Phase 3 reused existing MemoryError rows and stopped by diagnostic memory guard

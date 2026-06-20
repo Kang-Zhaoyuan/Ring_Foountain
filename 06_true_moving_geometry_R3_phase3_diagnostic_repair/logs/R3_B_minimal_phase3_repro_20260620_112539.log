@@ -1,0 +1,19 @@
+[2026-06-20 11:25:39] R3 Phase-3 diagnostic repair start
+[2026-06-20 11:25:39] R3 Phase B/C COMSOL client start
+[2026-06-20 11:26:06] Running B_repro_micro_displacement: minimal Phase-3 repro: micro displacement baseline
+[2026-06-20 11:26:45] Finished B_repro_micro_displacement: FAIL_DIAGNOSTIC
+[2026-06-20 11:26:45] Running B_repro_micro_displacement_repeat: minimal Phase-3 repro repeat
+[2026-06-20 11:27:05] Finished B_repro_micro_displacement_repeat: FAIL_DIAGNOSTIC
+[2026-06-20 11:27:05] Running C0_zero_displacement_baseline: C0 zero-displacement baseline check
+[2026-06-20 11:27:23] Finished C0_zero_displacement_baseline: FAIL_DIAGNOSTIC
+[2026-06-20 11:27:23] Running C1_micro_displacement_baseline: C1 micro-displacement case
+[2026-06-20 11:27:43] Finished C1_micro_displacement_baseline: FAIL_DIAGNOSTIC
+[2026-06-20 11:27:43] Running C2_shorter_time_horizon: C2 shorter time horizon only
+[2026-06-20 11:27:57] Finished C2_shorter_time_horizon: FAIL_DIAGNOSTIC
+[2026-06-20 11:27:57] Running C3_smaller_time_step: C3 smaller time step only
+[2026-06-20 11:28:20] Finished C3_smaller_time_step: FAIL_DIAGNOSTIC
+[2026-06-20 11:28:20] Running C4_smooth_displacement_ramp: C4 smoother displacement ramp only
+[2026-06-20 11:28:37] Finished C4_smooth_displacement_ramp: FAIL_DIAGNOSTIC
+[2026-06-20 11:28:37] Running C5_levelset_eps_2mm: C5 level-set interface thickness only
+[2026-06-20 11:28:54] Finished C5_levelset_eps_2mm: FAIL_DIAGNOSTIC
+[2026-06-20 11:28:54] R3 complete: {'R3_STATUS': 'FAIL', 'ALLOW_NEXT_DISPLACEMENT_LADDER': 'NO', 'ALLOW_NEXT_TRUE_GEOMETRY_JET1': 'NO', 'ALLOW_STAGE6': 'NO', 'ALLOW_REAL_HMAX_OUTPUT': 'NO'}
