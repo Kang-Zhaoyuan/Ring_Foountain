@@ -1,0 +1,4 @@
+candidate_id,has_connected_interface_source,has_z0_reference,has_artifact_exclusion_rule,has_roi_or_domain_rule,has_time_window,has_visual_audit_support,has_mesh_or_timestep_sensitivity,executable_as_real_hmax_now,reason
+T008_D5_best_existing_ALE_motion_candidate,YES,YES,PARTIAL,PARTIAL,YES,YES,NO,NO,"diagnostic arrays and figures exist, but contactline validity and mesh/time-step sensitivity are missing"
+T006_control_baseline_set,YES,YES,PARTIAL,NO,YES,PARTIAL,NO,NO,"controls are useful diagnostics, but baseline credibility remains unknown and no Hmax domain rule is passed"
+T011_current_Jet1_negative_reference,YES,YES,PARTIAL,PARTIAL,YES,YES,NO,NO,current Jet1 ROI is diagnostic-only and negative; cannot be used as real-Hmax route

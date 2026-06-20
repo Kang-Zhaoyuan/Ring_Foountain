@@ -440,3 +440,29 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No real Hmax has been produced.
 - Current Jet1 branch remains closed.
 <!-- TRUE_GEOMETRY_R3_MODEL_SEMANTICS_REPAIR:END -->
+
+<!-- TRUE_GEOMETRY_R3_STAGE6_ACCEPTANCE_PRECHECK:START -->
+## TRUE_GEOMETRY_R3_STAGE6_ACCEPTANCE_PRECHECK
+
+- Run id: `20260620_180015`
+- Scope: T014 bounded no-Stage6 acceptance precheck against existing true-geometry evidence.
+- T014 status: `PASS`
+- `ACCEPTANCE_PRECHECK_COMPLETED = YES`
+- `PHYSICAL_RING_MOTION_VALIDITY = PARTIAL`
+- `ALE_WETTEDWALL_NON_DOUBLE_COUNTING = PARTIAL`
+- `BOUNDARY_CONTACTLINE_VALIDITY = NO`
+- `CONNECTED_INTERFACE_EXTRACTION_VALIDITY = PARTIAL`
+- `REAL_HMAX_EXECUTABLE_NOW = NO`
+- `MINIMUM_CONTROLS_COMPLETE = PARTIAL`
+- `CURRENT_JET1_BRANCH_ALLOWED = NO`
+- `ALLOW_STAGE6_NOW = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- `ALLOW_BOUNDED_STAGE6_CANDIDATE_TASK = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_acceptance_precheck\reports\T014_final_report.md`
+- Candidate manifest: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_acceptance_precheck\tables\T014_candidate_evidence_manifest.csv`
+- Acceptance precheck matrix: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_acceptance_precheck\tables\T014_acceptance_precheck_matrix.csv`
+- Non-real-Hmax feasibility table: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_stage6_acceptance_precheck\tables\T014_nonreal_hmax_extractor_feasibility.csv`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- Current Jet1 branch remains closed.
+<!-- TRUE_GEOMETRY_R3_STAGE6_ACCEPTANCE_PRECHECK:END -->

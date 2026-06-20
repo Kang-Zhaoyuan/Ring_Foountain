@@ -1,0 +1,15 @@
+{
+  "T014_STATUS": "PASS",
+  "ACCEPTANCE_PRECHECK_COMPLETED": "YES",
+  "PHYSICAL_RING_MOTION_VALIDITY": "PARTIAL",
+  "ALE_WETTEDWALL_NON_DOUBLE_COUNTING": "PARTIAL",
+  "BOUNDARY_CONTACTLINE_VALIDITY": "NO",
+  "CONNECTED_INTERFACE_EXTRACTION_VALIDITY": "PARTIAL",
+  "REAL_HMAX_EXECUTABLE_NOW": "NO",
+  "MINIMUM_CONTROLS_COMPLETE": "PARTIAL",
+  "CURRENT_JET1_BRANCH_ALLOWED": "NO",
+  "ALLOW_STAGE6_NOW": "NO",
+  "ALLOW_REAL_HMAX_OUTPUT": "NO",
+  "ALLOW_BOUNDED_STAGE6_CANDIDATE_TASK": "NO",
+  "RECOMMENDED_NEXT_TASK": "Run a bounded no-Stage6 contactline/control-completeness repair task: classify WettedWall/contactline physical validity, verify dx/utr non-double-counting, and add or identify mesh/time-step sensitivity evidence without outputting real Hmax."
+}
