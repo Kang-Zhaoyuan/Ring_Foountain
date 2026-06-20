@@ -352,3 +352,21 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No true-geometry Jet1 detection has been performed.
 <!-- TRUE_GEOMETRY_R3_RAW_ARRAY_EXTRACTION_RECOMPUTE:END -->
 
+<!-- TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION:START -->
+## TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION
+
+- Run id: `20260620_155039`
+- Scope: diagnostic D0/D1/D2 regression with repaired raw-array/postprocessing.
+- T007 status: `PASS`
+- `D0_STATUS = PASS`
+- `D1_STATUS = PASS`
+- `D2_STATUS = PASS`
+- `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
+- `ALLOW_NEXT_DISPLACEMENT_LADDER = YES`
+- `ALLOW_STAGE6 = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_diagnostic_displacement_regression\reports\T007_final_report.md`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No true-geometry Jet1 detection has been performed.
+<!-- TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION:END -->
