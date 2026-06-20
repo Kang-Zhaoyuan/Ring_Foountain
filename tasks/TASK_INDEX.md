@@ -12,20 +12,22 @@ Repository: `Kang-Zhaoyuan/Ring_Foountain`
 | T006 | 2026-06-20 15:30 | NO | `reviews/20260620_153000_R006_review_and_plan.md` | `tasks/20260620_153000_T006_finish_remaining_contact_angle_slip_extraction.md` | Finish raw-array extraction/recompute for remaining W2/W3/W4/W7/W8 contact-angle/slip cases; no physics-stage advancement. | `ALLOW_STAGE6 = NO` |
 | T007 | 2026-06-20 15:45 | NO | `reviews/20260620_154500_R007_review_and_plan.md` | `tasks/20260620_154500_T007_diagnostic_d0_d1_d2_displacement_regression.md` | Diagnostic D0/D1/D2 zero/micro-motion displacement regression using repaired raw-array/postprocessing workflow; no Stage 6 or real Hmax. | `ALLOW_STAGE6 = NO` |
 | T008 | 2026-06-20 16:00 | NO | `reviews/20260620_160000_R008_review_and_plan.md` | `tasks/20260620_160000_T008_narrow_diagnostic_displacement_ladder.md` | Narrow diagnostic displacement ladder extending D0/D1/D2 by at most three amplitudes; no Stage 6, real Hmax, Jet1, or broad sweep. | `ALLOW_STAGE6 = NO` |
-| T009 | 2026-06-20 16:30 | YES | `reviews/20260620_163000_R009_review_and_plan.md` | `tasks/20260620_163000_T009_t008_visual_audit_completion.md` | Complete visual/SVG/CSV-backed audit of T008 figures before any Jet1 gate release; no COMSOL or physics-stage advancement. | `ALLOW_STAGE6 = NO` |
+| T009 | 2026-06-20 16:30 | NO | `reviews/20260620_163000_R009_review_and_plan.md` | `tasks/20260620_163000_T009_t008_visual_audit_completion.md` | Complete visual/SVG/CSV-backed audit of T008 figures before any Jet1 gate release; no COMSOL or physics-stage advancement. | `ALLOW_STAGE6 = NO` |
+| T010 | 2026-06-20 16:45 | YES | `reviews/20260620_164500_R010_review_and_plan.md` | `tasks/20260620_164500_T010_true_geometry_jet1_diagnostic.md` | Narrow true-geometry Jet1 diagnostic evidence generation only; no Stage 6, real Hmax, broad parameter sweep, or Jet1 physical conclusions. | `ALLOW_STAGE6 = NO` |
 
 ## Current active task
 
-`tasks/NEXT_TASK.md` is currently synchronized with `tasks/20260620_163000_T009_t008_visual_audit_completion.md`.
+`tasks/NEXT_TASK.md` is currently synchronized with `tasks/20260620_164500_T010_true_geometry_jet1_diagnostic.md`.
 
 ## Notes
 
 - Codex must treat `tasks/NEXT_TASK.md` as the active instruction source.
 - Archived task files are immutable unless a correction is explicitly recorded.
-- Review Agent may allow Stage 6 in a future task if evidence supports it, but current T009 does not allow Stage 6.
+- Review Agent may allow Stage 6 in a future task if evidence supports it, but current T010 does not allow Stage 6.
 - T002 passed audit packaging, but did not establish physics validity.
 - T003 produced a memory-safe implementation but did not resolve the actual blocker because raw arrays were not materialized and COMSOL reload exceeded runtime.
 - T004/T005/T006 repaired and validated the raw-array extraction/postprocessing path over nine baseline/control rows.
 - T007 recovered and validated D0/D1/D2 displacement semantics, but Hmax remains non-real.
-- T008 passed the narrow D3/D4/D5 diagnostic displacement ladder numerically and recommended Jet1, but R009 did not release Jet1 because T008 PNG figures were not visually auditable in the Review Agent session.
-- T009 is an audit-completion task to regenerate T008 figure evidence as SVG/CSV-backed artifacts before Jet1 can be reconsidered.
+- T008 passed the narrow D3/D4/D5 diagnostic displacement ladder numerically.
+- T009 completed the SVG/CSV-backed visual audit of T008 figures and recommended Jet1 diagnostic consideration.
+- T010 opens only a narrow true-geometry Jet1 diagnostic evidence task; Stage 6, real Hmax, broad parameter sweep, and Jet1 physical conclusions remain blocked.
