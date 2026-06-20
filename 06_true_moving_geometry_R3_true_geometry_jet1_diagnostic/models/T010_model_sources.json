@@ -1,0 +1,30 @@
+{
+  "run_id": "20260620_164644",
+  "cases": [
+    {
+      "case_id": "J0_static_baseline_for_jet1_diagnostic",
+      "legacy_case_id": "J0",
+      "source_case": "D0_zero_motion_regression",
+      "Vring": "0[m/s]",
+      "t_end": "0.005[s]",
+      "dt": "1e-4[s]",
+      "expected_displacement_m": -0.0,
+      "model_path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\models\\D0_20260619_165307.mph",
+      "java_path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R1_diagnostic_repair\\03_zero_motion_regression\\exports\\D0_20260619_165307.java",
+      "definition": "static baseline from T007/R1 D0"
+    },
+    {
+      "case_id": "J1_true_geometry_jet1_diagnostic",
+      "legacy_case_id": "J1",
+      "source_case": "D5_diagnostic_displacement_5e_minus_5m",
+      "Vring": "1e-2[m/s]",
+      "t_end": "0.005[s]",
+      "dt": "1e-4[s]",
+      "expected_displacement_m": -5e-05,
+      "model_path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R3_diagnostic_displacement_regression\\models\\T008_D5_20260620_161207.mph",
+      "java_path": "D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R3_diagnostic_displacement_regression\\models\\T008_D5_20260620_161207.java",
+      "definition": "largest T008 validated diagnostic displacement model"
+    }
+  ],
+  "note": "T010 loads saved models only; no new model semantics are introduced."
+}

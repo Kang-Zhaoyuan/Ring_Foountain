@@ -372,3 +372,23 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 - No true-geometry Jet1 detection has been performed in T009.
 <!-- TRUE_GEOMETRY_R3_DIAGNOSTIC_DISPLACEMENT_REGRESSION:END -->
 
+<!-- TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC:START -->
+## TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC
+
+- Run id: `20260620_164644`
+- Scope: T010 narrow true-geometry Jet1 diagnostic evidence only.
+- T010 status: `PASS`
+- `JET1_DIAGNOSTIC_SEMANTICS_RECOVERED = YES`
+- `J0_STATUS = PASS`
+- `J1_STATUS = PASS`
+- `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
+- `JET1_PHYSICAL_CONCLUSION_MADE = NO`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES`
+- `ALLOW_STAGE6 = NO`
+- `ALLOW_REAL_HMAX_OUTPUT = NO`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\reports\T010_final_report.md`
+- Figure manifest: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\tables\T010_figure_manifest.csv`
+- No Stage 6 parameter sweep has been performed.
+- No real Hmax has been produced.
+- No Jet1/Jet2 physical conclusion has been made.
+<!-- TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC:END -->

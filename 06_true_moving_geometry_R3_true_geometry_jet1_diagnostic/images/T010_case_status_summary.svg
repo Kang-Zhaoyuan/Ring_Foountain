@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img">
+<title>T010 case status summary</title>
+<desc>{&quot;source_table&quot;: &quot;D:\\_COMSOL_FILE_SAVE_\\COMSOL_Ring_Fountain\\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\\tables\\T010_recomputed_metrics.csv&quot;, &quot;source_columns&quot;: [&quot;legacy_case_id&quot;, &quot;case_pass_after_recompute&quot;], &quot;labels&quot;: [&quot;J0&quot;, &quot;J1&quot;], &quot;values&quot;: [1.0, 1.0]}</desc>
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<text x="30" y="40" font-family="Arial, sans-serif" font-size="24" fill="#111">T010 case status summary</text>
+<line x1="90" y1="100" x2="90" y2="400" stroke="#111"/>
+<line x1="90" y1="400.00" x2="870" y2="400.00" stroke="#555"/>
+<rect x="235.00" y="100.00" width="100.00" height="300.00" fill="#3f6fbf"/>
+<text x="285.00" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#111">J0</text>
+<text x="285.00" y="90.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111">PASS</text>
+<rect x="625.00" y="100.00" width="100.00" height="300.00" fill="#3f6fbf"/>
+<text x="675.00" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#111">J1</text>
+<text x="675.00" y="90.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111">PASS</text>
+<text x="90" y="478" font-family="Arial, sans-serif" font-size="13" fill="#111">Source: D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\tables\T010_recomputed_metrics.csv</text>
+</svg>
