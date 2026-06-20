@@ -375,20 +375,20 @@ Project goal: build staged COMSOL numerical models for the IYPT 2026 Ring Founta
 <!-- TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC:START -->
 ## TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC
 
-- Run id: `20260620_164644`
-- Scope: T010 narrow true-geometry Jet1 diagnostic evidence only.
-- T010 status: `PASS`
-- `JET1_DIAGNOSTIC_SEMANTICS_RECOVERED = YES`
-- `J0_STATUS = PASS`
-- `J1_STATUS = PASS`
+- Run id: `20260620_170508`
+- Scope: T011 Jet1 ROI/threshold semantics audit only.
+- T011 status: `PASS`
+- `J1_VS_J0_EVIDENCE = NEGATIVE`
+- `T010_ALLOW_NEXT_TRUE_GEOMETRY_JET1_CONSISTENT_WITH_THRESHOLD = NO`
 - `HMAX_IS_REAL_PHYSICAL_OUTPUT = NO`
 - `JET1_PHYSICAL_CONCLUSION_MADE = NO`
-- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = YES`
+- `ALLOW_NEXT_TRUE_GEOMETRY_JET1 = NO`
 - `ALLOW_STAGE6 = NO`
 - `ALLOW_REAL_HMAX_OUTPUT = NO`
-- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\reports\T010_final_report.md`
-- Figure manifest: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\tables\T010_figure_manifest.csv`
+- Final report: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\reports\T011_final_report.md`
+- Recompute table: `D:\_COMSOL_FILE_SAVE_\COMSOL_Ring_Fountain\06_true_moving_geometry_R3_true_geometry_jet1_diagnostic\tables\T011_threshold_recompute.csv`
 - No Stage 6 parameter sweep has been performed.
 - No real Hmax has been produced.
 - No Jet1/Jet2 physical conclusion has been made.
 <!-- TRUE_GEOMETRY_R3_TRUE_GEOMETRY_JET1_DIAGNOSTIC:END -->
+
