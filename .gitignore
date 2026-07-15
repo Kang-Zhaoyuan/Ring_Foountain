@@ -1,0 +1,22 @@
+# Third-party repositories and downloaded snapshots
+references/vendor/
+references/snapshots/
+
+# Generated build products
+*.exe
+*.o
+*.out
+*.a
+*.dump
+cases/*/build/
+cases/*/Results_*/
+cases/*/.qcc*/
+
+# Local run output
+runs/*/
+!runs/.gitkeep
+
+# Editors and caches
+.vscode/.ropeproject/
+__pycache__/
+*.pyc

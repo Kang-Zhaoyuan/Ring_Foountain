@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "WSL Ubuntu",
+      "cStandard": "c99",
+      "compilerPath": "/usr/bin/gcc",
+      "includePath": [
+        "${workspaceFolder}/src",
+        "/home/kqdx/basilisk/src"
+      ],
+      "defines": ["_GNU_SOURCE"]
+    }
+  ],
+  "version": 4
+}

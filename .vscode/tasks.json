@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Basilisk: Environment Check", "type": "shell", "command": "make env-check", "problemMatcher": []},
+    {"label": "Basilisk: Build Current Case", "type": "shell", "command": "make build CASE=${config:basilisk.case}", "problemMatcher": "$gcc"},
+    {"label": "Basilisk: Run Current Case", "type": "shell", "command": "make run CASE=${config:basilisk.case}", "problemMatcher": []},
+    {"label": "Basilisk: Validate Current Case", "type": "shell", "command": "make validate CASE=${config:basilisk.case}", "problemMatcher": []},
+    {"label": "Basilisk: Open Latest Run", "type": "shell", "command": "make open-latest", "problemMatcher": []},
+    {"label": "Basilisk: Git Status", "type": "shell", "command": "make git-status", "problemMatcher": []}
+  ]
+}

@@ -1,0 +1,4 @@
+# name	url	commit	branch	fetched_utc	license	license_sha256	path
+Drop-Impact	https://github.com/comphy-lab/Drop-Impact.git	ff46c945513367ab3422d81963c39dd11cc2de54	main	2026-07-14T15:04:26Z	LICENSE	3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986	vendor/Drop-Impact
+DropImpactViscousPool	https://github.com/rcsc-group/DropImpactViscousPool.git	c049c42fad7afb9cc49e590b812c386921f7ee0b	main	2026-07-14T15:04:24Z	LICENSE	401d7e62d5b7e310751aa7d43ac41de8aaf145f361bb8130db2c42c5223fe4b4	vendor/DropImpactViscousPool
+phd_basilisk	https://github.com/AndreWeiner/phd_basilisk.git	0dff5b4df4483cb20cd0883a587344f19f048bc8	master	2026-07-14T15:04:25Z	LICENSE	3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986	vendor/phd_basilisk

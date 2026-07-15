@@ -1,0 +1,1 @@
+cd /home/kqdx/basilisk_work/ring_fountain/cases/01_official_rising_axi && /home/kqdx/basilisk/src/qcc -O2 -Wall -DAXIS=1 -DADAPT=1 -DLEVEL=5 source_run.c -o /home/kqdx/basilisk_work/ring_fountain/runs/20260714_150825_01_official_rising_axi/case.exe -lm 

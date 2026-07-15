@@ -1,0 +1,1 @@
+cd /home/kqdx/basilisk_work/ring_fountain/cases/02_published_drop_impact && /home/kqdx/basilisk/src/qcc -O2 -Wall -grid=quadtree -disable-dimensions source_run.c -o /home/kqdx/basilisk_work/ring_fountain/runs/20260714_151228_02_published_drop_impact/case.exe -lm 

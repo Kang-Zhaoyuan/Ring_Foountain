@@ -1,0 +1,1 @@
+/home/kqdx/basilisk_work/ring_fountain/runs/20260714_151228_02_published_drop_impact/case.exe 6660 2020 25.9 934 100 14 20 5 4 

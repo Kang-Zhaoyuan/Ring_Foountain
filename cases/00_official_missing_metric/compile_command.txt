@@ -1,0 +1,1 @@
+-O2 -Wall source_run.c -o /home/kqdx/basilisk_work/ring_fountain/runs/20260714_145955_00_official_missing_metric/case.exe -lm 

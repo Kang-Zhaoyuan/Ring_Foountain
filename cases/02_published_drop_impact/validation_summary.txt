@@ -1,0 +1,9 @@
+status=headless smoke test PASS
+compile_exit=0
+run_exit=0
+final_time=0.25
+maxlevel=4
+invalid_markers=none
+api_compatibility=-disable-dimensions; output_gfs(t=) removed; unistd cleanup removed
+quantitative_reproduction=NO
+run_dir=runs/20260714_151228_02_published_drop_impact
