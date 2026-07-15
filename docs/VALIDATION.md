@@ -43,3 +43,33 @@ Because there is neither an official embedded contact-line API nor one successfu
 | 7 | not run | not applicable | N/A | N/A | N/A | N/A | N/A | blocked before grid study |
 
 No contact angle, contact-line formula, moving boundary, entry motion, cavity, jet, or fountain dynamics was introduced. The gate remains closed until a maintained and license-compatible embedded VOF contact-line implementation is identified and passes a separate canonical qcc validation.
+
+## External embedded contact-line candidate audit
+
+Audit date: 2026-07-15. Status: **failed; gate remains blocked**.
+
+The Popinet and Tavares Basilisk sandbox `contact-embed.h` implementations were identified as the only directly relevant fixed embedded VOF contact-angle route with published validation examples. Their source files have no explicit license grant, are outside the officially maintained `/src` tree, and the Tavares version is marked under testing with an adaptive-mesh fixme. They were therefore not copied into this repository.
+
+For preliminary compatibility evidence only, read-only copies under `/tmp` were exercised with a project-authored 90-degree sessile-drop probe using the installed qcc. Both headers compiled without warnings and produced identical results. Uniform levels 5, 6, and 7 completed to `t=0.5`, generated interface/solid facets and final dumps, and contained no invalid numerical markers. Initial semicircle geometry converged and the imposed contact normal was exact in detected contact cells. Maximum volume drift was non-monotone and terminal velocity increased from `2.5904474e-3` to `8.4098333e-3` between levels 5 and 7.
+
+The complete short-time comparison is in `cases/05_contact_embed_candidate_audit/validation.tsv`. Relative to the paper's long static relaxations (`T=15` or `T=20`), `t=0.5` is too short to treat terminal velocity as an equilibrium metric, so this probe is not the final numerical rejection. The independent license and maintenance failures remain. No ring geometry, axisymmetric extension, AMR, or motion was attempted with this code.
+
+## Author-source reproduction and long-time port
+
+Reproduction date: 2026-07-15. Status: **partially reproduced; general gate failed**.
+
+The user-supplied Tavares et al. PDF was read in place and hashed. The full public implementation/test listing and Popinet predecessor were downloaded to ignored, read-only vendor directories and frozen in `references/contact_embed_sources.lock`. No source file has an explicit license grant. Exact-source qcc object compilation succeeds for five of the seven author test files; the current 2-D sessile page fails on a duplicate `tag` and two undeclared old APIs, while the slot page includes a nonexistent filename. An exact cylinder build reaches the native link stage but this local Basilisk installation lacks the optional View libraries. A headless-only cylinder copy compiles without warnings and runs.
+
+The author cylinder setup was instrumented and run at `N=32,64,128` for 30, 90, and 150 degrees. All nine runs completed, wrote diagnostics/facets/dumps, and had zero invalid values. Total-volume drift decreased for the extreme angles, but 30-degree terminal velocity worsened from `9.96e-4` to `2.31e-2`, and its curvature standard deviation reached 2.96 at `N=128`. The 90-degree runs were stable, with terminal velocities near `1e-6`.
+
+The broken flat sessile page was minimally ported to the current header API outside the project and run to the paper's `T=20` at the same three levels for 45, 75, and 120 degrees. Again, all nine runs completed with no invalid values. The 75-degree terminal velocity converged to negligible values, but relative radius error increased from 1.58% to 3.99% for 45 degrees, its maximum total-volume drift increased from 3.24% to 3.42%, and the 120-degree results were non-monotonic.
+
+| geometry / angle | N=32 max drift / final speed | N=64 max drift / final speed | N=128 max drift / final speed | result |
+| --- | ---: | ---: | ---: | --- |
+| cylinder 30 deg | 4.99e-2 / 9.96e-4 | 2.48e-2 / 2.04e-2 | 1.29e-2 / 2.31e-2 | fail: velocity/curvature worsen |
+| cylinder 90 deg | 6.90e-3 / 5.72e-7 | 1.15e-4 / 2.53e-6 | 1.20e-4 / 1.23e-6 | locally stable, drift non-monotonic |
+| sessile 45 deg | 3.24e-2 / 7.27e-5 | 3.55e-2 / 5.17e-4 | 3.42e-2 / 1.70e-4 | fail: radius error and drift do not converge |
+| sessile 75 deg | 1.14e-2 / 4.35e-6 | 1.15e-2 / 1.44e-7 | 1.03e-2 / 5.24e-14 | locally stable, radius error worsens |
+| sessile 120 deg | 7.91e-3 / 2.50e-14 | 1.39e-2 / 3.24e-5 | 1.40e-2 / 4.80e-5 | fail: drift and speed worsen |
+
+Complete tables are in `cases/06_author_contact_embed_reproduction/`. The 147 generated logs, time series, interfaces, solid facets, and dumps are retained under `runs/20260715_233000_06_author_contact_embed_reproduction/`. The paper confirms technical compatibility for selected moderate angles, but it also explains the observed porous-layer mass absorption, pinning, and non-monotonic convergence. The general fixed embedded VOF contact-line gate remains closed.

@@ -1,0 +1,8 @@
+source	exact_qcc_object	warnings_or_error	executable_or_run
+droplet-cylinder-embed.c	pass	0	exact link blocked by missing local Basilisk View libraries; headless-only port compiled and ran
+sessile_embed.c	fail	tag redefinition; triple_cell_dectection and fraction_reconstruction are undeclared	current page cannot run unchanged; isolated current-API port compiled and ran
+sessile-embed-gravity.c	pass	2 maybe-uninitialized warnings	not run in this round
+sessile_embed3D.c	pass	0	not run in this round
+impact-thin-fiber.c	pass	0	not run in this round
+slip.c	pass	1 format-extra-args warning	not run in this round
+slot_contact_embed.c	fail	missing ../contact_embed.h	not run

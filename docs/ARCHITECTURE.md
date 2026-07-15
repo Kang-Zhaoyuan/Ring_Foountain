@@ -1,5 +1,7 @@
 # Architecture
 
+Current gate status: motion-model choices below are dormant. No translating-frame, moving-embed, or penalization implementation may begin until the fixed embedded VOF contact-line gate passes both license/maintenance review and canonical multi-angle refinement validation.
+
 ## Coordinate convention
 
 The axisymmetric meridional plane uses `x` as the axial (vertical) coordinate and `y` as radius. The domain must satisfy `y >= 0`; `bottom` is the symmetry axis. The flat ring section is the rectangle `Ri <= y <= Ro`, `-h/2 <= x <= h/2`.
