@@ -1,6 +1,6 @@
 # Ring Fountain Basilisk workspace
 
-This repository is the reproducible foundation for an axisymmetric Basilisk study of a flat metal ring entering a free surface. The current work is staged: official compatibility tests come before external reference cases, and all dynamic physics comes before the static annular geometry implementation.
+This repository is the reproducible foundation for an axisymmetric Basilisk study of a flat metal ring entering a free surface. The current work is staged: official compatibility tests come before external reference cases, and the static annular geometry gate comes before any moving-ring or free-surface-entry physics.
 
 The project uses the installed Basilisk tree read-only:
 
@@ -32,4 +32,3 @@ make validate CASE=cases/00_official_missing_metric
 5. Headless, low-cost publication-linked drop-impact smoke test.
 6. Static embedded annular geometry and mesh convergence.
 7. Architecture decision and handoff.
-

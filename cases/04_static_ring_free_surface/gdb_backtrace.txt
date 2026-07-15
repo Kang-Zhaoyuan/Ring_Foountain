@@ -1,0 +1,13 @@
+Program received signal SIGFPE, Arithmetic exception.
+residual_diffusion at /home/kqdx/basilisk/src/viscosity-embed.h:116
+#0 residual_diffusion() at /home/kqdx/basilisk/src/viscosity-embed.h:116
+#1 mg_solve() at /home/kqdx/basilisk/src/poisson.h:186
+#2 viscosity() at /home/kqdx/basilisk/src/viscosity-embed.h:156
+#3 viscous_term() at /home/kqdx/basilisk/src/navier-stokes/centered.h:356
+#4 event_do() at /home/kqdx/basilisk/src/grid/events.h:175
+#5 events() at /home/kqdx/basilisk/src/grid/events.h:241
+#6 run() at /home/kqdx/basilisk/src/run.h:21
+#7 main() at cases/04_static_ring_free_surface/compatibility_probe.c:34
+
+The full gdb command was:
+gdb -batch -ex run -ex bt --args /tmp/ring_fountain_case04_probe_debug

@@ -21,7 +21,7 @@ qcc_flags=${QCC_FLAGS:-}
 cp "$source" "$run_dir/source.c"
 sha256sum "$source" > "$run_dir/source.sha256"
 printf 'root=%s\ncase=%s\nrun=%s\n' "$root" "$case_dir" "$run_dir" > "$run_dir/parameters.txt"
-if git -C "$root" rev-parse HEAD > "$run_dir/git_commit.txt" 2>/dev/null; then :; else echo 'unavailable (project .git is not writable)' > "$run_dir/git_commit.txt"; fi
+if git -C "$root" rev-parse HEAD > "$run_dir/git_commit.txt" 2>/dev/null; then :; else echo 'unavailable (git HEAD not resolved)' > "$run_dir/git_commit.txt"; fi
 if (cd /home/kqdx/basilisk && darcs changes --last=1) > "$run_dir/basilisk_darcs_patch.txt" 2>&1; then :; else echo 'darcs metadata unavailable' > "$run_dir/basilisk_darcs_patch.txt"; fi
 printf 'cd %q && %q ' "$case_dir" /home/kqdx/basilisk/src/qcc > "$run_dir/compile_command.txt"
 printf '%q ' -O2 -Wall $qcc_flags "$source_name" -o "$program" -lm >> "$run_dir/compile_command.txt"

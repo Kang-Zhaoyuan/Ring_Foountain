@@ -25,3 +25,21 @@ Parameters are `Ri=0.0025 m`, `Ro=0.015 m`, `h=0.004 m`; analytical volume is `2
 | 7 | 1528 | 62 | 4.3627700805664055e-7 | 2.7412092868817513e-6 | 2.7954102e-3 | 0 / 0 | 0 |
 
 The rectangular section does not cross negative `y`, leaves the axis at `y=0` as the symmetry boundary, and shows decreasing geometry error under refinement. This stage has no fluid physics.
+
+## Static ring with free surface and embedded contact line
+
+Gate date: 2026-07-15. Status: **blocked/rejected**.
+
+The installed source tree was audited before implementing a dynamic case. `/home/kqdx/basilisk/src/axi.h` explicitly supports axisymmetric embedded metrics, and `/home/kqdx/basilisk/src/vof.h` contains an embedded-boundary advection branch. However, `/home/kqdx/basilisk/src/contact.h` only imposes height-function contact angles on domain boundaries; it provides no condition for an internal embedded boundary. The official `sessile.c` and `sessile3D.c` tests use domain walls, `missing_metric.c` contains no actual solid (`cs=fs=1`), and `gaussian-ns.c` has no free-surface/solid contact or surface tension. No official source includes both `embed.h` and `tension.h`, and no embedded contact-line implementation was found.
+
+A minimal probe in `cases/04_static_ring_free_surface/` combined quadtree, fixed embed, axi, centered two-phase VOF, and surface tension using the validated ring dimensions. The project qcc compiled it with exit code 0 and no diagnostics. The first initialization run terminated with exit code 136 (`SIGFPE`); `gdb` located the signal at `/home/kqdx/basilisk/src/viscosity-embed.h:116` in `residual_diffusion()`, reached through the first viscous solve. No completed timestep or valid `final.dump` was produced.
+
+Because there is neither an official embedded contact-line API nor one successful timestep, the required three-level comparison was not run. Water-volume drift, leakage, maximum velocity, minimum `dt`, maximum leaf count, interface evolution, persistent droplets, and contact-line noise are all marked not available rather than reported as zero.
+
+| maxlevel | completion | invalid markers | volume drift | solid leakage | max velocity | min dt | max leaves | result |
+| ---: | --- | --- | --- | --- | --- | --- | --- | --- |
+| 5 | not run | not applicable | N/A | N/A | N/A | N/A | N/A | blocked before grid study |
+| 6 | not run | not applicable | N/A | N/A | N/A | N/A | N/A | blocked before grid study |
+| 7 | not run | not applicable | N/A | N/A | N/A | N/A | N/A | blocked before grid study |
+
+No contact angle, contact-line formula, moving boundary, entry motion, cavity, jet, or fountain dynamics was introduced. The gate remains closed until a maintained and license-compatible embedded VOF contact-line implementation is identified and passes a separate canonical qcc validation.

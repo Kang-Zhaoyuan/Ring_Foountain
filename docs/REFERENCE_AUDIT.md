@@ -1,6 +1,6 @@
 # Reference audit
 
-Audit date: 2026-07-14. GitHub statistics are community signals only and are not used as a technical acceptance criterion. The installed Basilisk source and official tests remain the compatibility authority.
+Audit date: 2026-07-15. Repository metadata below reflects the locked fetch performed on 2026-07-14. GitHub statistics are community signals only and are not used as a technical acceptance criterion. The installed Basilisk source and official tests remain the compatibility authority.
 
 ## Trust tiers
 
@@ -40,5 +40,4 @@ The installed official files used by this project are `/home/kqdx/basilisk/src/t
 
 ## License decision
 
-No GPL source has been copied into the project. The only copied official test source is from the local Basilisk installation and is retained as an unmodified validation fixture, with its origin recorded in the case README. The MIT publication case remains in the ignored vendor tree until the required wrapper and attribution are reviewed.
-
+No GPL source has been copied into the project. The copied official test sources are retained as validation fixtures, with their origins recorded in the case READMEs. The MIT publication case has been copied case-locally into `cases/02_published_drop_impact/`, with `LICENSE-MIT` preserved and the compatibility edits documented in the case README.
