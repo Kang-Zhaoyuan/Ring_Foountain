@@ -1,0 +1,11 @@
+gate	grid_or_level	target	measured	result
+axisymmetric_hydrostatic_force	L5	0.026912712648370862_N	0.02633751349_N;_2.1373pct_error	pass_trend
+axisymmetric_hydrostatic_force	L6	0.026912712648370862_N	0.02677524868_N;_0.5108pct_error	pass_trend
+axisymmetric_hydrostatic_force	L7-equivalent	0.026912712648370862_N	0.02684339923_N;_0.2575pct_error	pass_trend
+axisymmetric_hydrostatic_force	finer	0.026912712648370862_N	0.1105pct_error	pass_trend
+air_freefall	R6_to_80ms	drop_31.392mm;_speed_0.7848mps	drop_error_-0.0343pct;_speed_error_-0.0362pct	pass
+air_freefall	R7_to_80ms	drop_31.392mm;_speed_0.7848mps	drop_error_-0.0391pct;_speed_error_-0.0431pct	pass
+hydrostatic_dynamic	R7	5ms_no_spurious_motion	max_speed_2.47e-5mps;_invalid_0	pass
+hydrostatic_dynamic	R8	5ms_no_spurious_motion	max_speed_about_4e-18mps;_invalid_0	pass
+prescribed_speed_regression	L7-equivalent	first_wetting_near_previous	first_wetting_3.636ms;_invalid_0	pass_with_domain_difference
+restart_continuity	16:1_L6_direct_vs_10ms_restart	match_direct_12ms	spurious_force_0.064N;_speed_disturbance_about_0.20mps	fail

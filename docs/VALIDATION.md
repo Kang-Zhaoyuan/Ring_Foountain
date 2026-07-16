@@ -105,3 +105,26 @@ At base level 7, 75 and 90 deg facets nearly coincide at 4, 8, and 12 ms. This s
 The tracked tables and review images are in `cases/07_exploratory_constant_speed_entry/`. The original 176-file evidence set remains in `runs/20260716_113000_07_exploratory_constant_speed_entry/`. The 932 follow-up archive files before the manifest are retained in `runs/20260716_121500_07_extended_entry_followup/`; the archive excludes all private source, executable, and external header content and is verified by a relative SHA256 manifest.
 
 Conclusion: accept only the base no-slip uniform L7 branch for constrained, manually reviewed morphology. Reject longer L8 runs, free-slip as an uncalibrated optimization, fabricated slip/contact laws, and all quantitative contact-line, cavity, speed, or jet claims. The only next action is manual classification of the existing L7 50--120 ms sequence against laboratory chronology before selecting a denser L7 interval.
+
+## Exploratory free-fall ring entry
+
+Exploration date: 2026-07-16. Status: **completed to 530 ms on uniform L6 and L7; accepted only for qualitative chronology and rendering**.
+
+The ring density is the user-confirmed `7800 kg/m^3`, giving mass `0.02144136986075032 kg`. Its lower face starts `50.9684 mm` above the water, corresponding to a vacuum contact speed of `1 m/s`. The fixed embedded geometry is retained in an accelerating ring frame. A project-authored axisymmetric pressure/viscous traction integral drives a vertical Newton equation; this is not moving-cut-cell geometry and it omits an explicit solid contact-line capillary line force.
+
+Before water entry, the axisymmetric hydrostatic force converges toward the analytical `0.0269127 N`, air-only free fall agrees with the analytical trajectory to better than 0.05%, and dynamic hydrostatic controls remain stable. A 16:1 dump can be read only after rebuilding fixed metrics, but restart introduces a `0.064 N` impulse and about `0.20 m/s` disturbance, so all accepted long results use uninterrupted processes.
+
+| run | completion | final drop / speed | max budget residual | max lab speed | min dt | cells | deep leakage | invalid | result |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| tall L6 | 330 ms | 449.740 mm / 2.531 m/s | 0.6909% | 10.056 m/s | 9.091e-6 s | 20,480 | 0 | 0 | coarse topology control |
+| tall L7 | 330 ms | 464.619 mm / 2.609 m/s | 0.3078% | 11.282 m/s | 9.091e-6 s | 81,920 | 0 | 0 | main qualitative branch |
+| deep L6 | 530 ms | 1092.831 mm / 3.821 m/s | 0.5434% | 12.462 m/s | 9.091e-6 s | 65,536 | 0 | 0 | cavity wall fragments strongly |
+| deep L7 | 530 ms | 1118.686 mm / 3.973 m/s | 0.2356% | 22.629 m/s | 9.091e-6 s | 262,144 | 0 | 0 | no closure; late high-speed/corrugation warning |
+
+The final deep L7 run was restarted from `t=0` after a host power loss and completed in one process; no partial dump was stitched. It exited normally after 12,694 steps and contains no `nan`, `inf`, `SIGFPE`, segmentation fault, deep-solid liquid, or radial outlet water. Maximum upward fluid force is `0.4688 N`, minimum is `-0.1176 N`, and maximum intentional contact-method ghost liquid is `2.566e-6 m^3`.
+
+Both grids show the manually identified central first-jet candidate and an annular open cavity. Neither shows coherent cavity closure by 530 ms. L7 has lower water-budget residual and less coarse fragmentation, but after roughly 390 ms it develops substantial corrugation, detached fragments, force oscillation, and large local speeds. Saved field samples place the 458--464 ms high-speed path in full-fluid interface cells about 38 mm above the ring rather than solely in embedded cut cells. The result therefore does not support a Worthington-jet claim or quantitative timing/height prediction.
+
+The laboratory-frame H.264 animation was generated from saved `2 ms` fields and decoded for verification. It uses one fixed `0--10 m/s` water-speed scale, saturates larger values red, and includes both a fixed full trajectory and fixed free-surface window. The tracked video SHA256 is `9282f72e5f13dc05b803a67b08709f3502c7c99c7e7736c9d88a7fc177805ecd`.
+
+Conclusion: retain L7 as a frozen qualitative baseline, not as a converged physical prediction. Do not interpret visual agreement as validation, do not infer a second-jet mechanism, and do not raise release height before comparing the current trajectory and morphology with the forthcoming blinded experiment.

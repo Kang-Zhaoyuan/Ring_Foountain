@@ -1,0 +1,41 @@
+parameter	value	unit	note
+coordinate_x	vertical	-	upward axial coordinate
+coordinate_y	radial	-	y >= 0; bottom is symmetry axis
+Ri	0.0025	m	inner ring radius
+Ro	0.015	m	outer ring radius
+h	0.004	m	rectangular axial thickness
+ring_density	7800	kg/m^3	user-confirmed 7.8 g/cm^3
+ring_volume	2.7488935718910665e-6	m^3	analytical annular volume
+ring_mass	0.02144136986075032	kg	density times volume
+ring_weight	0.21033983833396064	N	g = 9.81 m/s^2
+initial_lower_face_clearance	0.0509683995922528	m	chosen for 1 m/s vacuum contact speed
+vacuum_contact_speed	1	m/s	sqrt(2 g H)
+vacuum_contact_time	0.1019367991845056	s	sqrt(2 H/g)
+rho_water	998	kg/m^3	phase 1
+rho_air	1.2	kg/m^3	phase 2
+mu_water	0.001	Pa s	phase 1
+mu_air	0.000018	Pa s	phase 2
+surface_tension	0.072	N/m	constant
+gravity	9.81	m/s^2	negative x
+contact_angle	75	deg	uncalibrated engineering assumption
+embedded_velocity	no-slip	-	u.n = 0 and u.t = 0 in ring frame
+grid	uniform multigrid	-	quadtree viscous route rejected
+main_domain_axial	0.600	m	ring-frame length
+main_domain_radial	0.120	m	radius
+main_domain_x_origin	-0.150	m	ring-frame origin
+deep_domain_axial	1.920	m	power-of-two 16:1 aspect ratio
+deep_domain_radial	0.120	m	radius
+deep_domain_x_origin	-0.300	m	ring-frame origin
+L6_Delta	0.001875	m	coarse topology control
+L7_Delta	0.0009375	m	main visual branch
+CFL	0.4	-	maximum CFL
+DT_cap	0.0001	s	maximum timestep
+main_interface_interval	0.00025	s	L7 330 ms run
+coarse_interface_interval	0.0005	s	L6 controls
+velocity_field_interval	0.002	s	laboratory speed field
+Re_D_at_1mps	29940	-	D = 0.03 m
+We_D_at_1mps	415.8333333333333	-	D = 0.03 m
+Fr_D_at_1mps	1.8433375453644367	-	D = 0.03 m
+Bo_D	122.37975	-	D = 0.03 m
+Ca_at_1mps	0.01388888888888889	-	water properties
+Oh_D	0.0006810952535819544	-	D = 0.03 m
