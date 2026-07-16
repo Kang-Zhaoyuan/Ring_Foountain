@@ -16,10 +16,17 @@ Date: 2026-07-16
 - L7 maximum laboratory speed is `22.629 m/s`; saved 458--464 ms field samples place the rising high-speed path in full-fluid interface cells about 38 mm above the ring, not solely in embedded cut cells. Large late force oscillations coexist, so the late branch is not quantitatively credible.
 - A reproducible fixed-laboratory-frame animation workflow is tracked in `cases/08_exploratory_freefall_entry/tools/`. The resulting H.264 video shows the moving ring and water speed on a fixed `0--10 m/s` scale, with larger values saturated red.
 - Review material is in `cases/08_exploratory_freefall_entry/review/`, including the 330--530 ms L7 interface sheet, full animation, and decoded-video audit sheet.
+- A new 10 cm-release experiment reports that the ring becomes fully surrounded by water rather than carrying a cavity to large depth.
+- The matching 10 cm-release original L7 run remains attached through lower-face depth `305.6 mm`; this directly rejects the case-08 topology against experiment.
+- L6 controls spanning 30--120 deg, half/double surface tension, and no-slip/free-slip all remain attached. Water surface tension is not tuned.
+- A separate one-time experiment-constrained wetting event at provisional lower-face depth `100 mm` detaches the cavity without a new force or speed peak.
+- The constrained L7 run completes to 320 ms with `0.1663%` maximum budget residual, zero invalid values, `0.547 mL` added mobile water, and no reattachment. It remains an empirical scaffold rather than a physical wetting model.
 
 ## Evidence and storage
 
 - Tracked summaries: `cases/08_exploratory_freefall_entry/model_parameters.tsv`, `gate_summary.tsv`, `run_summary.tsv`, and `speed_peak_samples.tsv`.
+- The detachment audit, screening table, source hashes, and review images are tracked in `cases/09_release10cm_cavity_detachment/`.
+- Complete ignored evidence is in `runs/20260716_200718_09_release10cm_detachment/`; its 6,589-entry SHA256 manifest verifies with hash `b6d119fb39f7cbac9414ffa5ca2d6907d1f4f09de54d76545d9c641a387ea7da`.
 - Tracked interpretation and limitations: `cases/08_exploratory_freefall_entry/README.md` and `docs/VALIDATION.md`.
 - Ignored numerical evidence archive: `runs/20260716_173500_08_exploratory_freefall_entry/`. It contains complete diagnostics, interfaces, field samples, dumps, and rendering evidence but no private source, external header, or executable.
 - The final L7 run directory is about 850 MiB and contains 1,346 files before archive integration. Its service result is success with exit status 0.
@@ -35,4 +42,4 @@ Date: 2026-07-16
 
 ## Next gate
 
-The only next action is to compare the frozen L7 trajectory and interface chronology against the forthcoming blinded experiment. Do not increase release height or tune contact parameters before that comparison: the current ring already accelerates to nearly 4 m/s, while the missing closure coincides with late numerical instability rather than clear evidence of insufficient impact speed.
+The only next action is to measure the actual cavity-detachment time and ring depth from high-speed experimental video. Replace the provisional `100 mm` event with that datum before extending the constrained L7 branch to later jets. Do not reinterpret the one-time wetting operation as a calibrated contact-line law.

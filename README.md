@@ -35,3 +35,4 @@ make validate CASE=cases/00_official_missing_metric
 8. External fixed embedded contact-line audit and author-case reproduction.
 9. Isolated constant-speed Galilean-frame ring-entry exploration.
 10. Isolated accelerating-frame free-fall ring-entry exploration and laboratory-frame rendering.
+11. Experimental 10 cm-release cavity-detachment constraint and empirical topology scaffold.

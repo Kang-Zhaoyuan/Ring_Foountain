@@ -112,3 +112,12 @@ The external contact header remains unlicensed evaluation material outside the t
 The accelerating-frame free-fall route is accepted only as a constrained qualitative exploration. It successfully moves the ring in laboratory coordinates, couples a computed fluid force to vertical ring acceleration, and produces the manually identified first-jet candidate with an annular cavity. It has not demonstrated cavity closure or a credible Worthington jet, and it is not a quantitative prediction of real metal wetting, force, jet timing, or jet height.
 
 The single next recommendation is to compare this frozen L7 baseline, including ring trajectory and interface chronology, against the forthcoming blinded experiment before changing release height. The ring already reaches nearly `4 m/s`; increasing drop height now would add energy to a branch whose late cavity/contact behavior is numerically suspect and would not isolate the cause of the missing closure.
+
+## Subsequent experimental constraint
+
+The later 10 cm-release experiment reports that the ring becomes completely
+surrounded by water rather than carrying an attached cavity to large depth.
+Case `09_release10cm_cavity_detachment` demonstrates that this case-08 route
+does not reproduce that topology even after changing the release height. The
+case-08 L7 result is therefore retained as historical evidence of model
+failure, not as the branch for later prediction.

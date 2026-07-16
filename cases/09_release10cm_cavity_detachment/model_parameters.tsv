@@ -1,0 +1,24 @@
+parameter	value	unit	note
+release_height	0.100	m	experimental release height
+vacuum_impact_time	0.142784312293	s	sqrt(2 H/g)
+vacuum_impact_speed	1.40071410359	m/s	sqrt(2 g H)
+ring_density	7800	kg/m^3	user-confirmed
+Ri	0.0025	m	validated geometry
+Ro	0.015	m	validated geometry
+ring_thickness	0.004	m	validated geometry
+contact_angle	75	deg	uncalibrated baseline
+surface_tension	0.072	N/m	physical water value; not tuned
+empirical_lower_face_depth	0.100	m	provisional interpretation of experiment
+empirical_shell_thickness	1.25*Delta	-	one-time topology correction
+L6_Delta	0.001875	m	screening
+L7_Delta	0.0009375	m	main comparison
+domain_axial	0.960	m	uniform 8:1 multigrid
+domain_radial	0.120	m	axisymmetric radius
+domain_x_origin	-0.300	m	ring frame
+L6_added_water	1.2898536841943198e-6	m^3	one-time measured mobile-water addition
+L7_added_water	5.4730805970626406e-7	m^3	one-time measured mobile-water addition
+Re_D	41937.3802615	-	D=0.03 m at vacuum impact
+We_D	815.865	-	D=0.03 m at vacuum impact
+Fr_D	2.58198889747	-	D=0.03 m at vacuum impact
+Bo_D	122.37975	-	D=0.03 m
+Ca	0.0194543625499	-	water properties at vacuum impact

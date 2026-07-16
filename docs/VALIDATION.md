@@ -128,3 +128,42 @@ Both grids show the manually identified central first-jet candidate and an annul
 The laboratory-frame H.264 animation was generated from saved `2 ms` fields and decoded for verification. It uses one fixed `0--10 m/s` water-speed scale, saturates larger values red, and includes both a fixed full trajectory and fixed free-surface window. The tracked video SHA256 is `9282f72e5f13dc05b803a67b08709f3502c7c99c7e7736c9d88a7fc177805ecd`.
 
 Conclusion: retain L7 as a frozen qualitative baseline, not as a converged physical prediction. Do not interpret visual agreement as validation, do not infer a second-jet mechanism, and do not raise release height before comparing the current trajectory and morphology with the forthcoming blinded experiment.
+
+## Experimental cavity-detachment constraint
+
+Constraint date: 2026-07-16. Status: **original route rejected; empirical
+topology scaffold accepted only for qualitative continuation**.
+
+The new experiment uses a `100 mm` release height and reports that the ring
+becomes fully surrounded by water after the initial entry cavity. Vacuum
+impact speed is `1.400714 m/s`. The original 10 cm-release L7 calculation
+remains directly attached to the gas cavity through `300 ms`, when the lower
+ring face is `305.6 mm` underwater. Its interface-to-ring distance is still
+zero, despite zero invalid values and maximum budget residual `0.2504%`.
+
+L6 screening tested contact angles from 30 to 120 deg, surface tension from
+`0.036` to `0.144 N/m`, and no-slip versus free-slip. Every unforced route
+remains attached after passing `100 mm` depth. This rejects surface-tension
+tuning, static-angle tuning, and free-slip as explanations or fixes.
+
+A separate hybrid branch uses the first available experimental depth as a
+single topology constraint. At lower-face depth `100 mm`, it marks water once
+within a `1.25 Delta` ring shell and adds the measured mobile-water increment
+to the conservation reference. It does not continue forcing the interface.
+
+| grid | event time | added water | last attached depth | final distance | max budget residual | max lab speed | invalid |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| L6 | 206.2 ms | 1.290 mL | 99.715 mm | 217.5 mm at 280 ms | 0.2930% | 7.907 m/s | 0 |
+| L7 | 204.95 ms | 0.547 mL | 99.710 mm | 319.6 mm at 320 ms | 0.1663% | 8.024 m/s | 0 |
+
+No reattachment, invalid value, deep-solid liquid, outlet water, or new
+force/velocity peak occurs after the transition. The added volume decreases
+under refinement, but the event remains empirical and grid-dependent. It
+corrects only the known topology mismatch; residual cavity fragments and a
+central surface rise remain through 318 ms.
+
+Conclusion: reject the original fixed-contact-line branch against the
+experiment. Retain the constrained L7 branch only as a disclosed hybrid
+scaffold. The next validation datum must be the measured detachment time and
+ring depth from high-speed video; no later jet timing should be interpreted
+before replacing the provisional 100 mm trigger.

@@ -38,4 +38,20 @@ The level-8 peak has been localized to embedded/contact-line cells and adjacent 
 
 The fixed-geometry accelerating-frame model has now completed a deep uniform-L7 run to 530 ms and a fixed-laboratory-frame speed animation. It preserves a long open annular cavity and the manually identified first-jet candidate, but it does not close the cavity or produce a credible Worthington jet. After roughly 390 ms, increasing interface corrugation, detached fragments, force oscillations, and a `22.63 m/s` global laboratory-speed peak make the late branch numerically suspect.
 
-The current recommendation is to freeze this L7 result as a qualitative experimental baseline. Level 8 remains rejected for extension, and release height should not be changed until the current ring trajectory and interface chronology are compared with laboratory data. Force, wetting, cavity closure, and jet timing are not quantitative predictions until contact-line, grid-phase, and moving-frame limitations are resolved.
+Before the later cavity-detachment experiment, the recommendation was to
+freeze this L7 result as a qualitative baseline and compare it with laboratory
+data before changing release height. Level 8 remains rejected for extension,
+and force, wetting, cavity closure, and jet timing remain non-quantitative.
+
+The subsequent 10 cm-release experiment falsifies the attached-cavity
+topology of that baseline: the computed interface remains on the ring beyond
+300 mm depth, while the experiment reports a fully wetted ring. Broad static
+angle, surface-tension, and slip controls do not remove attachment.
+
+A separate hybrid architecture is therefore admitted for qualitative
+continuation. It keeps the original solver until a measured immersion-depth
+event, then applies one local, one-time wetting transition and explicitly
+accounts for the added mobile water. This is an experiment-constrained
+topology scaffold, not a dynamic contact-line model. It must remain a separate
+branch until the trigger depth is measured and the operation is replaced by a
+validated wetting/detachment treatment.
