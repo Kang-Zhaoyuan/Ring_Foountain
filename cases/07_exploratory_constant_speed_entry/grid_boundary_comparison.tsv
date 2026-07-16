@@ -1,0 +1,6 @@
+variant	level	wall_bc	axial_grid_phase	window_s	max_budget_residual	max_lab_speed_mps	peak_t_s	peak_region	peak_x_m	peak_r_m	peak_f	peak_cs	interpretation
+base_l7	7	no-slip	base	0.030	0.018564315661316291	2.8312659610594464	0.028208333333333346	free_interface	0.0025781250000000006	0.0063281249999999995	0.03193841333349267	1	main qualitative branch
+base_l8	8	no-slip	base	0.030	0.0230349841	11.8065502	0.0283558247	lower_ring_cut_cell	-0.0019921875	0.0045703125	1	0.466666667	refinement amplifies near-wall speed
+free_slip_l7	7	free-slip	base	0.030	0.017815234612960112	2.6121716554271761	0.026785714285714302	full_fluid_near_interface	0.0025781250000000006	0.0063281249999999995	0	1	diagnostic control only
+free_slip_l8	8	free-slip	base	0.030	0.02293469464892554	5.9659904254821789	0.024561403508771954	full_liquid_near_inner_edge	-0.00011718750000000097	0.0022265624999999998	1	1	wall change reduces but does not remove L8 amplification
+phase_shift_l7	7	no-slip	base_plus_half_Delta_x	0.030	0.026718546256906662	1.3551255573266616	0.030	upper_ring_cut_cell	0.001875	0.011484375	0	0.233333333	L7 morphology and diagnostics depend on cut-cell phase

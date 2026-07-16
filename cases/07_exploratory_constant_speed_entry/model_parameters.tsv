@@ -1,0 +1,36 @@
+parameter	value	unit	note
+coordinate_x	vertical	-	axial coordinate
+coordinate_y	radial	-	y >= 0; bottom is axis
+Ri	0.0025	m	inner ring radius
+Ro	0.015	m	outer ring radius
+h	0.004	m	rectangular axial thickness
+domain_radial_size	0.060	m	all runs
+domain_axial_square	0.060	m	initial 28 ms and 90 deg runs
+domain_axial_extended	0.120	m	main 60--75 ms comparison
+domain_axial_long	0.180	m	level-7 120 ms continuation
+domain_x_origin	-0.030	m	base grid phase
+domain_x_origin_phase_control	-0.029765625	m	base plus half a level-7 cell; diagnostic only
+initial_surface	-0.006	m	4 mm below lower ring face
+entry_speed	1.0	m/s	prescribed constant speed
+rho_water	998	kg/m^3	phase 1
+rho_air	1.2	kg/m^3	phase 2
+mu_water	0.001	Pa s	phase 1
+mu_air	0.000018	Pa s	phase 2
+surface_tension	0.072	N/m	constant
+gravity	9.81	m/s^2	negative x
+contact_angle_main	75	deg	uncalibrated engineering assumption
+contact_angle_compare	90	deg	short sensitivity run
+embedded_velocity_main	no-slip	-	u.n = 0 and u.t = 0
+embedded_velocity_control	free-slip	-	u.n = 0 and zero tangential gradient; not adopted as metal physics
+grid_main	uniform multigrid	-	quadtree viscous route rejected after SIGFPE
+level_7_Delta	0.00046875	m	128 radial cells
+level_8_Delta	0.000234375	m	256 radial cells
+CFL	0.4	-	maximum CFL
+DT_cap	0.0001	s	maximum timestep
+interface_interval	0.0005	s	facet output cadence
+Re_D	29940	-	D = 2 Ro = 0.03 m
+We_D	415.833333333	-	D = 0.03 m
+Fr_D	1.84333754536	-	D = 0.03 m
+Bo_D	122.37975	-	D = 0.03 m
+Ca	0.0138888888889	-	water properties
+Oh_D	0.000681095253582	-	D = 0.03 m

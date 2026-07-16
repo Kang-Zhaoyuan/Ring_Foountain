@@ -1,6 +1,6 @@
 # Architecture
 
-Current gate status: motion-model choices below are dormant. No translating-frame, moving-embed, or penalization implementation may begin until the fixed embedded VOF contact-line gate passes both license/maintenance review and canonical multi-angle refinement validation.
+Current gate status: the general embedded VOF contact-line gate remains failed, but a user-authorized, isolated exploratory branch now uses the technically viable moderate-angle Tavares route. Its source remains outside the repository because the file-level license is unspecified. Results from this branch are qualitative and do not convert the failed validation gate into a pass.
 
 ## Coordinate convention
 
@@ -11,10 +11,10 @@ The axisymmetric meridional plane uses `x` as the axial (vertical) coordinate an
 | Model | Strengths | Risks | Decision |
 | --- | --- | --- | --- |
 | Moving embedded boundary | Direct physical frame and natural acceleration history | Moving cut-cell geometry, contact-line treatment, conservation, and limited public validation | Separate experimental branch |
-| Fixed ring in a translating frame | Keeps the cut geometry fixed, compatible with axisymmetric VOF and adaptive refinement, and supports constant speed cleanly | Requires careful frame acceleration and boundary-condition bookkeeping for variable speed | Default first dynamic route |
+| Fixed ring in a translating frame | Keeps the cut geometry fixed, is compatible with axisymmetric VOF, and supports constant speed cleanly | Current tree/embed viscous path raises `SIGFPE`; external contact code also marks AMR as unfinished | Selected only with uniform grids for the first exploration |
 | Brinkman or volume penalization | Easy geometry motion and complex solids | Penalization error, stiffness, force interpretation, and less direct cut-cell validation | Not the first model |
 
-The first dynamic target is therefore a fixed embedded ring in a Galilean frame with axisymmetric VOF. Variable-speed extensions add the appropriate non-inertial acceleration only after the constant-speed case is validated. This round does not implement motion.
+The first exploratory model is a fixed embedded ring in a constant-speed Galilean frame with axisymmetric VOF. It was run at `U=1 m/s` on uniform levels 7 and 8. The base level-7 branch is retained for manually reviewed morphology, while level 8 is retained only as evidence of numerical sensitivity. Variable-speed extensions would require the appropriate non-inertial acceleration, but they remain outside the present scope.
 
 ## Decision matrix
 
@@ -22,8 +22,8 @@ The first dynamic target is therefore a fixed embedded ring in a Galilean frame 
 | --- | --- | --- | --- |
 | Axi compatibility | Possible but geometry/metric coupling is delicate | Direct fixed `embed` plus `axi` | Possible, with porosity metric choices |
 | VOF and contact line | Direct physical contact line, hardest numerically | Compatible, but contact line is a later boundary-condition task | Diffuse interface/contact line is model-dependent |
-| Adaptive mesh | Tracks moving cut cells and topology | Stable geometry, simpler boundary-focused refinement | Refines penalty layers and interfaces |
-| Conservation | Requires moving-cut-cell flux care | Best controlled for constant speed | Penalization introduces model error |
+| Adaptive mesh | Tracks moving cut cells and topology | Deferred: the current `AXI + TREE + EMBED` viscous smoke test fails and the external contact header marks AMR as a fixme | Refines penalty layers and interfaces |
+| Conservation | Requires moving-cut-cell flux care | Open-domain budget is measurable, but contact ghost cells produce non-monotonic residuals | Penalization introduces model error |
 | Pressure force | Direct but time-dependent cut integration | Direct fixed-surface integration in frame | Requires volume-force interpretation |
 | Surface entry/exit | Natural target, highest risk | Represented through translating free surface relative to fixed ring | Natural motion, diffuse solid transition |
 | Variable speed | Native kinematics | Add non-inertial frame acceleration | Native forcing but stiff |
@@ -32,4 +32,6 @@ The first dynamic target is therefore a fixed embedded ring in a Galilean frame 
 | Complexity | High | Moderate | Moderate, with calibration burden |
 | Public validation | Limited for this exact geometry | Closest to verified fixed-embed building blocks | Fewer directly comparable cases |
 
-The current recommendation is fixed geometry plus a constant-speed Galilean frame, followed by a separate variable-speed frame-acceleration study. A moving embedded boundary should remain an experimental branch until conservation, pressure force, and contact-line tests exist.
+The level-8 peak has been localized to embedded/contact-line cells and adjacent liquid. A free-slip control reduces but does not remove its refinement amplification, and a half-cell axial phase shift substantially changes the level-7 cavity path after 20 ms. These controls rule out treating the visually preferred level-7 branch as grid-converged or using a wall-condition change as an uncalibrated fix.
+
+The current recommendation remains fixed geometry plus a constant-speed Galilean frame on the base uniform level-7 grid, solely for qualitative manual morphology review. Level 8 should not be extended, and no variable-speed or moving-boundary study should begin until the existing 50--120 ms level-7 sequence has been classified against the laboratory chronology.

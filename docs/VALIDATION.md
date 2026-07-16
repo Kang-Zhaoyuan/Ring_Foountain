@@ -73,3 +73,35 @@ The broken flat sessile page was minimally ported to the current header API outs
 | sessile 120 deg | 7.91e-3 / 2.50e-14 | 1.39e-2 / 3.24e-5 | 1.40e-2 / 4.80e-5 | fail: drift and speed worsen |
 
 Complete tables are in `cases/06_author_contact_embed_reproduction/`. The 147 generated logs, time series, interfaces, solid facets, and dumps are retained under `runs/20260715_233000_06_author_contact_embed_reproduction/`. The paper confirms technical compatibility for selected moderate angles, but it also explains the observed porous-layer mass absorption, pinning, and non-monotonic convergence. The general fixed embedded VOF contact-line gate remains closed.
+
+## Exploratory constant-speed ring entry
+
+Exploration date: 2026-07-16. Status: **stable qualitative level-7 sequences obtained; grid, cut-cell phase, and contact-line convergence failed**.
+
+Following an explicit strategy change, the moderate-angle Tavares route was used only in an isolated local directory. The ring remains fixed while the free surface and both phases translate upward at `U=1 m/s`, equivalent to horizontal prescribed-speed entry. Water and air use `rho=998/1.2 kg/m^3`, `mu=1e-3/1.8e-5 Pa s`, `sigma=0.072 N/m`, and `g=9.81 m/s^2`. The 75 deg angle is uncalibrated; 90 deg is only a short comparison.
+
+The qcc quadtree build succeeded, but the viscous level-6 smoke run received `SIGFPE` at iteration zero in `/home/kqdx/basilisk/src/viscosity-embed.h:116`. A zero-viscosity quadtree control and viscous uniform-grid control reached 5 ms. Combined with the external header's adaptive-mesh fixme, this rejects quadtree for the present implementation. Basilisk source was not modified.
+
+Because the Galilean-frame domain has a liquid inlet, volume conservation is the relative residual against initial water plus analytical inlet volume. No run had outlet water. Intentional contact ghost liquid is reported separately from liquid more than `2.5 Delta` inside full-solid ring cells; only the latter is treated as leakage.
+
+| angle / grid / control | completion | max budget residual | max ghost liquid (m3) | deep-solid liquid (m3) | max frame/lab speed (m/s) | min dt (s) | cells | invalid |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 75 deg / L7 / no-slip, 120 x 60 mm | 60 ms | 1.8564% | 1.385e-6 | 0 | 3.830 / 2.831 | 9.091e-6 | 32,768 | 0 |
+| 75 deg / L8 / no-slip, 120 x 60 mm | 60 ms | 3.5939% | 8.264e-7 | 0 | 18.280 / 17.311 | 6.201e-6 | 131,072 | 0 |
+| 75 deg / L7 / no-slip, 180 x 60 mm | 120 ms | 1.8183% | 1.516e-6 | 0 | 7.301 / 6.593 | 9.091e-6 | 49,152 | 0 |
+| 90 deg / L7 / no-slip, 60 x 60 mm | 12 ms | 1.0712% | 7.281e-7 | 0 | 1.659 / 0.659 | 9.091e-6 | 16,384 | 0 |
+| 75 deg / L7 / free-slip control | 30 ms | 1.7815% | 1.314e-6 | 0 | 3.604 / 2.612 | 9.091e-6 | 32,768 | 0 |
+| 75 deg / L8 / free-slip control | 30 ms | 2.2935% | 5.244e-7 | 0 | 6.385 / 5.966 | 5.669e-6 | 131,072 | 0 |
+| 75 deg / L7 / half-cell phase control | 30 ms | 2.6719% | 1.028e-6 | 0 | 2.244 / 1.355 | 9.091e-6 | 32,768 | 0 |
+
+The no-slip L8 lab-frame speed reaches 17.311 m/s at 43.49 ms in liquid on the lower embedded face (`cs=0.467`); it is not a resolved free jet. Over the first 30 ms, changing to free-slip reduces the L8 peak from 11.807 to 5.966 m/s, but free-slip L8 remains 2.28 times L7 and its budget residual still worsens. The strongest full-liquid velocity moves about one L8 cell from the inner edge, while a 4.940 m/s interface/cut peak remains on the ring. Wall treatment influences but does not eliminate the instability.
+
+The no-slip level-7 half-cell axial phase control preserves `Delta` and physical ring/free-surface coordinates. It stays close to the base bulk interface through roughly 16 ms, then follows a different cavity path from 20 to 30 ms. Its lab speed drops from the base L7 value of 2.831 to 1.355 m/s while the budget residual rises from 1.856% to 2.672%. Level 7 is therefore not independently robust to cut-cell phase even though its base sequence looks more plausible.
+
+The user manually accepted the base L7 4--60 ms sequence as qualitatively consistent with the expected early crown and first-upward-event development. That review supports continued observation at L7 but is not numerical validation. The long L7 run reaches 120 ms and shows a progressively flatter translated far surface, central deformation, and detached interface fragments. No automated height or mechanism detector is used, and the sequence is not labeled as cavity closure or a Worthington jet without manual experimental comparison.
+
+At base level 7, 75 and 90 deg facets nearly coincide at 4, 8, and 12 ms. This supports only a limited statement that early bulk morphology is not highly sensitive to this moderate angle change on that grid. It does not validate either angle as metal wetting.
+
+The tracked tables and review images are in `cases/07_exploratory_constant_speed_entry/`. The original 176-file evidence set remains in `runs/20260716_113000_07_exploratory_constant_speed_entry/`. The 932 follow-up archive files before the manifest are retained in `runs/20260716_121500_07_extended_entry_followup/`; the archive excludes all private source, executable, and external header content and is verified by a relative SHA256 manifest.
+
+Conclusion: accept only the base no-slip uniform L7 branch for constrained, manually reviewed morphology. Reject longer L8 runs, free-slip as an uncalibrated optimization, fabricated slip/contact laws, and all quantitative contact-line, cavity, speed, or jet claims. The only next action is manual classification of the existing L7 50--120 ms sequence against laboratory chronology before selecting a denser L7 interval.

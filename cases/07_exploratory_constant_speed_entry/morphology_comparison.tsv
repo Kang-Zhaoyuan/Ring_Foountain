@@ -1,0 +1,8 @@
+time_s	square_l7_75_core_rise_m	square_l8_75_core_rise_m	square_l7_90_core_rise_m	observation
+0.004	0.000359375	0.0004765625	0.000359375	first wetting neighborhood
+0.008	0.002453125	0.0023359375	0.002453125	central upwelling; not a resolved jet
+0.012	0.002671875	0.0025546875	0.002671875	75 and 90 deg bulk shapes nearly coincide
+0.016	0.002421875	0.0023046875	NA	attached cavity and separated inner/outer surfaces
+0.020	0.002640625	0.0022890625	NA	broad shape remains comparable
+0.024	0.003328125	0.0025078125	NA	contact-line paths begin to diverge
+0.028	0.003546875	0.0022578125	NA	contact-line migration and speed are not grid-converged; historical 60 mm square comparison
