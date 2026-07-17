@@ -1,0 +1,6 @@
+route	grid	end_after_contact_ms	empirical_rule	max_budget_residual_pct	max_lab_speed_mps	min_dt_s	max_cells	max_deep_solid_liquid_m3	invalid_values	max_coherent_height_mm	decision
+historical_full_fill	L7	193.667	phi_le_1.25Delta	0.112295	9.607388	9.090909e-6	131072	0	0	8.5746	historical_only_deep_metric_unresolved
+no_transition	L7	93.667	disabled	0.146858	16.022915	9.090909e-6	131072	0	0	10.7107	rejected_cavity_constraint_and_shape
+shell_band	L7	93.667	abs_phi_le_1.25Delta	0.112295	9.615116	9.090909e-6	131072	0	0	8.2282	corrected_exploratory_baseline
+historical_full_fill	L8	93.500	phi_le_1.25Delta	0.093261	19.973258	7.352941e-6	524288	1.10662332776e-7	0	8.5967	rejected_deep_solid_fill
+shell_band	L8	93.500	abs_phi_le_1.25Delta	0.093261	19.973258	7.352941e-6	524288	0	0	8.2948	shape_diagnostic_only_speed_warning

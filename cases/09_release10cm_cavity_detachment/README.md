@@ -1,8 +1,8 @@
 # Release-height and cavity-detachment constraint
 
 Run date: 2026-07-16. Status: **the original fixed-contact-line L7 route is
-rejected against the new experiment; a separate experiment-constrained
-topology branch is numerically stable but remains non-predictive**.
+rejected against the new experiment; the historical topology branch is
+superseded by the corrected thin-band implementation in case 11**.
 
 ## New experimental constraint
 
@@ -65,8 +65,10 @@ mechanisms.
 A separate hybrid branch applies one explicitly disclosed operation:
 
 1. Evolve the original 75 deg, no-slip, `sigma=0.072 N/m` model unchanged.
-2. When the lower ring face first reaches `100 mm` underwater, set the water
-   fraction to one once within a `1.25 Delta` shell around the ring.
+2. When the lower ring face first reaches `100 mm` underwater, the historical
+   code applies `ring_levelset <= 1.25 Delta`. This was intended as a shell but
+   a case-11 source audit showed that it also includes the complete solid
+   interior.
 3. Measure the added mobile-water volume and include it in the subsequent
    water-budget reference.
 4. Do not continue forcing the interface after this single event.
@@ -90,11 +92,12 @@ There is no reattachment through `320 ms`. Maximum speed and maximum fluid
 force both occur before the imposed transition, so the operation does not
 create a new recorded impulse peak.
 
-The correction volume decreases under refinement because the shell thickness
-scales with `Delta`, but the operation itself remains grid-dependent and
-empirical. The contact-method ghost-liquid diagnostic rises because the solid
-ghost layer is intentionally marked as water; this is not reclassified as
-physical water inside the metal.
+The operation is grid-dependent and empirical. Its contact-method ghost-liquid
+diagnostic rises because solid cells are marked as water. The historical L6/L7
+deep-solid diagnostic reports zero only because its `2.5 Delta` threshold does
+not resolve the narrow interior of this ring section. L8 later exposes the
+full-fill error directly. Case 11 replaces the condition with the true thin
+band `-1.25 Delta <= ring_levelset <= 1.25 Delta` and reruns L7/L8.
 
 ## Morphology
 
@@ -119,9 +122,10 @@ external contact header is included here.
 ## Decision
 
 Reject surface-tension tuning, constant-angle tuning, and free-slip as fixes.
-Reject the original 10 cm-release L7 branch against the experiment. Accept the
-single-transition L7 branch only as an explicitly empirical topology scaffold
-for later qualitative work.
+Reject the original 10 cm-release L7 branch against the experiment. Preserve
+the historical transition runs as topology evidence, but do not continue from
+their full-solid-fill implementation. Only the corrected case-11 thin band is
+retained as an explicitly empirical scaffold.
 
 The only next recommendation is to extract the actual detachment time and
 ring depth from high-speed experimental video. That measurement should replace

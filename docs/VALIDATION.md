@@ -148,25 +148,28 @@ tuning, static-angle tuning, and free-slip as explanations or fixes.
 
 A separate hybrid branch uses the first available experimental depth as a
 single topology constraint. At lower-face depth `100 mm`, it marks water once
-within a `1.25 Delta` ring shell and adds the measured mobile-water increment
-to the conservation reference. It does not continue forcing the interface.
+and adds the measured mobile-water increment to the conservation reference. A
+later source audit found that the historical condition
+`ring_levelset <= 1.25 Delta` included the complete solid interior, not only
+the intended shell. The corrected route is documented below.
 
 | grid | event time | added water | last attached depth | final distance | max budget residual | max lab speed | invalid |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | L6 | 206.2 ms | 1.290 mL | 99.715 mm | 217.5 mm at 280 ms | 0.2930% | 7.907 m/s | 0 |
 | L7 | 204.95 ms | 0.547 mL | 99.710 mm | 319.6 mm at 320 ms | 0.1663% | 8.024 m/s | 0 |
 
-No reattachment, invalid value, deep-solid liquid, outlet water, or new
-force/velocity peak occurs after the transition. The added volume decreases
-under refinement, but the event remains empirical and grid-dependent. It
-corrects only the known topology mismatch; residual cavity fragments and a
-central surface rise remain through 318 ms.
+No reattachment, invalid value, outlet water, or new force/velocity peak
+occurs after the transition. The reported L6/L7 deep-solid zero is now treated
+as an under-resolved false negative because the diagnostic threshold exceeds
+the resolved half-width of part of the ring section. The event remains
+empirical and grid-dependent. It corrects only the known topology mismatch;
+residual cavity fragments and a central surface rise remain through 318 ms.
 
 Conclusion: reject the original fixed-contact-line branch against the
-experiment. Retain the constrained L7 branch only as a disclosed hybrid
-scaffold. The next validation datum must be the measured detachment time and
-ring depth from high-speed video; no later jet timing should be interpreted
-before replacing the provisional 100 mm trigger.
+experiment and supersede the historical full-solid-fill implementation. Only
+the corrected thin-band form below may be retained as a disclosed hybrid
+scaffold. No later jet timing is independently predicted while the provisional
+100 mm trigger remains.
 
 ## 17 July quantitative event intake and literal-parameter preflight
 
@@ -197,7 +200,7 @@ At L7, the radial metal width has only `3.95` cells.
 
 | run | completion | max budget residual | max lab speed | min dt | cells | deep leakage | invalid | max coherent height |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| literal specimen L7 | 340 ms | 0.1123% | 9.607 m/s | 9.091e-6 s | 131,072 | 0 | 0 | 8.575 mm |
+| literal specimen L7 | 340 ms | 0.1123% | 9.607 m/s | 9.091e-6 s | 131,072 | unresolved false zero | 0 | 8.575 mm |
 
 The one-time empirical topology event occurs `59.702 ms` after first wetting,
 near the measured first-jet maxima, so event timing is not independently
@@ -208,5 +211,46 @@ The run therefore fails the quantitative morphology comparison despite clean
 health diagnostics.
 
 Conclusion: preserve the negative result and do not tune `75 deg` or water
-surface tension to two repeats. Parameter metadata must be resolved before a
-costly L8 check; L7 alone is too coarse to close the gate.
+surface tension to two repeats. The user has identified the workbook as the
+latest reference, so its literal dimensions, measured mass, and `105 mm`
+release height are now the operational inputs. The density inconsistency is a
+metadata warning rather than a blocker.
+
+## First-jet shape correction and L8 audit
+
+Validation date: 2026-07-17. Status: **empirical shell bug corrected; local
+L8 shape improvement accepted only as a morphology diagnostic**.
+
+The experiment reports a first jet with no clear upper/lower diameter
+difference, while the L7 native facets are top-wide and bottom-narrow. A new
+facet-profile tool measures radius every `0.25 mm` and reports upper/lower and
+maximum/base ratios together with the number of multiple central crossings.
+
+Disabling the empirical transition at L7 does not change the 62.5 ms profile,
+worsens the later imbalance, raises maximum speed to `16.023 m/s`, and raises
+budget residual to `0.1469%`. This route is rejected. Source inspection then
+found that the historical one-sided condition filled all full-solid cells.
+The project-authored event was corrected in isolation to
+`-1.25 Delta <= ring_levelset <= 1.25 Delta` and qcc-compiled without
+diagnostics. No external header or solver source is tracked.
+
+| route | grid | max budget residual | max lab speed | min dt | cells | deep solid | invalid | max coherent height |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| corrected shell band | L7 | 0.1123% | 9.615 m/s | 9.091e-6 s | 131,072 | 0 | 0 | 8.228 mm |
+| historical full fill | L8 | 0.0933% | 19.973 m/s | 7.353e-6 s | 524,288 | 1.107e-7 m3 | 0 | 8.597 mm |
+| corrected shell band | L8 | 0.0933% | 19.973 m/s | 7.353e-6 s | 524,288 | 0 | 0 | 8.295 mm |
+
+The corrected L7 shape is effectively unchanged. At 62.5 ms, corrected L8
+changes the upper/lower mean-radius ratio from the L7 value `1.060` to `0.962`
+and visibly straightens the central body. At 76 ms it has broad shoulders and
+11 layers with multiple central crossings; by 90 ms its upper/lower ratio is
+`1.231`. The improvement is therefore local, not a complete equal-diameter
+history. L8 also retains a pre-transition `19.973 m/s` contact-edge speed peak,
+about twice L7, and the coherent height remains an order of magnitude below
+the measured `63.90--68.37 mm`.
+
+Conclusion: adopt the thin shell band as a correctness repair, retain
+corrected L7 as the exploratory working branch, and use corrected L8 only to
+show resolution sensitivity of the early silhouette. The only next action is
+calibrated contour extraction from the raw 62.5 and 76 ms experimental frames
+before any physical parameter is changed.

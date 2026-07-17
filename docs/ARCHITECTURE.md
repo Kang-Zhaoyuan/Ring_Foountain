@@ -55,3 +55,11 @@ accounts for the added mobile water. This is an experiment-constrained
 topology scaffold, not a dynamic contact-line model. It must remain a separate
 branch until the trigger depth is measured and the operation is replaced by a
 validated wetting/detachment treatment.
+
+The transition's historical one-sided level-set condition filled the complete
+solid interior and is superseded. The only retained scaffold uses the true
+two-sided band `-1.25 Delta <= ring_levelset <= 1.25 Delta`; uninterrupted L7
+and L8 audits give zero deep-solid liquid. This correctness repair does not
+promote the scaffold to a physical wetting law. L8 locally straightens the
+first-jet silhouette near 62.5 ms but retains a doubled contact-edge speed
+peak, so corrected L7 remains the exploratory working resolution.

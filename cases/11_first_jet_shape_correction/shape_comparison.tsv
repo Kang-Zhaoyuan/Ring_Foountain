@@ -1,0 +1,10 @@
+route	grid	requested_relative_ms	jet_top_mm	max_to_base_ratio	upper_to_lower_ratio	multiple_crossing_layers	interpretation
+historical_full_fill	L7	62.5	6.18365	1.13952	1.06001	1	mushroom_bias
+shell_band	L7	62.5	6.18346	1.13930	1.05982	1	unchanged_by_shell_fix
+shell_band	L8	62.5	6.13803	1.20332	0.96233	4	straighter_mean_body_local_bulge_remains
+historical_full_fill	L7	76	7.65805	1.32862	1.12207	2	mushroom_bias
+shell_band	L7	76	7.66454	1.32490	1.12157	2	unchanged_by_shell_fix
+shell_band	L8	76	7.49475	2.78609	0.49770	11	metric_confounded_by_wide_shoulders
+historical_full_fill	L7	90	8.38132	1.34256	1.20409	1	mushroom_bias_persists
+shell_band	L7	90	8.38640	1.33743	1.20804	1	mushroom_bias_persists
+shell_band	L8	90	8.43130	3.13972	1.23070	13	multiple_interfaces_and_mushroom_bias

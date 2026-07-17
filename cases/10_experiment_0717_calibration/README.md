@@ -68,7 +68,7 @@ experimental observations. The old and experimental geometries differ, so
 the vertical discrepancy in this workflow plot is not treated as a calibrated
 model error.
 
-## Parameter consistency hold
+## Authoritative specimen parameters
 
 The spreadsheet labels `5.2 mm` and `12.6 mm` as inner and outer diameter,
 with thickness `5.02 mm` and measured mass `5.35 g`. Interpreted literally as
@@ -77,14 +77,20 @@ density is `10.302 g/cm3`; density `7.8 g/cm3` would instead give `4.051 g`.
 Interpreting the two entries as radii gives `2.575 g/cm3`, so that alternative
 does not resolve the mismatch.
 
-The existing CFD geometry (`Ri=2.5 mm`, `Ro=15 mm`, `h=4 mm`, mass
-`21.441 g`) therefore does not represent this workbook specimen. Its old L7
-result may be used only to test the new height-analysis workflow, not compared
-quantitatively with the six experimental heights.
+The user subsequently identified this workbook as the latest reference. The
+working specimen is therefore frozen as `Ri=2.6 mm`, `Ro=6.3 mm`,
+`h=5.02 mm`, measured mass `5.35 g`, and release height `105 mm`. The motion
+equation uses the measured mass directly. The inconsistent density inferred
+from a rectangular annulus remains a metadata warning; it is not used to
+replace the measured mass with the earlier `7.8 g/cm3` material value.
 
-The release-height cell reads `100+/-5 (105)`. A literal `105 mm` vacuum drop
-gives `1.4353 m/s`; nominal `100 mm` gives `1.4007 m/s`. The parenthetical
-meaning must be confirmed before freezing an impact-speed target.
+The existing CFD geometry (`Ri=2.5 mm`, `Ro=15 mm`, `h=4 mm`, mass
+`21.441 g`) does not represent this workbook specimen. Its old L7 result may
+be used only to test the height-analysis workflow, not compared quantitatively
+with the six experimental heights.
+
+The release-height cell reads `100+/-5 (105)`. The current operational value
+is the parenthetical `105 mm`, giving a vacuum impact speed of `1.4353 m/s`.
 
 ## Literal-parameter L7 preflight
 
@@ -108,7 +114,7 @@ The ignored evidence archive has 1,719 files in its relative manifest;
 
 | end / grid | max budget drift | max lab speed | min dt | cells | deep leakage | invalid |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 340 ms / L7 | 0.1123% | 9.607 m/s | 9.091e-6 s | 131,072 | 0 | 0 |
+| 340 ms / L7 | 0.1123% | 9.607 m/s | 9.091e-6 s | 131,072 | unresolved false zero | 0 |
 
 First wetting occurs at `146.333 ms`, with ring speed close to the provisional
 vacuum value. The empirical topology event occurs at `206.036 ms`, or
@@ -140,13 +146,15 @@ Review files:
 L7 resolves the `3.7 mm` radial metal width with only `3.95` cells. The stable
 negative result is therefore a preflight, not a grid-converged rejection of
 the physical model. It does reject treating this L7 output as quantitative
-agreement and gives no basis for contact-angle or surface-tension fitting.
+agreement and gives no basis for contact-angle or surface-tension fitting. A
+later L8 audit showed that the historical empirical event filled the complete
+solid interior; L7's `2.5 Delta` deep-leak threshold could not resolve that
+error. Case 11 supersedes the event with a two-sided thin band.
 
 ## Decision
 
-Accept the two repeats as the first quantitative jet-height and event-time
-targets. Do not tune surface tension, contact angle, or the empirical cavity
-transition to two repeats. Retain the completed literal-parameter L7 run as a
-stable negative preflight. Confirm the specimen dimensions/mass interpretation
-and the release-height notation before spending on the required L8 resolution
-check or calibrating the experimental image-height metric.
+Accept the two repeats and the literal workbook specimen parameters as the
+current quantitative reference. Do not tune surface tension, contact angle,
+or the empirical cavity transition to two repeats. Retain the completed L7 run
+as a stable negative preflight, and use the same frozen parameters for the L8
+resolution check and future experimental-image comparison.

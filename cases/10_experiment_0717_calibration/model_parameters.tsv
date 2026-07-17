@@ -3,16 +3,16 @@ frame_rate	2000	fps	user supplied
 frame_interval	0.5	ms	derived
 inner_diameter	5.2	mm	literal workbook header interpretation
 outer_diameter	12.6	mm	literal workbook header interpretation
-Ri	0.0026	m	provisional half inner diameter
-Ro	0.0063	m	provisional half outer diameter
+Ri	0.0026	m	current half inner diameter from latest workbook
+Ro	0.0063	m	current half outer diameter from latest workbook
 ring_thickness	0.00502	m	workbook measurement
 ring_mass	0.00535	kg	workbook measured mass; used directly in motion equation
-rectangular_annulus_volume	5.19332283335214e-7	m^3	derived from provisional geometry
+rectangular_annulus_volume	5.19332283335214e-7	m^3	derived from current rectangular geometry
 equivalent_density	10301.6896343159	kg/m^3	consistency diagnostic; not claimed material density
 nominal_material_density	7800	kg/m^3	prior user value; conflicts with mass and literal geometry
-release_height	0.105	m	provisional interpretation of 100+/-5 (105)
-vacuum_contact_time	0.146310381821476	s	provisional sqrt(2 H/g)
-vacuum_contact_speed	1.43530484566868	m/s	provisional sqrt(2 g H)
+release_height	0.105	m	current literal value from 100+/-5 (105)
+vacuum_contact_time	0.146310381821476	s	current sqrt(2 H/g)
+vacuum_contact_speed	1.43530484566868	m/s	current sqrt(2 g H)
 contact_angle	75	deg	uncalibrated; not fitted
 surface_tension	0.072	N/m	water value; not fitted
 empirical_lower_face_depth	0.100	m	prior provisional topology constraint
@@ -23,9 +23,9 @@ L7_cells_across_radial_metal	3.94666666666667	-	under-resolved warning
 L7_cells_across_thickness	5.35466666666667	-	under-resolved warning
 interface_interval	0.00025	s	four outputs per millisecond
 field_interval	0.001	s	two experimental frames per sampled CFD field
-Re_D	18048.6713733145	-	D=12.6 mm at provisional vacuum impact
-We_D	359.796465	-	D=12.6 mm at provisional vacuum impact
-Fr_D	4.08248290463863	-	D=12.6 mm at provisional vacuum impact
+Re_D	18048.6713733145	-	D=12.6 mm at current vacuum impact
+We_D	359.796465	-	D=12.6 mm at current vacuum impact
+Fr_D	4.08248290463863	-	D=12.6 mm at current vacuum impact
 Bo_D	21.5877879	-	D=12.6 mm
-Ca	0.0199347895231761	-	water properties at provisional vacuum impact
+Ca	0.0199347895231761	-	water properties at current vacuum impact
 Oh_D	0.00105095279270976	-	D=12.6 mm
