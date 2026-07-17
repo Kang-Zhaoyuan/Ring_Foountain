@@ -1,0 +1,7 @@
+repeat	event	experiment_time_ms	experiment_height_mm	old_l7_sample_time_ms	old_l7_all_water_top_mm	old_l7_coherent_top_mm	old_l7_detached_top_mm	note
+1	crown	55.0	8.95	55.5833333	4.34751012	4.34751012	nan	workflow_only_wrong_geometry
+1	first_jet	62.5	68.37	61.5833333	4.64581797	4.64581797	nan	workflow_only_wrong_geometry
+1	worthington	146.0	52.77	145.583333	17.24255303	7.24255303	17.24255303	workflow_only_wrong_geometry
+2	crown	33.0	9.90	33.5833333	1.48028407	1.48028407	nan	workflow_only_wrong_geometry
+2	first_jet	76.0	63.90	75.5833333	5.58988810	5.58988810	nan	workflow_only_wrong_geometry
+2	worthington	177.5	63.90	175.583333	29.16700105	7.16700105	29.16700105	workflow_only_wrong_geometry

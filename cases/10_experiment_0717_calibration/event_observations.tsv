@@ -1,0 +1,7 @@
+group	repeat	event	height_mm	absolute_frame	frames_after_contact	time_after_contact_ms
+1	1	crown	8.95	573	110	55.0
+1	1	first_jet	68.37	588	125	62.5
+1	1	worthington	52.77	755	292	146.0
+1	2	crown	9.90	277	66	33.0
+1	2	first_jet	63.90	363	152	76.0
+1	2	worthington	63.90	566	355	177.5

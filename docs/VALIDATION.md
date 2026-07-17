@@ -167,3 +167,46 @@ experiment. Retain the constrained L7 branch only as a disclosed hybrid
 scaffold. The next validation datum must be the measured detachment time and
 ring depth from high-speed video; no later jet timing should be interpreted
 before replacing the provisional 100 mm trigger.
+
+## 17 July quantitative event intake and literal-parameter preflight
+
+Validation date: 2026-07-17. Status: **two repeats accepted as calibration
+targets; provisional L7 is numerically stable but does not produce the
+measured first or Worthington jet height**.
+
+The read-only workbook SHA256 is
+`5f8fcf43438903477c13cbc39ed466ffc050df8f03e40e7014bbe050dc5cddf9`.
+Only two repeats in group 1 are populated. At `2000 fps`, observed crown,
+first-jet, and Worthington maxima occur respectively at `33--55`, `62.5--76`,
+and `146--177.5 ms` after water contact. Mean heights are `9.425`, `66.135`,
+and `58.335 mm`. These are human coherent-column heights, not highest-droplet
+positions.
+
+A four-neighbour main-pool connectivity detector was applied first to the
+frozen old L7 fields and then to a new provisional specimen run. It reports
+all water, connected water, detached water, and centerline-connected heights
+separately. In the old run, isolated samples raise the late raw maximum from
+about `7.2` to `29.2 mm`, confirming that raw VOF height is not the experimental
+metric.
+
+The new preflight interprets workbook `5.2/12.6 mm` as inner/outer diameters,
+uses measured mass `5.35 g` directly, and interprets `100+/-5 (105)` as
+`105 mm`. This implies an inconsistent rectangular-annulus density of
+`10.302 g/cm3`; it is recorded as an equivalent density, not a material claim.
+At L7, the radial metal width has only `3.95` cells.
+
+| run | completion | max budget residual | max lab speed | min dt | cells | deep leakage | invalid | max coherent height |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| literal specimen L7 | 340 ms | 0.1123% | 9.607 m/s | 9.091e-6 s | 131,072 | 0 | 0 | 8.575 mm |
+
+The one-time empirical topology event occurs `59.702 ms` after first wetting,
+near the measured first-jet maxima, so event timing is not independently
+predicted. At all six measurement times the computed coherent height is only
+`1.333--7.901 mm`. The global speed peak is in a full-fluid interface cell
+`72.2 mm` below the surface, not in an embedded cut cell or upward surface jet.
+The run therefore fails the quantitative morphology comparison despite clean
+health diagnostics.
+
+Conclusion: preserve the negative result and do not tune `75 deg` or water
+surface tension to two repeats. Parameter metadata must be resolved before a
+costly L8 check; L7 alone is too coarse to close the gate.

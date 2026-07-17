@@ -1,0 +1,4 @@
+event	height_mean_mm	height_sample_sd_mm	height_range_mm	time_mean_ms	time_sample_sd_ms	time_range_ms	n
+crown	9.425	0.6717514421	0.950	44.000	15.5563491861	22.000	2
+first_jet	66.135	3.1607673119	4.470	69.250	9.5459415460	13.500	2
+worthington	58.335	7.8700984746	11.130	161.750	22.2738636074	31.500	2

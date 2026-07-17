@@ -1,0 +1,11 @@
+quantity	value	unit	note
+native_peak_time	0.2105000000	s	motion diagnostics
+native_peak_time_after_wetting	64.1666667	ms	near first-jet observation times
+native_max_lab_speed	9.60738752	m/s	global native-grid maximum
+nearest_field_time	0.2100000000	s	1 ms sampled field
+sampled_max_lab_speed	7.75004	m/s	f>0.01 and cs>1e-6
+sampled_x_ring	0.0329997	m	33 mm above ring center
+sampled_radius	0.004	m	axisymmetric radial coordinate
+sampled_z_lab	-0.0721920941	m	72.2 mm below undisturbed surface
+sampled_f	0.768653	-	two-phase interface sample
+sampled_cs	1.0	-	full-fluid cell; not an embedded cut cell

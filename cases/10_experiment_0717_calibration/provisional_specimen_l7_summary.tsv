@@ -1,0 +1,2 @@
+run	grid	end_s	first_wetting_s	empirical_transition_s	empirical_relative_to_wetting_ms	empirical_added_water_mL	max_budget_residual	max_lab_speed_mps	min_dt_s	max_cells	invalid_values	deep_solid_liquid_m3	max_coherent_height_mm	max_coherent_time_after_contact_ms	result
+literal_diameter_measured_mass	L7	0.340	0.1463333333	0.2060357143	59.7023810	0.175525810	0.00112295106	9.60738752	9.09090909e-6	131072	0	0	8.57461591	106.666667	stable_no_experimental_scale_jet
