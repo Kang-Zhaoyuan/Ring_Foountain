@@ -1,0 +1,4 @@
+candidate	inner_pressure_focus	positive_flux_before_42ms	continuous_column	height_improvement	decision
+legacy_case15	present_but_insufficient	yes	broad_low_connected_rise	1.00x	baseline
+contact_driven_inner	unchanged	yes_unchanged	unchanged	1.00x	reject_no_effect
+instant_inner_bracket	unchanged	yes_unchanged	unchanged	1.00x	reject_no_effect

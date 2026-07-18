@@ -1,0 +1,4 @@
+run	time_ms	jet_detected	H_through_mm	H_PLIC_mm	jet_onset_ms	base_radius_mm	tip_radius_mm	column_length_mm	main_pool_connected	isolated_drop_included
+baseline_l7_80ms	52.5	1	6.717300	7.152196	2.0	4.6875	2.8125	50.0986	1	0
+contact_inner_l7_80ms	52.5	1	6.717300	7.152196	2.0	4.6875	2.8125	50.0986	1	0
+instant_inner_l7_80ms	52.5	1	6.717300	7.152196	2.0	4.6875	2.8125	50.0986	1	0

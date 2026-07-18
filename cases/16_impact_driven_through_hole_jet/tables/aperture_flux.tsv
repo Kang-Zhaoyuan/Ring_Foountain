@@ -1,0 +1,3 @@
+run	time_ms	station	Q_m3_s	mass_flow_kg_s	momentum_N	positive_Q_m3_s	negative_Q_m3_s	liquid_area_m2
+baseline_l7_80ms	52.5	midplane	1.77471147207e-4	0.177116205	0.233640668	1.77471147207e-4	0	1.38058270910e-4
+instant_inner_l7_80ms	52.5	midplane	1.77471147207e-4	0.177116205	0.233640668	1.77471147207e-4	0	1.38058270910e-4

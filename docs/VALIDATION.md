@@ -1,5 +1,20 @@
 # Validation record
 
+## Case 16 impact-driven through-hole jet
+
+Status: diagnostic integrity PASS; mechanism modification FAIL; height
+improvement FAIL; L7/L8 NOT RUN; visual comparison NOT IMPROVED.
+
+The L7 diagnostic regression reproduces Case 15 at 52.5 ms to much better than
+the required 0.1 mm tolerance (`6.71729999997 mm`). The PLIC tip is
+`7.152196 mm`, within one L7 cell of the frozen cell metric. A no-ring L6
+control has no detected jet; a closed disk has exactly zero aperture area and
+flux and never triggers the detector. All completed runs exit normally with
+no invalid values. Contact-driven and instant-inner ghost modes produce no
+change in PLIC/flux/pressure, so the factor-two/25%-error-reduction L8 gate is
+not met. Review images and failure evidence are tracked in
+`cases/16_impact_driven_through_hole_jet/`.
+
 This document is updated as each stage produces numerical evidence. An animation is presentation only; acceptance requires logs, conservation checks, solver diagnostics, and mesh or geometry convergence.
 
 ## Official `missing_metric`

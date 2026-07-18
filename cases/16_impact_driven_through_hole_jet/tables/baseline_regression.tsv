@@ -1,0 +1,4 @@
+case	status	center_height_52p5ms_mm	tolerance_mm	note
+baseline_l7_80ms	PASS	6.71729999997	0.1	reproduces Case 15 6.7173 mm
+no_ring_l6_5ms	PASS	0	NA	no spontaneous jet; no invalid values
+closed_disk_l7_52p5ms	PASS	NA	NA	zero mid-plane aperture area and flux; detector remains off

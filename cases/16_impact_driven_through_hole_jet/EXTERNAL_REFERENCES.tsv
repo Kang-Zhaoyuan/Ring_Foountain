@@ -1,0 +1,2 @@
+repository_url	commit_sha	license	inspected_files	relevant_algorithm	relevant_parameters	nondimensional_mapping	code_copied	adaptation_location	attribution_required	limitations	final_use
+https://basilisk.fr	586963ed3f4e8704f89b314b8d1f9e8a475a4065	GPL (read-only installed authority)	src/embed.h;src/contact.h;src/navier-stokes/centered.h;src/axi.h	AXI coordinates;embedded fractions;pressure meaning;boundary contact angle	NA	project solver already depends on local Basilisk	no	NA	yes	contact.h is not arbitrary EMBED contact-line proof	API and numerical-boundary audit

@@ -1,0 +1,5 @@
+timestamp_utc	category	command	exit_code	physical_time_s	message	resolution
+2026-07-18T00:00:00Z	compile	make build CASE=cases/16_impact_driven_through_hole_jet	2	NA	write_flux_station: 'i' undeclared	pass event iteration explicitly
+2026-07-18T00:00:00Z	postprocess	tools/render_review.sh	1	NA	case root resolved one directory too high	correct root traversal and rerun
+2026-07-18T00:00:00Z	postprocess	tools/mechanism.gp	1	NA	gnuplot string comparison used numeric column syntax	use strcol(3) and rerun
+2026-07-18T00:00:00Z	visual-audit	review image inspection	0	NA	ring thickness used 1.43 m; time label malformed; Q panel blank	correct SI scale, labels, and numeric station filter; regenerate all images

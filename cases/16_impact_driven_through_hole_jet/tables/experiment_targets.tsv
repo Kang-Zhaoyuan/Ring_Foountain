@@ -1,0 +1,9 @@
+time_ms	classification	target	height_mm	note
+0	time_origin	first contact	NA	frame 300
+17.5	morphology	shallow crown and open cavity	NA	frame 335
+30	morphology	thin centre column visible	NA	frame 360
+42	morphology	first-jet trajectory frame	NA	frame 384
+52.5	model-development-target	first through-hole jet	105.80	frame 405; open cavity
+65	known morphology comparison	persistent thin first jet	NA	frame 430
+77.5	known morphology comparison	persistent jet and narrowing cavity	NA	frame 455
+96	out of scope	cavity closure	NA	not the first-jet cause

@@ -4,6 +4,11 @@ Date: 2026-07-18
 
 ## Current state
 
+- Case 16 establishes that the 52.5 ms first jet is an impact-stage through-hole jet, distinct from the 96 ms cavity-collapse/Worthington stage. Its diagnostic-only L7 baseline exactly reproduces Case 15 `center_height=6.717300 mm`; frozen PLIC height is `7.152196 mm` versus `105.80 mm` experimentally.
+- Case 16 no-ring and closed-disk controls pass. Closed-disk mid-plane liquid area/flux are zero and the detector never reports a jet. Baseline peak budget residual is `0.7573%`, wetting source zero, minimum dt `6.011 us`, and invalid count zero.
+- Contact-triggered and instant-inner full-solid ghost-cell modes do not change the PLIC, aperture-flux, or pressure diagnostics; the latter files are byte-identical to baseline. The Case 15 state architecture couples early and late wetting, but this coupling is not supported as the primary height-deficit cause.
+- No Case 16 candidate passed the L8 entry gate, so L8 and pre-impact-gap sensitivity were not run. The next gate is a validated arbitrary-EMBED contact-line treatment and measurement of the inner lower-edge chamfer/radius; do not prioritise 96 ms closure or Case 17 yet.
+
 - The project remains under `/home/kqdx/basilisk_work/ring_fountain` in WSL2 Ubuntu. Basilisk is read-only at `/home/kqdx/basilisk/src`, and `/home/kqdx/basilisk/src/qcc` remains compilation authority.
 - Case 13 archives the project-created evidence from an independent CoMPhy Drop-Impact reproduction. The external clone is pinned at `9fd0db798ec5a05f8410886231bdfbe30fac051d`, and its isolated Basilisk is pinned at `v2026-01-13`; neither external source tree, Git history, executable, dump, environment, nor GPL-3.0 solver file is tracked here.
 - The independent minimum reproduction gate passed: unchanged default source compiled, identical L8 cases reproduced scalar logs and compared PLIC facets exactly, the We=20 control produced a later larger footprint, restart/snapshots were restored, and native VOF/footprint post-processing completed without invalid run values.
