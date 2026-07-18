@@ -1,0 +1,5 @@
+selection	time_s	time_after_contact_ms	x_ring_m	radius_m	z_lab_m	lab_speed_mps	f	cs	location_class
+all_mobile_water	0.198	60.75	0.0139997	0.012	-0.0364429246138	11.5435	0.0122111	1	full_fluid_interface
+embedded_cut_cell	0.199	61.75	-0.0020003	0.00699999	-0.0531685312382	2.4911	1	0.98821	embedded_cut_cell
+full_fluid_interface	0.198	60.75	0.0139997	0.012	-0.0364429246138	11.5435	0.0122111	1	full_fluid_interface
+full_liquid	0.199	61.75	0.0219997	0.012	-0.0291685312382	3.84992	1	1	full_liquid

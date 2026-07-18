@@ -104,7 +104,12 @@ At base level 7, 75 and 90 deg facets nearly coincide at 4, 8, and 12 ms. This s
 
 The tracked tables and review images are in `cases/07_exploratory_constant_speed_entry/`. The original 176-file evidence set remains in `runs/20260716_113000_07_exploratory_constant_speed_entry/`. The 932 follow-up archive files before the manifest are retained in `runs/20260716_121500_07_extended_entry_followup/`; the archive excludes all private source, executable, and external header content and is verified by a relative SHA256 manifest.
 
-Conclusion: accept only the base no-slip uniform L7 branch for constrained, manually reviewed morphology. Reject longer L8 runs, free-slip as an uncalibrated optimization, fabricated slip/contact laws, and all quantitative contact-line, cavity, speed, or jet claims. The only next action is manual classification of the existing L7 50--120 ms sequence against laboratory chronology before selecting a denser L7 interval.
+Conclusion at that stage: accept only the base no-slip uniform L7 branch for
+constrained, manually reviewed morphology. Reject longer L8 runs, free-slip as
+an uncalibrated optimization, fabricated slip/contact laws, and all
+quantitative contact-line, cavity, speed, or jet claims. The then-next action
+was manual classification of the existing L7 50--120 ms sequence against
+laboratory chronology before selecting a denser L7 interval.
 
 ## Exploratory free-fall ring entry
 
@@ -249,8 +254,67 @@ history. L8 also retains a pre-transition `19.973 m/s` contact-edge speed peak,
 about twice L7, and the coherent height remains an order of magnitude below
 the measured `63.90--68.37 mm`.
 
-Conclusion: adopt the thin shell band as a correctness repair, retain
-corrected L7 as the exploratory working branch, and use corrected L8 only to
-show resolution sensitivity of the early silhouette. The only next action is
-calibrated contour extraction from the raw 62.5 and 76 ms experimental frames
-before any physical parameter is changed.
+Conclusion at that stage: adopt the thin shell band as a correctness repair,
+retain corrected L7 as the exploratory working branch, and use corrected L8
+only to show resolution sensitivity of the early silhouette. The then-next
+action was calibrated contour extraction from the raw 62.5 and 76 ms
+experimental frames before any physical parameter was changed.
+
+## 26.15 g laboratory-video trajectory and morphology audit
+
+Validation date: 2026-07-18. Status: **trajectory reproduced as a prescribed
+kinematic constraint; first-jet, hourglass-cavity, and later-jet morphology
+rejected at L7 and in the short L8 check**.
+
+The separate video specimen has `Ri=5.05 mm`, `Ro=20.07 mm`, thickness
+`2.86 mm`, and measured mass `26.15 g`. The read-only source-video SHA256 is
+`c5982c4ee7c2332d9798de1cc61a57400bb9acb694d9bfbb5473dba189ab8c07`.
+Physical timing uses the user-supplied original `2000 fps` and contact frame
+300; the encoded `30 fps` is playback only. No video or decoded frame is
+tracked.
+
+Frames 103 and 155 independently give impact speeds `1.34772` and
+`1.34338 m/s`. Their mean `1.34555 m/s` corresponds to a vacuum release
+height of `92.279 mm`. The original force-feedback L7 branch reproduces this
+pre-contact fall but over-predicts ring depth by `23.35` and `31.79 mm` at
+frames 384 and 405, then accelerates after entry. It is rejected.
+
+A continuous exponential post-contact trajectory fitted only to ring depths
+at frames 384 and 405 was then prescribed to isolate fluid morphology. It
+uses terminal speed `0.720415 m/s` and decay rate `76.9112 1/s`, and reproduces
+the two fitted depths within `0.0042 mm`. Fluid force is diagnostic only, so
+this route is not predictive free fall.
+
+Water geometry was not fitted. Frames 335, 360, 430, 455, 520, 550, and 620
+were held out and show the sequence from crown and open cavity through a thin
+first jet, cavity taper/separation, and a later narrow jet. The `5 deg`
+depth-direction tilt and left bend are acknowledged three-dimensional effects
+outside an axisymmetric model.
+
+| grid | cells through thickness | common-window budget drift | max lab speed | min dt | cells | deep solid | invalid |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| L7 | 3.05 | 0.2085% | 5.387 m/s | 9.091e-6 s | 131,072 | 0 | 0 |
+| L8 | 6.10 | 0.2542% | 18.645 m/s | 6.250e-6 s | 524,288 | 0 | 0 |
+
+Both runs completed normally with final dumps and no `nan`, `inf`, `SIGFPE`,
+segmentation fault, outlet water, or deep-solid liquid. The L8 saved-field
+peak is `11.5435 m/s` in a full-fluid interface sample at `z=-36.44 mm`, not
+in an upward free-surface jet. Refinement therefore smooths part of the cavity
+wall while amplifying the known local-speed warning.
+
+At frame 405 (`52.5 ms`), the experiment has a thin near-equal-diameter
+`105.80 mm` first jet with a crown. Connected rise is only `1.436 mm` at L7
+and `0.392 mm` at L8. At frame 492, the experiment has a closed hourglass air
+shape while the first jet persists; L7 instead has paired corrugated cavity
+walls extending toward the ring and a broad `10.299 mm` pedestal. The
+empirical trigger depth was derived from this frame, so its timing cannot be
+claimed as prediction. At frames 520--620, the experiment has a separated
+ring, mostly flat surrounding surface, and a thin later jet; L7 retains
+fragmented cavity remnants and a broad `12.210--17.188 mm` rise.
+
+Conclusion: accept the prescribed path only as a kinematic calibration and
+L8 only as a resolution-sensitivity diagnostic. Reject both grids for the
+observed first jet, hourglass closure, and later jet. Do not tune contact angle
+or surface tension to these frames. The next gate is a project-owned,
+license-clear fixed-embed dynamic wetting/detachment closure validated first
+against the held-out cavity topology.

@@ -63,3 +63,25 @@ and L8 audits give zero deep-solid liquid. This correctness repair does not
 promote the scaffold to a physical wetting law. L8 locally straightens the
 first-jet silhouette near 62.5 ms but retains a doubled contact-edge speed
 peak, so corrected L7 remains the exploratory working resolution.
+
+The 26.15 g video audit adds a separate prescribed-trajectory mode to the
+isolated fixed-ring frame. Pre-contact motion is ballistic; post-contact speed
+is a continuous exponential fit to measured ring positions. This mode is
+accepted only to remove trajectory error from a morphology test. It does not
+replace the force-feedback model, validate hydrodynamic force, or predict a
+new release condition.
+
+The audit rejects the current fluid morphology more strongly than the earlier
+height-only comparisons. L7 and short L8 miss a thin first jet already in the
+30 ms holdout frame. L8 smooths the attached cavity walls but raises the
+maximum laboratory speed from `5.39` to `18.65 m/s` over the common window,
+and the speed peak remains below the free surface. L7 also fails the held-out
+hourglass closure and later narrow-jet sequence, retaining corrugated cavity
+fragments and a broad central pedestal instead.
+
+Consequently, neither finer uniform resolution nor further static-angle or
+surface-tension adjustment is the next architecture step. The empirical
+one-time shell band remains a disclosed scaffold only. The next isolated
+branch must be project-owned and license-clear, implement dynamic wetting and
+gas-cavity detachment on the fixed embedded ring, and pass the video holdout
+topology before force feedback or new release heights are revisited.

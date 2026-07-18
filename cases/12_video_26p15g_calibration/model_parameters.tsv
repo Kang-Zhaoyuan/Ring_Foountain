@@ -1,0 +1,25 @@
+parameter	value	unit	status_or_note
+Ri	0.00505	m	video title inner radius
+Ro	0.02007	m	video title outer radius
+ring_thickness	0.00286	m	video title thickness
+ring_mass	0.02615	kg	video title measured mass used directly
+drop_clearance	0.0922785845162	m	calibrated only from pre_contact trajectory
+motion_mode	video	-	prescribed trajectory fluid force diagnostic only
+trajectory_impact_speed	1.34555038115	m/s	mean from frames 103 and 155
+trajectory_decay_rate	76.9112141855	1/s	continuous exponential fit to frames 384 and 405
+trajectory_terminal_speed	0.720414774329	m/s	continuous exponential fit to frames 384 and 405
+contact_angle	75	deg	uncalibrated inherited assumption
+surface_tension	0.072	N/m	water value not fitted
+empirical_lower_face_depth	0.0772827836437	m	selected trajectory evaluated at closure frame 492
+domain_axial	0.960	m	open accelerating window not literal tank
+domain_radial	0.120	m	open axisymmetric radius sufficient for early crown
+radial_level	7,8	-	L7 full chronology and L8 short first_jet resolution check
+Delta	0.0009375,0.00046875	m	uniform L7,L8 grids
+cells_across_radial_metal	16.0213333333,32.0426666667	-	Ro minus Ri over Delta for L7,L8
+cells_across_thickness	3.05066666667,6.10133333333	-	ring thickness over Delta for L7,L8
+run_end	0.300,0.200	s	L7 covers 162.8 ms after contact; L8 covers 62.75 ms
+interface_interval	0.00025	s	twice source camera temporal resolution
+field_interval	0.001	s	every two source frames
+fit_frames	103,155,384,405	frame	ring trajectory only; water morphology was not fitted
+empirical_trigger_frame	492	frame	depth trigger only; closure timing is not an independent prediction
+morphology_holdout_frames	335,360,430,455,520,550,620	frame	selected before morphology comparison and not used for parameters

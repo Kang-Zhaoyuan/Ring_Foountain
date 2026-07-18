@@ -1,0 +1,24 @@
+quantity	value	unit	derivation_or_note
+source_capture_rate	2000	fps	user supplied original high_speed rate
+physical_frame_interval	0.5	ms	one over source capture rate
+contact_frame	300	frame	user classification
+impact_speed_from_frame_103	1.34772412437	m/s	ballistic back_extrapolation with g=9.81
+impact_speed_from_frame_155	1.34337663793	m/s	ballistic back_extrapolation with g=9.81
+impact_speed_mean	1.34555038115	m/s	mean of independent labels
+impact_speed_spread	0.00434748643445	m/s	maximum minus minimum
+equivalent_vacuum_release_height	0.0922785845162	m	mean impact speed squared over 2g
+equivalent_vacuum_contact_time	0.137161098996	s	impact speed over g
+post_impact_constant_accel_v0	1.04141333333	m/s	two_point descriptive fit to frames 384 and 405
+post_impact_constant_accel	-6.43464852608	m/s2	two_point descriptive fit not a force law
+closure_depth_constant_accel	0.0703248195918	m	descriptive quadratic fit evaluated at frame 492
+trajectory_decay_rate	76.9112141855	1/s	continuous exponential velocity fit to frames 384 and 405
+trajectory_terminal_speed	0.720414774329	m/s	continuous exponential velocity fit to frames 384 and 405
+closure_depth_exponential	0.0772827836437	m	selected trajectory fit evaluated at frame 492
+ring_volume	3.39004508134e-06	m3	pi times Ro squared minus Ri squared times thickness
+equivalent_density	7713.76172663	kg/m3	measured mass over rectangular annulus volume
+Re_D	53902.3715147	-	D=40.14 mm U=impact_speed_mean
+We_D	1007.33828523	-	D=40.14 mm U=impact_speed_mean
+Fr_D	2.14425670036	-	D=40.14 mm U=impact_speed_mean
+Bo_D	219.089613159	-	D=40.14 mm
+Ca	0.0186881997382	-	water properties at impact_speed_mean
+Oh_D	0.000588816263588	-	D=40.14 mm

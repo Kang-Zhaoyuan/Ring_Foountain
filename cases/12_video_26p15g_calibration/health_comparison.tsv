@@ -1,0 +1,3 @@
+run	grid	Delta_m	cells_across_thickness	comparison_end_s	comparison_after_contact_ms	initial_water_m3	max_relative_budget_residual	max_ghost_liquid_m3	max_deep_solid_liquid_m3	max_frame_speed_mps	max_lab_speed_mps	min_dt_s	max_cells	invalid_values	process_end_s	final_dump	exit_status
+video_trajectory_l7	7	0.0009375	3.05066666667	0.200	62.8333333	0.00933240377351	0.00208474747645	2.72272905427e-06	0	6.10809037323	5.38702638481	9.09090909091e-06	131072	0	0.300	yes	0
+video_trajectory_l8	8	0.00046875	6.10133333333	0.200	62.75	0.00933240377351	0.00254215478536	1.69967903876e-06	0	19.3707780386	18.6453986357	6.25000000001e-06	524288	0	0.200	yes	0

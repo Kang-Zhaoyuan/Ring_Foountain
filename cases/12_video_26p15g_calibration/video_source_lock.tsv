@@ -1,0 +1,2 @@
+artifact	path	size_bytes	mtime_local	sha256	codec	width_px	height_px	encoded_fps	frames	duration_s	status
+laboratory_video	E:\Ring_Inner_r5.05mm_Ring_outter_R20.07mm_Ring_Thickness_2.86mm_Ring_mass_26.15g_C001H001S0001.mp4	153698510	2026-07-17T21:16:29.6004544+08:00	c5982c4ee7c2332d9798de1cc61a57400bb9acb694d9bfbb5473dba189ab8c07	h264	1280	1024	30	660	22	read_only_not_copied
