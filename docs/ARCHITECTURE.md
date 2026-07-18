@@ -81,7 +81,10 @@ fragments and a broad central pedestal instead.
 
 Consequently, neither finer uniform resolution nor further static-angle or
 surface-tension adjustment is the next architecture step. The empirical
-one-time shell band remains a disclosed scaffold only. The next isolated
-branch must be project-owned and license-clear, implement dynamic wetting and
-gas-cavity detachment on the fixed embedded ring, and pass the video holdout
-topology before force feedback or new release heights are revisited.
+one-time shell band remains a disclosed scaffold only. Case 15 now supplies
+the first project-owned, license-clear dynamic-wetting branch on the fixed
+embedded ring. Its physical-arclength front writes only full-solid ghost cells
+and produces delayed detachment without mobile-liquid injection. The remaining
+architecture gate is a pressure/geometry-aware gas-neck closure that improves
+the video holdout jet and post-detachment topology before force feedback or new
+release heights are revisited.

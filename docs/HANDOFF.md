@@ -15,6 +15,10 @@ Date: 2026-07-18
 - The unchanged plain Bursting-Bubble solver's minimum gate passes. Identical L8 cases have byte-identical 678-row logs, exact dump-derived metrics, and exact main-body PLIC at four common times; an Oh control delays the frozen jet event from `t=0.58` to `0.60`; L10 completes to `t=0.7` without invalid values.
 - The Bursting-Bubble scientific gate is partial. L8 versus L10 jet onset shifts by `-0.07`, connected height at `t=0.60` changes about `253%`, and the local speed is non-monotone. L11 is estimated at about 86 minutes and was not started because it crosses the explicit 60-minute gate; no grid-convergence claim is made.
 - In every audited Bursting-Bubble solver variant, `Bond` selects a precomputed initial-shape file and no gravity term enters momentum. Paper drill-solver results, plain-solver results, and Ring Fountain physics must remain separate.
+- Case 15 starts the project-owned ring-development branch. It uses the case-12 26.15 g geometry and prescribed path, a physical-arclength wetting front, filtered two-phase AXI+EMBED, and the case-14 connected-main-liquid measurement pattern. No external GPL solver source is copied.
+- The wetting state writes only full-solid ghost cells; physical cut-cell VOF is unchanged. In the isolated verifier, L6 2 ms, L7 6 ms, and L7 110 ms runs all compile cleanly, exit normally, contain no invalid values, and report exactly zero mobile-liquid source. The WSL `/home/kqdx/basilisk/src/qcc` authority rerun remains required before merge.
+- The L7 110 ms run completes in 283.4 s. Its wetting front reaches the trailing face at 96 ms, full wetting occurs at 101 ms, the interface is last within one cell of the ring at 102.5 ms, and it is over three cells away at 103 ms. Maximum absolute volume-budget residual is `0.9592%`; maximum speed is `18.146 m/s`.
+- This is a functional delayed-detachment result, not an experimental PASS. At 52.5 ms the connected center rise is `6.717 mm` versus the measured `105.80 mm`, and post-detachment PLIC retains fragmented cavity remnants.
 - The general fixed embedded VOF contact-line gate remains failed. The Tavares header is still unlicensed evaluation material outside the repository; no external contact-line source is tracked. The newly tracked laboratory frames are owner-contributed experimental evidence, not solver code.
 - Root `requirements.txt` records that core Ring Fountain Python analysis tools use only the standard library. It also freezes the verified Python/system-tool versions and Basilisk Darcs weak hash; case 13 keeps its optional NumPy/Matplotlib plotter dependencies in a case-local lock, and the unlicensed external contact header remains intentionally unavailable through pip or this repository.
 - The earlier ring uses user-confirmed density `7800 kg/m^3`, dimensions `Ri=2.5 mm`, `Ro=15 mm`, `h=4 mm`, and derived mass `21.441 g`. The 17 July workbook describes a different specimen and must not be mixed with it.
@@ -70,7 +74,7 @@ Date: 2026-07-18
 - Ignored numerical evidence archive: `runs/20260716_173500_08_exploratory_freefall_entry/`. It contains complete diagnostics, interfaces, field samples, dumps, and rendering evidence but no private source, external header, or executable.
 - The final L7 run directory is about 850 MiB and contains 1,346 files before archive integration. Its service result is success with exit status 0.
 - Complete ignored case-12 evidence is in `runs/20260717_213534_12_video_26p15g_calibration/` (three uninterrupted runs, about 3.4 GiB, dense interfaces, sampled fields, final dumps, and private local review sheets). Its 4,055-entry relative manifest verifies and has SHA256 `720a31ba3396e4ce6adee754bfaca7ad0ce7b0bd4c7b37851db9fa26d8429ebb`. The archive itself contains no solver source, executable, external header, raw video, or standalone decoded source frame; the newly selected frames live only in the tracked case directory.
-- Git is writable. The experimental-data intake is committed locally as `09374ba`, the shape-correction round as `12b4302`, and the case-12 video audit as `36a5e3f`. Push remains manual by project rule and user choice.
+- Git is writable. The experimental-data intake is committed locally as `09374ba`, the shape-correction round as `12b4302`, and the case-12 video audit as `36a5e3f`. Case 15 is on local branch `feat/case15-dynamic-wetting` and is committed in independently reviewable rounds. Push remains manual by project rule and user choice.
 
 ## Model limits
 
@@ -88,7 +92,11 @@ Date: 2026-07-18
 
 ## Next gate
 
-The only next action is to develop a project-owned, license-clear dynamic
-wetting/detachment closure for the fixed embedded ring and validate it first
-against the held-out cavity topology. Do not change contact angle, surface
-tension, or the empirical trigger to force agreement with the video.
+Case 15 is now implemented through the first complete L7 entry calculation.
+Keep the trusted case-12 geometry, prescribed trajectory and fluid properties
+fixed. The next coding action is a pressure/geometry-aware gas-neck closure
+that replaces the simultaneous trailing-face release while preserving the
+source-free full-solid ghost-cell rule and the existing diagnostics. Compare
+that revision at the already selected 52.5, 96, 103 and 109.5 ms times, then
+run one L8 sensitivity calculation if the L7 topology improves. Do not return
+to broad external reproduction or begin a parameter sweep.

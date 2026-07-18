@@ -1,0 +1,4 @@
+input	level	cells	solved_time_s	last_diagnostic_s	wet_shell_final	max_abs_budget_residual_pct	max_speed_m_per_s	max_connected_height_mm	connected_height_52p5ms_mm	full_wet_time_ms	last_interface_near_ring_ms	first_interface_over_3_cells_from_ring_ms	wetting_source_m3	invalid_values	solver_wall_s
+smoke.params	6	32768	0.002	0.002	0.40625	0.0222587	1.761405	1.642813	NA	NA	NA	NA	0	0	NA
+default.params	7	131072	0.006	0.006	0.46875	0.0609768	2.628935	2.489600	NA	NA	NA	NA	0	0	NA
+entry_110ms.params	7	131072	0.110	0.1095	1	0.9592024	18.146148	17.434882	6.717300	101.0	102.5	103.0	0	0	283.4
