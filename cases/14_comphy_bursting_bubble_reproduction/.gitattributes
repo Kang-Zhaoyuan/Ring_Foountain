@@ -1,0 +1,5 @@
+# Preserve captured evidence byte-for-byte and do not normalize facet spacing.
+logs/** -whitespace
+figures/*.dat -whitespace
+tables/*.tsv -whitespace
+tables/*.sha256 -whitespace

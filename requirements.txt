@@ -3,8 +3,8 @@
 # Python >= 3.10 is required; the current workspace was verified with
 # Python 3.14.4. Core Ring Fountain Python tools use only the standard library,
 # so there are intentionally no project-wide PyPI packages below. The archived
-# case-13 Drop-Impact audit plotter has an isolated, optional dependency lock at
-# cases/13_comphy_drop_impact_reproduction/tools/requirements.txt; it is not
+# case-13 Drop-Impact and case-14 Bursting-Bubble audit plotters have isolated,
+# optional dependency locks in their respective tools directories; they are not
 # needed by the ring solver or to inspect the tracked evidence. On PEP 668 distributions,
 # validate/install this file inside a virtual environment:
 #

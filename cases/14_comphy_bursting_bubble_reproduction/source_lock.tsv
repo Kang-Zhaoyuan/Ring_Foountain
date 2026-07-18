@@ -1,0 +1,12 @@
+artifact	source	ref_or_version	sha256_or_commit	path	note
+Bursting-Bubble	https://github.com/comphy-lab/Bursting-Bubble.git	fb6090bf287afa5bd8c238272a95df27b9bcec4d	fb6090bf287afa5bd8c238272a95df27b9bcec4d	upstream	detached HEAD; tracked diff clean
+plain solver	Bursting-Bubble repository	fb6090bf287afa5bd8c238272a95df27b9bcec4d	5d0f9ea8f2d125e9dca5d65a24031373f30f660033fb6d265d50e42e5771afd5	upstream/simulationCases/burstingBubble.c	unchanged source used for every local solve
+default parameters	Bursting-Bubble repository	fb6090bf287afa5bd8c238272a95df27b9bcec4d	809aaefb924021898726234d1fc163ede4bd2f43c7101178613e9e2cc74b0805	upstream/default.params	unchanged; report params are copies
+Basilisk installer	https://raw.githubusercontent.com/comphy-lab/basilisk-C/main/reset_install_basilisk-ref-locked.sh	v2026-01-13	72bb2460abe9701a4f233dc4261283eea2b4f1fd543143f5137197aa3593e9aa	upstream/reset_install_basilisk-ref-locked.sh	downloaded, hashed, read before execution
+Basilisk qcc	https://github.com/comphy-lab/basilisk-C	v2026-01-13	a44e1d1f5598b947edb1d531bbd4cc7a419cac3cd60bc10f74faecde8038315c	upstream/basilisk/src/qcc	isolated install
+Basilisk lock patch	comphy-lab/basilisk-C release asset	v2026-01-13	787caa11aefe3000a7887c246b053a7a3fbedea6b3dbfa2063febbc0302bf06c	upstream/basilisk/.comphy-patches/2026-01-13-mpi-tree-dump-header-fix.patch	listed as applied in .comphy-lock
+SingularJets capsule	Bursting-Bubble repository	eea44b8c779965a9bbbce7f58e5b9fdebc69f079	d78f727130ce967bccc2295317be740b7c35b52aec1517836fe1e8aaf1244733	report/capsule_work/SHA256SUMS	211 payload entries all passed before generation
+capsule simulation bundle	capsule provenance	e35ebdc3c0f8dfc60d45a96eae426b38b75f22b1	bundle verified complete	report/capsule_work/provenance/simulation-source.bundle	drill solver provenance; not the local plain solver
+uv release	https://github.com/astral-sh/uv/releases/tag/0.11.29	0.11.29	04f8b82f5d47f0512dcd32c67a4a6f16a0ea27c81537c338fd0ad6b23cebe829	report/logs/uv-0.11.29-x86_64-unknown-linux-gnu.tar.gz	official release checksum verified before extraction
+uv binary	uv release archive	0.11.29	4f26786f798cce6e9f467fe917d4305b9600ef8bf14994aa016fbb32523e5ca5	report/tools/uv-0.11.29/uv	isolated user-level tool
+capsule Python	uv managed CPython	3.12.13	9544d2a29138833e6177d45dbc57468d37710b5080c901fbb579d53f251cdd6f	/home/kqdx/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/bin/python3.12	locked capsule requires 3.12.x

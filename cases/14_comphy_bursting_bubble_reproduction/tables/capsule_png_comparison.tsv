@@ -1,0 +1,12 @@
+path	shape	mean_abs_8bit	rmse_8bit	max_abs_8bit	pixel_exact_fraction
+data-Oh-0.02297/gridconv_Oh0.02297_L13-L14.png	3378x4098x4	0	0	0	1
+data-Oh-0.03/gridconv3_Oh0.03_L13-L14-L15.png	3378x4098x4	0	0	0	1
+facet-collapse-figure3/fig3_Oh0.03_collapse.png	2070x2025x4	0	0	0	1
+fig2_flux_scalings.png	768x2029x4	0	0	0	1
+fig2_v2.png	786x2025x4	3.00022869	23.9737498	255	0.967811391
+fig2a_streamlines.png	(924, 996, 4)->(929, 996, 4)	NA	NA	NA	0
+fig2a_streamlines_frames/fig2a_streamlines_snapshot_0.492500.png	390x501x4	0.247373202	6.87155401	254	0.988126311
+fig2a_streamlines_frames/fig2a_streamlines_snapshot_0.494219.png	390x501x4	0.336809714	8.04596764	254	0.988950305
+fig2a_streamlines_frames/fig2a_streamlines_snapshot_0.496719.png	390x501x4	0.409640974	8.93817161	254	0.991212447
+fig2a_streamlines_frames/fig2a_streamlines_snapshot_0.499844.png	390x501x4	0.368354317	8.45425329	254	0.991893137
+sketch_paper_worthington.png	868x1073x4	0	0	0	1

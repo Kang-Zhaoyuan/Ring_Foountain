@@ -1,0 +1,59 @@
+Downloading cpython-3.12.13-linux-x86_64-gnu (download) (32.6MiB)
+ Downloaded cpython-3.12.13-linux-x86_64-gnu (download)
+Using CPython 3.12.13
+Creating virtual environment at: .venv
+Downloading fonttools (4.8MiB)
+Downloading pygments (1.2MiB)
+Downloading kiwisolver (1.4MiB)
+Downloading pillow (6.6MiB)
+Downloading matplotlib (9.6MiB)
+Downloading scipy (33.6MiB)
+Downloading numpy (15.9MiB)
+ Downloaded pygments
+ Downloaded kiwisolver
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded matplotlib
+ Downloaded numpy
+ Downloaded scipy
+Prepared 16 packages in 23.23s
+Installed 16 packages in 137ms
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + fonttools==4.63.0
+ + iniconfig==2.3.0
+ + kiwisolver==1.5.0
+ + matplotlib==3.11.0
+ + numpy==2.4.6
+ + packaging==26.2
+ + pillow==12.3.0
+ + pluggy==1.6.0
+ + pygments==2.20.0
+ + pyparsing==3.3.2
+ + pytest==9.0.2
+ + python-dateutil==2.9.0.post0
+ + scipy==1.17.1
+ + six==1.17.0
+	Command being timed: "../tools/uv-0.11.29/uv sync --frozen"
+	User time (seconds): 2.92
+	System time (seconds): 5.09
+	Percent of CPU this job got: 26%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 57548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 16506
+	Voluntary context switches: 52094
+	Involuntary context switches: 65
+	Swaps: 0
+	File system inputs: 2872
+	File system outputs: 720568
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

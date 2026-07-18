@@ -1,0 +1,39 @@
+migration_validation_utc=2026-07-18T10:39:38Z
+
+[make env-check]
+./scripts/env_check.sh
+/home/kqdx/basilisk_work/ring_fountain
+Linux LAPTOP-F30LNG9F 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+Ubuntu
+kqdx
+git version 2.53.0
+Kang-Zhaoyuan
+kangzhaoyuan@163.com
+main
+/home/kqdx/basilisk/src/qcc
+/home/kqdx/basilisk/src/qcc
+/usr/bin/bwrap
+environment: PASS
+env_check_exit=0
+
+[migrated tool statuses]
+migrated_analyze_results.status=0
+migrated_audit_compile_isolated.status=0
+migrated_audit_compile_ring_qcc.status=0
+migrated_audit_run_isolated.status=0
+migrated_audit_run_ring_qcc.status=0
+
+[regeneration identity]
+summary_tables_and_figures_byte_identical=YES
+
+[utf8 and markdown links]
+utf8_bad=0
+relative_links_checked=5
+broken_links=0
+text_checks_exit=0
+
+[excluded artifact scan]
+excluded_artifacts_found=0
+
+[git diff check]
+git_diff_check_exit=0

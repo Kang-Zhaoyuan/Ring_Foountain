@@ -1,0 +1,3 @@
+case	Oh	jet_time	H_t0.60	H_t0.69	first_liquid_component_split	max_KE_snapshot	max_speed_snapshot	interpretation
+2808	0.01	0.580000	0.386204788	0.720522385	0.640000	5.37060881	151.353412	higher Oh delays and damps the early jet; L8 functional response only
+2820	0.02	0.600000	0.107571774	0.623062177	NONE_BY_0.69	5.07724301	112.676127	higher Oh delays and damps the early jet; L8 functional response only

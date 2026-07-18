@@ -1,0 +1,52 @@
+Parameter file: default.params
+Creating case directory: simulationCases/1000
+
+=========================================
+Bursting Bubble Simulation (Newtonian)
+=========================================
+Case Number: 1000
+Case Directory: simulationCases/1000
+Parameter File: default.params
+
+Physical Parameters:
+  Oh=1e-2, Bond=1e-3
+  MAXlevel=12, tmax=1.5, zWall=4.0
+
+Stage: Both (Stage 1 + Stage 2)
+Parallelization: Serial
+
+Working directory: /home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/simulationCases/1000
+Copied source file to case directory
+
+=========================================
+Stage 1: Generate Initial Condition
+=========================================
+Compiling for serial execution...
+Compiler: qcc
+Flags: -O2 -Wall -disable-dimensions -I../../src-local  
+Compilation successful: burstingBubble
+
+Compile-only mode: Stopping here
+	Command being timed: "./runSimulation.sh --verbose --compile-only default.params"
+	User time (seconds): 14.09
+	System time (seconds): 2.17
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.94
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 547316
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 280892
+	Voluntary context switches: 2591
+	Involuntary context switches: 144
+	Swaps: 0
+	File system inputs: 48
+	File system outputs: 13112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

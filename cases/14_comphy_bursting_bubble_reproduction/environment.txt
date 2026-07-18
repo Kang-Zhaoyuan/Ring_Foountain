@@ -1,0 +1,122 @@
+Captured: 2026-07-18T17:30:06+08:00
+Timezone: Asia/Shanghai
+
+$ date
+Sat Jul 18 17:30:07 CST 2026
+
+$ uname -a
+Linux LAPTOP-F30LNG9F 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+
+$ wsl.exe --version
+WSL Hr,g: 2.7.10.0
+Q8hHr,g: 6.18.33.2-2
+WSLg Hr,g: 1.0.73.2
+MSRDC Hr,g: 1.2.6676
+Direct3D Hr,g: 1.611.1-81528511
+DXCore Hr,g: 10.0.26100.1-240331-1435.ge-release
+Windows: 10.0.26200.8875
+
+$ nproc
+16
+
+$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.3Gi       9.7Gi        77Mi       1.8Gi        11Gi
+Swap:          4.0Gi          0B       4.0Gi
+
+$ df -h .
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   25G  932G   3% /
+
+$ gcc --version
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+$ git --version
+git version 2.53.0
+
+$ bash --version
+GNU bash, version 5.3.9(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2025 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+$ python3 --version
+Python 3.14.4
+
+$ uv --version
+uv not found
+
+$ command -v mpicc/mpirun
+mpicc not found
+/usr/local/bin/mpirun
+
+$ initial BASILISK
+/home/kqdx/basilisk/src
+
+$ initial qcc
+/home/kqdx/basilisk/src/qcc
+6dc8de0ecb2ed366c48cd379387dfc6bae50844c9ef4df3e232d8ff6ceed0dee  /home/kqdx/basilisk/src/qcc
+
+POST-INSTALL
+/bin/bash: line 5: .project_config: No such file or directory
+BASILISK=/home/kqdx/basilisk/src
+qcc=/home/kqdx/basilisk/src/qcc
+cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+.project_config
+sed: can't read .project_config: No such file or directory
+
+.comphy-lock
+ref=v2026-01-13
+os=linux
+created_utc=2026-07-18T09:31:43Z
+local_bview=false
+patches_applied=2026-01-13-mpi-tree-dump-header-fix.patch
+patches_skipped=
+
+patches
+2026-01-13-mpi-tree-dump-header-fix.patch
+
+key hashes
+a44e1d1f5598b947edb1d531bbd4cc7a419cac3cd60bc10f74faecde8038315c  basilisk/src/qcc
+9f5571dc6d5b880271fbf2d715d6ff4938bd1fb7034620681b46c7cc02b86790  basilisk/src/axi.h
+11de50ca5054a2c89d47581eec78580d745bd242e18c5b0e84759a86ae9a30e8  basilisk/src/two-phase.h
+98f132f6902ad4642ab1b431491dc97855b839b9a725d07d5afc5c5dee8b01bd  basilisk/src/navier-stokes/centered.h
+7ef8a3961c427aab23aa41ce856a46e1bfd2093ca4a43bc125b8d1432e9454a0  basilisk/src/tension.h
+sha256sum: .project_config: No such file or directory
+b368d3e1add662b7df80c3076cd8e3e99956c8c1fac8604a3b7fc6414dcceb47  basilisk/.comphy-lock
+
+git tracked diff
+
+git status
+?? reset_install_basilisk-ref-locked.sh
+
+FINAL ENVIRONMENT LOCK
+Captured: 2026-07-18T18:13:28+08:00
+Ring Fountain HEAD: ed903d56101332309651d8decc51831e3596570d
+Bursting-Bubble HEAD: fb6090bf287afa5bd8c238272a95df27b9bcec4d
+Bursting-Bubble tracked diff exit: 0
+BASILISK=/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/basilisk/src
+qcc=/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/basilisk/src/qcc
+72bb2460abe9701a4f233dc4261283eea2b4f1fd543143f5137197aa3593e9aa  upstream/reset_install_basilisk-ref-locked.sh
+a44e1d1f5598b947edb1d531bbd4cc7a419cac3cd60bc10f74faecde8038315c  upstream/basilisk/src/qcc
+787caa11aefe3000a7887c246b053a7a3fbedea6b3dbfa2063febbc0302bf06c  upstream/basilisk/.comphy-patches/2026-01-13-mpi-tree-dump-header-fix.patch
+uv 0.11.29 (x86_64-unknown-linux-gnu)
+Python 3.12.13
+4f26786f798cce6e9f467fe917d4305b9600ef8bf14994aa016fbb32523e5ca5  report/tools/uv-0.11.29/uv
+9544d2a29138833e6177d45dbc57468d37710b5080c901fbb579d53f251cdd6f  /home/kqdx/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/bin/python3.12
+Final filesystem usage:
+1000M	.
+Final free space:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   26G  931G   3% /

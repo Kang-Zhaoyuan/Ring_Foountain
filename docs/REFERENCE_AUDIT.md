@@ -8,7 +8,7 @@ Audit date: 2026-07-15. Repository metadata below reflects the locked fetch perf
 | --- | --- | --- |
 | A | Installed `/home/kqdx/basilisk/src`, official tests and headers | API, coordinate conventions, and numerical compatibility |
 | B | `rcsc-group/DropImpactViscousPool`, `AndreWeiner/phd_basilisk` | Publication-linked physics and reproducible engineering patterns |
-| C | `comphy-lab/Drop-Impact`, reviewed Basilisk sandbox pages | Structure, diagnostics, and experimental comparisons only |
+| C | `comphy-lab/Drop-Impact`, `comphy-lab/Bursting-Bubble`, reviewed Basilisk sandbox pages | Structure, diagnostics, and experimental comparisons only |
 
 ## Repository records
 
@@ -17,6 +17,7 @@ Audit date: 2026-07-15. Repository metadata below reflects the locked fetch perf
 | DropImpactViscousPool | https://github.com/rcsc-group/DropImpactViscousPool.git / `main` / `c049c42fad7afb9cc49e590b812c386921f7ee0b` | 9 / 2 / 23 | 2022-10-27 | MIT (`LICENSE`) | B-tier primary impact reference; wrapper or attribution-preserving copy only |
 | phd_basilisk | https://github.com/AndreWeiner/phd_basilisk.git / `master` / `0dff5b4df4483cb20cd0883a587344f19f048bc8` | 21 / 12 / 7 | 2020-03-04 | GPL-3.0 (`LICENSE`) | B-tier architecture and rising-bubble comparison; no source copied |
 | Drop-Impact | https://github.com/comphy-lab/Drop-Impact.git / `main` / `ff46c945513367ab3422d81963c39dd11cc2de54` | 1 / 0 / 147 | 2026-07-14 | GPL-3.0 (`LICENSE`) | C-tier current structure and diagnostics; no source copied |
+| Bursting-Bubble | https://github.com/comphy-lab/Bursting-Bubble.git / detached / `fb6090bf287afa5bd8c238272a95df27b9bcec4d` | not used as criterion | 2026-07-18 audit | GPL-3.0 (`LICENSE`) | C-tier capsule, connected-jet diagnostics, and resource-gate reference; no source copied |
 
 The full lock record, including license SHA256 values, is in `references/references.lock`. All three vendor worktrees were clean at audit time. The vendor directory is ignored and remains independent from this project.
 
@@ -33,6 +34,16 @@ The README links the work to a 2020 PhD thesis and describes an axisymmetric ris
 ### Drop-Impact
 
 The README documents an axisymmetric VOF drop-impact code, adaptive refinement, parameter files, serial/MPI runners, and post-processing. It also instructs users to install a separately pinned Basilisk release. The repository is GPL-3.0 and therefore reference-only here. The current commit is a generated search-database update; implementation history and the separate Basilisk pin must be treated cautiously. Risks include release/API mismatch, MPI dependencies, and the fact that its high-resolution workflow is not appropriate for this smoke-test gate.
+
+### Bursting-Bubble
+
+The independent case-14 audit locks the repository and its Basilisk release,
+reproduces the SingularJets2026 offline data/figure regression capsule, and
+tests the unchanged plain solver separately. It is GPL-3.0 and remains
+reference-only. Its paper drill solver, local plain solver, and Ring Fountain
+model are distinct. Bond selects initial geometry but does not add gravity to
+momentum; L8/L10 jet observables are not converged; and the measured L11 cost
+crosses the agreed resource gate. No source or capsule payload is copied.
 
 ### Embedded VOF contact-line candidates
 

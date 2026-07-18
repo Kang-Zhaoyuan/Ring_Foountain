@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/tools/analyze_results.py", line 167, in <module>
+    fig, axes = plt.subplots(2, 2, figsize=(9, 7), constrained_layout=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1886, in subplots
+    fig = figure(**fig_kw)
+          ^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1096, in figure
+    manager = new_figure_manager(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/pyplot.py", line 576, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 3656, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 3661, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 1836, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/report/capsule_work/.venv/lib/python3.12/site-packages/matplotlib/backends/_backend_tk.py", line 545, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kqdx/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/tkinter/__init__.py", line 2346, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: couldn't connect to display ":0"
+Command exited with non-zero status 1
+	Command being timed: "report/capsule_work/.venv/bin/python report/tools/analyze_results.py"
+	User time (seconds): 3.17
+	System time (seconds): 0.36
+	Percent of CPU this job got: 241%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 111144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5
+	Minor (reclaiming a frame) page faults: 21789
+	Voluntary context switches: 51
+	Involuntary context switches: 54
+	Swaps: 0
+	File system inputs: 3152
+	File system outputs: 1096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

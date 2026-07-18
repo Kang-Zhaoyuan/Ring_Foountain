@@ -1,0 +1,40 @@
+
+POST-INSTALL VERIFIED
+BASILISK=/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/basilisk/src
+qcc=/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/basilisk/src/qcc
+cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+export BASILISK="/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/basilisk/src"
+
+if [ ! -d "$BASILISK" ]; then
+  echo "Error: BASILISK directory not found: $BASILISK" >&2
+  return 1 2>/dev/null || exit 1
+fi
+
+# Ensure the repo-installed Basilisk takes precedence, without duplicating PATH
+_PATH=":$PATH:"
+_PATH="${_PATH//:$BASILISK:/:}"
+_PATH="${_PATH#:}"
+_PATH="${_PATH%:}"
+export PATH="$BASILISK${_PATH:+:$_PATH}"
+unset _PATH
+
+# Refresh command lookup cache (best-effort)
+hash -r 2>/dev/null || true
+rehash 2>/dev/null || true
+ref=v2026-01-13
+os=linux
+created_utc=2026-07-18T09:31:43Z
+local_bview=false
+patches_applied=2026-01-13-mpi-tree-dump-header-fix.patch
+patches_skipped=
+a44e1d1f5598b947edb1d531bbd4cc7a419cac3cd60bc10f74faecde8038315c  basilisk/src/qcc
+9f5571dc6d5b880271fbf2d715d6ff4938bd1fb7034620681b46c7cc02b86790  basilisk/src/axi.h
+11de50ca5054a2c89d47581eec78580d745bd242e18c5b0e84759a86ae9a30e8  basilisk/src/two-phase.h
+98f132f6902ad4642ab1b431491dc97855b839b9a725d07d5afc5c5dee8b01bd  basilisk/src/navier-stokes/centered.h
+7ef8a3961c427aab23aa41ce856a46e1bfd2093ca4a43bc125b8d1432e9454a0  basilisk/src/tension.h
+aaeaa7a42783511b04bbd77e451248d220e00e38b44232ab1c98dee84d857250  .project_config
+b368d3e1add662b7df80c3076cd8e3e99956c8c1fac8604a3b7fc6414dcceb47  basilisk/.comphy-lock

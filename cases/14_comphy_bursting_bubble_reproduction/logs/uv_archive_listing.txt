@@ -1,0 +1,3 @@
+uv-x86_64-unknown-linux-gnu/
+uv-x86_64-unknown-linux-gnu/uvx
+uv-x86_64-unknown-linux-gnu/uv

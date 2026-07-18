@@ -1,0 +1,43 @@
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp
+Q_j interpolation prefactors for Q_j ~ A*r_j^1.41017 as r_j -> 0, blended to PCHIP data over 0.005 <= r_j <= 0.1:
+  Level 13, focus 13: A = 20.1358
+  Level 14, focus 13: A = 18.3713
+  Level 15, focus 13: A = 20.8179
+  Level 15, focus 14: A = 22.439
+  Level 15, focus 15: A = 22.6456
+Wrote fig2_v2.pdf
+wrote fig2a_streamlines.{pdf,png} and fig2_v2.{pdf,png}
+	Command being timed: "env SINGULARJETS_NO_TEX=1 bash reproduce-fig2-v2.sh"
+	User time (seconds): 22.01
+	System time (seconds): 1.49
+	Percent of CPU this job got: 114%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 243816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 209667
+	Voluntary context switches: 727
+	Involuntary context switches: 162
+	Swaps: 0
+	File system inputs: 152
+	File system outputs: 56312
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

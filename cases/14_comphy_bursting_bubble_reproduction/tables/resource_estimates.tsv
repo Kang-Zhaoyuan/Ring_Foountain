@@ -1,0 +1,5 @@
+case	level	horizon	basis	runtime_s	disk_bytes	decision
+2810	10	0.7	measured	1139.61	240234209	COMPLETED
+2811	11	0.7	L8-L10 per-level factor 4.525/2.215	5157.1	532231175	PAUSE_GT_60_MIN
+2812	12	0.7	same scaling	23337.1	1179141077	NOT_STARTED
+1000	12	1.5	short-L12 estimate scaled linearly by horizon (optimistic)	50008.1	2526730880	NOT_STARTED_GT_60_MIN

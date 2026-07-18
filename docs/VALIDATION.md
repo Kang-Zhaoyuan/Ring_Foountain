@@ -376,3 +376,71 @@ cross the agreed resource gate, so neither was started. Full evidence,
 limitations, commands, failure records, coordinate audit, and hashes are in
 `cases/13_comphy_drop_impact_reproduction/`. This result validates an audit
 workflow, not Drop-Impact physics for the ring geometry.
+
+## Independent CoMPhy Bursting-Bubble reproduction baseline
+
+Validation date: 2026-07-18. Status: **capsule PASS; minimum solver PASS;
+scientific jet baseline PARTIAL**.
+
+This benchmark was executed independently under
+`/home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/`. The
+external Bursting-Bubble checkout is detached at
+`fb6090bf287afa5bd8c238272a95df27b9bcec4d`, with an isolated ref-locked
+Basilisk `v2026-01-13`. Case 14 contains only project-created audit evidence;
+no external GPL source, paper capsule payload, Basilisk tree, binary, virtual
+environment, dump, restart, or snapshot is tracked.
+
+The SingularJets2026 offline capsule passes all 211 payload hashes. The locked
+CPython 3.12 environment regenerated the primary Fig. 2 path and passed all
+seven offline frozen numerical regressions. PDF/PNG bytes are not falsely
+claimed identical: renderer differences are measured separately, while the
+regression prefactors and point counts pass. Optional grid/facet runners retain
+a documented LaTeX dependency and were not edited to hide it. These are
+archived-data/figure/test results, not local L13--L15 HPC recomputation.
+
+The current plain solver source compiled unchanged. Identical L8 cases 2808
+and 2809 completed both stages to `t=0.7`; their 678-row scalar logs, every
+dump-derived metric, and main-connected PLIC at `t=0.50, 0.58, 0.64, 0.69`
+are exact matches. Case 2820 changes only liquid Oh from 0.01 to 0.02 and
+delays the a-priori connected-jet event from `t=0.58` to `0.60`, with smaller
+early height and no liquid-component split by `t=0.69`.
+
+The event definition uses face-connected `f>1e-4` liquid, the largest
+component as the main pool, a central band `r<=2 Delta_min`, free-surface zero
+`z=0`, and the first stored time when connected height exceeds
+`max(0.02,2 Delta_min)` with a continuous outer base wider than
+`2 Delta_min`. Detached droplets are excluded from connected height. Every
+snapshot was restored to audit liquid volume, KE, maximum speed/location,
+leaf cells, minimum Delta, cavity base, three height definitions, and topology;
+minimum dt comes from the solver log.
+
+| metric | L8 | L10 | interpretation |
+| --- | ---: | ---: | --- |
+| jet event time | 0.58 | 0.51 | raw shift `-0.07` |
+| connected H at t=0.60 | 0.3862 | 1.3616 | about `+253%` |
+| connected H at t=0.69 | 0.7205 | 2.3917 | about `+232%` |
+| KE at t=0.60 | 3.7835 | 5.1639 | about `+36.5%` |
+| max local speed | 151.35 | 68.23 | non-monotone and unresolved |
+| max relative liquid-volume drift | `8.81e-8` | `6.10e-7` | small but not decreasing |
+| runtime | 55.65 s | 1139.61 s | measured complete two-stage cost |
+
+These changes and large common-time PLIC distances fail the scientific
+convergence gate. The measured L8-to-L10 runtime ratio gives a per-level factor
+of 4.525, estimating L11 at 85.95 minutes and short L12 at 6.48 hours. The
+unchanged L12 `tmax=1.5` case is optimistically about 13.89 hours. All exceed
+the 60-minute single-run gate and were not started; disk estimates remain below
+20 GB. The result is therefore PARTIAL rather than being inferred from a jet
+animation.
+
+The physics audit also finds that `Bond` only formats the initial geometry
+filename (`Bo0.0010.dat` or `Bo0.0000.dat`). No gravity acceleration enters
+momentum, so Bond variation cannot be described as dynamic gravity response.
+The locally solved plain fixed-maximum-level solver is also distinct from the
+paper capsule's drill solver and its singular-focus safeguards.
+
+Full evidence and migration boundaries are in
+`cases/14_comphy_bursting_bubble_reproduction/`. The benchmark supports audit
+methods—locking, repeatability, connected-interface metrics, PLIC comparison,
+and resource gating—not direct transfer of GPL code, stationary-bubble
+assumptions, or unconverged numerical values into the ring solver. The existing
+Ring Fountain next gate remains unchanged.

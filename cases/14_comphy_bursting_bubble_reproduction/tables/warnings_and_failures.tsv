@@ -1,0 +1,17 @@
+stage	command_or_component	status	classification	explanation
+Basilisk install	direct ./reset_install_basilisk-ref-locked.sh	126	RECOVERED	downloaded file lacked execute bit; rerun explicitly with bash
+Basilisk install	bash installer --hard	0	PASS	tool session returned before background shell was observed complete; final status and build both zero
+Basilisk build	upstream Basilisk sources	0	UPSTREAM_WARNINGS	wsServer const, TinyPngOut nonnull, and display.h const warnings retained in install log
+capsule environment	uv sync --frozen	0	PASS	installed locked CPython 3.12.13 and 16 locked packages
+capsule test	uv run --offline pytest	1	RECOVERED	uv 0.11.29 tried to re-resolve under changed global exclude-newer policy
+capsule test	uv run --offline --frozen pytest	0	PASS	7 tests passed with network disabled
+capsule optional runners	direct bash reproduce-Oh*.sh/reproduce_facets.sh	1	ENVIRONMENT	first attempts used system Python without matplotlib
+capsule optional runners	offline frozen uv runners	1	ENVIRONMENT	scripts hard-code text.usetex=True and LaTeX is absent; committed products remain intact
+capsule bundle	git bundle verify outside repository	1	RECOVERED	git requires repository context; git -C upstream bundle verify passed
+default compile	plain solver L12 compile-only	0	PASS	no solver warning; CaseNo 1000 side effect recorded
+snapshot extraction	getBase/getJetFoot with absolute path	134	RECOVERED	upstream char filename[80] overflowed; retry used short relative paths without source changes
+snapshot audit	audit_snapshot initial KE	0	CORRECTED	postprocessor default rho2=1 inflated KE; rho2=1e-3 fixed and all derived tables regenerated
+analysis render	Tk backend	1	RECOVERED	DISPLAY unavailable; rerun with explicit noninteractive Agg backend
+local solves	2808/2809/2820/2810	0	PASS	no NaN, Inf, SIGFPE, segmentation fault, KE gate, or solver warning
+grid gate	2811/2812	NOT_RUN	RESOURCE_GATE	L11 estimated 85.95 min from measured L8-L10 scaling, exceeding 60-minute gate
+default full run	Case 1000 L12 tmax=1.5	NOT_RUN	RESOURCE_GATE	optimistic estimate 13.89 h; compile-only completed

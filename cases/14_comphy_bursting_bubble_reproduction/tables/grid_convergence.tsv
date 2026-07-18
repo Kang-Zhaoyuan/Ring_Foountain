@@ -1,0 +1,5 @@
+case	level	status	jet_time	H_t0.60	H_t0.69	r_base_t0.60	KE_t0.60	max_rel_volume_drift	max_speed	max_leaf_cells	delta_min	min_dt	runtime_s	case_bytes	note
+2808	8	COMPLETED	0.580000	0.386204788	0.720522385	0.4492188	3.78345218	8.80651739e-08	151.353412	8290	0.0390625	1.2522e-05	55.650	48944504	two-level evidence; not a convergence claim
+2810	10	COMPLETED	0.510000	1.36163344	2.39169274	0.3955078	5.16392202	6.0979323e-07	68.2311574	45130	0.009765625	1.56525e-06	1139.610	240234209	two-level evidence; not a convergence claim
+2811	11	NOT_RUN_RESOURCE_GATE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5157.1	532231175	estimate exceeds 60-minute single-run gate
+2812	12	NOT_RUN_RESOURCE_GATE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	23337.1	1179141077	estimate exceeds 60-minute single-run gate

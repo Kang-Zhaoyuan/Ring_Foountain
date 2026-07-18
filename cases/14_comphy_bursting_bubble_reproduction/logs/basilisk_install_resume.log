@@ -1,0 +1,51 @@
+[0;36mUsing requested release tag: v2026-01-13[0m
+Checking prerequisites...
+
+[0;32m✓ make is installed[0m
+[0;32m✓ gcc is installed[0m
+[0;32m✓ curl is installed[0m
+[0;32m✓ tar is installed[0m
+[0;32m✓ gawk is installed[0m
+
+[0;32m✅ All prerequisites are satisfied![0m
+
+[0;36mUsing existing basilisk installation...[0m
+
+[0;36mChecking qcc installation...[0m
+[0;32m✅ qcc is properly installed.[0m
+cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+[0;32m✅ Basilisk ref-locked installation complete![0m
+Installed ref:
+  v2026-01-13
+To use basilisk in your shell, run:
+  source /home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/.project_config
+Lock stamp:
+  /home/kqdx/basilisk_work/reproductions/bursting_bubble_20260718/upstream/basilisk/.comphy-lock
+	Command being timed: "bash reset_install_basilisk-ref-locked.sh --ref=v2026-01-13"
+	User time (seconds): 0.01
+	System time (seconds): 0.04
+	Percent of CPU this job got: 17%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7832
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3310
+	Voluntary context switches: 710
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

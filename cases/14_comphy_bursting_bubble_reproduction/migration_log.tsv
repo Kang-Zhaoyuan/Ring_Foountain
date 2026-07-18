@@ -1,0 +1,12 @@
+category	item	decision	reason
+source	upstream Git checkout	EXCLUDE	GPL-3.0 external repository; immutable commit recorded instead
+source	Basilisk installer and tree	EXCLUDE	external source/build content; tag, lock patch, and hashes recorded
+source	upstream postProcess sources and executables	EXCLUDE	GPL source and compiled products
+source	SingularJets2026 capsule_work	EXCLUDE	mixed CC-BY data and GPL scripts remain independently obtainable
+runtime	dumps/restarts/snapshots/case binaries	EXCLUDE	large external solver output and build products
+runtime	uv tarball/release JSON/.venv	EXCLUDE	downloaded environment artifacts; version and hashes retained
+evidence	reports/commands/environment/status logs	INCLUDE	project-created audit trail including recovered failures
+evidence	params/tables/PLIC/figures	INCLUDE	factual inputs and newly derived numerical evidence
+evidence	external_run_checksums.sha256	INCLUDE	historical independent-workspace manifest, explicitly non-local
+tools	metric definitions/analyzer/audit source/extractor	INCLUDE	project-authored audit utilities; source form only
+repository	README/VALIDATION/HANDOFF	UPDATE	document stage 16 without advancing ring-physics gate
