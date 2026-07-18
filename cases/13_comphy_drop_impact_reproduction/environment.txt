@@ -1,0 +1,77 @@
+capture_utc=2026-07-18T05:41:36Z
+uname_a:
+Linux LAPTOP-F30LNG9F 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+wsl_distro_name=Ubuntu
+wsl_interop=/run/WSL/12930_interop
+proc_version:
+Linux version 6.18.33.2-microsoft-standard-WSL2 (root@f1bbfb02316b) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026
+wsl_exe_version:
+WSL Hr,g: 2.7.10.0
+Q8hHr,g: 6.18.33.2-2
+WSLg Hr,g: 1.0.73.2
+MSRDC Hr,g: 1.2.6676
+Direct3D Hr,g: 1.611.1-81528511
+DXCore Hr,g: 10.0.26100.1-240331-1435.ge-release
+Windows: 10.0.26200.8875
+nproc:
+16
+free_h:
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.8Gi        10Gi        77Mi       769Mi        10Gi
+Swap:          4.0Gi          0B       4.0Gi
+df_h_dot:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   23G  933G   3% /
+gcc_version:
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+git_version:
+git version 2.53.0
+bash_version:
+GNU bash, version 5.3.9(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2025 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+python_version:
+Python 3.14.4
+python_command:
+python3_command:
+/usr/bin/python3
+mpi:
+/bin/bash: line 17: mpicc: command not found
+/usr/local/bin/mpirun
+mpirun (Open MPI) 5.0.6
+
+Report bugs to https://www.open-mpi.org/community/help/
+BASILISK=/home/kqdx/basilisk/src
+qcc_command:
+/home/kqdx/basilisk/src/qcc
+qcc_resolved:
+/home/kqdx/basilisk/src/qcc
+upstream_git:
+9fd0db798ec5a05f8410886231bdfbe30fac051d
+## HEAD (no branch)
+
+post_install_capture:
+installed_ref=v2026-01-13
+lock_file=/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/.comphy-lock
+lock_created_utc=2026-07-18T05:43:09Z
+lock_patch=2026-01-13-mpi-tree-dump-header-fix.patch
+project_config=/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/.project_config
+isolated_BASILISK=/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src
+isolated_qcc=/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/qcc
+isolated_qcc_sha256=c40e73ea36d08459e28d99931314160c49fd4dfae62ead826ddb288f8b616407
+isolated_basilisk_size=49M
+installer_sha256=72bb2460abe9701a4f233dc4261283eea2b4f1fd543143f5137197aa3593e9aa
+mpi_compiler=unavailable
+mpi_launcher=/usr/local/bin/mpirun (Open MPI 5.0.6)
+postprocess_python=/usr/bin/python3 (Python 3.14.4)
+postprocess_dependencies=/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/pydeps
+numpy=2.5.1
+pandas=3.0.3
+matplotlib=3.11.1

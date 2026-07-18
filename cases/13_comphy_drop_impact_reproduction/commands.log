@@ -1,0 +1,148 @@
+# Commands executed for the Drop-Impact reproduction
+# Shell: bash; dates are 2026-07-18 Asia/Shanghai unless an output says UTC.
+# Commands prefixed FAIL are retained failed attempts. Commands prefixed PAUSED were not executed.
+
+# Read-only Ring_Foountain audit
+git -C /home/kqdx/basilisk_work/ring_fountain status --short --branch
+git -C /home/kqdx/basilisk_work/ring_fountain log -1 --oneline
+git -C /home/kqdx/basilisk_work/ring_fountain remote -v
+
+# Independent workspace and pinned clone
+mkdir -p /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/report/{params,logs,tables,figures}
+git clone https://github.com/comphy-lab/Drop-Impact.git /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream
+git -C /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream checkout --detach 9fd0db798ec5a05f8410886231bdfbe30fac051d
+git -C /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream rev-parse HEAD
+git -C /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream status --short --branch
+git -C /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream submodule status
+
+# Required source/instruction audit (all read-only)
+sed -n '1,520p' upstream/AGENTS.md
+sed -n '1,240p' upstream/README.md
+sed -n '1,240p' upstream/default.params
+sed -n '1,320p' upstream/runSimulation.sh
+sed -n '1,320p' upstream/runParameterSweep.sh
+sed -n '1,320p' upstream/runPostProcess-Ncases.sh
+sed -n '1,520p' upstream/simulationCases/dropImpact.c
+rg --files upstream/src-local upstream/postProcess | sort
+for f in upstream/src-local/* upstream/postProcess/*; do test -f "$f" && sed -n '1,1000p' "$f"; done
+
+# Environment capture (stdout/stderr saved in report/environment.txt)
+uname -a
+printf '%s\n' "${WSL_DISTRO_NAME:-}" "${WSL_INTEROP:-}"
+cat /proc/version
+wsl.exe --version
+nproc
+free -h
+df -h .
+gcc --version
+git --version
+bash --version
+python --version
+python3 --version
+command -v python python3 mpicc mpirun qcc
+mpicc --version
+mpirun --version
+printf 'BASILISK=%s\n' "${BASILISK:-}"
+
+# Installer download, hash, complete local review, and isolated install
+cd upstream
+curl -fL https://raw.githubusercontent.com/comphy-lab/basilisk-C/main/reset_install_basilisk-ref-locked.sh -o reset_install_basilisk-ref-locked.sh
+sha256sum reset_install_basilisk-ref-locked.sh | tee ../report/logs/install_script.sha256
+sed -n '1,700p' reset_install_basilisk-ref-locked.sh
+chmod +x reset_install_basilisk-ref-locked.sh
+/usr/bin/time -v ./reset_install_basilisk-ref-locked.sh --ref=v2026-01-13 --hard > ../report/logs/basilisk_install.log 2>&1
+source .project_config
+cat .project_config
+cat basilisk/.comphy-lock
+printf 'BASILISK=%s\n' "$BASILISK"
+command -v qcc
+readlink -f "$(command -v qcc)"
+qcc --version
+sha256sum "$(command -v qcc)"
+du -sh basilisk
+
+# Stage A: unchanged default compile
+cd upstream
+source .project_config
+/usr/bin/time -v ./runSimulation.sh --compile-only default.params > ../report/logs/stage_a_default_compile.log 2>&1
+find simulationCases/1000 -maxdepth 2 -type f -printf '%P\t%s bytes\n' | sort
+sha256sum default.params simulationCases/1000/case.params simulationCases/dropImpact.c simulationCases/1000/dropImpact.c simulationCases/1000/dropImpact
+
+# Parameter files were created by exact copies of default.params followed by only the stated CaseNo/MAXlevel/tmax/We substitutions.
+cp upstream/default.params report/params/smoke_l8_a.params
+cp upstream/default.params report/params/smoke_l8_b.params
+cp upstream/default.params report/params/smoke_we20.params
+cp upstream/default.params report/params/grid_l10.params
+cp upstream/default.params report/params/grid_l11.params
+cp upstream/default.params report/params/grid_l12.params
+# substitutions: 1808/L8/0.1; 1809/L8/0.1; 1820/L8/0.1/We20; 1810/L10/0.1; 1811/L11/0.1; 1812/L12/0.1
+diff -u upstream/default.params report/params/smoke_l8_a.params
+diff -u upstream/default.params report/params/smoke_l8_b.params
+diff -u upstream/default.params report/params/smoke_we20.params
+diff -u upstream/default.params report/params/grid_l10.params
+diff -u upstream/default.params report/params/grid_l11.params
+diff -u upstream/default.params report/params/grid_l12.params
+
+# Stage B: sequential smoke runs
+cd upstream
+source .project_config
+/usr/bin/time -v ./runSimulation.sh ../report/params/smoke_l8_a.params > ../report/logs/smoke_l8_a.log 2>&1
+/usr/bin/time -v ./runSimulation.sh ../report/params/smoke_l8_b.params > ../report/logs/smoke_l8_b.log 2>&1
+/usr/bin/time -v ./runSimulation.sh ../report/params/smoke_we20.params > ../report/logs/smoke_we20.log 2>&1
+rg -n -i 'nan|inf|sigfpe|floating point|segmentation|core dumped' report/logs/smoke_*.log upstream/simulationCases/{1808,1809,1820}/results/log
+sha256sum upstream/simulationCases/{1808,1809}/results/log
+cmp upstream/simulationCases/1808/results/log upstream/simulationCases/1809/results/log
+find upstream/simulationCases/{1808,1809,1820}/results -type f -size 0 -print
+
+# Native post-processing prerequisites and retained failures
+cd upstream
+source .project_config
+qcc -autolink postProcess/getFacet.c -o postProcess/getFacet -lm
+FAIL qcc -autolink postProcess/getData-generic.c -o postProcess/getData-generic -lm
+FAIL qcc -autolink postProcess/getFootPrint.c -o postProcess/getFootPrint -lm
+qcc -disable-dimensions -autolink postProcess/getData-generic.c -o postProcess/getData-generic -lm
+qcc -disable-dimensions -autolink postProcess/getFootPrint.c -o postProcess/getFootPrint -lm
+FAIL python3 -m venv ../venv
+FAIL ../venv/bin/python -m pip install pandas matplotlib
+python3 -m pip install --target ../pydeps pandas matplotlib
+mkdir -p ../report/bin
+ln -s /usr/bin/python3 ../report/bin/python
+PATH="$(pwd)/../report/bin:$PATH" PYTHONPATH="$(pwd)/../pydeps" /usr/bin/time -v ./runPostProcess-Ncases.sh --CPUs 4 --nGFS 32 --tsnap 0.01 --GridsPerR 64 --ZMAX 3 --RMAX 3 --ZMIN 0 1808 > ../report/logs/postprocess_case1808.log 2>&1
+
+# Direct restart and snapshot reads through the unchanged upstream getFacet helper
+cd upstream/postProcess
+./getFacet ../simulationCases/1808/results/restart > ../../report/logs/restart_1808_facets.dat
+./getFacet ../simulationCases/1808/results/intermediate/snapshot-0.0000 > ../../report/figures/interface_case1808_t0.0000.dat
+./getFacet ../simulationCases/1808/results/intermediate/snapshot-0.1500 > ../../report/figures/interface_case1808_t0.1500.dat
+./getFacet ../simulationCases/1808/results/intermediate/snapshot-0.3100 > ../../report/figures/interface_case1808_t0.3100.dat
+
+# Stage D: same physical parameters and horizon, sequential L10/L11/L12
+cd upstream
+source .project_config
+/usr/bin/time -v ./runSimulation.sh ../report/params/grid_l10.params > ../report/logs/grid_l10.log 2>&1
+/usr/bin/time -v ./runSimulation.sh ../report/params/grid_l11.params > ../report/logs/grid_l11.log 2>&1
+/usr/bin/time -v ./runSimulation.sh ../report/params/grid_l12.params > ../report/logs/grid_l12.log 2>&1
+rg -n -i 'nan|inf|sigfpe|floating point|segmentation|core dumped' report/logs/grid_l*.log upstream/simulationCases/{1810,1811,1812}/results/log
+
+# Read-only numerical audit helper; the first qcc path form failed and its residue was preserved.
+cd upstream
+source .project_config
+FAIL qcc -disable-dimensions -I./src-local -O2 -Wall ../report/tools/snapshot_metrics.c -o ../report/tools/snapshot_metrics -lm
+cd ../report/tools
+qcc -disable-dimensions -I../../upstream/src-local -O2 -Wall snapshot_metrics.c -o snapshot_metrics -lm
+# snapshot_metrics was applied to every snapshot in 1808, 1810, 1811 and 1812; TSV outputs are in report/tables/.
+# getFootPrint was applied with wall-normal x/R cutoff 0.05 to the same snapshots.
+# getFacet exported the t=0.1, 0.2 and 0.3 contours for L10/L11/L12.
+cd ../..
+PYTHONPATH=pydeps /usr/bin/python3 report/tools/analyze_results.py > report/logs/analyze_results.log 2>&1
+
+# Final read-only integrity checks
+git -C upstream rev-parse HEAD
+git -C upstream diff --exit-code
+git -C upstream status --short --branch
+git -C /home/kqdx/basilisk_work/ring_fountain status --short --branch
+git -C /home/kqdx/basilisk_work/ring_fountain rev-parse HEAD
+
+# Resource-gated commands, deliberately not executed
+PAUSED ./runSimulation.sh ../report/params/grid_l14.params
+PAUSED ./runSimulation.sh default.params

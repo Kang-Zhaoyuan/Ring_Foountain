@@ -1,0 +1,12 @@
+python3 packages:
+numpy 2.3.5
+pandas UNAVAILABLE ModuleNotFoundError("No module named 'pandas'")
+matplotlib UNAVAILABLE ModuleNotFoundError("No module named 'matplotlib'")
+tools:
+/usr/bin/ffmpeg
+ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers
+built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)
+/usr/bin/gnuplot
+/usr/bin/magick
+Version: ImageMagick 7.1.2-18 Q16 x86_64 23822 https://imagemagick.org
+Copyright: (C) 1999 ImageMagick Studio LLC

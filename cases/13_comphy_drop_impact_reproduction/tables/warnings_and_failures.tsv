@@ -1,0 +1,8 @@
+stage	observation	classification	resolution
+Basilisk_install	five compiler warnings: one wsServer discarded const, one TinyPngOut nonnull comparison, three display.h discarded const	upstream_build_warning	installation and qcc verification succeeded; retained verbatim in basilisk_install.log
+default_compile	no qcc warning	none	compile exited 0
+all_runs	no NaN Inf SIGFPE segmentation fault or solver warning; invalid snapshot count zero	none	runs exited 0
+postprocess_compile	getData-generic and getFootPrint failed Basilisk dimensional constraints with normal -autolink	expected_compatibility_gap	recompiled unchanged sources with -disable-dimensions -autolink; exited 0
+postprocess_plot	Computer Modern font unavailable warnings	cosmetic	Matplotlib used DejaVu fallback; figures are valid
+python_venv	stdlib venv lacked ensurepip and its Python had no pip	environment_gap	preserved incomplete venv; installed dependencies into isolated pydeps and used report/bin/python shim
+audit_helper_first_compile	qcc exited 139 when the helper source was addressed through ../report/tools	audit_tool_failure	preserved .qcc2XyEeQ and upstream/report residue; compilation from report/tools with a basename exited 0

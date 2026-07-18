@@ -1,0 +1,142 @@
+=========================================
+Drop Impact Simulation - Single Case
+=========================================
+Case Number: 1809
+Case Directory: simulationCases/1809
+Parameter File: ../report/params/smoke_l8_b.params
+Execution Mode: Serial
+
+Creating case directory: simulationCases/1809
+
+=========================================
+Compilation
+=========================================
+Copied source file to case directory
+Compiling dropImpact.c...
+Compilation successful: dropImpact
+
+=========================================
+Execution
+=========================================
+Running simulation with case.params
+
+Starting simulation...
+=========================================
+INFO: tmax scaled: 0.1 * sqrt(We=10) = 0.3162
+Created output directory: results
+Created output directory: results/intermediate
+Log file opened: results/log
+
+========================================
+Drop Impact Simulation Configuration
+========================================
+
+Case Identification:
+  Case Number:              1809
+
+Physical Parameters:
+  Weber number (We):        10
+  Ohnesorge (drop):         0.01
+  Ohnesorge (surround):     1e-05
+  Density ratio:            0.001
+  Reynolds (drop):          316.228
+
+Geometry:
+  Domain size (Ldomain):    8
+  Drop position (x, y):     (1.05, 0)
+  Drop radius:              1
+  Impact velocity:          -1
+
+Numerical Settings:
+  Grid levels (min/max):    6 / 8
+  Initial grid level:       6 (2^6 = 64 cells)
+  Error tolerances:
+    VOF (fErr):             0.001
+    Curvature (KErr):       0.0001
+    Velocity (VelErr):      0.01
+
+Time Control:
+  Maximum time (tmax):      0.316228
+  Snapshot interval:        0.01
+
+Output:
+  Output directory:         results
+  Log interval:             1 iterations
+
+========================================
+
+
+Initializing simulation from initial conditions...
+Initial grid refinement complete (MAXlevel = 8)
+Initial drop setup complete:
+  Drop center: (1.05, 0)
+  Drop radius: 1
+  Impact velocity: -1
+Initialization complete.
+
+i=0  t=0  dt=2.8334e-05  KE=2.04744
+Snapshot saved at t = 0
+Snapshot saved at t = 0.01
+Snapshot saved at t = 0.02
+Snapshot saved at t = 0.03
+Snapshot saved at t = 0.04
+Snapshot saved at t = 0.05
+Snapshot saved at t = 0.06
+Snapshot saved at t = 0.07
+Snapshot saved at t = 0.08
+Snapshot saved at t = 0.09
+Snapshot saved at t = 0.1
+Snapshot saved at t = 0.11
+Snapshot saved at t = 0.12
+Snapshot saved at t = 0.13
+Snapshot saved at t = 0.14
+Snapshot saved at t = 0.15
+Snapshot saved at t = 0.16
+Snapshot saved at t = 0.17
+Snapshot saved at t = 0.18
+Snapshot saved at t = 0.19
+Snapshot saved at t = 0.2
+Snapshot saved at t = 0.21
+Snapshot saved at t = 0.22
+Snapshot saved at t = 0.23
+Snapshot saved at t = 0.24
+i=100  t=0.25  dt=0.00333333  KE=1.82883
+Snapshot saved at t = 0.25
+Snapshot saved at t = 0.26
+Snapshot saved at t = 0.27
+Snapshot saved at t = 0.28
+Snapshot saved at t = 0.29
+Snapshot saved at t = 0.3
+Snapshot saved at t = 0.31
+Log file closed
+
+Simulation completed successfully.
+
+# Quadtree, 116 steps, 1.5409 CPU, 1.543 real, 3.22e+05 points.step/s, 41 var
+=========================================
+Simulation completed successfully
+Output location: simulationCases/1809
+=========================================
+	Command being timed: "./runSimulation.sh ../report/params/smoke_l8_b.params"
+	User time (seconds): 8.79
+	System time (seconds): 1.06
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 543028
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 272474
+	Voluntary context switches: 2389
+	Involuntary context switches: 70
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 67992
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

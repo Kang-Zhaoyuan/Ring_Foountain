@@ -1,0 +1,7 @@
+target	basis	solver_horizon_tU_over_R	estimated_solver_runtime_s	estimated_wall_time_h	estimated_case_bytes_low	estimated_case_bytes_conservative	decision
+L10_short	measured	0.316228	18.07	0.00714	37274369	37274369	completed
+L11_short	measured	0.316228	100.6	0.03003	69724610	69724610	completed
+L12_short	measured	0.316228	924	0.25881	146608366	146608366	completed
+L13_short	L12 multiplied by measured L12/L11 runtime ratio 9.185 and disk ratio 2.103; conservative disk 4x	0.316228	8486	2.36	308278000	586433464	not_requested
+L14_short	one additional identical ratio step; conservative disk another 4x	0.316228	77945	21.65	648200000	2345733856	paused_over_60_min
+L14_default_tmax1	10x-horizon linear lower-order extrapolation from L14_short; later impact dynamics may cost more	3.16228	779450	216.51	6482000000	23457338560	paused_over_60_min_and_possible_20GB

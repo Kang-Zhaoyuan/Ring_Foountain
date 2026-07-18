@@ -39,3 +39,4 @@ make validate CASE=cases/00_official_missing_metric
 12. Workbook-based event-height/timing intake and coherent-height calibration.
 13. First-jet shape correction and L7/L8 native-facet audit.
 14. Separate 26.15 g video-specimen trajectory/morphology audit and laboratory key-frame atlas.
+15. Independent CoMPhy Drop-Impact reproduction audit, with pinned external versions, repeatability and parameter-response smoke tests, native VOF post-processing, and short L10--L12 convergence evidence. Only newly created audit material is tracked; GPL upstream source and run dumps remain outside this repository.

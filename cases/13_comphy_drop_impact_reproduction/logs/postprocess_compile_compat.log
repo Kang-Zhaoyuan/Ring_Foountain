@@ -1,0 +1,2 @@
+$ qcc -disable-dimensions -autolink postProcess/getData-generic.c -o postProcess/getData-generic -lm
+$ qcc -disable-dimensions -autolink postProcess/getFootPrint.c -o postProcess/getFootPrint -lm

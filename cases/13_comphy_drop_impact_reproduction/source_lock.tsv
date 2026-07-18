@@ -1,0 +1,7 @@
+object	location_or_identifier	version_or_sha	license_or_role	tracked_copy
+Drop-Impact	https://github.com/comphy-lab/Drop-Impact.git	9fd0db798ec5a05f8410886231bdfbe30fac051d	GPL-3.0 upstream	no
+Basilisk	independent upstream/basilisk/src	v2026-01-13	isolated solver dependency	no
+Basilisk lock patch	independent basilisk/.comphy-lock	2026-01-13-mpi-tree-dump-header-fix.patch	installer-applied compatibility patch	no
+installer	https://raw.githubusercontent.com/comphy-lab/basilisk-C/main/reset_install_basilisk-ref-locked.sh	sha256:72bb2460abe9701a4f233dc4261283eea2b4f1fd543143f5137197aa3593e9aa	inspected local installer	no
+isolated qcc	independent upstream/basilisk/src/qcc	sha256:c40e73ea36d08459e28d99931314160c49fd4dfae62ead826ddb288f8b616407	compilation authority for this audit only	no
+external run manifest	external_run_checksums.sha256	sha256:a937ec5e2b1f5f903bdffcd2146315e2582be13bc31e4443aa013eb74957f76e	original 691-entry evidence manifest	yes

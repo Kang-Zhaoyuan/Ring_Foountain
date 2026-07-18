@@ -1,0 +1,4 @@
+case	purpose	input_We	MAXlevel	input_tmax	solver_tmax_tU_over_R	exit	steps	solver_s	restart_bytes	snapshots	invalid_markers
+1808	repeat_A	10	8	0.1	0.316228	0	116	1.546	435857	32	0
+1809	repeat_B	10	8	0.1	0.316228	0	116	1.543	435857	32	0
+1820	parameter_response	20	8	0.1	0.447214	0	157	2.125	433425	45	0

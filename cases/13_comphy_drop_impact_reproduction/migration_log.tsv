@@ -1,0 +1,13 @@
+category	included	path_or_item	reason
+documentation	yes	README.md REPRODUCTION_REPORT.md OPEN_QUESTIONS.md LICENSE_BOUNDARY.md	new audit interpretation and migration explanation
+provenance	yes	environment.txt commands.log source_lock.tsv	new environment command and source-lock records
+inputs	yes	params/	new executed case parameter records
+process_evidence	yes	logs/	new stdout stderr status warning failure and restore evidence
+derived_evidence	yes	tables/ figures/	new numerical tables PLIC output and review figures
+audit_code	yes	tools/*.py tools/*.c tools/requirements.txt	newly authored audit sources and case-local dependency lock
+upstream_repository	no	Drop-Impact clone and Git objects	already obtainable from pinned GitHub commit and GPL-3.0; no duplication
+upstream_source	no	solver scripts src-local and postProcess sources	GPL-3.0 source is not copied into Ring Fountain
+Basilisk	no	installer source installed tree and project config	independent environment is frozen by ref and hashes only
+build_products	no	executables objects and qcc temporary directories	generated third-party-linked binaries are unnecessary for audit review
+raw_run_data	no	restart snapshots dumps and MP4	large regenerable artifacts remain in independent reproduction
+runtime_dependencies	no	pydeps venv and installed packages	environment versions are recorded; packages are not vendored

@@ -1,0 +1,11 @@
+entry_point	created_or_overwritten	behavior_or_risk
+runSimulation.sh	simulationCases/CaseNo directory	mkdir -p reuses an existing case number
+runSimulation.sh	case.params dropImpact.c dropImpact executable	parameter/source copies and executable are overwritten on every invocation
+dropImpact executable	results/log	opened with mode w before any restore, so a restarted run truncates history
+dropImpact executable	results/restart	latest dump overwrites the preceding restart
+dropImpact executable	results/intermediate/snapshot-TIME	same-time filenames are overwritten; new times accumulate
+runParameterSweep.sh	temporary parameter files	created for each combination and removed by EXIT trap
+Video-generic.py	results/Video/*.png	existing PNG frames are skipped rather than overwritten
+Video-generic.py	results/CaseNo.mp4	ffmpeg -y overwrites an existing movie
+getFootPrint.py	results/rFootvsTime_CUTOFF.csv	CSV is overwritten for each cutoff
+plotFootPrint.py	results/CaseNo_rFootvsTime.pdf	PDF is overwritten

@@ -1,0 +1,7 @@
+# Preserve captured and numerical evidence byte-for-byte. Facet streams end
+# with blank separators; some Python-generated TSV files use CRLF; compiler
+# logs can contain command-output trailing spaces.
+logs/** -whitespace
+figures/*.dat -whitespace
+tables/*.dat -whitespace
+tables/*.tsv -whitespace

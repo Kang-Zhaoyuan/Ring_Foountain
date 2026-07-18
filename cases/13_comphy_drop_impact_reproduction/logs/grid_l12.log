@@ -1,0 +1,171 @@
+=========================================
+Drop Impact Simulation - Single Case
+=========================================
+Case Number: 1812
+Case Directory: simulationCases/1812
+Parameter File: ../report/params/grid_l12.params
+Execution Mode: Serial
+
+Creating case directory: simulationCases/1812
+
+=========================================
+Compilation
+=========================================
+Copied source file to case directory
+Compiling dropImpact.c...
+Compilation successful: dropImpact
+
+=========================================
+Execution
+=========================================
+Running simulation with case.params
+
+Starting simulation...
+=========================================
+INFO: tmax scaled: 0.1 * sqrt(We=10) = 0.3162
+Created output directory: results
+Created output directory: results/intermediate
+Log file opened: results/log
+
+========================================
+Drop Impact Simulation Configuration
+========================================
+
+Case Identification:
+  Case Number:              1812
+
+Physical Parameters:
+  Weber number (We):        10
+  Ohnesorge (drop):         0.01
+  Ohnesorge (surround):     1e-05
+  Density ratio:            0.001
+  Reynolds (drop):          316.228
+
+Geometry:
+  Domain size (Ldomain):    8
+  Drop position (x, y):     (1.05, 0)
+  Drop radius:              1
+  Impact velocity:          -1
+
+Numerical Settings:
+  Grid levels (min/max):    6 / 12
+  Initial grid level:       6 (2^6 = 64 cells)
+  Error tolerances:
+    VOF (fErr):             0.001
+    Curvature (KErr):       0.0001
+    Velocity (VelErr):      0.01
+
+Time Control:
+  Maximum time (tmax):      0.316228
+  Snapshot interval:        0.01
+
+Output:
+  Output directory:         results
+  Log interval:             1 iterations
+
+========================================
+
+
+Initializing simulation from initial conditions...
+Initial grid refinement complete (MAXlevel = 12)
+Initial drop setup complete:
+  Drop center: (1.05, 0)
+  Drop radius: 1
+  Impact velocity: -1
+Initialization complete.
+
+i=0  t=0  dt=4.42718e-07  KE=2.09137
+Snapshot saved at t = 0
+i=100  t=0.00946105  dt=0.000107791  KE=2.0852
+Snapshot saved at t = 0.01
+Snapshot saved at t = 0.02
+i=200  t=0.0203261  dt=0.000108696  KE=2.0851
+Snapshot saved at t = 0.03
+i=300  t=0.0311957  dt=0.000108696  KE=2.08503
+Snapshot saved at t = 0.04
+i=400  t=0.0420652  dt=0.000108696  KE=2.08492
+i=500  t=0.0493695  dt=4.85034e-05  KE=2.08446
+Snapshot saved at t = 0.05
+i=600  t=0.0543509  dt=5.08931e-05  KE=2.08328
+i=700  t=0.0596696  dt=5.50747e-05  KE=2.08132
+Snapshot saved at t = 0.06
+i=800  t=0.0664973  dt=7.96073e-05  KE=2.07793
+Snapshot saved at t = 0.07
+i=900  t=0.0754677  dt=0.000103007  KE=2.07259
+Snapshot saved at t = 0.08
+i=1000  t=0.0861957  dt=0.000108696  KE=2.06537
+Snapshot saved at t = 0.09
+i=1100  t=0.0970652  dt=0.000108696  KE=2.05734
+Snapshot saved at t = 0.1
+i=1200  t=0.107935  dt=0.000108696  KE=2.04875
+Snapshot saved at t = 0.11
+i=1300  t=0.118804  dt=0.000108696  KE=2.03969
+Snapshot saved at t = 0.12
+i=1400  t=0.129674  dt=0.000108696  KE=2.03026
+Snapshot saved at t = 0.13
+Snapshot saved at t = 0.14
+i=1500  t=0.140543  dt=0.000108696  KE=2.02045
+Snapshot saved at t = 0.15
+i=1600  t=0.151413  dt=0.000108696  KE=2.01035
+Snapshot saved at t = 0.16
+i=1700  t=0.162283  dt=0.000108696  KE=2
+Snapshot saved at t = 0.17
+i=1800  t=0.173152  dt=0.000108696  KE=1.98939
+Snapshot saved at t = 0.18
+i=1900  t=0.184022  dt=0.000108696  KE=1.97857
+Snapshot saved at t = 0.19
+i=2000  t=0.194891  dt=0.000108696  KE=1.96758
+Snapshot saved at t = 0.2
+i=2100  t=0.205761  dt=0.000108696  KE=1.95639
+Snapshot saved at t = 0.21
+i=2200  t=0.21663  dt=0.000108696  KE=1.94505
+Snapshot saved at t = 0.22
+i=2300  t=0.2275  dt=0.000108696  KE=1.93359
+Snapshot saved at t = 0.23
+i=2400  t=0.23837  dt=0.000108696  KE=1.92197
+Snapshot saved at t = 0.24
+i=2500  t=0.249239  dt=0.000108696  KE=1.91023
+Snapshot saved at t = 0.25
+Snapshot saved at t = 0.26
+i=2600  t=0.260109  dt=0.000108696  KE=1.8984
+Snapshot saved at t = 0.27
+i=2700  t=0.270978  dt=0.000108696  KE=1.88648
+Snapshot saved at t = 0.28
+i=2800  t=0.281848  dt=0.000108696  KE=1.87438
+Snapshot saved at t = 0.29
+i=2900  t=0.292717  dt=0.000108696  KE=1.86224
+Snapshot saved at t = 0.3
+i=3000  t=0.303587  dt=0.000108696  KE=1.85
+Snapshot saved at t = 0.31
+Log file closed
+
+Simulation completed successfully.
+
+# Quadtree, 3059 steps, 923.832 CPU, 924 real, 1.03e+05 points.step/s, 41 var
+=========================================
+Simulation completed successfully
+Output location: simulationCases/1812
+=========================================
+	Command being timed: "./runSimulation.sh ../report/params/grid_l12.params"
+	User time (seconds): 929.34
+	System time (seconds): 1.81
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:31.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 543000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 412627
+	Voluntary context switches: 2431
+	Involuntary context switches: 5080
+	Swaps: 0
+	File system inputs: 16
+	File system outputs: 572912
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

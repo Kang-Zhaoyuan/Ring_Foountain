@@ -1,0 +1,13 @@
+$ qcc -autolink postProcess/getFacet.c -o postProcess/getFacet -lm
+$ qcc -autolink postProcess/getData-generic.c -o postProcess/getData-generic -lm
+/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/common.h:34: error: the dimensional constraints below are not compatible
+/src/common.h:34: '1. [1]'
+	└─ [/src/common.h:34: 'L0 = 1. [1]'] = [1]
+/src/grid/cartesian-common.h:913: '(xp - x)/Delta - v.d.x/2.'
+	└─ [/src/common.h:34: 'L0 = 1. [1]'] = [0]
+$ qcc -autolink postProcess/getFootPrint.c -o postProcess/getFootPrint -lm
+postProcess/getFootPrint.c:126: error: the dimensional constraints below are not compatible
+postProcess/getFootPrint.c:126: 'x >= x_cutoff'
+	└─ [/src/common.h:32: 'X0 = 0.'] = [0]
+/src/grid/variables.h:12: '((ig + 1)/2. + (point.i - 2))*Delta + X0'
+	└─ [/src/common.h:32: 'X0 = 0.'] = [1]

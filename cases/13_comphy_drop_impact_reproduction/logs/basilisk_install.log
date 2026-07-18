@@ -1,0 +1,182 @@
+[0;36mUsing requested release tag: v2026-01-13[0m
+Checking prerequisites...
+
+[0;32m✓ make is installed[0m
+[0;32m✓ gcc is installed[0m
+[0;32m✓ curl is installed[0m
+[0;32m✓ tar is installed[0m
+[0;32m✓ gawk is installed[0m
+
+[0;32m✅ All prerequisites are satisfied![0m
+
+[0;36mInstalling basilisk (ref-locked)...[0m
+[0;36mDownloading: https://github.com/comphy-lab/basilisk-C/releases/download/v2026-01-13/basilisk-linux.tar.gz[0m
+[0;36mSetting up basilisk directory...[0m
+[0;36mUsing Linux configuration...[0m
+[0;36mBuilding basilisk (first pass with -k to continue on errors)...[0m
+sh /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/tests.sh
+updating /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/Makefile.tests
+updating Makefile.deps
+make -C darcsit 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DYY_NO_UNPUT    literate-c.c   -o literate-c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DYY_NO_UNPUT    codeblock.c   -o codeblock
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DYY_NO_UNPUT    pagemagic.c   -o pagemagic
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DYY_NO_UNPUT -DYY_NO_INPUT    sanitize.c   -o sanitize
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DYY_NO_UNPUT    urldecode.c   -o urldecode
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make -C ast 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast'
+make -C interpreter 
+make[2]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast/interpreter'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\" -I../.. -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o interpreter.o interpreter.c
+make[2]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast/interpreter'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o ast.o ast.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o tokens.o tokens.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o basilisk.o basilisk.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o translate.o translate.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o allocator.o allocator.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o faststack.o faststack.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o stencil.o stencil.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o types.o types.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o references.o references.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o kernels.o kernels.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\" grammar.c -o grammar
+./grammar < basilisk.yacc  > grammar.h
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -DBASILISK=\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"   -c -o check.o check.c
+ar cr libast.a ast.o tokens.o basilisk.o translate.o allocator.o faststack.o stencil.o types.o references.o kernels.o check.o interpreter/interpreter.o
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast'
+make -C kdt 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/kdt'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 -D_FILE_OFFSET_BITS=64 -c kdt.c
+ar cr libkdt.a kdt.o
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 xyz2kdt.c kdt.o -o xyz2kdt -lm
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 kdtquery.c kdt.o -o kdtquery -lm
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/kdt'
+make -C wsServer 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer'
+cc -std=c99 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE=1 -pedantic  -Wno-unused-result -Wno-overlength-strings -fno-diagnostics-show-caret /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/base64/base64.c -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 -I /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/include -c -o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/base64/base64.o
+cc -std=c99 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE=1 -pedantic  -Wno-unused-result -Wno-overlength-strings -fno-diagnostics-show-caret /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/handshake/handshake.c -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 -I /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/include -c -o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/handshake/handshake.o
+cc -std=c99 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE=1 -pedantic  -Wno-unused-result -Wno-overlength-strings -fno-diagnostics-show-caret /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/sha1/sha1.c -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 -I /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/include -c -o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/sha1/sha1.o
+cc -std=c99 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE=1 -pedantic  -Wno-unused-result -Wno-overlength-strings -fno-diagnostics-show-caret /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/ws.c -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -O2 -I /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/include -c -o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/ws.o
+/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/ws.c: In function ‘do_handshake’:
+/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/ws.c:567:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ar cr libws.a /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/base64/base64.o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/handshake/handshake.o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/sha1/sha1.o /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer/src/ws.o
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer'
+make -C gl 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl'
+make -C tinyrenderer 
+make[2]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl/tinyrenderer'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -c tiny.c
+make[2]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl/tinyrenderer'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I..   -c -o trackball.o trackball.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I..   -c -o utils.o utils.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I..   -c -o polygonize.o polygonize.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I..   -c -o og_stroke_mono_roman.o og_stroke_mono_roman.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I.. -c -o parser.o parser.tab.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I..   -c -o TinyPngOut.o TinyPngOut.c
+TinyPngOut.c: In function ‘TinyPngOut_init’:
+TinyPngOut.c:37:30: warning: ‘nonnull’ argument ‘out’ compared to NULL [-Wnonnull-compare]
+   37 |         if (w == 0 || h == 0 || out == NULL)
+      |                              ^
+ar cr libglutils.a trackball.o utils.o polygonize.o og_stroke_mono_roman.o parser.o TinyPngOut.o
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -I..   -c -o fb_tiny.o fb_tiny.c
+ar cr libfb_tiny.a fb_tiny.o tinyrenderer/tiny.o
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl'
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DLIBDIR=\"`pwd`\" -c include.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DLIBDIR=\"`pwd`\" -c postproc.c
+cc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DLIBDIR=\"`pwd`\" \
+	-DCC99="\"cc -std=c99 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE=1 -pedantic  -Wno-unused-result -Wno-overlength-strings -fno-diagnostics-show-caret\"" \
+	-DCPP99="\"\"" \
+	-DCADNACC="\"clang -D_CADNA=1 -x c++ -m64 -Wno-unused-function -Wno-unused-result -Wno-c++11-compat-deprecated-writable-strings -Wno-address-of-array-temporary\"" \
+	-DBASILISK="\"/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src\"" \
+	qcc.c include.o postproc.o -o qcc -Last -last -lm
+cd darcsit && make && cd cgi-bin && make
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit/cgi-bin'
+chmod 755 darcsit
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit/cgi-bin'
+./qcc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -autolink bview.c -o bview2D -lfb_tiny -lm
+./display.h: In function ‘display_control_update’:
+./display.h:465:67: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+./qcc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -autolink -grid=octree bview.c -o bview3D -lfb_tiny -lm
+./display.h: In function ‘display_control_update’:
+./display.h:465:67: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+./qcc -std=c99 -D_XOPEN_SOURCE=700 -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -autolink -grid=multigrid bview.c -o bview2Dm -lfb_tiny -lm
+./display.h: In function ‘display_control_update’:
+./display.h:465:67: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[0;36mBuilding basilisk (final build)...[0m
+make -C darcsit 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make -C ast 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast'
+make -C interpreter 
+make[2]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast/interpreter'
+make[2]: 'interpreter.o' is up to date.
+make[2]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast/interpreter'
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/ast'
+make -C kdt 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/kdt'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/kdt'
+make -C wsServer 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/wsServer'
+make -C gl 
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl'
+make -C tinyrenderer 
+make[2]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl/tinyrenderer'
+make[2]: 'tiny.o' is up to date.
+make[2]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl/tinyrenderer'
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/gl'
+cd darcsit && make && cd cgi-bin && make
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit'
+make[1]: Entering directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit/cgi-bin'
+chmod 755 darcsit
+make[1]: Leaving directory '/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/src/darcsit/cgi-bin'
+
+[0;36mChecking qcc installation...[0m
+[0;32m✅ qcc is properly installed.[0m
+cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+[0;32m✅ Basilisk ref-locked installation complete![0m
+Installed ref:
+  v2026-01-13
+To use basilisk in your shell, run:
+  source /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/.project_config
+Lock stamp:
+  /home/kqdx/basilisk_work/reproductions/drop_impact_20260718/upstream/basilisk/.comphy-lock
+	Command being timed: "./reset_install_basilisk-ref-locked.sh --ref=v2026-01-13 --hard"
+	User time (seconds): 29.45
+	System time (seconds): 3.87
+	Percent of CPU this job got: 35%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:34.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 394188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 42
+	Minor (reclaiming a frame) page faults: 821516
+	Voluntary context switches: 24204
+	Involuntary context switches: 250
+	Swaps: 0
+	File system inputs: 175744
+	File system outputs: 125680
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

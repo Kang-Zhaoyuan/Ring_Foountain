@@ -323,3 +323,56 @@ observed first jet, hourglass closure, and later jet. Do not tune contact angle
 or surface tension to these frames. The next gate is a project-owned,
 license-clear fixed-embed dynamic wetting/detachment closure validated first
 against the held-out cavity topology.
+
+## Independent CoMPhy Drop-Impact reproduction baseline
+
+Validation date: 2026-07-18. Status: **minimum reproduction PASS; scientific
+reproduction PARTIAL**.
+
+This benchmark was executed outside the Ring Fountain repository in
+`/home/kqdx/basilisk_work/reproductions/drop_impact_20260718/`. The external
+Drop-Impact repository was detached at
+`9fd0db798ec5a05f8410886231bdfbe30fac051d`; an isolated Basilisk
+`v2026-01-13` installation was used. The main read-only Basilisk tree was not
+used, and no upstream GPL-3.0 source or external build product was migrated.
+Case 13 tracks only material created by the audit.
+
+The unchanged default source compiled with the pinned external qcc and no
+Drop-Impact warning. Two physically and numerically identical L8 cases exited
+normally after 116 steps. Their complete scalar logs and PLIC facets at
+`tU/R=0.1` have matching SHA256 hashes; their final volume, energy, maximum
+velocity, leaf-cell count, level, cell width, VOF range, and invalid-value
+records are identical. The We=20 L8 control differs meaningfully: at
+`tU/R=0.3`, footprint radius is `1.07090 R` versus `0.944984 R` for We=10,
+and logged kinetic energy is `1.87642` versus `1.83775`.
+
+The native post-processing path restored restart and intermediate dumps,
+exported PLIC facets, produced 32 frames and a video externally, and generated
+footprint series. The upstream labels that describe raw x as radial, y as
+axial, and footprint cutoff units as metres are incorrect. Pinned Basilisk AXI
+uses axial x and radial y; all audit tables and migrated figures use `x/R`,
+`r/R`, `tU/R`, velocity `U`, volume `R^3`, and energy
+`rho_l U^2 R^3`. The native L8 cutoffs at 0.001--0.01 R lie below the first
+cell centre and return zero; the comparison uses wall-normal `x/R<=0.05`.
+
+| level | max leaf cells | min Delta/R | max volume drift | KE at t=.3 | window footprint @ t=.31 | max snapshot speed | solver time |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| L10 | 33,004 | 0.0078125 | 1.430e-5 | 1.82764 | 0.890829 | 11.7074 | 18.07 s |
+| L11 | 118,930 | 0.00390625 | 5.677e-6 | 1.84566 | 0.894809 | 14.7933 | 100.6 s |
+| L12 | 460,933 | 0.001953125 | 2.502e-6 | 1.85405 | 0.895490 | 18.8743 | 924.0 s |
+
+L11-to-L12 integral changes are below the provisional 5% engineering gate:
+final volume changes `0.000604%`, common-time kinetic energy changes
+`0.41--0.46%`, and short-window footprint changes `0.0761%`. The symmetric
+interface Hausdorff distance falls from `0.002914 R` at `t=.1` to `0.002670 R`
+at `t=.3`. However, maximum local speed increases `27.59%`, the largest
+footprint remains at the final available snapshot, no true maximum-spreading
+time is observed, and the wall has no explicit contact-angle or dynamic-wetting
+model. These prevent scientific PASS.
+
+Measured L11-to-L12 cost ratios extrapolate a short L14 run to about 21.7 hours
+and the unchanged default horizon to roughly nine days and 6.5--23.5 GB. Both
+cross the agreed resource gate, so neither was started. Full evidence,
+limitations, commands, failure records, coordinate audit, and hashes are in
+`cases/13_comphy_drop_impact_reproduction/`. This result validates an audit
+workflow, not Drop-Impact physics for the ring geometry.
