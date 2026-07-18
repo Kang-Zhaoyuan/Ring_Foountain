@@ -1,0 +1,7 @@
+parameter	value	unit	status
+first_launch_time	0.0175	s	frame_335_no-jet boundary
+first_launch_speed	5.43291394	m/s	fit
+first_linear_damping	34.782	1/s	fit
+worthington_launch_time	0.11	s	frame_550_onset
+worthington_launch_speed	4.95370813	m/s	fit
+worthington_linear_damping	25.732	1/s	fit

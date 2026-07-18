@@ -1,5 +1,41 @@
 # Validation record
 
+## Case 17 calibrated visible jets
+
+Validation date: 2026-07-19. Status: **hybrid height PASS; bulk numerical
+health PASS; native L7 thin-jet resolution FAIL**.
+
+Case 17 freezes the Case 12 geometry, trajectory and fluids and adds two
+separate, auditable layers.  The L7 VOF/EMBED calculation supplies the bulk
+flow and conservation record.  A reduced-order damped ballistic model supplies
+the visible tip of the sub-grid liquid/droplet chain.  The distinction is
+mandatory: the final native material PLIC height at 52.5 ms is `9.144950 mm`,
+whereas the calibrated visible-tip height is `105.800000 mm` against the exact
+Case 12 value `105.80 mm`.
+
+The hybrid model also gives `126.999864 mm` at 77.5 ms for the persistent first
+jet, and `107.000000/130.999895 mm` at 143.5/160 ms for the Worthington jet.
+Those three target values are provisional frame-based estimates with
+`+/-12`, `+/-12` and `+/-15 mm` uncertainties.  Crown-splash keypoints are
+`20/26/32 mm` at `17.5/30/52.5 ms`, with 8--10 mm uncertainty, and fade to
+zero at the observed 110 ms relaxed-surface frame.  Only the 52.5 ms first-jet
+number is an exact user-supplied measurement.
+
+The accepted 165 ms L7 run compiles and exits with code 0.  Across 326 health
+records it has maximum absolute volume-budget residual `0.947609%`, maximum
+speed `11.278923 m/s`, minimum time step `6.010542e-6 s`, 131,072 leaf cells,
+zero invalid values and exactly zero wetting-added mobile volume.  The run copy
+and tracked source have identical SHA256
+`8b1ddaee9c98ae7920c5a929273df323f6c05c70c4dbc0410efd9c2c8fc15436`.
+
+Rejected screens include direct axial acceleration, aperture velocity
+relaxation, longer impulse duration and continuity-scaled converging sheets.
+The strongest L6 sheet screen raised the native height only to `10.1 mm` and
+was not disguised as success.  Case 17 is therefore a one-specimen calibrated
+closure, not grid convergence or a prediction for other rings/releases.
+Reproducible parameters, event tables, source hashes, literature links and the
+full iteration record are under `cases/17_calibrated_jet_impulses/`.
+
 ## Case 16 impact-driven through-hole jet
 
 Status: diagnostic integrity PASS; mechanism modification FAIL; height

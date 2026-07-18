@@ -1,0 +1,8 @@
+feature	frame	time_ms	target_mm	uncertainty_mm	status	provenance
+first_jet	405	52.5	105.80	5	exact_user_value	case12/video_observations.tsv
+first_jet	455	77.5	127	12	provisional_pixel_review	case12/raw/frame_0455.png
+crown_envelope	335	17.5	20	8	provisional_pixel_review	case12/raw/frame_0335.png
+crown_envelope	360	30	26	8	provisional_pixel_review	case12/raw/frame_0360.png
+crown_envelope	405	52.5	32	10	provisional_pixel_review	case12/raw/frame_0405.png
+worthington_jet	587	143.5	107	12	provisional_pixel_review	case12/raw/frame_0587.png
+worthington_jet	620	160	131	15	provisional_pixel_review	case12/raw/frame_0620.png

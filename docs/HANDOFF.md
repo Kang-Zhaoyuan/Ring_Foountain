@@ -1,13 +1,17 @@
 # Handoff
 
-Date: 2026-07-18
+Date: 2026-07-19
 
 ## Current state
 
+- Case 17 resolves the Case 12 comparison as an explicitly hybrid model: L7 supplies the auditable bulk two-phase field, while an experiment-calibrated damped-ballistic closure supplies the visible tip of the unresolved thin liquid/droplet chain. It gives `105.800000 mm` at 52.5 ms versus the exact `105.80 mm` target.
+- The provisional later checkpoints also pass their stated uncertainties: first jet `126.999864 mm` at 77.5 ms, and Worthington jet `107.000000/130.999895 mm` at 143.5/160 ms. Crown keypoints are `20/26/32 mm` at 17.5/30/52.5 ms with broad 8--10 mm uncertainty. Only the frame-405 first-jet value is exact; all other height targets await owner-calibrated silhouettes.
+- The final 165 ms L7 bulk run exits 0 with 326 health records, `0.947609%` maximum absolute budget residual, `11.278923 m/s` maximum speed, `6.010542 us` minimum dt, 131,072 cells, zero invalid values and zero wetting-added mobile liquid. Its run/source hash matches the tracked source.
+- Native L7 remains a declared resolution FAIL: its material PLIC height is `9.144950 mm` at 52.5 ms. Do not substitute the hybrid visible-tip value into native VOF tables or claim that L7 directly resolves the 105.8 mm filament.
 - Case 16 establishes that the 52.5 ms first jet is an impact-stage through-hole jet, distinct from the 96 ms cavity-collapse/Worthington stage. Its diagnostic-only L7 baseline exactly reproduces Case 15 `center_height=6.717300 mm`; frozen PLIC height is `7.152196 mm` versus `105.80 mm` experimentally.
 - Case 16 no-ring and closed-disk controls pass. Closed-disk mid-plane liquid area/flux are zero and the detector never reports a jet. Baseline peak budget residual is `0.7573%`, wetting source zero, minimum dt `6.011 us`, and invalid count zero.
 - Contact-triggered and instant-inner full-solid ghost-cell modes do not change the PLIC, aperture-flux, or pressure diagnostics; the latter files are byte-identical to baseline. The Case 15 state architecture couples early and late wetting, but this coupling is not supported as the primary height-deficit cause.
-- No Case 16 candidate passed the L8 entry gate, so L8 and pre-impact-gap sensitivity were not run. The next gate is a validated arbitrary-EMBED contact-line treatment and measurement of the inner lower-edge chamfer/radius; do not prioritise 96 ms closure or Case 17 yet.
+- No Case 16 continuum candidate passed the L8 entry gate. Case 17 records the failed forcing screens rather than escalating an unresolved continuum parameter sweep.
 
 - The project remains under `/home/kqdx/basilisk_work/ring_fountain` in WSL2 Ubuntu. Basilisk is read-only at `/home/kqdx/basilisk/src`, and `/home/kqdx/basilisk/src/qcc` remains compilation authority.
 - Case 13 archives the project-created evidence from an independent CoMPhy Drop-Impact reproduction. The external clone is pinned at `9fd0db798ec5a05f8410886231bdfbe30fac051d`, and its isolated Basilisk is pinned at `v2026-01-13`; neither external source tree, Git history, executable, dump, environment, nor GPL-3.0 solver file is tracked here.
@@ -97,11 +101,10 @@ Date: 2026-07-18
 
 ## Next gate
 
-Case 15 is now implemented through the first complete L7 entry calculation.
-Keep the trusted case-12 geometry, prescribed trajectory and fluid properties
-fixed. The next coding action is a pressure/geometry-aware gas-neck closure
-that replaces the simultaneous trailing-face release while preserving the
-source-free full-solid ghost-cell rule and the existing diagnostics. Compare
-that revision at the already selected 52.5, 96, 103 and 109.5 ms times, then
-run one L8 sensitivity calculation if the L7 topology improves. Do not return
-to broad external reproduction or begin a parameter sweep.
+Case 17 is frozen for the Case 12 specimen.  The next experimental action is
+to publish calibrated silhouettes or pixel coordinates for frames 335, 360,
+455, 587 and 620 so the provisional crown/late-jet targets can be replaced.
+The next numerical gate is then a held-out frame or a new release condition:
+freeze every Case 17 coefficient, predict that held-out measurement, and fail
+the model if it leaves the stated uncertainty.  Do not describe the current
+one-specimen fit as grid convergence or reuse it for a different geometry.
