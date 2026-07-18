@@ -36,3 +36,6 @@ make validate CASE=cases/00_official_missing_metric
 9. Isolated constant-speed Galilean-frame ring-entry exploration.
 10. Isolated accelerating-frame free-fall ring-entry exploration and laboratory-frame rendering.
 11. Experimental 10 cm-release cavity-detachment constraint and empirical topology scaffold.
+12. Workbook-based event-height/timing intake and coherent-height calibration.
+13. First-jet shape correction and L7/L8 native-facet audit.
+14. Separate 26.15 g video-specimen trajectory/morphology audit and laboratory key-frame atlas.

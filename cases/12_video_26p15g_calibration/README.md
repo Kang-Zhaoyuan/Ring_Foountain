@@ -17,8 +17,11 @@ has SHA256
 frame 300 as first contact.
 
 The isolated solver is project-authored but includes the unlicensed external
-`contact-embed.h`. Source, binary, header, decoded video frames, and the video
-itself remain outside Git. `source_hashes.tsv` freezes all relevant hashes.
+`contact-embed.h`. Solver source, binary, header, and the complete video remain
+outside Git. At the project owner's explicit request, 15 selected decoded
+laboratory frames and project-authored annotations are now tracked in
+`experiment_frames/`; their provenance, SHA256 hashes, and media-rights limit
+are documented there. `source_hashes.tsv` freezes the numerical-source hashes.
 Compilation used `/home/kqdx/basilisk/src/qcc -O2 -Wall` and completed without
 diagnostics. Basilisk source was not modified.
 
@@ -113,13 +116,21 @@ and holdout verdict.
 
 ## Review material
 
+- `experiment_frames/README.md` is the visual laboratory atlas for human
+  review. It embeds four overview sheets and links to 15 exact raw frames, 15
+  captioned full frames, and five enlarged object/phenomenon callouts.
+- `experiment_frames/frame_index.tsv` freezes each selected frame's physical
+  time, fitted speed, position/evidence basis, file paths, and hashes.
+- `experiment_frames/callout_index.tsv` maps every callout to its exact raw
+  frame and hash. The overlays are provisional until project-owner review.
 - `review/L7_vs_L8_early_holdout.png` compares L7 and L8 at frames 335, 360,
   and 405.
 - `review/L7_holdout_sequence.png` shows all seven L7 holdout times in a fixed
   laboratory frame.
-- Ignored private comparison sheets containing decoded video frames are at
+- Additional ignored comparison sheets combining experimental and CFD frames
+  are at
   `runs/20260717_213534_12_video_26p15g_calibration/review/video_vs_L7_events.png`
-  and `video_vs_L7_holdout.png`. They are for local human review only.
+  and `video_vs_L7_holdout.png`; those combined sheets remain local-only.
 
 ## Decision
 

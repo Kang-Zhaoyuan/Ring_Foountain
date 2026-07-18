@@ -1,0 +1,6 @@
+file	frame	title	note	source_raw_file	sha256
+callouts/01_ring_and_waterline_frame_0280.jpg	280	Ring approaching the waterline	Identifies the metal ring and the undisturbed waterline before contact.	raw/frame_0280.png	d969d3d640609d9564caba83c7bde44f12308daaee58321afbe3acb0be027591
+callouts/02_first_contact_frame_0300.jpg	300	First water contact	Identifies the ring at the contact-frame time origin and the waterline.	raw/frame_0300.png	5a3d1e3f1c9ae25f857e8a435f786498b73f6d540ee41b84d0edc2df1b5ccee8
+callouts/03_first_jet_and_open_cavity_frame_0405.jpg	405	First jet, crown, and open cavity	Labels the thin first jet, crown splash, open air cavity, and submerged ring.	raw/frame_0405.png	ffe9aed945f835321965449057959f46d5119caf85fc158a83cad156f6f93a94
+callouts/04_hourglass_closure_frame_0492.jpg	492	Hourglass cavity at closure	Labels the first-jet remnant, hourglass air cavity, cavity neck, and ring.	raw/frame_0492.png	4e245cfe7fb46bd13e93857ee3f1b1c38de7853b2741295ca55a111277ac96b2
+callouts/05_later_jet_frame_0587.jpg	587	Later central jet	Labels the later jet, mostly flat surrounding surface, and submerged ring.	raw/frame_0587.png	a2aa0234d53cc0aa3acd65a8a8c7f31e0a8d7124efe057ba3431e248553d7d5d

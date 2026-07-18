@@ -270,8 +270,13 @@ The separate video specimen has `Ri=5.05 mm`, `Ro=20.07 mm`, thickness
 `2.86 mm`, and measured mass `26.15 g`. The read-only source-video SHA256 is
 `c5982c4ee7c2332d9798de1cc61a57400bb9acb694d9bfbb5473dba189ab8c07`.
 Physical timing uses the user-supplied original `2000 fps` and contact frame
-300; the encoded `30 fps` is playback only. No video or decoded frame is
-tracked.
+300; the encoded `30 fps` is playback only. The complete video remains outside
+Git. At the project owner's explicit request, 15 selected exact decoded frames,
+15 captioned derivatives, five object/phenomenon callouts, and four overview
+sheets are tracked in `cases/12_video_26p15g_calibration/experiment_frames/`.
+Their indexes freeze source-frame relationships and SHA256 hashes. The labels
+remain provisional pending owner review, and no permissive media license is
+inferred from repository inclusion.
 
 Frames 103 and 155 independently give impact speeds `1.34772` and
 `1.34338 m/s`. Their mean `1.34555 m/s` corresponds to a vacuum release
