@@ -8,10 +8,12 @@
  * post-contact deceleration.
  *
  * The wetting closure is deliberately small and explicit.  A monotone scalar
- * propagates through a thin embedded-solid shell when it touches physical
- * liquid or an already-wet shell neighbour.  Its propagation speed is a model
- * parameter in m/s.  The scalar supplies liquid VOF ghost/cut-cell values and
- * the resulting physical liquid source is measured at every step.
+ * propagates through a thin embedded-solid shell using physical arclength
+ * measured from the leading face.  Its propagation speed is a model parameter
+ * in m/s and does not depend on the number of cells through the ring.  The
+ * scalar supplies liquid VOF values only in full-solid ghost cells; physical
+ * cut-cell VOF is never overwritten.  Any resulting mobile-liquid source is
+ * nevertheless measured at every step.
  */
 
 #include "grid/multigrid.h"
@@ -34,7 +36,7 @@ typedef struct {
   double rho_liquid, rho_gas, mu_liquid, mu_gas;
   double surface_tension, gravity;
   double impact_speed, terminal_speed, trajectory_decay_rate;
-  double wetting_speed, wetting_band_cells, liquid_contact_threshold;
+  double wetting_speed, wetting_band_cells, wetting_relaxation_time;
   double max_speed_abort;
 } Config;
 
@@ -44,7 +46,7 @@ static Config cfg = {
   998., 1.2, 1.e-3, 1.8e-5,
   0.072, 9.81,
   1.34555038115, 0.720414774329, 76.9112141855,
-  0.0297916666667, 1.25, 0.5,
+  0.0297916666667, 1.25, 0.005,
   100.
 };
 
@@ -85,6 +87,24 @@ static double ring_levelset (double xx, double rr)
 {
   return max (max (cfg.Ri - rr, rr - cfg.Ro),
               fabs (xx) - cfg.thickness/2.);
+}
+
+/* Shortest surface arclength from the leading lower face.  The bottom is wet
+ * at first contact, both vertical faces advance over the physical thickness,
+ * and arrival at the upper corners releases the complete trailing face. */
+static double wetting_surface_distance (double xx, double rr)
+{
+  const double dlower = fabs(xx + cfg.thickness/2.);
+  const double dupper = fabs(xx - cfg.thickness/2.);
+  const double dinner = fabs(rr - cfg.Ri);
+  const double douter = fabs(rr - cfg.Ro);
+  const double nearest = min(min(dlower, dupper), min(dinner, douter));
+
+  if (nearest == dlower)
+    return 0.;
+  if (nearest == dinner || nearest == douter)
+    return clamp(xx + cfg.thickness/2., 0., cfg.thickness);
+  return cfg.thickness;
 }
 
 static double prescribed_speed (double tau)
@@ -143,7 +163,7 @@ static int set_parameter (const char * key, const char * value)
   else if (!strcmp(key, "trajectory_decay_rate")) cfg.trajectory_decay_rate = atof(value);
   else if (!strcmp(key, "wetting_speed")) cfg.wetting_speed = atof(value);
   else if (!strcmp(key, "wetting_band_cells")) cfg.wetting_band_cells = atof(value);
-  else if (!strcmp(key, "liquid_contact_threshold")) cfg.liquid_contact_threshold = atof(value);
+  else if (!strcmp(key, "wetting_relaxation_time")) cfg.wetting_relaxation_time = atof(value);
   else if (!strcmp(key, "max_speed_abort")) cfg.max_speed_abort = atof(value);
   else {
     fprintf(stderr, "unknown parameter '%s'\n", key);
@@ -197,9 +217,8 @@ static int parameters_are_valid (void)
     cfg.surface_tension > 0. && cfg.gravity >= 0. &&
     cfg.impact_speed > 0. && cfg.terminal_speed >= 0. &&
     cfg.trajectory_decay_rate > 0. && cfg.wetting_speed >= 0. &&
-    cfg.wetting_band_cells > 0. &&
-    cfg.liquid_contact_threshold > 0. &&
-    cfg.liquid_contact_threshold < 1. && cfg.max_speed_abort > 0.;
+    cfg.wetting_band_cells > 0. && cfg.wetting_relaxation_time > 0. &&
+    cfg.max_speed_abort > 0.;
 }
 
 static double liquid_volume (void)
@@ -238,7 +257,7 @@ static void write_parameters (void)
   fprintf(fp, "trajectory_decay_rate\t%.17g\t1/s\n", cfg.trajectory_decay_rate);
   fprintf(fp, "wetting_speed\t%.17g\tm/s\n", cfg.wetting_speed);
   fprintf(fp, "wetting_band_cells\t%.17g\tcells\n", cfg.wetting_band_cells);
-  fprintf(fp, "liquid_contact_threshold\t%.17g\t-\n", cfg.liquid_contact_threshold);
+  fprintf(fp, "wetting_relaxation_time\t%.17g\ts\n", cfg.wetting_relaxation_time);
   fclose(fp);
 }
 
@@ -312,7 +331,8 @@ event init (t = 0)
   fprintf(diagnostics_fp,
           "i\tt\tdt\tframe_speed\tframe_acceleration\tring_depth\t"
           "liquid_volume\texpected_volume\tbudget_residual\twetting_source\t"
-          "wet_shell_fraction\tkinetic_energy\tmax_speed\tleaf_cells\t"
+          "wetting_front_distance\twet_shell_fraction\tkinetic_energy\t"
+          "max_speed\tleaf_cells\t"
           "liquid_components\tconnected_height\tcenter_height\tinvalid\n");
   fflush(diagnostics_fp);
 }
@@ -330,7 +350,7 @@ event acceleration (i++)
 event dynamic_wetting (i++)
 {
   scalar next_wet[];
-  boundary ((scalar *){f, wet, cs});
+  const double front_distance = cfg.wetting_speed*t;
 
   foreach() {
     const double phi = ring_levelset(x, y);
@@ -341,21 +361,15 @@ event dynamic_wetting (i++)
       continue;
     }
 
-    double liquid_seed = 0.;
-    if (cs[1,0] > 1.e-6 && f[1,0] >= cfg.liquid_contact_threshold)
-      liquid_seed = 1.;
-    if (cs[-1,0] > 1.e-6 && f[-1,0] >= cfg.liquid_contact_threshold)
-      liquid_seed = 1.;
-    if (cs[0,1] > 1.e-6 && f[0,1] >= cfg.liquid_contact_threshold)
-      liquid_seed = 1.;
-    if (cs[0,-1] > 1.e-6 && f[0,-1] >= cfg.liquid_contact_threshold)
-      liquid_seed = 1.;
-
-    const double neighbour_wet = max(max(wet[1,0], wet[-1,0]),
-                                     max(wet[0,1], wet[0,-1]));
-    const double drive = max(liquid_seed, neighbour_wet);
-    const double increment = dt*cfg.wetting_speed/max(Delta, 1.e-30)*drive;
-    next_wet[] = clamp(max(wet[], wet[] + increment), 0., 1.);
+    const double surface_distance = wetting_surface_distance(x, y);
+    double target = 0.;
+    if (surface_distance <= 0.)
+      target = 1.;
+    else if (front_distance > surface_distance)
+      target = clamp((front_distance - surface_distance)/
+                     max(cfg.wetting_speed*cfg.wetting_relaxation_time,
+                         1.e-30), 0., 1.);
+    next_wet[] = max(wet[], target);
   }
   boundary ({next_wet});
 
@@ -363,9 +377,11 @@ event dynamic_wetting (i++)
   foreach(reduction(+:added)) {
     const double oldf = f[];
     wet[] = next_wet[];
+    /* Write only full-solid ghost cells.  Physical cut cells are never
+     * converted into liquid by the closure. */
     if (ring_levelset(x, y) <= 0. &&
         ring_levelset(x, y) >= -cfg.wetting_band_cells*Delta &&
-        cs[] < 1.)
+        cs[] <= 1.e-12)
       f[] = max(f[], wet[]);
     added += 2.*pi*y*sq(Delta)*cs[]*max(f[] - oldf, 0.);
   }
@@ -413,7 +429,8 @@ static void connected_heights (int * component_count,
   *center_height = h_center > -HUGE/2. ? max(h_center, 0.) : 0.;
 }
 
-event diagnostics (t = 0.; t += cfg.output_interval; t <= cfg.t_end)
+event diagnostics (t = 0.; t += cfg.output_interval;
+                   t <= cfg.t_end + 1.e-12)
 {
   double volume = 0., kinetic_energy = 0., max_speed = 0.;
   double shell_measure = 0., wet_measure = 0.;
@@ -449,11 +466,11 @@ event diagnostics (t = 0.; t += cfg.output_interval; t <= cfg.t_end)
 
   fprintf(diagnostics_fp,
           "%d\t%.17g\t%.17g\t%.17g\t%.17g\t%.17g\t%.17g\t%.17g\t"
-          "%.17g\t%.17g\t%.17g\t%.17g\t%.17g\t%ld\t%d\t%.17g\t%.17g\t%ld\n",
+          "%.17g\t%.17g\t%.17g\t%.17g\t%.17g\t%.17g\t%ld\t%d\t%.17g\t%.17g\t%ld\n",
           i, t, dt, prescribed_speed(t),
           -cfg.gravity + prescribed_speed_derivative(t), depth,
           volume, expected, residual, cumulative_wetting_source,
-          wet_fraction, kinetic_energy, max_speed, grid->n,
+          cfg.wetting_speed*t, wet_fraction, kinetic_energy, max_speed, grid->n,
           components, connected_height, center_height, invalid);
   fflush(diagnostics_fp);
 
@@ -475,10 +492,9 @@ event diagnostics (t = 0.; t += cfg.output_interval; t <= cfg.t_end)
   }
 }
 
-event stop_run (i++)
+event stop_run (t = cfg.t_end)
 {
-  if (t >= cfg.t_end)
-    return 1;
+  return 1;
 }
 
 event finalize (t = end)

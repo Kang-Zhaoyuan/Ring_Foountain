@@ -444,3 +444,35 @@ methods—locking, repeatability, connected-interface metrics, PLIC comparison,
 and resource gating—not direct transfer of GPL code, stationary-bubble
 assumptions, or unconverged numerical values into the ring solver. The existing
 Ring Fountain next gate remains unchanged.
+
+## First dynamic-wetting ring-entry implementation
+
+Validation date: 2026-07-18. Status: **functional implementation PASS;
+experimental morphology FAIL**.
+
+Case 15 is project-authored. It reuses the case-12 26.15 g specimen and
+prescribed post-contact path, the filtered two-phase AXI+EMBED organization
+exercised by Drop-Impact, and the connected-main-liquid diagnostic pattern
+exercised by Bursting-Bubble. No external GPL solver source is copied. A
+monotone wetting front advances by physical surface distance from the leading
+face at `0.0297917 m/s`; the value is calibrated from the observed 96 ms
+contact-to-hourglass interval rather than predicted.
+
+The closure writes VOF only in full-solid ghost cells. It never overwrites a
+physical cut cell, and all three initial runs report zero mobile-liquid source.
+In the isolated verifier, the L6 2 ms, L7 6 ms and L7 110 ms cases compile
+without warnings, exit normally, write PLIC and final dumps, and contain no
+invalid values. The long L7 run uses 131,072 uniform cells and completes 2,773
+steps in 283.4 s. Its maximum absolute volume-budget residual is `0.9592%`,
+maximum local speed is `18.146 m/s`, and maximum connected rise is `17.435 mm`.
+The WSL `/home/kqdx/basilisk/src/qcc` authority rerun remains a merge gate.
+
+The wetting front reaches the trailing face at 96 ms and finishes its disclosed
+5 ms relaxation at 101 ms. Native PLIC is last within one L7 cell of the ring
+at 102.5 ms and is more than three cells away at 103 ms. This passes the narrow
+implementation goal of source-free delayed detachment. It does not pass the
+experiment: at 52.5 ms the connected center rise is `6.717 mm`, only about
+one-sixteenth of the measured `105.80 mm` thin jet, and the later interface
+retains fragmented cavity remnants. No grid-convergence or predictive closure
+claim is made. The next gate is a project-owned pressure/geometry-aware gas-neck
+closure followed by one L8 sensitivity run, not another external reproduction.

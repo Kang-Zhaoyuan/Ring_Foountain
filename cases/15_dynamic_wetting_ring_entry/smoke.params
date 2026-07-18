@@ -21,6 +21,6 @@ trajectory_decay_rate=76.9112141855
 
 wetting_speed=0.0297916666667
 wetting_band_cells=1.25
-liquid_contact_threshold=0.5
+wetting_relaxation_time=0.005
 
 max_speed_abort=100.0

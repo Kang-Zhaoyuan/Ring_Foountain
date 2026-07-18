@@ -12,7 +12,8 @@ it is not another external-repository reproduction.
 - filtered water/air VOF, viscosity, surface tension, gravity and the
   prescribed-frame acceleration;
 - a project-owned finite-speed wetting front in a `1.25 Delta` ring shell;
-- cumulative accounting of liquid introduced by the closure;
+- ghost-cell-only wetting: physical cut-cell VOF is never overwritten;
+- cumulative accounting verifies that the closure adds no mobile liquid;
 - connected-main-liquid and centerline height diagnostics adapted from the
   method exercised in the Bursting-Bubble baseline;
 - native PLIC facets, final dump, mass budget, kinetic energy and safety data.
@@ -25,9 +26,12 @@ The initial wetting speed is
 
 so the experimental contact-to-hourglass interval supplies one disclosed
 calibration. It is not an independent closure-time prediction. Unlike the old
-single depth event, the new state advances locally from physical liquid contact
-or a wetted neighbouring shell cell, is monotone, and has a grid-scaled finite
-propagation speed.
+single depth event, the leading lower face has surface coordinate `s=0`, the
+inner/outer sides use `s=x+h/2`, and the trailing face uses
+`s=h`. The state is monotone and the front position `s=wetting_speed*t` is
+independent of grid spacing. Each newly reached surface relaxes to wet over
+`5 ms`; reaching both upper corners therefore releases the complete trailing
+face rather than requiring a slow radial sweep across it.
 
 No Tavares/Popinet contact header and no CoMPhy solver source is copied into
 this case. CoMPhy supplies the trusted solver organization, filtered two-phase
@@ -50,22 +54,40 @@ and process logs. `default.params` is the first L7 6 ms entry calculation;
 
 ## First local result
 
-Both initial calculations compile without warnings and exit normally:
+The source compiles without warnings with the isolated Basilisk verifier. All
+three first calculations exit normally, write non-empty native PLIC streams
+and final dumps, and contain no invalid values:
 
-| input | cells | end time | wet shell | budget residual | max speed | invalid |
+| input | cells | solved time | wet shell | max budget residual | max speed | wetting source |
 |---|---:|---:|---:|---:|---:|---:|
-| `smoke.params` | 32,768 | 2 ms | 2.052% | -0.02225% | 1.717 m/s | 0 |
-| `default.params` | 131,072 | 6 ms | 10.671% | -0.06858% | 1.714 m/s | 0 |
+| `smoke.params` | 32,768 | 2 ms | 40.625% | 0.0223% | 1.761 m/s | 0 |
+| `default.params` | 131,072 | 6 ms | 46.875% | 0.0610% | 2.629 m/s | 0 |
+| `entry_110ms.params` | 131,072 | 110 ms | 100% | 0.9592% | 18.146 m/s | 0 |
 
-Both runs write non-empty native PLIC streams and final dumps. The wetting
-source is nonzero and remains explicitly included in the expected-volume
-budget. These are functional results, not convergence evidence.
+The 110 ms run took 283.4 s. The front reaches the trailing face at 96 ms,
+the `5 ms` relaxation makes it fully wet at 101 ms, and native PLIC is last
+within one L7 cell of the ring at 102.5 ms; it is more than three cells away
+at 103 ms. This is the first source-free delayed-detachment implementation in
+the project.
+
+At the held-out 52.5 ms frame, however, the computed connected center rise is
+only `6.717 mm`, versus the measured thin-jet height `105.80 mm`. The run also
+reaches a local speed of `18.146 m/s`, and the post-detachment interface still
+contains fragmented cavity remnants. The closure therefore fixes the timing
+mechanism and removes artificial liquid injection, but it does not yet
+reproduce the observed jet morphology. The compact numerical record is in
+`first_run_summary.tsv`.
+
+These local results verify the implementation path. Project rule still makes
+`/home/kqdx/basilisk/src/qcc` in WSL the final compilation authority, so the
+same three commands must be rerun there before this branch is merged.
 
 ## Present boundary
 
-This round asks only whether the new closure compiles, starts from first
-contact, propagates wetting locally and preserves finite fields. It does not
-repeat the external benchmarks and does not claim grid convergence. After the
-smoke run, `entry_110ms.params` extends the same L7 case to 110 ms so it crosses
-the calibrated cavity-detachment interval, without changing any other physical
-parameter.
+This round establishes a working new physics branch; it does not repeat the
+external benchmarks and does not claim grid convergence or experimental
+validation. The next coding task is to replace the simultaneous trailing-face
+release with a pressure/geometry-aware gas-neck closure while keeping the
+trajectory, fluid properties and source-free ghost-cell rule fixed. A single
+L8 sensitivity run should follow that change; broad parameter scans remain
+out of scope.
