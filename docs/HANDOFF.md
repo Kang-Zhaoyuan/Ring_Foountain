@@ -6,6 +6,7 @@ Date: 2026-07-18
 
 - The project remains under `/home/kqdx/basilisk_work/ring_fountain` in WSL2 Ubuntu. Basilisk is read-only at `/home/kqdx/basilisk/src`, and `/home/kqdx/basilisk/src/qcc` remains compilation authority.
 - The general fixed embedded VOF contact-line gate remains failed. The Tavares header is still unlicensed evaluation material outside the repository; only project-authored descriptions, diagnostics, tables, and results are tracked.
+- Root `requirements.txt` records that all tracked Python analysis tools use only the standard library. It also freezes the verified Python/system-tool versions and Basilisk Darcs weak hash; the unlicensed external contact header remains intentionally unavailable through pip or this repository.
 - The earlier ring uses user-confirmed density `7800 kg/m^3`, dimensions `Ri=2.5 mm`, `Ro=15 mm`, `h=4 mm`, and derived mass `21.441 g`. The 17 July workbook describes a different specimen and must not be mixed with it.
 - The free-fall exploration uses a fixed embedded ring in an accelerating ring frame, uniform multigrid, axisymmetric two-phase VOF, gravity, surface tension, and the uncalibrated 75 deg contact-angle assumption. It integrates laboratory ring position and speed from an axisymmetric fluid-traction estimate. It is not moving-cut-cell geometry.
 - Hydrostatic force, air-only free fall, dynamic hydrostatic stability, and prescribed-speed regression gates passed. Dump restart was rejected because it introduces a spurious pressure impulse and velocity disturbance.

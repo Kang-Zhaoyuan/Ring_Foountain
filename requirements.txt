@@ -1,0 +1,32 @@
+# Ring Fountain reproduction requirements
+#
+# Python >= 3.10 is required; the current workspace was verified with
+# Python 3.14.4. All tracked Python tools use only the standard library, so
+# there are intentionally no PyPI packages below. On PEP 668 distributions,
+# validate/install this file inside a virtual environment:
+#
+#   python3 -m venv .venv
+#   .venv/bin/python -m pip install -r requirements.txt
+#
+# The CFD and rendering workflow also requires system software, which pip
+# cannot install. Verified versions in WSL2 Ubuntu are listed for provenance;
+# compatible versions are expected to work.
+#
+#   Basilisk qcc  /home/kqdx/basilisk/src/qcc (read-only project authority)
+#   Basilisk VCS  Darcs weak hash d988c85fac0fff4e4db82ca6c839972912bac005
+#                 2630 patches at the time of verification
+#   GCC           15.2.0
+#   GNU Bash      5.3.9
+#   Git           2.53.0
+#   gnuplot       6.0 patchlevel 2
+#   FFmpeg        8.0.1
+#   ImageMagick   7.1.2-18
+#
+# Standard Unix tools used by the shell workflow include make, awk, sed,
+# find, sort, xargs, sha256sum, and /usr/bin/time. gdb is optional and is only
+# needed to reproduce the documented SIGFPE backtrace investigation.
+#
+# The isolated exploratory contact-line runs additionally require the exact
+# external contact-embed header recorded by hash in the relevant case. That
+# unlicensed evaluation source is deliberately not distributed by this
+# repository and cannot be installed from this requirements file.
