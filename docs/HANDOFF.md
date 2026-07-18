@@ -88,7 +88,17 @@ Date: 2026-07-18
 
 ## Next gate
 
-The only next action is to develop a project-owned, license-clear dynamic
-wetting/detachment closure for the fixed embedded ring and validate it first
-against the held-out cavity topology. Do not change contact angle, surface
-tension, or the empirical trigger to force agreement with the video.
+Case 15 now begins the project-owned dynamic-wetting branch. It keeps the
+26.15 g specimen and prescribed video trajectory, replaces the one-time depth
+event with a finite-speed local wetting front, measures its liquid source, and
+uses connected-main-liquid height diagnostics. The first disclosed front speed
+is calibrated from the 96 ms contact-to-hourglass interval; it is not an
+independent timing prediction.
+
+The L6 2 ms and L7 6 ms first runs compile without warnings and exit normally.
+They use 32,768 and 131,072 cells, end with 2.052% and 10.671% wet-shell
+coverage, retain finite fields, and have maximum absolute volume-budget
+residuals below 0.07%. The next action is the prepared unchanged L7 110 ms
+calculation in `entry_110ms.params`. Do not return to broad external
+reproduction, and do not change surface tension or the trajectory during this
+first implementation sequence.

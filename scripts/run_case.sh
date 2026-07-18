@@ -2,6 +2,7 @@
 set -euo pipefail
 
 root=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+qcc=${QCC:-/home/kqdx/basilisk/src/qcc}
 case_dir=${1:?usage: run_case.sh CASE_DIR [PROGRAM_ARGS...]}
 shift || true
 case_dir=$(cd "$case_dir" && pwd)
@@ -23,14 +24,14 @@ sha256sum "$source" > "$run_dir/source.sha256"
 printf 'root=%s\ncase=%s\nrun=%s\n' "$root" "$case_dir" "$run_dir" > "$run_dir/parameters.txt"
 if git -C "$root" rev-parse HEAD > "$run_dir/git_commit.txt" 2>/dev/null; then :; else echo 'unavailable (git HEAD not resolved)' > "$run_dir/git_commit.txt"; fi
 if (cd /home/kqdx/basilisk && darcs changes --last=1) > "$run_dir/basilisk_darcs_patch.txt" 2>&1; then :; else echo 'darcs metadata unavailable' > "$run_dir/basilisk_darcs_patch.txt"; fi
-printf 'cd %q && %q ' "$case_dir" /home/kqdx/basilisk/src/qcc > "$run_dir/compile_command.txt"
+printf 'cd %q && %q ' "$case_dir" "$qcc" > "$run_dir/compile_command.txt"
 printf '%q ' -O2 -Wall $qcc_flags "$source_name" -o "$program" -lm >> "$run_dir/compile_command.txt"
 printf '\n' >> "$run_dir/compile_command.txt"
-if (cd "$case_dir" && /home/kqdx/basilisk/src/qcc -O2 -Wall $qcc_flags "$source_name" -o "$program" -lm) > "$run_dir/compile.log" 2>&1; then
+if (cd "$case_dir" && "$qcc" -O2 -Wall $qcc_flags "$source_name" -o "$program" -lm) > "$run_dir/compile.log" 2>&1; then
   printf '%q ' "$program" "$@" > "$run_dir/run_command.txt"
   printf '\n' >> "$run_dir/run_command.txt"
   set +e
-  (cd "$case_dir" && "$program" "$@") > "$run_dir/stdout.log" 2> "$run_dir/stderr.log"
+  (cd "$case_dir" && RUN_OUTPUT_DIR="$run_dir" "$program" "$@") > "$run_dir/stdout.log" 2> "$run_dir/stderr.log"
   status=$?
   set -e
 else
