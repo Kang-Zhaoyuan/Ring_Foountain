@@ -25,6 +25,13 @@ are documented there. `source_hashes.tsv` freezes the numerical-source hashes.
 Compilation used `/home/kqdx/basilisk/src/qcc -O2 -Wall` and completed without
 diagnostics. Basilisk source was not modified.
 
+A second owner-designated representative example is archived under
+`experiment_examples/row7_ideal_entry/`. It transcribes workbook row 7 from a
+new 1584-frame video, adds 19 exact decoded frames and four review sheets, and
+calculates contact speed using Shenzhen normal gravity. This evidence is Case
+18 intake material; it does not retroactively validate the rejected Case 12
+solver morphology.
+
 ## Model and specimen
 
 The video title gives `Ri=5.05 mm`, `Ro=20.07 mm`, thickness `2.86 mm`, and
@@ -116,6 +123,10 @@ and holdout verdict.
 
 ## Review material
 
+- `experiment_examples/row7_ideal_entry/README.md` is the visual and numerical
+  entry point for the new row-7 representative experiment. Its source locks,
+  raw frames, annotations, observation table, and fit table are independent of
+  the earlier 660-frame atlas.
 - `experiment_frames/README.md` is the visual laboratory atlas for human
   review. It embeds four overview sheets and links to 15 exact raw frames, 15
   captioned full frames, and five enlarged object/phenomenon callouts.

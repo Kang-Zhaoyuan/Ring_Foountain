@@ -1,0 +1,18 @@
+phase	frame	time_after_contact_ms	value	unit	quantity	basis
+approach	90	-92.5	77.92	mm	ring lower-face height above water	workbook
+approach	201	-37	43.53	mm	ring lower-face height above water	workbook
+approach	242	-16.5	20.18	mm	ring lower-face height above water	workbook
+contact	275	0	0	mm	first contact	workbook
+crown	374	49.5	34.38	mm	maximum tracked crown height	workbook
+first_jet	354	39.5	78.86	mm	tracked liquid centroid height	workbook
+first_jet	380	52.5	107.57	mm	tracked liquid centroid height	workbook
+first_jet	406	65.5	133.43	mm	tracked liquid centroid height	workbook
+first_jet	415	70	140.694	mm	tracked liquid centroid height	workbook
+first_jet	428	76.5	151.74	mm	tracked liquid centroid height	workbook
+first_jet	447	86	179.17	mm	tracked liquid centroid height	workbook
+second_jet	540	132.5	81.83	mm	tracked liquid centroid height	workbook
+second_jet	565	145	73.5	mm	tracked liquid centroid height	workbook
+second_jet	584	154.5	87.38	mm	tracked liquid centroid height	owner-corrected AG7 unit: 87.38 mm
+second_jet	598	161.5	106.94	mm	tracked liquid centroid height	workbook
+second_jet	638	181.5	128.71	mm	tracked liquid centroid height	workbook
+second_jet	663	194	142.27	mm	tracked liquid centroid height	workbook

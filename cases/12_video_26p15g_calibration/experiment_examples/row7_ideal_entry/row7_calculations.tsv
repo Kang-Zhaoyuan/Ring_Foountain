@@ -1,0 +1,14 @@
+model	quantity	value	unit	note
+approach_contact_constrained_free_acceleration	impact_speed	1.37345697698	m/s	three approach points; contact position fixed to zero
+approach_contact_constrained_free_acceleration	effective_acceleration	11.4685980575	m/s2	fitted rather than assumed
+approach_contact_constrained_free_acceleration	position_rmse	0.623947274681	mm	three approach points
+approach_contact_constrained_shenzhen_gravity	gravity	9.78792	m/s2	WGS-84 normal gravity at latitude 22.54 deg near sea level
+approach_contact_constrained_shenzhen_gravity	impact_speed	1.30369188248	m/s	acceleration fixed to Shenzhen normal gravity
+approach_contact_constrained_shenzhen_gravity	position_rmse	1.23949808388	mm	three approach points
+approach_contact_constrained_shenzhen_gravity	equivalent_vacuum_release_height	86.8219460539	mm	derived scale, not supplied release height
+first_jet_ballistic_extrapolation	peak_frame	824.557232433	frame	six centroid points; vertical acceleration fixed to -g
+first_jet_ballistic_extrapolation	peak_height	348.425498604	mm	model extrapolation beyond the six measured points
+first_jet_ballistic_extrapolation	height_rmse	3.00816063368	mm	six centroid points
+second_jet_ballistic_extrapolation	peak_frame	837.146709951	frame	six centroid points; owner confirms AG7 is 87.38 mm
+second_jet_ballistic_extrapolation	peak_height	175.546937787	mm	model extrapolation beyond the six measured points
+second_jet_ballistic_extrapolation	height_rmse	8.66178532928	mm	six centroid points
