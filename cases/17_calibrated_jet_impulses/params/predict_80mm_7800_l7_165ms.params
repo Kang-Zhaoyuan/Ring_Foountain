@@ -1,0 +1,27 @@
+# Predictive 80 mm vacuum-release condition requested for human review.
+# Ring density is 7.8 g/cm^3 = 7800 kg/m^3; the derived mass is
+# pi*(Ro^2 - Ri^2)*thickness*rho = 0.0264423516345 kg.
+# The solver begins at first water contact, so impact_speed=sqrt(2*g*0.080).
+# All other Case 17 trajectory and closure coefficients remain frozen.
+level=7
+wetting_mode=0
+geometry_mode=0
+t_end=0.165
+output_interval=0.0005
+Ri=0.00505
+Ro=0.02007
+thickness=0.00286
+ring_mass=0.0264423516345
+rho_liquid=998.0
+rho_gas=1.2
+mu_liquid=0.001
+mu_gas=0.000018
+surface_tension=0.072
+gravity=9.81
+impact_speed=1.25283678107
+terminal_speed=0.720414774329
+trajectory_decay_rate=76.9112141855
+wetting_speed=0.0297916666667
+wetting_band_cells=1.25
+wetting_relaxation_time=0.005
+max_speed_abort=100.0
